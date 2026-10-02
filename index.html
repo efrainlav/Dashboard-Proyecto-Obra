@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Visor de torres | Windpeshi</title>
+  <title>Visor proyecto Windpeshi vr 1.0</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <style>
     :root {
@@ -64,16 +64,13 @@
       gap: 13px;
     }
 
-    .brand-mark {
-      width: 36px;
-      height: 36px;
-      display: grid;
-      place-items: center;
-      color: var(--green-dark);
-      background: var(--lime);
-      font-weight: 800;
-      font-size: 13px;
-      border-radius: 4px;
+    .brand-logo {
+      height: 42px;
+      width: auto;
+      max-width: 140px;
+      object-fit: contain;
+      display: block;
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
     }
 
     h1 {
@@ -716,9 +713,9 @@
   <main class="app">
     <header class="topbar">
       <div class="brand">
-        <div class="brand-mark" aria-hidden="true">WP</div>
+        <img src="png/eco.png" alt="Logo Windpeshi" class="brand-logo">
         <div>
-          <h1>Visor geográfico de torres</h1>
+          <h1>Visor proyecto Windpeshi vr 1.0</h1>
           <div class="subtitle">Proyecto Windpeshi · Capa de infraestructura</div>
         </div>
       </div>
