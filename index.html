@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visor de torres | Windpeshi</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #202b2b;
+      --muted: #687775;
+      --line: #dce4df;
+      --paper: #f4f6f2;
+      --panel: #ffffff;
+      --green: #286b53;
+      --green-dark: #1e513f;
+      --lime: #d4e75a;
+      --amber: #dd9a39;
+      font-family: "Aptos", "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      overflow: hidden;
+      color: var(--ink);
+      background: var(--paper);
+    }
+
+    .app {
+      height: 100vh;
+      height: 100dvh;
+      min-height: 0;
+      display: grid;
+      grid-template-rows: auto auto minmax(0, 1fr);
+      overflow: hidden;
+    }
+
+    .topbar {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 12px 24px;
+      color: #f8fbf7;
+      background: var(--green-dark);
+      border-bottom: 4px solid var(--lime);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+    }
+
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      color: var(--green-dark);
+      background: var(--lime);
+      font-weight: 800;
+      font-size: 13px;
+      border-radius: 4px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 650;
+    }
+
+    .subtitle {
+      margin-top: 3px;
+      color: #d3e0d8;
+      font-size: 12px;
+    }
+
+    .top-meta {
+      color: #d3e0d8;
+      font-size: 12px;
+      text-align: right;
+    }
+
+    .workspace {
+      min-height: 0;
+      height: 100%;
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(270px, 330px) minmax(0, 1fr);
+      gap: 14px;
+      padding: 14px;
+      overflow: hidden;
+    }
+
+    .sidebar {
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .eyebrow {
+      color: var(--green);
+      font-size: 10px;
+      font-weight: 750;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 5px 0 0;
+      font-size: 17px;
+      font-weight: 650;
+    }
+
+    .activity-panel {
+      min-height: 0;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .activity-head {
+      padding: 18px 16px 13px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .activity-meta {
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .activity-list {
+      min-height: 0;
+      flex: 1;
+      margin: 0;
+      padding: 0 16px 12px;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      list-style: none;
+    }
+
+    .activity-group {
+      border-bottom: 1px solid #e2e9e3;
+    }
+
+    .activity-group-head {
+      min-height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .activity-group-head::-webkit-details-marker {
+      display: none;
+    }
+
+    .activity-group-head::after {
+      content: '+';
+      color: var(--green);
+      font-size: 17px;
+      line-height: 1;
+    }
+
+    .activity-group[open]>.activity-group-head::after {
+      content: '\2212';
+    }
+
+    .activity-group-title {
+      margin: 0;
+      color: var(--green-dark);
+      font-size: 12px;
+      font-weight: 750;
+    }
+
+    .activity-group-count {
+      color: var(--muted);
+      font-size: 10px;
+    }
+
+    .activity-group-items {
+      margin: 0;
+      padding: 0 0 12px;
+      list-style: none;
+    }
+
+    .activity-item {
+      padding: 7px 8px;
+      border-radius: 4px;
+      transition: background-color 0.15s ease;
+    }
+
+    .activity-item.is-clickable {
+      cursor: pointer;
+    }
+
+    .activity-item.is-clickable:hover {
+      background: #edf4ef;
+    }
+
+    .activity-front-badge {
+      display: inline-block;
+      margin-bottom: 3px;
+      padding: 1px 6px;
+      border-radius: 3px;
+      background: #eef3ef;
+      color: var(--green-dark);
+      font-size: 9.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+
+    .activity-item-maplink {
+      display: inline-flex;
+      align-items: center;
+      margin-left: 5px;
+      font-size: 11px;
+      vertical-align: middle;
+    }
+
+    .activity-title {
+      margin: 0 0 3px;
+      font-size: 12px;
+      font-weight: 650;
+      line-height: 1.35;
+    }
+
+    .activity-location {
+      margin: 0;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.4;
+    }
+
+    .activity-empty {
+      padding: 16px 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .day-nav {
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 10px 24px;
+      border-bottom: 1px solid var(--line);
+      background: #fbfcfa;
+    }
+
+    .week-picker {
+      min-width: 230px;
+      display: grid;
+      gap: 4px;
+      color: var(--green-dark);
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .week-select {
+      width: 100%;
+      min-height: 34px;
+      padding: 0 28px 0 10px;
+      border: 1.5px solid var(--line);
+      border-radius: 5px;
+      color: var(--ink);
+      background-color: white;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23286b53' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 9px center;
+      appearance: none;
+      -webkit-appearance: none;
+      font: inherit;
+      font-size: 11.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .week-select:focus {
+      outline: none;
+      border-color: var(--green);
+      box-shadow: 0 0 0 3px rgba(40, 107, 83, 0.15);
+    }
+
+    .week-select:hover:not(:disabled) {
+      border-color: var(--green);
+    }
+
+    .week-select:disabled {
+      opacity: 0.6;
+      cursor: wait;
+    }
+
+    .day-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .day-button {
+      min-width: 82px;
+      min-height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      padding: 0 10px;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      color: var(--ink);
+      background: white;
+      font: inherit;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .day-button:hover:not(:disabled) {
+      border-color: var(--green);
+    }
+
+    .day-button[aria-pressed="true"] {
+      border-color: var(--green-dark);
+      color: white;
+      background: var(--green-dark);
+    }
+
+    .day-button:disabled {
+      opacity: 0.55;
+      cursor: wait;
+    }
+
+    .day-date {
+      font-size: 10px;
+      opacity: 0.75;
+    }
+
+    .summary-tab {
+      position: absolute;
+      z-index: 700;
+      top: 50%;
+      left: 14px;
+      width: 28px;
+      min-height: 86px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      padding: 8px 4px;
+      border: 1px solid var(--line);
+      border-radius: 0 5px 5px 0;
+      color: var(--green-dark);
+      background: white;
+      box-shadow: 0 1px 5px #17251f30;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+    }
+
+    .summary-tab:hover {
+      border-color: var(--green);
+    }
+
+    .summary-tab-arrow {
+      font-size: 17px;
+      line-height: 1;
+    }
+
+    .summary-tab-label {
+      writing-mode: vertical-rl;
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 750;
+    }
+
+    .day-feedback {
+      margin-left: auto;
+      color: var(--muted);
+      font-size: 11px;
+      text-align: right;
+    }
+
+    .feature-popup {
+      min-width: 240px;
+      max-height: 290px;
+      overflow-y: auto;
+      padding-right: 4px;
+    }
+
+    .feature-popup h3 {
+      margin: 3px 0 10px;
+      color: var(--ink);
+      font-size: 15px;
+    }
+
+    .popup-layer {
+      color: var(--green);
+      font-size: 10px;
+      font-weight: 750;
+      text-transform: uppercase;
+    }
+
+    .popup-row {
+      display: grid;
+      grid-template-columns: minmax(95px, 42%) 1fr;
+      gap: 10px;
+      padding: 7px 0;
+      border-top: 1px solid #e9eeea;
+      font-size: 12px;
+    }
+
+    .popup-row dt {
+      color: var(--muted);
+      overflow-wrap: anywhere;
+    }
+
+    .popup-row dd {
+      margin: 0;
+      font-weight: 550;
+      overflow-wrap: anywhere;
+    }
+
+    .workspace.summary-hidden {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .workspace.summary-hidden .sidebar {
+      display: none;
+    }
+
+    .map-panel {
+      position: relative;
+      min-height: 0;
+      height: 100%;
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      overflow: hidden;
+      background: #dfe8df;
+    }
+
+    #map {
+      position: absolute;
+      inset: 0;
+    }
+
+    .map-badge {
+      position: absolute;
+      z-index: 500;
+      top: 12px;
+      left: 58px;
+      padding: 8px 11px;
+      border: 1px solid #dce4df;
+      border-radius: 4px;
+      color: var(--ink);
+      background: #fffffff2;
+      box-shadow: 0 1px 4px #1b30221a;
+      font-size: 12px;
+      pointer-events: none;
+    }
+
+    .map-badge strong {
+      color: var(--green-dark);
+    }
+
+    .status {
+      position: absolute;
+      z-index: 500;
+      right: 12px;
+      bottom: 12px;
+      max-width: calc(100% - 24px);
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      background: #fffffff2;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .status.error {
+      color: #9d352e;
+      border-color: #e8c4bf;
+    }
+
+    .tower-logo {
+      width: 26px;
+      height: 26px;
+      display: block;
+      filter: drop-shadow(0 1px 2px #17251f88);
+    }
+
+    .aeros-logo {
+      width: 36px;
+      height: 24px;
+      display: block;
+      object-fit: contain;
+      filter: drop-shadow(0 1px 2px #17251f88);
+    }
+
+    .tower-logo.is-visit {
+      outline: 3px solid var(--lime);
+      outline-offset: 3px;
+      border-radius: 5px;
+      background: rgba(212, 231, 90, 0.35);
+      filter: drop-shadow(0 0 10px #d4e75a) drop-shadow(0 2px 4px rgba(23, 37, 31, 0.8));
+      transform: scale(1.22);
+      transition: transform 0.2s ease, outline-color 0.2s ease;
+    }
+
+    .cauce-point.is-visit {
+      outline: 3px solid var(--lime);
+      outline-offset: 3px;
+      transform: scale(1.35);
+      box-shadow: 0 0 12px #d4e75a;
+      transition: transform 0.2s ease;
+    }
+
+    .tower-logo.is-community-related {
+      outline: 3px solid #00bcd4;
+      outline-offset: 2px;
+      box-shadow: 0 0 10px #00bcd4;
+    }
+
+    .community-logo.is-selected {
+      outline: 3px solid #00bcd4;
+      outline-offset: 2px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px #00bcd4;
+    }
+
+    .leaflet-tooltip.tower-name-label {
+      padding: 0;
+      border: 0;
+      color: var(--green-dark);
+      background: transparent;
+      box-shadow: none;
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.2;
+      text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 0 0 4px #fff;
+      pointer-events: none;
+    }
+
+    .leaflet-tooltip.tower-name-label::before {
+      display: none;
+    }
+
+    .leaflet-tooltip.asset-name-label {
+      padding: 0;
+      border: 0;
+      color: #202b2b;
+      background: transparent;
+      box-shadow: none;
+      font-size: 10px;
+      font-weight: 750;
+      line-height: 1.2;
+      text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 0 0 3px #fff;
+      pointer-events: none;
+    }
+
+    .leaflet-tooltip.asset-name-label::before {
+      display: none;
+    }
+
+    .community-logo {
+      width: 30px;
+      height: 30px;
+      display: block;
+      filter: drop-shadow(0 1px 2px #17251f88);
+    }
+
+    .leaflet-tooltip.community-name-label {
+      padding: 0;
+      border: 0;
+      color: #704625;
+      background: transparent;
+      box-shadow: none;
+      font-size: 11px;
+      font-weight: 800;
+      line-height: 1.2;
+      text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 0 0 3px #fff;
+      pointer-events: none;
+    }
+
+    .leaflet-tooltip.community-name-label::before {
+      display: none;
+    }
+
+    .cauce-point {
+      width: 15px;
+      height: 15px;
+      border: 2px solid white;
+      box-shadow: 0 1px 5px #17251f99;
+    }
+
+    .aeros-point {
+      border-radius: 50%;
+      background: #58b6a5;
+    }
+
+    .cauce-point.cauce-line-point,
+    .cauce-point.cauce-park-point {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: #3278b7;
+      transform: none;
+    }
+
+    @media (max-width: 760px) {
+      .topbar {
+        min-height: 60px;
+        padding: 10px 14px;
+      }
+
+      .top-meta {
+        display: none;
+      }
+
+      .day-nav {
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 10px 14px;
+      }
+
+      .week-picker {
+        width: 100%;
+        min-width: 0;
+      }
+
+      .day-buttons {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 6px;
+      }
+
+      .day-button {
+        min-width: 0;
+        padding: 0 4px;
+        gap: 4px;
+        min-height: 36px;
+      }
+
+      .summary-tab {
+        top: 10px !important;
+        left: 10px !important;
+        transform: none !important;
+        width: 32px;
+        min-height: 32px;
+        border-radius: 4px;
+      }
+
+      .summary-tab-label {
+        display: none;
+      }
+
+      .day-feedback {
+        width: 100%;
+        margin-left: 0;
+        text-align: left;
+      }
+
+      .workspace {
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(0, 48fr) minmax(0, 52fr);
+        padding: 10px;
+        gap: 10px;
+      }
+
+      .workspace.summary-hidden {
+        grid-template-rows: minmax(0, 1fr);
+      }
+
+      .sidebar {
+        order: 2;
+      }
+
+      .map-panel {
+        order: 1;
+        min-height: 0;
+      }
+
+      .feature-popup {
+        min-width: 205px;
+        max-width: 260px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">WP</div>
+        <div>
+          <h1>Visor geográfico de torres</h1>
+          <div class="subtitle">Proyecto Windpeshi · Capa de infraestructura</div>
+        </div>
+      </div>
+      <div class="top-meta">Visualización de datos KML</div>
+    </header>
+
+    <nav class="day-nav" aria-label="Selector de semana y día de programación">
+      <label class="week-picker" for="week-select">
+        <span>Semana de programación / reprogramación</span>
+        <select id="week-select" class="week-select" disabled aria-label="Seleccionar semana de programación">
+          <option>Cargando semanas...</option>
+        </select>
+      </label>
+      <div class="day-buttons">
+        <button class="day-button" type="button" data-day="monday" aria-pressed="false" disabled><span
+            class="day-name">Lunes</span> <span class="day-date"></span></button>
+        <button class="day-button" type="button" data-day="tuesday" aria-pressed="false" disabled><span
+            class="day-name">Martes</span> <span class="day-date"></span></button>
+        <button class="day-button" type="button" data-day="wednesday" aria-pressed="false" disabled><span
+            class="day-name">Miércoles</span> <span class="day-date"></span></button>
+        <button class="day-button" type="button" data-day="thursday" aria-pressed="false" disabled><span
+            class="day-name">Jueves</span> <span class="day-date"></span></button>
+        <button class="day-button" type="button" data-day="friday" aria-pressed="false" disabled><span
+            class="day-name">Viernes</span> <span class="day-date"></span></button>
+        <button class="day-button week-summary-button" type="button" data-day="week-summary" aria-pressed="false"
+          disabled>Resumen <span class="day-date">Semana</span></button>
+      </div>
+      <div id="day-feedback" class="day-feedback" aria-live="polite">Cargando programación…</div>
+    </nav>
+
+    <section class="workspace" aria-label="Visor de la capa Torres">
+      <button id="summary-toggle" class="summary-tab" type="button" aria-expanded="true" aria-controls="activity-panel"
+        aria-label="Ocultar resumen de actividades" title="Ocultar resumen">
+        <span class="summary-tab-arrow" aria-hidden="true">‹</span>
+        <span class="summary-tab-label" aria-hidden="true"></span>
+      </button>
+      <aside class="sidebar" aria-label="Resumen de actividades del día">
+        <div id="activity-panel" class="activity-panel">
+          <header class="activity-head">
+            <div class="eyebrow">Resumen de actividades</div>
+            <h2 id="activity-day">Selecciona un día</h2>
+            <div id="activity-count" class="activity-meta"></div>
+          </header>
+          <div id="activity-list" class="activity-list">
+            <div class="activity-empty">Selecciona un día para consultar la programación.</div>
+          </div>
+        </div>
+      </aside>
+
+      <section class="map-panel" aria-label="Mapa de torres">
+        <div id="map"></div>
+        <div class="map-badge"><strong>Capas del proyecto</strong></div>
+        <div id="status" class="status">Cargando kml/Torres.kml…</div>
+      </section>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script>
+    const map = L.map('map', { preferCanvas: true }).setView([11.28, -72.22], 13);
+    const streetBase = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; OpenStreetMap'
+    }).addTo(map);
+    const satelliteImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+      maxZoom: 19,
+      attribution: 'Tiles &copy; Esri and its imagery providers',
+      zIndex: 1
+    });
+    const satelliteLabels = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}', {
+      maxZoom: 19,
+      attribution: 'Labels &copy; Esri',
+      zIndex: 2
+    });
+    const satelliteHybrid = L.layerGroup([satelliteImagery, satelliteLabels]);
+
+    const towerLayer = L.featureGroup().addTo(map);
+    const aerosLayer = L.featureGroup().addTo(map);
+    const areaLayer = L.featureGroup().addTo(map);
+    const cauceLineaLayer = L.featureGroup().addTo(map);
+    const cauceParqueLayer = L.featureGroup().addTo(map);
+    const communitiesLayer = L.featureGroup().addTo(map);
+    L.control.layers({
+      Callejero: streetBase,
+      'Satélite híbrido': satelliteHybrid
+    }, {
+      Torres: towerLayer,
+      Aerogeneradores: aerosLayer,
+      'Área del parque': areaLayer,
+      'Ocupación de cauce · Línea': cauceLineaLayer,
+      'Ocupación de cauce · Parque': cauceParqueLayer,
+      Comunidades: communitiesLayer
+    }, { collapsed: true }).addTo(map);
+    const status = document.getElementById('status');
+    const featurePopup = L.popup({ maxWidth: 360, maxHeight: 340, autoClose: true, closeOnClick: true });
+    let features = [];
+    let aerosFeatures = [];
+    let cauceLineaFeatures = [];
+    let cauceParqueFeatures = [];
+    let communityFeatures = [];
+    let selectedCommunityFeature = null;
+    let weeklyPrograms = [];
+    let activeWeek = null;
+    let weekdaySchedule = {};
+    const weekSelect = document.getElementById('week-select');
+
+    function setActiveWeek(weekId) {
+      activeWeek = weeklyPrograms.find((week) => week.id === weekId);
+      if (!activeWeek) throw new Error(`No se encontró la semana ${weekId}.`);
+      weekdaySchedule = Object.fromEntries(activeWeek.days.map((day) => [day.key, day]));
+      weekSelect.value = activeWeek.id;
+      activeWeek.days.forEach((day) => {
+        const button = document.querySelector(`.day-button[data-day="${day.key}"]`);
+        if (!button) return;
+        const nameEl = button.querySelector('.day-name');
+        const dateEl = button.querySelector('.day-date');
+        if (nameEl) nameEl.textContent = day.name;
+        if (dateEl) dateEl.textContent = day.date;
+      });
+    }
+
+    async function loadScheduleCatalog() {
+      const response = await fetch('./programacion-semanal.json');
+      if (!response.ok) throw new Error(`No se pudo leer programacion-semanal.json (HTTP ${response.status}).`);
+      const catalog = await response.json();
+      if (!Array.isArray(catalog.weeks) || !catalog.weeks.length) throw new Error('El catálogo no contiene semanas.');
+      weeklyPrograms = catalog.weeks;
+      weekSelect.replaceChildren();
+      weeklyPrograms.forEach((week) => {
+        const option = document.createElement('option');
+        option.value = week.id;
+        option.textContent = week.label;
+        weekSelect.append(option);
+      });
+      setActiveWeek(catalog.defaultWeekId || weeklyPrograms[0].id);
+      weekSelect.disabled = false;
+    }
+
+    function getWeeklyActivities() {
+      const grouped = new Map();
+      Object.values(weekdaySchedule).forEach((day) => {
+        (day.activities || []).filter((activity) => !/ocupaciones de cauce/i.test(activity.title)).forEach((activity) => {
+          const key = `${activity.title}|${activity.location}`;
+          const existing = grouped.get(key) || { ...activity, days: [] };
+          existing.days.push(day.name);
+          grouped.set(key, existing);
+        });
+      });
+      return Array.from(grouped.values()).map((activity) => ({
+        ...activity,
+        location: `${activity.location} · ${Array.from(new Set(activity.days)).join(', ')}`
+      }));
+    }
+
+    function getScheduleForDay(dayKey) {
+      if (!weekdaySchedule || Object.keys(weekdaySchedule).length === 0) return null;
+      if (dayKey !== 'week-summary') return weekdaySchedule[dayKey] || Object.values(weekdaySchedule)[0] || null;
+      const days = Object.values(weekdaySchedule);
+      return {
+        label: 'Resumen semanal',
+        towers: Array.from(new Set(days.flatMap((day) => day.towers || []))),
+        occupations: Array.from(new Set(days.flatMap((day) => day.occupations || []))),
+        activities: getWeeklyActivities()
+      };
+    }
+
+    function parseAttributes(description) {
+      const doc = new DOMParser().parseFromString(description, 'text/html');
+      return Array.from(doc.querySelectorAll('tr')).map((row) => {
+        const cells = Array.from(row.children).filter((cell) => cell.tagName === 'TD').map((cell) => cell.textContent.trim());
+        return cells.length >= 2 && cells[0] ? [cells[0], cells.slice(1).join(' ')] : null;
+      }).filter(Boolean);
+    }
+
+    function makeIcon() {
+      return L.divIcon({
+        className: '',
+        html: '<img class="tower-logo" src="./svg/transmission-tower.svg" alt="">',
+        iconSize: [26, 26],
+        iconAnchor: [13, 13]
+      });
+    }
+
+    function updateMapLabels() {
+      const showLabels = map.getZoom() >= 12;
+      [...features, ...aerosFeatures, ...cauceLineaFeatures, ...cauceParqueFeatures, ...communityFeatures].forEach((feature) => {
+        if (showLabels) feature.marker.openTooltip();
+        else feature.marker.closeTooltip();
+      });
+    }
+
+    function popupContent(feature, layerName) {
+      const rows = feature.attributes.map(([key, value]) => (
+        `<div class="popup-row"><dt>${escapeHtml(key)}</dt><dd>${escapeHtml(value || 'Sin dato')}</dd></div>`
+      )).join('');
+      const relatedSummary = Number.isInteger(feature.relatedTowerCount)
+        ? `<p class="community-related-summary">${feature.relatedTowerCount} ${feature.relatedTowerCount === 1 ? 'torre asociada' : 'torres asociadas'}</p>`
+        : '';
+      return `<div class="feature-popup"><div class="popup-layer">${escapeHtml(layerName)}</div><h3>${escapeHtml(feature.name)}</h3>${relatedSummary}<dl>${rows}</dl></div>`;
+    }
+
+    function showFeatureInfo(layer, feature, layerName) {
+      featurePopup.setLatLng(layer.getLatLng()).setContent(popupContent(feature, layerName)).openOn(map);
+    }
+
+    function syncVisitStyle(feature, selector) {
+      feature.marker?.getElement()?.querySelector(selector)?.classList.toggle('is-visit', Boolean(feature.isVisit));
+    }
+
+    function matchesTowerVisit(feature, towerIds) {
+      if (!Array.isArray(towerIds)) return false;
+      const featName = (feature.name || '').trim().toUpperCase();
+      return towerIds.some((id) => {
+        if (!id) return false;
+        const cleanId = String(id).trim().toUpperCase();
+        return featName === cleanId || featName === `${cleanId}N` || featName === `${cleanId}V`;
+      });
+    }
+
+    function normalizeCommunity(value) {
+      const name = value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase().replace(/[^A-Z0-9]/g, '');
+      const aliases = {
+        TOLOIRA: 'CASAAUTORIDADTOLOIRA',
+        JAIPACHON: 'JAIPAICHON',
+        MASHUAMANAWANE: 'MAASHUMANAWANE'
+      };
+      return aliases[name] || name;
+    }
+
+    function clearCommunityHighlight() {
+      features.forEach((tower) => tower.marker.getElement()?.querySelector('.tower-logo')?.classList.remove('is-community-related'));
+      if (selectedCommunityFeature) {
+        selectedCommunityFeature.marker.getElement()?.querySelector('.community-logo')?.classList.remove('is-selected');
+        selectedCommunityFeature.relatedTowerCount = undefined;
+        selectedCommunityFeature.relatedTowers = undefined;
+      }
+      selectedCommunityFeature = null;
+    }
+
+    function isUpperSanLuis(community) {
+      if (!/san\s*luis/i.test(community.name || '')) return false;
+      return (community.coordinates && community.coordinates[1] > 11.5) ||
+        community.attributes?.some(([k, v]) => k.toLowerCase() === 'parque' && /v[ií]a/i.test(v));
+    }
+
+    function highlightCommunity(community) {
+      clearCommunityHighlight();
+      if (isUpperSanLuis(community)) {
+        return 0;
+      }
+      const communityKey = normalizeCommunity(community.name);
+      const relatedTowers = features.filter((tower) => {
+        const towerCommunity = tower.attributes.find(([key]) => key.toLowerCase() === 'comunidad')?.[1];
+        return towerCommunity && normalizeCommunity(towerCommunity) === communityKey;
+      });
+      if (!relatedTowers.length) return 0;
+
+      selectedCommunityFeature = community;
+      community.relatedTowers = relatedTowers;
+      community.relatedTowerCount = relatedTowers.length;
+      relatedTowers.forEach((tower) => tower.marker.getElement()?.querySelector('.tower-logo')?.classList.add('is-community-related'));
+      community.marker.getElement()?.querySelector('.community-logo')?.classList.add('is-selected');
+      return relatedTowers.length;
+    }
+
+    function matchesOccupationVisit(feature, occupationIds) {
+      if (!Array.isArray(occupationIds)) return false;
+      const featureId = (feature.attributes?.find(([key]) => key === 'ID_OCU_CAU')?.[1] || feature.name || '').trim().toUpperCase();
+      return occupationIds.some((id) => {
+        if (!id) return false;
+        const cleanId = String(id).trim().toUpperCase();
+        const match = cleanId.match(/^OC0*(\d+)$/i);
+        if (!match) return featureId === cleanId;
+        const number = Number(match[1]);
+        return featureId === `O${number}` || featureId === `OC_${number}` || featureId === `OC${number}` || featureId === `OC0${number}`;
+      });
+    }
+
+    function highlightDay(dayKey) {
+      const day = getScheduleForDay(dayKey);
+      if (!day) return;
+      clearCommunityHighlight();
+      map.closePopup(featurePopup);
+      document.querySelectorAll('.day-button').forEach((button) => {
+        button.setAttribute('aria-pressed', String(button.dataset.day === dayKey));
+      });
+
+      const selectedTowers = features.filter((feature) => matchesTowerVisit(feature, day.towers));
+      const selectedLineOccupations = cauceLineaFeatures.filter((feature) => matchesOccupationVisit(feature, day.occupations));
+      const selectedParkOccupations = cauceParqueFeatures.filter((feature) => matchesOccupationVisit(feature, day.occupations));
+      features.forEach((feature) => {
+        feature.isVisit = selectedTowers.includes(feature);
+        feature.marker.setZIndexOffset(feature.isVisit ? 8000 : feature.baseZIndexOffset);
+        syncVisitStyle(feature, '.tower-logo');
+      });
+      [...cauceLineaFeatures, ...cauceParqueFeatures].forEach((feature) => {
+        feature.isVisit = selectedLineOccupations.includes(feature) || selectedParkOccupations.includes(feature);
+        feature.marker.setZIndexOffset(feature.isVisit ? 12000 : feature.baseZIndexOffset);
+        syncVisitStyle(feature, '.cauce-point');
+      });
+      const occupationCount = selectedLineOccupations.length + selectedParkOccupations.length;
+      const occupationLabel = occupationCount === 1 ? 'ocupación resaltada' : 'ocupaciones resaltadas';
+      const towerLabel = selectedTowers.length === 1 ? 'torre' : 'torres';
+      document.getElementById('day-feedback').textContent = `${day.label}: ${selectedTowers.length} ${towerLabel} y ${occupationCount} ${occupationLabel}`;
+      renderDayActivities(dayKey);
+      zoomToDay(dayKey);
+    }
+
+    function zoomToDay(dayKey) {
+      const day = getScheduleForDay(dayKey);
+      if (!day) return;
+      const visits = [
+        ...features.filter((feature) => matchesTowerVisit(feature, day.towers)),
+        ...cauceLineaFeatures.filter((feature) => matchesOccupationVisit(feature, day.occupations)),
+        ...cauceParqueFeatures.filter((feature) => matchesOccupationVisit(feature, day.occupations))
+      ];
+      const bounds = L.latLngBounds(visits.map((feature) => [feature.coordinates[1], feature.coordinates[0]]));
+      if (bounds.isValid()) map.fitBounds(bounds.pad(0.25), { maxZoom: 14 });
+    }
+
+    function categorizeActivity(activity) {
+      const text = `${activity.title || ''} ${activity.front || ''}`.toLowerCase();
+      if (/socializaci[oó]n|atenci[oó]n|predio|acta|capacitaci[oó]n|\brio\b|comunidad|vecindad/i.test(text)) {
+        return 'Social y predial';
+      }
+      if (/forest|fauna|bi[oó]tico|ahuyenta|ambiental/i.test(text)) {
+        return 'Gestión ambiental';
+      }
+      if (/obra civil|campamento|adecuaci[oó]n|excavaci[oó]n|fundaci[oó]n|montaje/i.test(text)) {
+        return 'Obra civil';
+      }
+      if (/abastecimiento|despacho|recepci[oó]n|descargue|material|zona franca|log[ií]stica|ej[eé]rcito|suministro|patio/i.test(text)) {
+        return 'Logística y suministros';
+      }
+      if (/frente trabajo no (?:[3-9]|10)/i.test(activity.front || '')) {
+        return 'Obra civil';
+      }
+      return 'Otras actividades';
+    }
+
+    function renderDayActivities(dayKey) {
+      const day = getScheduleForDay(dayKey);
+      if (!day) return;
+
+      const towerVisits = features.filter((feature) => matchesTowerVisit(feature, day.towers)).map((feature) => ({
+        title: feature.name,
+        location: feature.attributes.find(([key]) => key.toLowerCase() === 'comunidad')?.[1] || '',
+        feature
+      }));
+
+      const occupationFeatures = [...cauceLineaFeatures, ...cauceParqueFeatures].filter((feature) => matchesOccupationVisit(feature, day.occupations));
+      const occupationVisits = occupationFeatures.map((feature) => {
+        const occId = (day.occupations || []).find((id) => matchesOccupationVisit(feature, [id])) || feature.name;
+        return {
+          title: `${occId} (${feature.name})`,
+          location: feature.attributes.find(([key]) => key.toUpperCase() === 'VEREDA')?.[1] || '',
+          feature
+        };
+      });
+
+      const scheduledActivities = (day.activities || []).filter((activity) => !/ocupaciones de cauce/i.test(activity.title));
+
+      const categorized = {
+        'Social y predial': [],
+        'Gestión ambiental': [],
+        'Obra civil': [],
+        'Logística y suministros': [],
+        'Otras actividades': []
+      };
+
+      scheduledActivities.forEach((activity) => {
+        const cat = categorizeActivity(activity);
+        if (categorized[cat]) categorized[cat].push(activity);
+        else categorized['Otras actividades'].push(activity);
+      });
+
+      const activityGroups = [
+        { title: 'Social y predial', items: categorized['Social y predial'] },
+        { title: 'Gestión ambiental', items: categorized['Gestión ambiental'] },
+        { title: 'Obra civil', items: categorized['Obra civil'] },
+        { title: 'Logística y suministros', items: categorized['Logística y suministros'] },
+        { title: 'Otras actividades', items: categorized['Otras actividades'] }
+      ];
+
+      const groups = [
+        { title: 'Torres programadas', items: towerVisits, type: 'towers' },
+        { title: 'Ocupaciones de cauce', items: occupationVisits, type: 'cauces' },
+        ...activityGroups
+      ].filter((group) => group.items.length > 0);
+
+      document.getElementById('activity-day').textContent = day.label;
+      const towerLabel = towerVisits.length === 1 ? 'torre' : 'torres';
+      const occupationLabel = occupationVisits.length === 1 ? 'cauce' : 'cauces';
+      const totalActivities = scheduledActivities.length;
+      const activityLabel = totalActivities === 1 ? 'actividad' : 'actividades';
+      document.getElementById('activity-count').textContent = `${towerVisits.length} ${towerLabel} · ${occupationVisits.length} ${occupationLabel} · ${totalActivities} ${activityLabel}`;
+
+      const list = document.getElementById('activity-list');
+      const showFullWeek = dayKey === 'week-summary';
+      list.classList.toggle('activity-list-weekly', showFullWeek);
+      list.replaceChildren();
+
+      groups.forEach((group, index) => {
+        const section = document.createElement('details');
+        section.className = 'activity-group';
+        section.open = index === 0;
+
+        const header = document.createElement('summary');
+        header.className = 'activity-group-head';
+
+        const title = document.createElement('span');
+        title.className = 'activity-group-title';
+        title.textContent = group.title;
+
+        const count = document.createElement('span');
+        count.className = 'activity-group-count';
+        count.textContent = group.items.length;
+
+        header.append(title, count);
+
+        const items = document.createElement('ul');
+        items.className = 'activity-group-items';
+
+        group.items.forEach((activity) => {
+          const item = document.createElement('li');
+          item.className = 'activity-item';
+
+          if (group.type === 'towers' && activity.feature?.marker) {
+            item.classList.add('is-clickable');
+            item.title = 'Hacer clic para ubicar en el mapa';
+            item.addEventListener('click', (e) => {
+              e.stopPropagation();
+              map.setView(activity.feature.marker.getLatLng(), 15);
+              showFeatureInfo(activity.feature.marker, activity.feature, 'Torre');
+            });
+          } else if (group.type === 'cauces' && activity.feature?.marker) {
+            item.classList.add('is-clickable');
+            item.title = 'Hacer clic para ubicar en el mapa';
+            item.addEventListener('click', (e) => {
+              e.stopPropagation();
+              map.setView(activity.feature.marker.getLatLng(), 16);
+              showFeatureInfo(activity.feature.marker, activity.feature, 'Ocupación de cauce');
+            });
+          } else {
+            const towerMatch = ((activity.location || '') + ' ' + (activity.title || '')).match(/\b(T\d{1,3}[NV]?)\b/i);
+            if (towerMatch) {
+              const matchedTower = features.find((f) => matchesTowerVisit(f, [towerMatch[1]]));
+              if (matchedTower && matchedTower.marker) {
+                item.classList.add('is-clickable');
+                item.title = `Hacer clic para ubicar ${matchedTower.name} en el mapa`;
+                item.addEventListener('click', (e) => {
+                  e.stopPropagation();
+                  map.setView(matchedTower.marker.getLatLng(), 15);
+                  showFeatureInfo(matchedTower.marker, matchedTower, 'Torre');
+                });
+              }
+            }
+          }
+
+          if (activity.front) {
+            const frontBadge = document.createElement('span');
+            frontBadge.className = 'activity-front-badge';
+            frontBadge.textContent = activity.front;
+            item.append(frontBadge);
+          }
+
+          const itemTitle = document.createElement('h4');
+          itemTitle.className = 'activity-title';
+          itemTitle.textContent = activity.title;
+
+          if (item.classList.contains('is-clickable')) {
+            const mapIcon = document.createElement('span');
+            mapIcon.className = 'activity-item-maplink';
+            mapIcon.textContent = '📍';
+            itemTitle.append(mapIcon);
+          }
+
+          const location = document.createElement('p');
+          location.className = 'activity-location';
+          location.textContent = activity.location || 'Sin ubicación';
+
+          item.append(itemTitle, location);
+          items.append(item);
+        });
+
+        section.addEventListener('toggle', () => {
+          if (section.open && !list.classList.contains('activity-list-weekly')) {
+            list.querySelectorAll('.activity-group[open]').forEach((other) => {
+              if (other !== section) other.open = false;
+            });
+          }
+        });
+
+        section.append(header, items);
+        list.append(section);
+      });
+    }
+
+    function readPlacemark(placemark, index) {
+      const coordinates = placemark.getElementsByTagNameNS('*', 'coordinates')[0]?.textContent.trim().split(/[\s,]+/).map(Number);
+      if (!coordinates || coordinates.length < 2 || !Number.isFinite(coordinates[0]) || !Number.isFinite(coordinates[1])) return null;
+      const name = placemark.getElementsByTagNameNS('*', 'name')[0]?.textContent.trim() || `Torre ${index + 1}`;
+      const description = placemark.getElementsByTagNameNS('*', 'description')[0]?.textContent || '';
+      return { id: placemark.getAttribute('id') || `tower-${index}`, index, name, coordinates, attributes: parseAttributes(description) };
+    }
+
+    function addClickablePoints(xml, layer, layerName, style) {
+      const placemarks = Array.from(xml.getElementsByTagNameNS('*', 'Placemark'));
+      const points = placemarks.map(readPlacemark).filter(Boolean);
+      points.forEach((feature) => {
+        const icon = L.divIcon({
+          className: '',
+          html: style.iconHtml || `<div class="cauce-point ${style.markerClass}"></div>`,
+          iconSize: style.iconSize || [15, 15],
+          iconAnchor: style.iconAnchor || [7, 7]
+        });
+        feature.baseZIndexOffset = style.zIndexOffset ?? 1000;
+        const marker = L.marker([feature.coordinates[1], feature.coordinates[0]], {
+          icon,
+          title: feature.name,
+          zIndexOffset: feature.baseZIndexOffset,
+          riseOnHover: true
+        });
+        feature.marker = marker;
+        marker.bindTooltip(feature.name, {
+          permanent: true,
+          direction: 'right',
+          offset: style.labelOffset || [8, 0],
+          className: style.labelClass || 'asset-name-label',
+          opacity: 1
+        });
+        marker.on('add', () => syncVisitStyle(feature, '.cauce-point'));
+        marker.on('click', () => {
+          if (style.onClick) {
+            map.closePopup(featurePopup);
+            const clickResult = style.onClick(feature);
+            if (clickResult && Array.isArray(feature.relatedTowers) && feature.relatedTowers.length) {
+              const bounds = L.latLngBounds([
+                ...feature.relatedTowers.map((tower) => [tower.coordinates[1], tower.coordinates[0]]),
+                [feature.coordinates[1], feature.coordinates[0]]
+              ]);
+              if (bounds.isValid()) map.fitBounds(bounds.pad(0.25), { maxZoom: 14 });
+            }
+            showFeatureInfo(marker, feature, layerName);
+            return;
+          }
+          clearCommunityHighlight();
+          showFeatureInfo(marker, feature, layerName);
+        }).addTo(layer);
+      });
+      return points;
+    }
+
+    function parseKml(xml, path) {
+      const parser = new DOMParser();
+      const parsed = parser.parseFromString(xml, 'application/xml');
+      if (parsed.querySelector('parsererror')) throw new Error(`${path} no tiene un formato KML válido.`);
+      return parsed;
+    }
+
+    function parseCoordinates(coordinatesNode) {
+      return (coordinatesNode?.textContent || '').trim().split(/\s+/).map((coordinate) => {
+        const [longitude, latitude] = coordinate.split(',').map(Number);
+        return Number.isFinite(longitude) && Number.isFinite(latitude) ? [latitude, longitude] : null;
+      }).filter(Boolean);
+    }
+
+    async function loadLayers() {
+      const paths = [
+        './kml/Torres.kml',
+        './kml/Aeros_Parque.kml',
+        './kml/Area_Parque.kml',
+        './kml/Ocupacion_Cauce_Linea.kml',
+        './kml/Ocupaciones_Cauce_Parque.kml'
+      ];
+      const [kmlResponses, communitiesResponse] = await Promise.all([
+        Promise.all(paths.map((path) => fetch(path))),
+        fetch('./kml/Comunidades_2026.kmz')
+      ]);
+      const failedResponse = kmlResponses.find((response) => !response.ok);
+      if (failedResponse) throw new Error(`No se pudo leer una capa KML (HTTP ${failedResponse.status}).`);
+      if (!communitiesResponse.ok) throw new Error(`No se pudo leer Comunidades_2026.kmz (HTTP ${communitiesResponse.status}).`);
+
+      const [documents, communityArchive] = await Promise.all([
+        Promise.all(kmlResponses.map(async (response, index) => parseKml(await response.text(), paths[index]))),
+        JSZip.loadAsync(await communitiesResponse.arrayBuffer())
+      ]);
+
+      const communityKml = Object.values(communityArchive.files).find((entry) => !entry.dir && entry.name.toLowerCase().endsWith('.kml'));
+      if (!communityKml) throw new Error('No se encontró un KML dentro de Comunidades_2026.kmz.');
+      const communitiesDocument = parseKml(await communityKml.async('text'), 'Comunidades_2026.kmz');
+
+      const towerPlacemarks = Array.from(documents[0].getElementsByTagNameNS('*', 'Placemark'));
+      features = towerPlacemarks.map(readPlacemark).filter(Boolean);
+      if (!features.length) throw new Error('No se encontraron torres válidas en kml/Torres.kml.');
+
+      features.forEach((feature) => {
+        feature.baseZIndexOffset = 0;
+        feature.marker = L.marker([feature.coordinates[1], feature.coordinates[0]], { icon: makeIcon(), title: feature.name });
+        feature.marker.bindTooltip(feature.name, {
+          permanent: true,
+          direction: 'right',
+          offset: [8, 0],
+          className: 'tower-name-label',
+          opacity: 1
+        });
+        feature.marker.on('add', () => syncVisitStyle(feature, '.tower-logo'));
+        feature.marker.on('click', () => {
+          clearCommunityHighlight();
+          showFeatureInfo(feature.marker, feature, 'Torre');
+        });
+        feature.marker.addTo(towerLayer);
+      });
+
+      aerosFeatures = addClickablePoints(documents[1], aerosLayer, 'Aerogenerador', {
+        iconHtml: '<img class="aeros-logo" src="./svg/eolica.svg" alt="">',
+        iconSize: [36, 24],
+        iconAnchor: [18, 12],
+        zIndexOffset: 1000
+      });
+      cauceLineaFeatures = addClickablePoints(documents[3], cauceLineaLayer, 'Ocupación de cauce · Línea', {
+        markerClass: 'cauce-line-point',
+        iconSize: [11, 11],
+        iconAnchor: [5, 5],
+        zIndexOffset: 2000
+      });
+      cauceParqueFeatures = addClickablePoints(documents[4], cauceParqueLayer, 'Ocupación de cauce · Parque', {
+        markerClass: 'cauce-park-point',
+        iconSize: [11, 11],
+        iconAnchor: [5, 5],
+        zIndexOffset: 3000
+      });
+      communityFeatures = addClickablePoints(communitiesDocument, communitiesLayer, 'Comunidad', {
+        iconHtml: '<img class="community-logo" src="./svg/hut.svg" alt="">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 15],
+        labelClass: 'community-name-label',
+        labelOffset: [9, 0],
+        zIndexOffset: 16000,
+        onClick: highlightCommunity
+      });
+
+      const polygonParts = Array.from(documents[2].getElementsByTagNameNS('*', 'Polygon')).map((polygon) => {
+        const outerBoundary = polygon.getElementsByTagNameNS('*', 'outerBoundaryIs')[0];
+        const outer = parseCoordinates(outerBoundary?.getElementsByTagNameNS('*', 'coordinates')[0]);
+        const holes = Array.from(polygon.getElementsByTagNameNS('*', 'innerBoundaryIs')).map((boundary) => parseCoordinates(boundary.getElementsByTagNameNS('*', 'coordinates')[0]));
+        return outer.length ? [outer, ...holes.filter((ring) => ring.length)] : null;
+      }).filter(Boolean);
+      if (!polygonParts.length) throw new Error('No se encontró un polígono en kml/Area_Parque.kml.');
+      const areaGeometry = polygonParts.length === 1 ? polygonParts[0] : polygonParts;
+      L.polygon(areaGeometry, {
+        color: '#c75d47',
+        weight: 2,
+        fillColor: '#e59a70',
+        fillOpacity: 0.16,
+        interactive: false
+      }).addTo(areaLayer);
+    }
+
+    function escapeHtml(value) {
+      return (value || '').replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
+    }
+
+    weekSelect.addEventListener('change', () => {
+      setActiveWeek(weekSelect.value);
+      const activeBtn = document.querySelector('.day-button[aria-pressed="true"]');
+      const activeDay = activeBtn ? activeBtn.dataset.day : 'monday';
+      highlightDay(activeDay);
+    });
+
+    document.querySelectorAll('.day-button').forEach((button) => {
+      button.addEventListener('click', () => highlightDay(button.dataset.day));
+    });
+
+    const workspace = document.querySelector('.workspace');
+    const sidebar = document.querySelector('.sidebar');
+    const summaryToggle = document.getElementById('summary-toggle');
+    const summaryTabArrow = summaryToggle.querySelector('.summary-tab-arrow');
+
+    function positionSummaryTab() {
+      if (window.innerWidth <= 760) {
+        summaryToggle.style.left = '';
+        summaryToggle.style.top = '';
+        return;
+      }
+      const workspaceRect = workspace.getBoundingClientRect();
+      if (workspace.classList.contains('summary-hidden')) {
+        summaryToggle.style.left = '14px';
+        summaryToggle.style.top = `${workspaceRect.height / 2}px`;
+        return;
+      }
+      const sidebarRect = sidebar.getBoundingClientRect();
+      summaryToggle.style.left = `${sidebarRect.right - workspaceRect.left}px`;
+      summaryToggle.style.top = `${sidebarRect.top - workspaceRect.top + sidebarRect.height / 2}px`;
+    }
+
+    summaryToggle.addEventListener('click', () => {
+      const hidden = workspace.classList.toggle('summary-hidden');
+      summaryToggle.setAttribute('aria-expanded', String(!hidden));
+      summaryToggle.setAttribute('aria-label', hidden ? 'Mostrar resumen de actividades' : 'Ocultar resumen de actividades');
+      summaryToggle.title = hidden ? 'Mostrar resumen' : 'Ocultar resumen';
+      summaryTabArrow.textContent = hidden ? '›' : '‹';
+      requestAnimationFrame(() => {
+        positionSummaryTab();
+        map.invalidateSize({ pan: false });
+      });
+    });
+
+    window.addEventListener('resize', positionSummaryTab);
+    positionSummaryTab();
+    map.on('zoomend', updateMapLabels);
+
+    async function initApp() {
+      try {
+        status.textContent = 'Cargando programación y capas geográficas…';
+        await Promise.all([
+          loadScheduleCatalog(),
+          loadLayers()
+        ]);
+        document.querySelectorAll('.day-button').forEach((button) => { button.disabled = false; });
+        highlightDay('monday');
+        updateMapLabels();
+        status.textContent = `${features.length} torres, ${aerosFeatures.length} aerogeneradores, ${cauceLineaFeatures.length} ocupaciones de línea, ${cauceParqueFeatures.length} de parque, ${communityFeatures.length} comunidades y área cargados`;
+      } catch (error) {
+        status.textContent = error.message;
+        status.classList.add('error');
+        document.getElementById('day-feedback').textContent = 'Error al cargar los datos';
+        console.error('Error inicializando aplicación:', error);
+      }
+    }
+
+    initApp();
+  </script>
+</body>
+
+</html>

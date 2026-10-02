@@ -1,0 +1,4881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+<Document id="Infraestructura puntual PE">
+  <name>Infraestructura puntual PE</name>
+  <snippet></snippet>
+  <Folder id="FeatureLayer0">
+    <name>Infraestructura puntual PE</name>
+    <snippet></snippet>
+    <Placemark id="ID_00000">
+      <name>WP1</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP1</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>Intervisible con Observador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5110348,2956</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2843626,858</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -71.98731470005026,11.63230570105943,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00001">
+      <name>WP2</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP2</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5110518,2125</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2843227,279</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -71.98576859999319,11.62868570063956,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00002">
+      <name>WP3</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP3</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5110212,9258</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2842836,0442</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -71.98858270024196,11.625156499754,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00003">
+      <name>WP4</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP4</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5110409,8183</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2842439,2802</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -71.98678899951584,11.62156110103462,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00004">
+      <name>WP5</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP5</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5109654,9162</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2841007,8338</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -71.99376229975348,11.60863670065372,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00005">
+      <name>WP6</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP6</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5109377,6356</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2840623,3757</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -71.99631889956305,11.60516780023836,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00006">
+      <name>WP8</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP8</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5108782,2662</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2839444,4048</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.00181950062731,11.59452190035038,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00007">
+      <name>WP9</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP9</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5108601,5648</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2839021,3264</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.00349100043768,11.59070049951303,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00008">
+      <name>WP14</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP14</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>Intervisible con Observador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5106569,9907</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2835786,6055</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.02223210025524,11.5615030002507,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00009">
+      <name>WP15</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP15</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>Intervisible con Observador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5106508,4534</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2835411,6201</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.02280839930405,11.55811280007315,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00010">
+      <name>WP16</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP16</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5105467,8347</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2836235,6526</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.03232930053495,11.56559900066664,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00011">
+      <name>WP18</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP18</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5105774,2999</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2837081,2001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.0294913991832,11.57323839987462,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00012">
+      <name>WP19</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP19</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5107463,2141</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2839289,9229</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.01392669961473,11.59316600037623,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00013">
+      <name>WP20</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP20</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5107499,9096</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2839681,0551</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.01357760056639,11.59670300069334,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00014">
+      <name>WP22</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP22</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>Intervisible con Observador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5107781,3434</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2840513,7881</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.01096890032886,11.60422700079151,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00015">
+      <name>WP23</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP23</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>Intervisible con Observador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5108125,9209</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2841098,4558</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.00778860043566,11.60950500018911,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00016">
+      <name>WP24</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP24</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5107626,6744</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2841520,3261</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.01235600042887,11.61333690113783,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00017">
+      <name>WP25</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP25</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>Intervisible con Observador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5108654,21</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2842106,1746</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.00290889915865,11.61860400094843,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00018">
+      <name>WP26</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP26</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5108635,9184</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2842486,7151</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.00306449960692,11.62204690090265,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00019">
+      <name>WP27</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP27</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5108627,691</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2842878,1577</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.00312740049893,11.62558810001969,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00020">
+      <name>WP28</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP28</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5108667,66</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2843308,207</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.00274680057467,11.62947699990552,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00021">
+      <name>WP29</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP29</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>Intervisible con Observador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5109261,792</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2844023,9068</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -71.99727179978147,11.63593220024866,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00022">
+      <name>WP30</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP30</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>Intervisible con Observador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5109319,546</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2844425,8755</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -71.99672880032054,11.63956650078456,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00023">
+      <name>WP31</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP31</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>Intervisible con observador 31</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5109467,2299</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2844838,1893</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -71.99536020039119,11.64329150047318,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00024">
+      <name>WP32</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP32</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5108060,6432</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2845154,6385</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.00825769998268,11.64619880007641,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00025">
+      <name>WP33</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP33</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5107824,9973</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2844727,9644</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.01043379956484,11.64234660011148,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00026">
+      <name>WP34</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP34</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5107724,2093</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2844311,3133</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.01137200002249,11.63858080051146,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00027">
+      <name>WP35</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP35</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>Intervisible con Observador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5107780,4517</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2843932,508</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.01086800046176,11.63515240106091,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00028">
+      <name>WP39</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP39</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5105686,667</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2841946,334</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.03014349993711,11.61725089978762,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00029">
+      <name>WP40</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP40</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>Intervisible con Observador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5105567,9627</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2841536,8074</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.03124550041422,11.61355000107062,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00030">
+      <name>WP41</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP41</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>Intervisible con Observador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5105717,6947</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2840964,6301</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.02988950055405,11.60836950024222,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00031">
+      <name>WP42</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP42</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5106093,837</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2840355,9169</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.02645729965803,11.60285150079747,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00032">
+      <name>WP44</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP44</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5103469,4064</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2838728,8757</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.05058710039609,11.58821339999237,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00033">
+      <name>WP45</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP45</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5103348,5163</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2838291,3864</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.05170959968922,11.5842595000879,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00034">
+      <name>WP46</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP46</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5103243,7692</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2837878,7581</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.0526831997519,11.5805300009331,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00035">
+      <name>WP47</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP47</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5103253,9261</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2837475,2999</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.05260229980072,11.57688000101083,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00036">
+      <name>WP48</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP48</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5103214,0844</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2837062,202</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.05298039967872,11.57314429954937,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00037">
+      <name>WP49</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP49</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5103329,3118</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2836692,9638</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.05193450006695,11.5698007001179,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00038">
+      <name>WP50</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP50</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>Intervisible con Observador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5103637,1285</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2836306,3914</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.04912229998675,11.56629450010777,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00039">
+      <name>WP52</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP52</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5104141,7325</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2835646,8556</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.04451320012105,11.56031309995545,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00040">
+      <name>WP53</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP53</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5104538,4711</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2835267,6518</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.04088519984222,11.55687080018092,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00041">
+      <name>TM2_</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Torre de Medición</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>TM2_</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Torres de medición propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>Torre de monitoreo de variables metereológicas</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5106129,5237</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2837128,8526</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.02623095912449,11.57365852357099,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00042">
+      <name>TM1_</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Torre de Medición</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>TM1_</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Torres de medición propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>Torre de monitoreo de variables metereológicas</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5106782,0939</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2835563,5421</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.02029328807666,11.55947860933014,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00043">
+      <name>WP36</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP36</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>Intervisible con Observador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5106887,2559</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2843426,5976</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.01908029941526,11.63060400056975,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00044">
+      <name>WP37</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP37</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>Intervisible con Observador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5107000,2411</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2842881,6362</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.01806079993962,11.62567080086132,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00045">
+      <name>WP38</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP38</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5106898,5054</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2842471,984</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.01900729980848,11.62196830030497,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00046">
+      <name>WP43</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>LAV0029-00-2019</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>EXPEDIENTE</td>
+<td>LAV0029-00-2019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>OPERADOR</td>
+<td>WIND AUTOGENERACIÓN S.A.S.</td>
+</tr>
+<tr>
+<td>PROYECTO</td>
+<td>PARQUE EÓLICO WINDPESHI</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NUM_ACT_AD</td>
+<td>00261</td>
+</tr>
+<tr>
+<td>FEC_ACT_AD</td>
+<td>13/02/2020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ART_ACT_AD</td>
+<td>Articulo primero</td>
+</tr>
+<tr>
+<td>TIPO_INFRA</td>
+<td>Aerogenerador</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ID_INFRA_PT</td>
+<td>WP43</td>
+</tr>
+<tr>
+<td>CARACTER</td>
+<td>Aerogeneradores Propuestos</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ESTADO</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ADECUACION</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TIPO_ADEC</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>CALIDAD</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>REQU_OCUP</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr>
+<td>OBSERV</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COOR_ESTE</td>
+<td>5104524,6608</td>
+</tr>
+<tr>
+<td>COOR_NORTE</td>
+<td>2840414,8761</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>GRUPO</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -72.04085319986959,11.6034330005011,0</coordinates>
+      </Point>
+    </Placemark>
+  </Folder>
+  <Style id="IconStyle00">
+    <IconStyle>
+      <scale>1.000000</scale>
+      <Icon><href>Layer0_Symbol_253addd0_0.png</href></Icon>
+    </IconStyle>
+    <LabelStyle>
+      <color>ffffffff</color>
+      <scale>0.750000</scale>
+    </LabelStyle>
+    <PolyStyle>
+      <color>ff000000</color>
+      <outline>0</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="IconStyle041">
+    <IconStyle>
+      <scale>1.000000</scale>
+      <Icon><href>Layer0_Symbol_253ae540_0.png</href></Icon>
+    </IconStyle>
+    <LabelStyle>
+      <color>ffffffff</color>
+      <scale>0.750000</scale>
+    </LabelStyle>
+    <PolyStyle>
+      <color>ff000000</color>
+      <outline>0</outline>
+    </PolyStyle>
+  </Style>
+</Document>
+</kml>
