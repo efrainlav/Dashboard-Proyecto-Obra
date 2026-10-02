@@ -1,4 +1,4 @@
-# Visor Geográfico de Torres - Proyecto Windpeshi
+# Visor Proyecto Windpeshi vr 1.0
 
 Visor geográfico interactivo para la visualización de la infraestructura, torres de transmisión, ocupaciones de cauce, comunidades y programación semanal de obra del Proyecto Windpeshi.
 
@@ -24,6 +24,7 @@ Visor geográfico interactivo para la visualización de la infraestructura, torr
 ├── index.html                  # Aplicación web / Visor
 ├── programacion-semanal.json   # Catálogo de programación semanal
 ├── kml/                        # Capas espaciales (KML y KMZ)
+├── png/                        # Logotipo e imágenes institucionales
 ├── svg/                        # Íconos vectoriales del visor
 └── README.md                   # Documentación
 ```
