@@ -194,6 +194,10 @@
     .activity-group-count {
       color: var(--muted);
       font-size: 10px;
+      margin-left: auto;
+      font-weight: 600;
+      min-width: 20px;
+      text-align: right;
     }
 
     .activity-group-items {
@@ -1122,7 +1126,7 @@
       groups.forEach((group, index) => {
         const section = document.createElement('details');
         section.className = 'activity-group';
-        section.open = index === 0;
+        section.open = false;
 
         const header = document.createElement('summary');
         header.className = 'activity-group-head';
