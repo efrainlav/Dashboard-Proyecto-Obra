@@ -1,4 +1,16 @@
+# Sistema operativo y archivos temporales
 .DS_Store
 Thumbs.db
 ~$*
 *.tmp
+*.bak
+*.swp
+
+# Archivos de datos internos y hojas de cálculo confidenciales
+*.xlsx
+*.xls
+*.mpp
+*.csv
+Consorcio_Windpeshi/
+IWAKARI/
+Code/
