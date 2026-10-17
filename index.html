@@ -406,23 +406,29 @@
     }
 
     .feature-popup {
-      min-width: 240px;
-      max-height: 290px;
+      min-width: 250px;
+      max-height: 310px;
       overflow-y: auto;
       padding-right: 4px;
     }
 
-    .feature-popup h3 {
-      margin: 3px 0 10px;
-      color: var(--ink);
-      font-size: 15px;
+    .feature-popup h3,
+    .feature-popup .popup-title {
+      margin: 2px 0 8px;
+      color: var(--green-dark);
+      font-size: 18px;
+      font-weight: 850;
+      letter-spacing: -0.2px;
+      line-height: 1.2;
     }
 
     .popup-layer {
-      color: var(--green);
+      color: #b45309;
       font-size: 10px;
-      font-weight: 750;
+      font-weight: 800;
       text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-bottom: 2px;
     }
 
     .popup-row {
@@ -468,24 +474,7 @@
       inset: 0;
     }
 
-    .map-badge {
-      position: absolute;
-      z-index: 500;
-      top: 12px;
-      left: 58px;
-      padding: 8px 11px;
-      border: 1px solid #dce4df;
-      border-radius: 4px;
-      color: var(--ink);
-      background: #fffffff2;
-      box-shadow: 0 1px 4px #1b30221a;
-      font-size: 12px;
-      pointer-events: none;
-    }
 
-    .map-badge strong {
-      color: var(--green-dark);
-    }
 
     .status {
       position: absolute;
@@ -962,37 +951,60 @@
       border: 1px solid #fca5a5;
     }
 
-    /* Popup integration */
+    /* Popup integration - Alta Relevancia de Avance de Obra */
     .popup-progress-section {
-      margin-top: 8px;
-      padding-top: 7px;
-      border-top: 1px solid #e1ebe3;
+      margin: 9px 0 10px;
+      padding: 10px 12px;
+      background: #f4f8f5;
+      border: 1px solid #d4e5d8;
+      border-left: 4px solid var(--green-dark);
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(15, 76, 44, 0.05);
     }
 
     .popup-progress-title {
-      font-size: 10.5px;
-      font-weight: 750;
+      font-size: 11px;
+      font-weight: 800;
       color: var(--green-dark);
       text-transform: uppercase;
       letter-spacing: 0.5px;
-      margin-bottom: 5px;
+      margin-bottom: 8px;
     }
 
     .popup-progress-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 4px 8px;
-      font-size: 10px;
+      gap: 6px 12px;
+      font-size: 11px;
     }
 
     .popup-progress-item {
       display: flex;
       justify-content: space-between;
-      color: #3b5042;
+      align-items: center;
+      color: #2c3e34;
+      padding: 2px 0;
+      border-bottom: 1px dashed #e1eae3;
+    }
+
+    .popup-progress-item:last-child,
+    .popup-progress-item:nth-last-child(2) {
+      border-bottom: none;
+    }
+
+    .popup-progress-item span {
+      color: #4b6354;
+      font-weight: 550;
     }
 
     .popup-progress-item strong {
       color: #0f4c2c;
+      font-weight: 800;
+      background: #e6f4ea;
+      padding: 1px 7px;
+      border-radius: 10px;
+      border: 1px solid #cce5d4;
+      font-size: 11px;
     }
 
     /* Botones flotantes de acceso rápido en el mapa (Alto Contraste) */
@@ -1272,7 +1284,6 @@
             <span>🌀 Aeros</span>
           </button>
         </div>
-        <div class="map-badge"><strong>Capas del proyecto</strong></div>
         <div id="status" class="status">Cargando kml/Torres.kml…</div>
       </section>
     </section>
@@ -1807,8 +1818,18 @@
           <div class="popup-row"><dt>Latitud</dt><dd>${escapeHtml(formatCoord(latRaw))}</dd></div>
           <div class="popup-row"><dt>Longitud</dt><dd>${escapeHtml(formatCoord(lonRaw))}</dd></div>
         `;
+      } else if (layerName === 'Aerogenerador') {
+        // Se elimina EXPEDIENTE, OPERADOR, PROYECTO, NUM_ACT_AD. Solo se conserva el nombre y el avance demo
+        rows = '';
+      } else if (layerName === 'Torre') {
+        // Se quita TIPO_INFRA, ID_INFRA_PT, SITIO e información redundante para dar relevancia al nombre y avance demo
+        const excludedTowerKeys = /^(TIPO_INFRA|ID_INFRA_PT|SITIO|OBJECTID|TEXT|AHUYENTAMIENTO.*|DESPEJE.*|EXCAVACI.*|SOLADO.*|CIMENTACI.*|ACERO.*|CONCRETO.*|RELLENO.*|COOR_X|COOR_Y)$/i;
+        const remainingAttrs = (feature.attributes || []).filter(([key]) => !excludedTowerKeys.test(key.trim()));
+        rows = remainingAttrs.map(([key, value]) => (
+          `<div class="popup-row"><dt>${escapeHtml(key)}</dt><dd>${escapeHtml(value || 'Sin dato')}</dd></div>`
+        )).join('');
       } else {
-        rows = feature.attributes.map(([key, value]) => (
+        rows = (feature.attributes || []).map(([key, value]) => (
           `<div class="popup-row"><dt>${escapeHtml(key)}</dt><dd>${escapeHtml(value || 'Sin dato')}</dd></div>`
         )).join('');
       }
@@ -1846,7 +1867,8 @@
           </div>
         `;
       }
-      return `<div class="feature-popup"><div class="popup-layer">${escapeHtml(layerName)}</div><h3>${escapeHtml(feature.name)}</h3>${relatedSummary}${progressBlock}<dl>${rows}</dl></div>`;
+      const dlBlock = rows.trim() ? `<dl>${rows}</dl>` : '';
+      return `<div class="feature-popup"><div class="popup-layer">${escapeHtml(layerName)}</div><h3 class="popup-title">${escapeHtml(feature.name)}</h3>${relatedSummary}${progressBlock}${dlBlock}</div>`;
     }
 
     function showFeatureInfo(layer, feature, layerName) {
