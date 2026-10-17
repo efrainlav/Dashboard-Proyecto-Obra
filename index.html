@@ -704,42 +704,46 @@
         order: 1;
         min-height: 0;
       }
+    }
 
     /* --- Pestañas del Panel Lateral --- */
     .sidebar-tabs {
       display: flex;
-      background: #edf3ee;
+      background: #021422;
       padding: 6px;
-      gap: 6px;
-      border-bottom: 1px solid var(--line);
+      gap: 5px;
+      border-bottom: 1px solid #083c61;
     }
 
     .sidebar-tab-btn {
       flex: 1;
-      border: none;
-      background: transparent;
-      padding: 7px 10px;
+      border: 1px solid transparent;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 7px 4px;
       border-radius: 4px;
-      font-size: 11.5px;
+      font-size: 11px;
       font-weight: 650;
-      color: var(--muted);
+      color: #8bb5d6;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 6px;
+      gap: 4px;
+      white-space: nowrap;
       transition: all 0.15s ease;
     }
 
     .sidebar-tab-btn:hover {
-      color: var(--green-dark);
-      background: rgba(255, 255, 255, 0.6);
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.12);
+      border-color: #0b517d;
     }
 
     .sidebar-tab-btn.is-active {
-      background: #ffffff;
-      color: var(--green-dark);
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+      background: #06395b;
+      color: #ffffff;
+      border-color: #00b4d8;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
     }
 
     .sidebar-tab-badge {
@@ -747,75 +751,78 @@
       padding: 1px 5px;
       border-radius: 999px;
       background: #00b4d8;
-      color: #ffffff;
+      color: #031c2e;
       font-size: 9px;
-      font-weight: 700;
+      font-weight: 800;
       line-height: 1.2;
     }
 
-    /* --- Panel de Avance de Torres --- */
-    .progress-panel {
+    /* --- Paneles de Avance Estilo ArcGIS Online Dashboard --- */
+    .arcgis-panel {
       min-height: 0;
       flex: 1;
       display: flex;
       flex-direction: column;
       overflow: hidden;
-      background: #fbfdfb;
+      background: #021422;
+      color: #e2f0fa;
     }
 
-    .progress-head {
-      padding: 14px 16px 12px;
-      border-bottom: 1px solid var(--line);
-      background: #ffffff;
+    .arcgis-head {
+      padding: 12px 14px 10px;
+      border-bottom: 1px solid #083854;
+      background: #031a2c;
     }
 
-    .progress-head-top {
+    .arcgis-head-top {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
       gap: 10px;
     }
 
-    .progress-scope-badge {
+    .arcgis-scope-badge {
       display: inline-block;
-      margin-bottom: 4px;
+      margin-bottom: 3px;
       padding: 2px 7px;
       border-radius: 3px;
-      font-size: 9.5px;
+      font-size: 9px;
       font-weight: 750;
-      letter-spacing: 0.8px;
+      letter-spacing: 0.6px;
       text-transform: uppercase;
-      background: #e8f3ec;
-      color: var(--green-dark);
+      background: #073859;
+      color: #38bdf8;
+      border: 1px solid #0c5685;
     }
 
-    .progress-scope-badge.is-filtered {
-      background: #e0f2fe;
-      color: #0369a1;
+    .arcgis-scope-badge.is-filtered {
+      background: #044b7a;
+      color: #7dd3fc;
+      border-color: #0284c7;
     }
 
-    .progress-head h2 {
+    .arcgis-head h2 {
       margin: 2px 0 0;
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 700;
-      color: #11281a;
+      color: #ffffff;
       line-height: 1.25;
     }
 
-    .progress-scope-subtitle {
-      margin-top: 4px;
-      font-size: 11px;
-      color: var(--muted);
+    .arcgis-scope-subtitle {
+      margin-top: 3px;
+      font-size: 10.5px;
+      color: #8cb6d4;
     }
 
-    .progress-reset-btn {
-      border: 1px solid #c8dcd0;
-      background: #f4faf6;
-      color: var(--green-dark);
-      padding: 4px 8px;
+    .arcgis-reset-btn {
+      border: 1px solid #0284c7;
+      background: rgba(2, 132, 199, 0.15);
+      color: #38bdf8;
+      padding: 3px 8px;
       border-radius: 4px;
-      font-size: 10.5px;
-      font-weight: 650;
+      font-size: 10px;
+      font-weight: 700;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
@@ -824,206 +831,101 @@
       transition: all 0.15s ease;
     }
 
-    .progress-reset-btn:hover {
-      background: #e5f3eb;
-      border-color: var(--green);
+    .arcgis-reset-btn:hover {
+      background: #0284c7;
+      color: #ffffff;
+      box-shadow: 0 0 8px rgba(2, 132, 199, 0.5);
     }
 
-    .progress-cards-container {
+    .arcgis-cards-container {
       min-height: 0;
       flex: 1;
-      padding: 12px 14px 16px;
+      padding: 10px 12px 14px;
       overflow-y: auto;
       overscroll-behavior: contain;
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       gap: 8px;
+      align-content: start;
     }
 
-    /* --- Tarjetas Estilo Dashboard KPI (Azul Oscuro / Petróleo) --- */
-    .kpi-card {
-      background: linear-gradient(180deg, #042740 0%, #031c2e 100%);
+    .arcgis-card {
+      background: linear-gradient(180deg, #04243a 0%, #031c2e 100%);
       border: 1px solid #094a73;
-      border-radius: 6px;
-      padding: 10px 14px;
-      color: #e2f0fa;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      padding: 10px 8px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       transition: transform 0.12s ease, border-color 0.12s ease, box-shadow 0.12s ease;
     }
 
-    .kpi-card:hover {
+    .arcgis-card:hover {
       border-color: #00b4d8;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 10px rgba(0, 180, 216, 0.2);
     }
 
-    .kpi-card.kpi-card-main {
-      padding: 14px 14px;
-      text-align: center;
-      background: linear-gradient(180deg, #053354 0%, #032238 100%);
+    .arcgis-card.arcgis-card-main {
+      grid-column: span 2;
+      padding: 12px 10px;
+      background: linear-gradient(180deg, #053354 0%, #032138 100%);
       border-color: #0c5c8f;
     }
 
-    .kpi-card-main .kpi-card-title {
-      font-size: 15px;
+    .arcgis-card-title {
+      font-size: 12px;
       font-weight: 500;
-      color: #9cd4f8;
-      letter-spacing: 0.5px;
+      color: #9ec5e2;
+      letter-spacing: 0.3px;
+      margin: 0 0 2px;
     }
 
-    .kpi-card-main .kpi-card-number {
-      font-size: 32px;
-      font-weight: 700;
-      color: #ffffff;
-      margin: 4px 0 2px;
-      line-height: 1;
-    }
-
-    .kpi-card-caption {
-      font-size: 10px;
-      color: #88b7d6;
-    }
-
-    /* Acordeones de cada métrica */
-    .kpi-card-accordion {
-      padding: 0;
-      overflow: hidden;
-    }
-
-    .kpi-card-summary {
-      padding: 10px 14px;
-      list-style: none;
-      cursor: pointer;
-      user-select: none;
-      text-align: center;
-      position: relative;
-    }
-
-    .kpi-card-summary::-webkit-details-marker {
-      display: none;
-    }
-
-    .kpi-card-title {
+    .arcgis-card-main .arcgis-card-title {
       font-size: 13.5px;
-      font-weight: 500;
-      color: #bce1fa;
-      margin: 0;
+      font-weight: 600;
+      color: #bae0fc;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
     }
 
-    .kpi-card-number {
+    .arcgis-card-value {
       font-size: 22px;
       font-weight: 750;
       color: #ffffff;
-      margin: 3px 0 5px;
+      margin: 2px 0;
       line-height: 1.15;
-      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     }
 
-    .kpi-progress-bar {
-      height: 4px;
-      background: #061926;
+    .arcgis-card-main .arcgis-card-value {
+      font-size: 34px;
+      font-weight: 800;
+      color: #ffffff;
+      margin: 2px 0 3px;
+    }
+
+    .arcgis-card-caption {
+      font-size: 9.5px;
+      color: #79a7c5;
+    }
+
+    .arcgis-card-bar {
+      height: 3px;
+      background: #02111d;
       border-radius: 999px;
       overflow: hidden;
-      margin: 5px auto 0;
-      max-width: 90%;
-      border: 1px solid rgba(255, 255, 255, 0.05);
+      margin: 6px auto 0;
+      width: 85%;
+      border: 1px solid rgba(255, 255, 255, 0.04);
     }
 
-    .kpi-progress-fill {
+    .arcgis-card-bar-fill {
       height: 100%;
       border-radius: 999px;
-      background: linear-gradient(90deg, #00b4d8, #48cae4);
+      background: linear-gradient(90deg, #0284c7, #38bdf8);
       transition: width 0.4s ease-out;
-    }
-
-    .kpi-expand-hint {
-      display: inline-block;
-      font-size: 9px;
-      color: #6ea4c7;
-      margin-top: 3px;
-      transition: transform 0.15s ease;
-    }
-
-    .kpi-card-accordion[open] .kpi-expand-hint {
-      transform: rotate(180deg);
-    }
-
-    .kpi-card-details {
-      padding: 10px 14px 12px;
-      background: #021422;
-      border-top: 1px solid #083b5c;
-      font-size: 11px;
-    }
-
-    .kpi-breakdown-stats {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 4px;
-      text-align: center;
-      margin-bottom: 8px;
-    }
-
-    .kpi-breakdown-item {
-      background: rgba(255, 255, 255, 0.04);
-      padding: 4px;
-      border-radius: 3px;
-    }
-
-    .kpi-breakdown-label {
-      font-size: 8.5px;
-      color: #79a7c5;
-      text-transform: uppercase;
-    }
-
-    .kpi-breakdown-val {
-      font-size: 12px;
-      font-weight: 700;
-      color: #ffffff;
-      margin-top: 2px;
-    }
-
-    .kpi-towers-list-title {
-      font-size: 9.5px;
-      font-weight: 700;
-      color: #79a7c5;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin: 6px 0 4px;
-      text-align: left;
-    }
-
-    .kpi-towers-pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 4px;
-      max-height: 110px;
-      overflow-y: auto;
-      padding: 2px 0;
-    }
-
-    .kpi-tower-pill {
-      border: 1px solid #0a466d;
-      background: #04243a;
-      color: #d6ecfb;
-      padding: 2px 6px;
-      border-radius: 3px;
-      font-size: 10px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.15s ease;
-      display: inline-flex;
-      align-items: center;
-      gap: 3px;
-    }
-
-    .kpi-tower-pill:hover {
-      background: #00b4d8;
-      color: #031c2e;
-      border-color: #00b4d8;
-    }
-
-    .kpi-tower-pill-pct {
-      font-size: 8.5px;
-      opacity: 0.8;
     }
 
     /* Popup integration */
@@ -1059,29 +961,36 @@
       color: #0f4c2c;
     }
 
-    /* Botón flotante de acceso rápido en el mapa */
-    .map-progress-quickbtn {
+    /* Botones flotantes de acceso rápido en el mapa */
+    .map-progress-buttons {
       position: absolute;
       top: 14px;
       right: 14px;
       z-index: 999;
-      background: #042740;
-      color: #ffffff;
-      border: 1px solid #00b4d8;
-      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
-      padding: 7px 12px;
+      display: flex;
+      gap: 6px;
+    }
+
+    .map-progress-quickbtn {
+      background: #04243a;
+      color: #e2f0fa;
+      border: 1px solid #0a527f;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.35);
+      padding: 7px 11px;
       border-radius: 5px;
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 650;
       cursor: pointer;
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 5px;
       transition: all 0.15s ease;
     }
 
     .map-progress-quickbtn:hover {
       background: #063c63;
+      border-color: #00b4d8;
+      color: #ffffff;
       transform: translateY(-1px);
     }
   </style>
@@ -1135,9 +1044,13 @@
           <button id="tab-btn-schedule" class="sidebar-tab-btn is-active" type="button" role="tab" aria-selected="true" aria-controls="activity-panel">
             <span>📋 Programación</span>
           </button>
-          <button id="tab-btn-progress" class="sidebar-tab-btn" type="button" role="tab" aria-selected="false" aria-controls="progress-panel">
-            <span>🏗️ Avance Torres</span>
-            <span id="tab-progress-badge" class="sidebar-tab-badge" style="display: none;"></span>
+          <button id="tab-btn-towers" class="sidebar-tab-btn" type="button" role="tab" aria-selected="false" aria-controls="towers-panel">
+            <span>🗼 Torres</span>
+            <span id="tab-towers-badge" class="sidebar-tab-badge" style="display: none;"></span>
+          </button>
+          <button id="tab-btn-aeros" class="sidebar-tab-btn" type="button" role="tab" aria-selected="false" aria-controls="aeros-panel">
+            <span>🌀 Aeros</span>
+            <span id="tab-aeros-badge" class="sidebar-tab-badge" style="display: none;"></span>
           </button>
         </div>
 
@@ -1152,116 +1065,179 @@
           </div>
         </div>
 
-        <div id="progress-panel" class="progress-panel" style="display: none;">
-          <header class="progress-head">
-            <div class="progress-head-top">
+        <!-- Panel de Avance Torres (Estilo ArcGIS Dashboard) -->
+        <div id="towers-panel" class="arcgis-panel" style="display: none;">
+          <header class="arcgis-head">
+            <div class="arcgis-head-top">
               <div>
-                <span id="progress-scope-badge" class="progress-scope-badge">General</span>
-                <h2 id="progress-scope-title">Todo el Proyecto</h2>
+                <span id="towers-scope-badge" class="arcgis-scope-badge">General</span>
+                <h2 id="towers-scope-title">Todo el Proyecto</h2>
               </div>
-              <button id="progress-reset-btn" class="progress-reset-btn" type="button" title="Restablecer a todo el proyecto" style="display: none;">
+              <button id="towers-reset-btn" class="arcgis-reset-btn" type="button" title="Restablecer a todo el proyecto" style="display: none;">
                 ↺ Ver todo
               </button>
             </div>
-            <div id="progress-scope-subtitle" class="progress-scope-subtitle">
+            <div id="towers-scope-subtitle" class="arcgis-scope-subtitle">
               138 torres en total · Promedio consolidado
             </div>
           </header>
 
-          <div class="progress-cards-container">
+          <div class="arcgis-cards-container">
             <!-- Card Principal: Conteo de Torres -->
-            <div class="kpi-card kpi-card-main">
-              <div class="kpi-card-title">Torres</div>
-              <div class="kpi-card-number" id="kpi-towers-count">0</div>
-              <div class="kpi-card-caption" id="kpi-towers-caption">Torres en el alcance actual</div>
+            <div class="arcgis-card arcgis-card-main">
+              <div class="arcgis-card-title">Torres</div>
+              <div class="arcgis-card-value" id="towers-kpi-count">138</div>
+              <div class="arcgis-card-caption" id="towers-kpi-caption">Torres en el alcance actual</div>
             </div>
 
-            <!-- Card Acordeón: Ahuyentamiento -->
-            <details class="kpi-card kpi-card-accordion" data-metric="ahuyentamiento">
-              <summary class="kpi-card-summary">
-                <div class="kpi-card-title">Ahuyentamiento</div>
-                <div class="kpi-card-number" id="kpi-val-ahuyentamiento">0 %</div>
-                <div class="kpi-progress-bar">
-                  <div class="kpi-progress-fill" id="kpi-bar-ahuyentamiento" style="width: 0%;"></div>
-                </div>
-                <span class="kpi-expand-hint">▾</span>
-              </summary>
-              <div class="kpi-card-details" id="kpi-details-ahuyentamiento"></div>
-            </details>
+            <!-- Métrica: Ahuyentamiento -->
+            <div class="arcgis-card">
+              <div class="arcgis-card-title">Ahuyentamiento</div>
+              <div class="arcgis-card-value" id="towers-val-ahuyentamiento">0 %</div>
+              <div class="arcgis-card-bar">
+                <div class="arcgis-card-bar-fill" id="towers-bar-ahuyentamiento" style="width: 0%;"></div>
+              </div>
+            </div>
 
-            <!-- Card Acordeón: Excavación -->
-            <details class="kpi-card kpi-card-accordion" data-metric="excavacion">
-              <summary class="kpi-card-summary">
-                <div class="kpi-card-title">Excavación</div>
-                <div class="kpi-card-number" id="kpi-val-excavacion">0 %</div>
-                <div class="kpi-progress-bar">
-                  <div class="kpi-progress-fill" id="kpi-bar-excavacion" style="width: 0%;"></div>
-                </div>
-                <span class="kpi-expand-hint">▾</span>
-              </summary>
-              <div class="kpi-card-details" id="kpi-details-excavacion"></div>
-            </details>
+            <!-- Métrica: Excavación -->
+            <div class="arcgis-card">
+              <div class="arcgis-card-title">Excavación</div>
+              <div class="arcgis-card-value" id="towers-val-excavacion">0 %</div>
+              <div class="arcgis-card-bar">
+                <div class="arcgis-card-bar-fill" id="towers-bar-excavacion" style="width: 0%;"></div>
+              </div>
+            </div>
 
-            <!-- Card Acordeón: Relleno -->
-            <details class="kpi-card kpi-card-accordion" data-metric="relleno">
-              <summary class="kpi-card-summary">
-                <div class="kpi-card-title">Relleno</div>
-                <div class="kpi-card-number" id="kpi-val-relleno">0 %</div>
-                <div class="kpi-progress-bar">
-                  <div class="kpi-progress-fill" id="kpi-bar-relleno" style="width: 0%;"></div>
-                </div>
-                <span class="kpi-expand-hint">▾</span>
-              </summary>
-              <div class="kpi-card-details" id="kpi-details-relleno"></div>
-            </details>
+            <!-- Métrica: Relleno -->
+            <div class="arcgis-card">
+              <div class="arcgis-card-title">Relleno</div>
+              <div class="arcgis-card-value" id="towers-val-relleno">0 %</div>
+              <div class="arcgis-card-bar">
+                <div class="arcgis-card-bar-fill" id="towers-bar-relleno" style="width: 0%;"></div>
+              </div>
+            </div>
 
-            <!-- Card Acordeón: Solado -->
-            <details class="kpi-card kpi-card-accordion" data-metric="solado">
-              <summary class="kpi-card-summary">
-                <div class="kpi-card-title">Solado</div>
-                <div class="kpi-card-number" id="kpi-val-solado">0 %</div>
-                <div class="kpi-progress-bar">
-                  <div class="kpi-progress-fill" id="kpi-bar-solado" style="width: 0%;"></div>
-                </div>
-                <span class="kpi-expand-hint">▾</span>
-              </summary>
-              <div class="kpi-card-details" id="kpi-details-solado"></div>
-            </details>
+            <!-- Métrica: Solado -->
+            <div class="arcgis-card">
+              <div class="arcgis-card-title">Solado</div>
+              <div class="arcgis-card-value" id="towers-val-solado">0 %</div>
+              <div class="arcgis-card-bar">
+                <div class="arcgis-card-bar-fill" id="towers-bar-solado" style="width: 0%;"></div>
+              </div>
+            </div>
 
-            <!-- Card Acordeón: Acero -->
-            <details class="kpi-card kpi-card-accordion" data-metric="acero">
-              <summary class="kpi-card-summary">
-                <div class="kpi-card-title">Acero</div>
-                <div class="kpi-card-number" id="kpi-val-acero">0 %</div>
-                <div class="kpi-progress-bar">
-                  <div class="kpi-progress-fill" id="kpi-bar-acero" style="width: 0%;"></div>
-                </div>
-                <span class="kpi-expand-hint">▾</span>
-              </summary>
-              <div class="kpi-card-details" id="kpi-details-acero"></div>
-            </details>
+            <!-- Métrica: Acero -->
+            <div class="arcgis-card">
+              <div class="arcgis-card-title">Acero</div>
+              <div class="arcgis-card-value" id="towers-val-acero">0 %</div>
+              <div class="arcgis-card-bar">
+                <div class="arcgis-card-bar-fill" id="towers-bar-acero" style="width: 0%;"></div>
+              </div>
+            </div>
 
-            <!-- Card Acordeón: Concreto -->
-            <details class="kpi-card kpi-card-accordion" data-metric="concreto">
-              <summary class="kpi-card-summary">
-                <div class="kpi-card-title">Concreto</div>
-                <div class="kpi-card-number" id="kpi-val-concreto">0 %</div>
-                <div class="kpi-progress-bar">
-                  <div class="kpi-progress-fill" id="kpi-bar-concreto" style="width: 0%;"></div>
-                </div>
-                <span class="kpi-expand-hint">▾</span>
-              </summary>
-              <div class="kpi-card-details" id="kpi-details-concreto"></div>
-            </details>
+            <!-- Métrica: Concreto -->
+            <div class="arcgis-card">
+              <div class="arcgis-card-title">Concreto</div>
+              <div class="arcgis-card-value" id="towers-val-concreto">0 %</div>
+              <div class="arcgis-card-bar">
+                <div class="arcgis-card-bar-fill" id="towers-bar-concreto" style="width: 0%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel de Avance Aerogeneradores (Estilo ArcGIS Dashboard) -->
+        <div id="aeros-panel" class="arcgis-panel" style="display: none;">
+          <header class="arcgis-head">
+            <div class="arcgis-head-top">
+              <div>
+                <span id="aeros-scope-badge" class="arcgis-scope-badge">General</span>
+                <h2 id="aeros-scope-title">Todo el Parque Eólico</h2>
+              </div>
+              <button id="aeros-reset-btn" class="arcgis-reset-btn" type="button" title="Restablecer a todos los aerogeneradores" style="display: none;">
+                ↺ Ver todo
+              </button>
+            </div>
+            <div id="aeros-scope-subtitle" class="arcgis-scope-subtitle">
+              47 aerogeneradores en total · Promedio consolidado
+            </div>
+          </header>
+
+          <div class="arcgis-cards-container">
+            <!-- Card Principal: Conteo de Aeros -->
+            <div class="arcgis-card arcgis-card-main">
+              <div class="arcgis-card-title">Aerogeneradores</div>
+              <div class="arcgis-card-value" id="aeros-kpi-count">47</div>
+              <div class="arcgis-card-caption" id="aeros-kpi-caption">Aerogeneradores del parque eólico</div>
+            </div>
+
+            <!-- Métrica: Ahuyentamiento -->
+            <div class="arcgis-card">
+              <div class="arcgis-card-title">Ahuyentamiento</div>
+              <div class="arcgis-card-value" id="aeros-val-ahuyentamiento">0 %</div>
+              <div class="arcgis-card-bar">
+                <div class="arcgis-card-bar-fill" id="aeros-bar-ahuyentamiento" style="width: 0%;"></div>
+              </div>
+            </div>
+
+            <!-- Métrica: Excavación -->
+            <div class="arcgis-card">
+              <div class="arcgis-card-title">Excavación</div>
+              <div class="arcgis-card-value" id="aeros-val-excavacion">0 %</div>
+              <div class="arcgis-card-bar">
+                <div class="arcgis-card-bar-fill" id="aeros-bar-excavacion" style="width: 0%;"></div>
+              </div>
+            </div>
+
+            <!-- Métrica: Relleno -->
+            <div class="arcgis-card">
+              <div class="arcgis-card-title">Relleno</div>
+              <div class="arcgis-card-value" id="aeros-val-relleno">0 %</div>
+              <div class="arcgis-card-bar">
+                <div class="arcgis-card-bar-fill" id="aeros-bar-relleno" style="width: 0%;"></div>
+              </div>
+            </div>
+
+            <!-- Métrica: Solado -->
+            <div class="arcgis-card">
+              <div class="arcgis-card-title">Solado</div>
+              <div class="arcgis-card-value" id="aeros-val-solado">0 %</div>
+              <div class="arcgis-card-bar">
+                <div class="arcgis-card-bar-fill" id="aeros-bar-solado" style="width: 0%;"></div>
+              </div>
+            </div>
+
+            <!-- Métrica: Acero -->
+            <div class="arcgis-card">
+              <div class="arcgis-card-title">Acero</div>
+              <div class="arcgis-card-value" id="aeros-val-acero">0 %</div>
+              <div class="arcgis-card-bar">
+                <div class="arcgis-card-bar-fill" id="aeros-bar-acero" style="width: 0%;"></div>
+              </div>
+            </div>
+
+            <!-- Métrica: Concreto -->
+            <div class="arcgis-card">
+              <div class="arcgis-card-title">Concreto</div>
+              <div class="arcgis-card-value" id="aeros-val-concreto">0 %</div>
+              <div class="arcgis-card-bar">
+                <div class="arcgis-card-bar-fill" id="aeros-bar-concreto" style="width: 0%;"></div>
+              </div>
+            </div>
           </div>
         </div>
       </aside>
 
       <section class="map-panel" aria-label="Mapa de torres">
         <div id="map"></div>
-        <button id="map-progress-btn" class="map-progress-quickbtn" type="button" title="Ver avance general de torres">
-          <span>🏗️ Avance Torres</span>
-        </button>
+        <div class="map-progress-buttons">
+          <button id="map-towers-btn" class="map-progress-quickbtn" type="button" title="Ver avance de torres">
+            <span>🗼 Torres</span>
+          </button>
+          <button id="map-aeros-btn" class="map-progress-quickbtn" type="button" title="Ver avance de aerogeneradores">
+            <span>🌀 Aeros</span>
+          </button>
+        </div>
         <div class="map-badge"><strong>Capas del proyecto</strong></div>
         <div id="status" class="status">Cargando kml/Torres.kml…</div>
       </section>
@@ -1314,6 +1290,7 @@
     let communityFeatures = [];
     let selectedCommunityFeature = null;
     let selectedTowerFeature = null;
+    let selectedAeroFeature = null;
     let activeSidebarTab = 'schedule';
     const PROGRESS_METRICS = [
       { key: 'ahuyentamiento', label: 'Ahuyentamiento' },
@@ -1379,40 +1356,123 @@
       };
     }
 
+    function generateDemoAeroProgress(aero, index) {
+      let hash = 0;
+      const str = (aero.name || `WP${index + 1}`) + '_windpeshi_aero_demo_2026';
+      for (let i = 0; i < str.length; i++) {
+        hash = (hash << 5) - hash + str.charCodeAt(i);
+        hash |= 0;
+      }
+      const rand = (seedOffset) => {
+        const x = Math.sin(hash + seedOffset) * 10000;
+        return x - Math.floor(x);
+      };
+
+      const tier = rand(7);
+      let ahuyentamiento, excavacion, solado, acero, concreto, relleno;
+
+      if (tier < 0.35) {
+        ahuyentamiento = 100;
+        excavacion = 100;
+        solado = 100;
+        acero = 100;
+        concreto = Math.round(90 + rand(1) * 10);
+        relleno = Math.round(75 + rand(2) * 25);
+      } else if (tier < 0.65) {
+        ahuyentamiento = 100;
+        excavacion = Math.round(96 + rand(1) * 10); // Permite hasta ~106% como en sobre-excavación de obra civil
+        solado = Math.round(70 + rand(2) * 30);
+        acero = Math.round(55 + rand(3) * 40);
+        concreto = Math.round(35 + rand(4) * 45);
+        relleno = Math.round(15 + rand(5) * 35);
+      } else if (tier < 0.85) {
+        ahuyentamiento = Math.round(80 + rand(1) * 20);
+        excavacion = Math.round(45 + rand(2) * 45);
+        solado = Math.round(25 + rand(3) * 35);
+        acero = Math.round(rand(4) * 30);
+        concreto = 0;
+        relleno = 0;
+      } else {
+        ahuyentamiento = Math.round(30 + rand(1) * 50);
+        excavacion = Math.round(rand(2) * 25);
+        solado = 0;
+        acero = 0;
+        concreto = 0;
+        relleno = 0;
+      }
+
+      return {
+        ahuyentamiento: Math.min(100, Math.max(0, ahuyentamiento)),
+        excavacion: Math.min(110, Math.max(0, excavacion)),
+        relleno: Math.min(100, Math.max(0, relleno)),
+        solado: Math.min(100, Math.max(0, solado)),
+        acero: Math.min(100, Math.max(0, acero)),
+        concreto: Math.min(100, Math.max(0, concreto))
+      };
+    }
+
     function switchSidebarTab(tabName) {
       activeSidebarTab = tabName;
-      const isSchedule = tabName === 'schedule';
       const scheduleBtn = document.getElementById('tab-btn-schedule');
-      const progressBtn = document.getElementById('tab-btn-progress');
-      if (scheduleBtn && progressBtn) {
-        scheduleBtn.classList.toggle('is-active', isSchedule);
-        scheduleBtn.setAttribute('aria-selected', String(isSchedule));
-        progressBtn.classList.toggle('is-active', !isSchedule);
-        progressBtn.setAttribute('aria-selected', String(!isSchedule));
+      const towersBtn = document.getElementById('tab-btn-towers');
+      const aerosBtn = document.getElementById('tab-btn-aeros');
+
+      if (scheduleBtn) {
+        scheduleBtn.classList.toggle('is-active', tabName === 'schedule');
+        scheduleBtn.setAttribute('aria-selected', String(tabName === 'schedule'));
+      }
+      if (towersBtn) {
+        towersBtn.classList.toggle('is-active', tabName === 'towers');
+        towersBtn.setAttribute('aria-selected', String(tabName === 'towers'));
+      }
+      if (aerosBtn) {
+        aerosBtn.classList.toggle('is-active', tabName === 'aeros');
+        aerosBtn.setAttribute('aria-selected', String(tabName === 'aeros'));
       }
 
       const activityPanel = document.getElementById('activity-panel');
-      const progressPanel = document.getElementById('progress-panel');
-      if (activityPanel) activityPanel.style.display = isSchedule ? 'flex' : 'none';
-      if (progressPanel) progressPanel.style.display = isSchedule ? 'none' : 'flex';
+      const towersPanel = document.getElementById('towers-panel');
+      const aerosPanel = document.getElementById('aeros-panel');
 
-      if (!isSchedule) {
-        updateProgressDashboard();
-      }
+      if (activityPanel) activityPanel.style.display = tabName === 'schedule' ? 'flex' : 'none';
+      if (towersPanel) towersPanel.style.display = tabName === 'towers' ? 'flex' : 'none';
+      if (aerosPanel) aerosPanel.style.display = tabName === 'aeros' ? 'flex' : 'none';
+
+      if (tabName === 'towers') updateTowersDashboard();
+      if (tabName === 'aeros') updateAerosDashboard();
     }
 
-    function resetProgressScope() {
+    function resetTowersScope() {
       selectedTowerFeature = null;
       clearCommunityHighlight();
       map.closePopup(featurePopup);
-      updateProgressDashboard();
+      updateTowersDashboard();
     }
 
     function selectTowerForProgress(feature) {
       clearCommunityHighlight();
       selectedTowerFeature = feature;
-      updateProgressDashboard();
+      updateTowersDashboard();
+      switchSidebarTab('towers');
+      if (workspace && workspace.classList.contains('summary-hidden')) {
+        summaryToggle.click();
+      }
       showFeatureInfo(feature.marker, feature, 'Torre');
+    }
+
+    function resetAerosScope() {
+      selectedAeroFeature = null;
+      map.closePopup(featurePopup);
+      updateAerosDashboard();
+    }
+
+    function selectAeroForProgress(feature) {
+      selectedAeroFeature = feature;
+      updateAerosDashboard();
+      switchSidebarTab('aeros');
+      if (workspace && workspace.classList.contains('summary-hidden')) {
+        summaryToggle.click();
+      }
     }
 
     function formatPercentage(value) {
@@ -1423,14 +1483,14 @@
         : `${rounded.toFixed(1).replace('.', ',')} %`;
     }
 
-    function updateProgressDashboard() {
-      const scopeBadge = document.getElementById('progress-scope-badge');
-      const scopeTitle = document.getElementById('progress-scope-title');
-      const scopeSubtitle = document.getElementById('progress-scope-subtitle');
-      const resetBtn = document.getElementById('progress-reset-btn');
-      const tabBadge = document.getElementById('tab-progress-badge');
-      const towersCount = document.getElementById('kpi-towers-count');
-      const towersCaption = document.getElementById('kpi-towers-caption');
+    function updateTowersDashboard() {
+      const scopeBadge = document.getElementById('towers-scope-badge');
+      const scopeTitle = document.getElementById('towers-scope-title');
+      const scopeSubtitle = document.getElementById('towers-scope-subtitle');
+      const resetBtn = document.getElementById('towers-reset-btn');
+      const tabBadge = document.getElementById('tab-towers-badge');
+      const towersCount = document.getElementById('towers-kpi-count');
+      const towersCaption = document.getElementById('towers-kpi-caption');
 
       if (!scopeTitle || !towersCount) return;
 
@@ -1470,7 +1530,7 @@
         scopeBadge.textContent = 'General';
         scopeBadge.classList.remove('is-filtered');
         scopeTitle.textContent = 'Todo el Proyecto';
-        scopeSubtitle.textContent = `${features.length} torres en total · Promedio consolidado de avance`;
+        scopeSubtitle.textContent = `${features.length} torres en total · Promedio consolidado`;
         towersCount.textContent = String(features.length);
         towersCaption.textContent = 'Total de torres de transmisión del proyecto';
         if (tabBadge) {
@@ -1483,9 +1543,8 @@
       }
 
       PROGRESS_METRICS.forEach(({ key }) => {
-        const valEl = document.getElementById(`kpi-val-${key}`);
-        const barEl = document.getElementById(`kpi-bar-${key}`);
-        const detailsEl = document.getElementById(`kpi-details-${key}`);
+        const valEl = document.getElementById(`towers-val-${key}`);
+        const barEl = document.getElementById(`towers-bar-${key}`);
         if (!valEl || !barEl) return;
 
         let avg = 0;
@@ -1506,56 +1565,76 @@
         } else {
           barEl.style.background = 'linear-gradient(90deg, #f59e0b, #fbbf24)';
         }
+      });
+    }
 
-        if (detailsEl) {
-          const completed = scopeTowers.filter((t) => (t.progress?.[key] ?? 0) >= 100).length;
-          const inProgress = scopeTowers.filter((t) => (t.progress?.[key] ?? 0) > 0 && (t.progress?.[key] ?? 0) < 100).length;
-          const pending = scopeTowers.filter((t) => (t.progress?.[key] ?? 0) === 0).length;
+    function updateAerosDashboard() {
+      const scopeBadge = document.getElementById('aeros-scope-badge');
+      const scopeTitle = document.getElementById('aeros-scope-title');
+      const scopeSubtitle = document.getElementById('aeros-scope-subtitle');
+      const resetBtn = document.getElementById('aeros-reset-btn');
+      const tabBadge = document.getElementById('tab-aeros-badge');
+      const aerosCount = document.getElementById('aeros-kpi-count');
+      const aerosCaption = document.getElementById('aeros-kpi-caption');
 
-          let pillsHtml = '';
-          if (scopeTowers.length > 0) {
-            const sorted = [...scopeTowers].sort((a, b) => (b.progress?.[key] ?? 0) - (a.progress?.[key] ?? 0));
-            pillsHtml = sorted.map((t) => {
-              const pct = t.progress ? (t.progress[key] ?? 0) : 0;
-              return `<button class="kpi-tower-pill" type="button" data-tower-name="${escapeHtml(t.name)}" title="Enfocar ${escapeHtml(t.name)}">
-                <span>${escapeHtml(t.name)}</span>
-                <span class="kpi-tower-pill-pct">${pct}%</span>
-              </button>`;
-            }).join('');
-          } else {
-            pillsHtml = '<span style="color:#79a7c5;font-size:10px;">No hay torres en este alcance.</span>';
-          }
+      if (!scopeTitle || !aerosCount) return;
 
-          detailsEl.innerHTML = `
-            <div class="kpi-breakdown-stats">
-              <div class="kpi-breakdown-item">
-                <div class="kpi-breakdown-label">100% Listas</div>
-                <div class="kpi-breakdown-val">${completed}</div>
-              </div>
-              <div class="kpi-breakdown-item">
-                <div class="kpi-breakdown-label">En Progreso</div>
-                <div class="kpi-breakdown-val">${inProgress}</div>
-              </div>
-              <div class="kpi-breakdown-item">
-                <div class="kpi-breakdown-label">0% Pendientes</div>
-                <div class="kpi-breakdown-val">${pending}</div>
-              </div>
-            </div>
-            <div class="kpi-towers-list-title">Detalle por torre (${scopeTowers.length}):</div>
-            <div class="kpi-towers-pills">${pillsHtml}</div>
-          `;
+      let scopeAeros = [];
+      let isFiltered = false;
 
-          detailsEl.querySelectorAll('.kpi-tower-pill').forEach((pill) => {
-            pill.addEventListener('click', (e) => {
-              e.stopPropagation();
-              const towerName = pill.dataset.towerName;
-              const matched = features.find((f) => f.name === towerName);
-              if (matched && matched.marker) {
-                map.setView(matched.marker.getLatLng(), 15);
-                selectTowerForProgress(matched);
-              }
-            });
-          });
+      if (selectedAeroFeature) {
+        scopeAeros = [selectedAeroFeature];
+        isFiltered = true;
+        scopeBadge.textContent = 'Aerogenerador';
+        scopeBadge.classList.add('is-filtered');
+        scopeTitle.textContent = `Aerogenerador ${selectedAeroFeature.name}`;
+        scopeSubtitle.textContent = 'Avance individual de obra del aerogenerador';
+        aerosCount.textContent = '1';
+        aerosCaption.textContent = 'Aerogenerador seleccionado en el mapa';
+        if (tabBadge) {
+          tabBadge.textContent = selectedAeroFeature.name;
+          tabBadge.style.display = 'inline-block';
+        }
+      } else {
+        scopeAeros = aerosFeatures;
+        isFiltered = false;
+        scopeBadge.textContent = 'General';
+        scopeBadge.classList.remove('is-filtered');
+        scopeTitle.textContent = 'Todo el Parque Eólico';
+        scopeSubtitle.textContent = `${aerosFeatures.length} aerogeneradores en total · Promedio consolidado`;
+        aerosCount.textContent = String(aerosFeatures.length);
+        aerosCaption.textContent = 'Total de aerogeneradores del parque eólico';
+        if (tabBadge) {
+          tabBadge.style.display = 'none';
+        }
+      }
+
+      if (resetBtn) {
+        resetBtn.style.display = isFiltered ? 'inline-flex' : 'none';
+      }
+
+      PROGRESS_METRICS.forEach(({ key }) => {
+        const valEl = document.getElementById(`aeros-val-${key}`);
+        const barEl = document.getElementById(`aeros-bar-${key}`);
+        if (!valEl || !barEl) return;
+
+        let avg = 0;
+        if (scopeAeros.length === 1) {
+          avg = scopeAeros[0].progress ? (scopeAeros[0].progress[key] ?? 0) : 0;
+        } else if (scopeAeros.length > 1) {
+          const sum = scopeAeros.reduce((acc, a) => acc + (a.progress ? (a.progress[key] ?? 0) : 0), 0);
+          avg = sum / scopeAeros.length;
+        }
+
+        valEl.textContent = formatPercentage(avg);
+        barEl.style.width = `${Math.min(100, Math.max(0, avg))}%`;
+
+        if (avg >= 80) {
+          barEl.style.background = 'linear-gradient(90deg, #10b981, #00b4d8)';
+        } else if (avg >= 40) {
+          barEl.style.background = 'linear-gradient(90deg, #00b4d8, #38bdf8)';
+        } else {
+          barEl.style.background = 'linear-gradient(90deg, #f59e0b, #fbbf24)';
         }
       });
     }
@@ -1661,7 +1740,21 @@
       if (layerName === 'Torre' && feature.progress) {
         progressBlock = `
           <div class="popup-progress-section">
-            <div class="popup-progress-title">Avance de Obra (Demo)</div>
+            <div class="popup-progress-title">Avance de Obra · Torre (Demo)</div>
+            <div class="popup-progress-grid">
+              <div class="popup-progress-item"><span>Ahuyentamiento:</span> <strong>${feature.progress.ahuyentamiento}%</strong></div>
+              <div class="popup-progress-item"><span>Excavación:</span> <strong>${feature.progress.excavacion}%</strong></div>
+              <div class="popup-progress-item"><span>Relleno:</span> <strong>${feature.progress.relleno}%</strong></div>
+              <div class="popup-progress-item"><span>Solado:</span> <strong>${feature.progress.solado}%</strong></div>
+              <div class="popup-progress-item"><span>Acero:</span> <strong>${feature.progress.acero}%</strong></div>
+              <div class="popup-progress-item"><span>Concreto:</span> <strong>${feature.progress.concreto}%</strong></div>
+            </div>
+          </div>
+        `;
+      } else if (layerName === 'Aerogenerador' && feature.progress) {
+        progressBlock = `
+          <div class="popup-progress-section">
+            <div class="popup-progress-title">Avance de Obra · Aerogenerador (Demo)</div>
             <div class="popup-progress-grid">
               <div class="popup-progress-item"><span>Ahuyentamiento:</span> <strong>${feature.progress.ahuyentamiento}%</strong></div>
               <div class="popup-progress-item"><span>Excavación:</span> <strong>${feature.progress.excavacion}%</strong></div>
@@ -1680,7 +1773,10 @@
       if (layerName === 'Torre') {
         selectedTowerFeature = feature;
         clearCommunityHighlight();
-        updateProgressDashboard();
+        updateTowersDashboard();
+      } else if (layerName === 'Aerogenerador') {
+        selectedAeroFeature = feature;
+        updateAerosDashboard();
       }
       featurePopup.setLatLng(layer.getLatLng()).setContent(popupContent(feature, layerName)).openOn(map);
     }
@@ -1729,7 +1825,8 @@
       clearCommunityHighlight();
       selectedTowerFeature = null;
       if (isUpperSanLuis(community)) {
-        updateProgressDashboard();
+        updateTowersDashboard();
+        switchSidebarTab('towers');
         return 0;
       }
       const communityKey = normalizeCommunity(community.name);
@@ -1745,7 +1842,11 @@
         relatedTowers.forEach((tower) => tower.marker.getElement()?.querySelector('.tower-logo')?.classList.add('is-community-related'));
       }
       community.marker.getElement()?.querySelector('.community-logo')?.classList.add('is-selected');
-      updateProgressDashboard();
+      updateTowersDashboard();
+      switchSidebarTab('towers');
+      if (workspace && workspace.classList.contains('summary-hidden')) {
+        summaryToggle.click();
+      }
       return relatedTowers.length;
     }
 
@@ -2104,7 +2205,11 @@
         iconHtml: '<img class="aeros-logo" src="./svg/eolica.svg" alt="">',
         iconSize: [36, 24],
         iconAnchor: [18, 12],
-        zIndexOffset: 1000
+        zIndexOffset: 1000,
+        onClick: selectAeroForProgress
+      });
+      aerosFeatures.forEach((feature, index) => {
+        feature.progress = generateDemoAeroProgress(feature, index);
       });
       cauceLineaFeatures = addClickablePoints(documents[3], cauceLineaLayer, 'Ocupación de cauce · Línea', {
         markerClass: 'cauce-line-point',
@@ -2200,27 +2305,41 @@
 
     // Conexión de pestañas del panel lateral
     document.getElementById('tab-btn-schedule')?.addEventListener('click', () => switchSidebarTab('schedule'));
-    document.getElementById('tab-btn-progress')?.addEventListener('click', () => switchSidebarTab('progress'));
+    document.getElementById('tab-btn-towers')?.addEventListener('click', () => switchSidebarTab('towers'));
+    document.getElementById('tab-btn-aeros')?.addEventListener('click', () => switchSidebarTab('aeros'));
 
-    // Botón de restablecer alcance a todo el proyecto
-    document.getElementById('progress-reset-btn')?.addEventListener('click', (e) => {
+    // Botones de restablecer alcance
+    document.getElementById('towers-reset-btn')?.addEventListener('click', (e) => {
       e.stopPropagation();
-      resetProgressScope();
+      resetTowersScope();
+    });
+    document.getElementById('aeros-reset-btn')?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      resetAerosScope();
     });
 
-    // Botón de acceso rápido flotante en el mapa
-    document.getElementById('map-progress-btn')?.addEventListener('click', () => {
-      if (workspace.classList.contains('summary-hidden')) {
+    // Botones de acceso rápido flotantes en el mapa
+    document.getElementById('map-towers-btn')?.addEventListener('click', () => {
+      if (workspace && workspace.classList.contains('summary-hidden')) {
         summaryToggle.click();
       }
-      switchSidebarTab('progress');
+      switchSidebarTab('towers');
+    });
+    document.getElementById('map-aeros-btn')?.addEventListener('click', () => {
+      if (workspace && workspace.classList.contains('summary-hidden')) {
+        summaryToggle.click();
+      }
+      switchSidebarTab('aeros');
     });
 
-    // Clic en el mapa para deseleccionar torre/comunidad si se hace clic fuera
+    // Clic en el mapa para deseleccionar si se hace clic fuera
     map.on('click', (e) => {
       if (e.originalEvent && e.originalEvent._handledByMarker) return;
       if (selectedTowerFeature || selectedCommunityFeature) {
-        resetProgressScope();
+        resetTowersScope();
+      }
+      if (selectedAeroFeature) {
+        resetAerosScope();
       }
     });
 
@@ -2234,7 +2353,8 @@
         document.querySelectorAll('.day-button').forEach((button) => { button.disabled = false; });
         highlightDay('monday');
         updateMapLabels();
-        updateProgressDashboard();
+        updateTowersDashboard();
+        updateAerosDashboard();
         status.textContent = `${features.length} torres, ${aerosFeatures.length} aerogeneradores, ${cauceLineaFeatures.length} ocupaciones de línea, ${cauceParqueFeatures.length} de parque, ${communityFeatures.length} comunidades y área cargados`;
       } catch (error) {
         status.textContent = error.message;
