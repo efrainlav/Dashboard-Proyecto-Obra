@@ -998,46 +998,40 @@
     }
 
     .popup-progress-item strong {
-      color: #0f4c2c;
       font-weight: 800;
-      background: #e6f4ea;
-      padding: 1px 7px;
-      border-radius: 10px;
-      border: 1px solid #cce5d4;
       font-size: 11px;
     }
 
-    /* Botones flotantes de acceso rápido en el mapa (Alto Contraste) */
-    .map-progress-buttons {
-      position: absolute;
-      top: 14px;
-      right: 14px;
-      z-index: 999;
-      display: flex;
-      gap: 6px;
+    .popup-progress-badge {
+      display: inline-block;
+      min-width: 38px;
+      text-align: center;
+      font-weight: 800;
+      padding: 1px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+      line-height: 1.4;
     }
 
-    .map-progress-quickbtn {
-      background: #ffffff;
-      color: var(--green-dark);
-      border: 1.5px solid var(--green);
-      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
-      padding: 7px 11px;
-      border-radius: 5px;
-      font-size: 11.5px;
-      font-weight: 750;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      transition: all 0.15s ease;
+    /* Menores a 25%: Color rojizo */
+    .popup-progress-badge.badge-progress-red {
+      color: #991b1b;
+      background: #fee2e2;
+      border: 1px solid #fca5a5;
     }
 
-    .map-progress-quickbtn:hover {
-      background: var(--green-dark);
-      border-color: var(--green-dark);
-      color: #ffffff;
-      transform: translateY(-1px);
+    /* 25% a 75%: Color amarillo / ámbar */
+    .popup-progress-badge.badge-progress-amber {
+      color: #92400e;
+      background: #fef3c7;
+      border: 1px solid #fcd34d;
+    }
+
+    /* Mayores a 75%: Color verde */
+    .popup-progress-badge.badge-progress-green {
+      color: #0f4c2c;
+      background: #e6f4ea;
+      border: 1px solid #cce5d4;
     }
   </style>
 </head>
@@ -1276,14 +1270,6 @@
 
       <section class="map-panel" aria-label="Mapa de torres">
         <div id="map"></div>
-        <div class="map-progress-buttons">
-          <button id="map-towers-btn" class="map-progress-quickbtn" type="button" title="Ver avance de torres">
-            <span>🗼 Torres</span>
-          </button>
-          <button id="map-aeros-btn" class="map-progress-quickbtn" type="button" title="Ver avance de aerogeneradores">
-            <span>🌀 Aeros</span>
-          </button>
-        </div>
         <div id="status" class="status">Cargando kml/Torres.kml…</div>
       </section>
     </section>
@@ -1774,19 +1760,22 @@
       });
     }
 
-    function formatCoord(val) {
+    function formatWgs84(val) {
       if (val === null || val === undefined || val === '') return 'Sin dato';
-      const num = typeof val === 'number' ? val : parseFloat(String(val).replace(',', '.'));
-      if (isNaN(num)) {
-        const cleaned = String(val).trim();
-        return cleaned.length > 8 ? cleaned.slice(0, 8) : cleaned;
+      const num = Number(val);
+      if (!Number.isFinite(num)) return String(val).trim();
+      return num.toFixed(6);
+    }
+
+    function getProgressBadge(val) {
+      const num = Number(val) || 0;
+      let cls = 'badge-progress-green';
+      if (num < 25) {
+        cls = 'badge-progress-red';
+      } else if (num <= 75) {
+        cls = 'badge-progress-amber';
       }
-      let str = num.toFixed(6);
-      if (str.length > 8) {
-        str = str.slice(0, 8);
-        if (str.endsWith('.')) str = str.slice(0, -1);
-      }
-      return str;
+      return `<strong class="popup-progress-badge ${cls}">${num}%</strong>`;
     }
 
     function popupContent(feature, layerName) {
@@ -1815,19 +1804,35 @@
         rows = `
           <div class="popup-row"><dt>Semáforo</dt><dd>${semBadge}</dd></div>
           <div class="popup-row"><dt>Zona</dt><dd>${escapeHtml(zonaRaw)}</dd></div>
-          <div class="popup-row"><dt>Latitud</dt><dd>${escapeHtml(formatCoord(latRaw))}</dd></div>
-          <div class="popup-row"><dt>Longitud</dt><dd>${escapeHtml(formatCoord(lonRaw))}</dd></div>
+          <div class="popup-row"><dt>Latitud</dt><dd>${escapeHtml(formatWgs84(latRaw))}</dd></div>
+          <div class="popup-row"><dt>Longitud</dt><dd>${escapeHtml(formatWgs84(lonRaw))}</dd></div>
         `;
       } else if (layerName === 'Aerogenerador') {
-        // Se elimina EXPEDIENTE, OPERADOR, PROYECTO, NUM_ACT_AD. Solo se conserva el nombre y el avance demo
-        rows = '';
+        // Se elimina EXPEDIENTE, OPERADOR, PROYECTO, NUM_ACT_AD. Solo se conserva el nombre, avance demo y coordenadas WGS 84
+        const lat = feature.coordinates ? feature.coordinates[1] : null;
+        const lon = feature.coordinates ? feature.coordinates[0] : null;
+        rows = `
+          <div class="popup-row"><dt>Latitud</dt><dd>${escapeHtml(formatWgs84(lat))}</dd></div>
+          <div class="popup-row"><dt>Longitud</dt><dd>${escapeHtml(formatWgs84(lon))}</dd></div>
+        `;
       } else if (layerName === 'Torre') {
-        // Se quita TIPO_INFRA, ID_INFRA_PT, SITIO e información redundante para dar relevancia al nombre y avance demo
-        const excludedTowerKeys = /^(TIPO_INFRA|ID_INFRA_PT|SITIO|OBJECTID|TEXT|AHUYENTAMIENTO.*|DESPEJE.*|EXCAVACI.*|SOLADO.*|CIMENTACI.*|ACERO.*|CONCRETO.*|RELLENO.*|COOR_X|COOR_Y)$/i;
+        // Se quita TIPO_INFRA, ID_INFRA_PT, SITIO, coordenadas proyectadas y campos redundantes
+        const excludedTowerKeys = /^(TIPO_INFRA|ID_INFRA_PT|SITIO|OBJECTID|TEXT|COOR_.*|AHUYENTAMIENTO.*|DESPEJE.*|EXCAVACI.*|SOLADO.*|CIMENTACI.*|ACERO.*|CONCRETO.*|RELLENO.*)$/i;
         const remainingAttrs = (feature.attributes || []).filter(([key]) => !excludedTowerKeys.test(key.trim()));
-        rows = remainingAttrs.map(([key, value]) => (
+        
+        const lat = feature.coordinates ? feature.coordinates[1] : null;
+        const lon = feature.coordinates ? feature.coordinates[0] : null;
+
+        const attrRows = remainingAttrs.map(([key, value]) => (
           `<div class="popup-row"><dt>${escapeHtml(key)}</dt><dd>${escapeHtml(value || 'Sin dato')}</dd></div>`
         )).join('');
+
+        const coordRows = `
+          <div class="popup-row"><dt>Latitud</dt><dd>${escapeHtml(formatWgs84(lat))}</dd></div>
+          <div class="popup-row"><dt>Longitud</dt><dd>${escapeHtml(formatWgs84(lon))}</dd></div>
+        `;
+
+        rows = attrRows + coordRows;
       } else {
         rows = (feature.attributes || []).map(([key, value]) => (
           `<div class="popup-row"><dt>${escapeHtml(key)}</dt><dd>${escapeHtml(value || 'Sin dato')}</dd></div>`
@@ -1843,12 +1848,12 @@
           <div class="popup-progress-section">
             <div class="popup-progress-title">Avance de Obra · Torre (Demo)</div>
             <div class="popup-progress-grid">
-              <div class="popup-progress-item"><span>Ahuyentamiento:</span> <strong>${feature.progress.ahuyentamiento}%</strong></div>
-              <div class="popup-progress-item"><span>Excavación:</span> <strong>${feature.progress.excavacion}%</strong></div>
-              <div class="popup-progress-item"><span>Relleno:</span> <strong>${feature.progress.relleno}%</strong></div>
-              <div class="popup-progress-item"><span>Solado:</span> <strong>${feature.progress.solado}%</strong></div>
-              <div class="popup-progress-item"><span>Acero:</span> <strong>${feature.progress.acero}%</strong></div>
-              <div class="popup-progress-item"><span>Concreto:</span> <strong>${feature.progress.concreto}%</strong></div>
+              <div class="popup-progress-item"><span>Ahuyentamiento:</span> ${getProgressBadge(feature.progress.ahuyentamiento)}</div>
+              <div class="popup-progress-item"><span>Excavación:</span> ${getProgressBadge(feature.progress.excavacion)}</div>
+              <div class="popup-progress-item"><span>Relleno:</span> ${getProgressBadge(feature.progress.relleno)}</div>
+              <div class="popup-progress-item"><span>Solado:</span> ${getProgressBadge(feature.progress.solado)}</div>
+              <div class="popup-progress-item"><span>Acero:</span> ${getProgressBadge(feature.progress.acero)}</div>
+              <div class="popup-progress-item"><span>Concreto:</span> ${getProgressBadge(feature.progress.concreto)}</div>
             </div>
           </div>
         `;
@@ -1857,12 +1862,12 @@
           <div class="popup-progress-section">
             <div class="popup-progress-title">Avance de Obra · Aerogenerador (Demo)</div>
             <div class="popup-progress-grid">
-              <div class="popup-progress-item"><span>Ahuyentamiento:</span> <strong>${feature.progress.ahuyentamiento}%</strong></div>
-              <div class="popup-progress-item"><span>Excavación:</span> <strong>${feature.progress.excavacion}%</strong></div>
-              <div class="popup-progress-item"><span>Relleno:</span> <strong>${feature.progress.relleno}%</strong></div>
-              <div class="popup-progress-item"><span>Solado:</span> <strong>${feature.progress.solado}%</strong></div>
-              <div class="popup-progress-item"><span>Acero:</span> <strong>${feature.progress.acero}%</strong></div>
-              <div class="popup-progress-item"><span>Concreto:</span> <strong>${feature.progress.concreto}%</strong></div>
+              <div class="popup-progress-item"><span>Ahuyentamiento:</span> ${getProgressBadge(feature.progress.ahuyentamiento)}</div>
+              <div class="popup-progress-item"><span>Excavación:</span> ${getProgressBadge(feature.progress.excavacion)}</div>
+              <div class="popup-progress-item"><span>Relleno:</span> ${getProgressBadge(feature.progress.relleno)}</div>
+              <div class="popup-progress-item"><span>Solado:</span> ${getProgressBadge(feature.progress.solado)}</div>
+              <div class="popup-progress-item"><span>Acero:</span> ${getProgressBadge(feature.progress.acero)}</div>
+              <div class="popup-progress-item"><span>Concreto:</span> ${getProgressBadge(feature.progress.concreto)}</div>
             </div>
           </div>
         `;
@@ -2420,19 +2425,7 @@
       resetAerosScope();
     });
 
-    // Botones de acceso rápido flotantes en el mapa
-    document.getElementById('map-towers-btn')?.addEventListener('click', () => {
-      if (workspace && workspace.classList.contains('summary-hidden')) {
-        summaryToggle.click();
-      }
-      switchSidebarTab('towers');
-    });
-    document.getElementById('map-aeros-btn')?.addEventListener('click', () => {
-      if (workspace && workspace.classList.contains('summary-hidden')) {
-        summaryToggle.click();
-      }
-      switchSidebarTab('aeros');
-    });
+
 
     // Clic en el mapa para deseleccionar si se hace clic fuera
     map.on('click', (e) => {
