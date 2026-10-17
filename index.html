@@ -922,15 +922,16 @@
       transition: width 0.4s ease-out;
     }
 
-    /* Popup badges para Semáforo de Comunidades */
+    /* Popup badges para Relacionamiento de Comunidades */
     .popup-badge {
       display: inline-flex;
       align-items: center;
-      gap: 4px;
-      padding: 2px 8px;
+      gap: 5px;
+      padding: 3px 9px;
       border-radius: 4px;
-      font-weight: 750;
+      font-weight: 800;
       font-size: 11px;
+      letter-spacing: 0.02em;
     }
 
     .badge-green {
@@ -940,15 +941,21 @@
     }
 
     .badge-amber {
-      background: #fef3c7;
-      color: #78350f;
-      border: 1px solid #fde047;
+      background: #fef9c3;
+      color: #854d0e;
+      border: 1px solid #facc15;
     }
 
     .badge-red {
       background: #fee2e2;
       color: #7f1d1d;
       border: 1px solid #fca5a5;
+    }
+
+    .badge-other {
+      background: #f1f5f9;
+      color: #475569;
+      border: 1px solid #cbd5e1;
     }
 
     /* Popup integration - Alta Relevancia de Avance de Obra */
@@ -1033,6 +1040,400 @@
       background: #e6f4ea;
       border: 1px solid #cce5d4;
     }
+
+    /* Comentario de Relacionamiento en Popup de Comunidad */
+    .popup-rel-box {
+      margin-top: 9px;
+      padding: 9px 11px;
+      background: #f9fbf9;
+      border: 1px solid #d4dfd7;
+      border-left: 4px solid var(--green);
+      border-radius: 5px;
+      font-size: 11px;
+    }
+    .popup-rel-box.popup-rel-rojo {
+      border-left-color: #ef4444;
+      background: #fef8f8;
+      border-color: #fed7d7;
+    }
+    .popup-rel-box.popup-rel-amarillo {
+      border-left-color: #f59e0b;
+      background: #fffdf5;
+      border-color: #feebc8;
+    }
+    .popup-rel-box.popup-rel-verde {
+      border-left-color: #22c55e;
+      background: #f7fdf9;
+      border-color: #c6f6d5;
+    }
+    .popup-rel-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+      font-size: 9.5px;
+      color: #64748b;
+    }
+    .popup-rel-tag {
+      font-weight: 750;
+      color: #1e293b;
+      background: rgba(0, 0, 0, 0.05);
+      padding: 1px 5px;
+      border-radius: 3px;
+    }
+    .popup-rel-date {
+      font-weight: 600;
+    }
+    .popup-rel-text {
+      margin: 3px 0 6px;
+      line-height: 1.35;
+      color: #1e293b;
+      font-size: 11px;
+    }
+    .popup-rel-link-btn {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      background: #eef4f0;
+      color: #1e513f;
+      border: 1px solid #cbdad0;
+      border-radius: 4px;
+      padding: 4px 6px;
+      font-size: 10.5px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .popup-rel-link-btn:hover {
+      background: var(--green);
+      color: #ffffff;
+      border-color: var(--green);
+    }
+
+    /* --- Pestaña y Panel de Entorno (KPIs y Filtro Espacial ArcGIS) --- */
+    .entorno-kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 7px;
+      margin-bottom: 11px;
+    }
+
+    .entorno-kpi-card {
+      border: 1px solid #d4dfd7;
+      background: #ffffff;
+      border-radius: 6px;
+      padding: 9px 8px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.18s ease;
+      position: relative;
+      outline: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+      user-select: none;
+    }
+
+    .entorno-kpi-card:hover {
+      border-color: var(--green);
+      transform: translateY(-1px);
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07);
+    }
+
+    .entorno-kpi-card.is-active {
+      border-width: 2px;
+      box-shadow: 0 0 0 2px rgba(30, 81, 63, 0.18), 0 3px 6px rgba(0, 0, 0, 0.06);
+    }
+
+    .entorno-kpi-card.is-active.kpi-card-green {
+      border-color: #15803d;
+      background: #f0fdf4;
+    }
+
+    .entorno-kpi-card.is-active.kpi-card-amber {
+      border-color: #b45309;
+      background: #fffbeb;
+    }
+
+    .entorno-kpi-card.is-active.kpi-card-red {
+      border-color: #b91c1c;
+      background: #fef2f2;
+    }
+
+    #kpi-filter-todos.is-active {
+      border-color: #1e513f;
+      background: #f4f8f5;
+    }
+
+    .entorno-kpi-label {
+      font-size: 10.5px;
+      font-weight: 750;
+      color: #475569;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .entorno-kpi-val {
+      font-size: 21px;
+      font-weight: 850;
+      color: #0f172a;
+      line-height: 1.1;
+      margin: 2px 0;
+    }
+
+    .entorno-kpi-val.text-green { color: #15803d; }
+    .entorno-kpi-val.text-amber { color: #b45309; }
+    .entorno-kpi-val.text-red { color: #b91c1c; }
+
+    .entorno-kpi-hint {
+      font-size: 9.5px;
+      font-weight: 600;
+      color: #64748b;
+    }
+
+    .kpi-dot {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+    }
+    .dot-green { background: #22c55e; }
+    .dot-amber { background: #f59e0b; }
+    .dot-red { background: #ef4444; }
+
+    .entorno-filter-section {
+      background: #f8faf8;
+      border: 1px solid #d4dfd7;
+      border-radius: 6px;
+      padding: 9px 10px;
+      margin-bottom: 11px;
+    }
+
+    .entorno-select-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      font-weight: 700;
+      color: #1e513f;
+      margin-bottom: 5px;
+    }
+
+    .entorno-count-badge {
+      background: #e2ece5;
+      color: #1e513f;
+      font-size: 9.5px;
+      padding: 1px 7px;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+
+    .entorno-select {
+      width: 100%;
+      padding: 7px 9px;
+      border: 1px solid #cbd5e1;
+      border-radius: 5px;
+      font-size: 11.5px;
+      font-weight: 650;
+      color: #0f172a;
+      background: #ffffff;
+      cursor: pointer;
+    }
+
+    .entorno-select:focus {
+      outline: none;
+      border-color: var(--green);
+      box-shadow: 0 0 0 2px rgba(30, 81, 63, 0.15);
+    }
+
+    .entorno-detail-card {
+      background: #ffffff;
+      border: 1px solid #d4dfd7;
+      border-radius: 6px;
+      padding: 11px;
+    }
+
+    .entorno-detail-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 9px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #eef3ef;
+      gap: 8px;
+    }
+
+    .entorno-community-name {
+      margin: 0;
+      font-size: 14.5px;
+      font-weight: 800;
+      color: #1e513f;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      line-height: 1.25;
+    }
+
+    .entorno-meta-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 6px;
+      margin-bottom: 11px;
+      font-size: 11px;
+    }
+
+    .entorno-meta-item {
+      background: #f8faf8;
+      padding: 5px 7px;
+      border-radius: 4px;
+      border: 1px solid #eef3ef;
+    }
+
+    .entorno-meta-item dt {
+      font-size: 9px;
+      font-weight: 700;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .entorno-meta-item dd {
+      margin: 2px 0 0;
+      font-weight: 750;
+      color: #1e293b;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .entorno-comments-title {
+      font-size: 10.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #334155;
+      margin: 10px 0 7px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .entorno-comment-item {
+      background: #f8faf9;
+      border: 1px solid #e2ece5;
+      border-left: 3.5px solid var(--green);
+      border-radius: 4px;
+      padding: 7px 9px;
+      margin-bottom: 7px;
+      font-size: 11px;
+    }
+
+    .entorno-comment-item.comment-red {
+      border-left-color: #ef4444;
+      background: #fef8f8;
+      border-color: #fed7d7;
+    }
+
+    .entorno-comment-item.comment-amber {
+      border-left-color: #f59e0b;
+      background: #fffdf5;
+      border-color: #feebc8;
+    }
+
+    .entorno-comment-item.comment-green {
+      border-left-color: #22c55e;
+      background: #f7fdf9;
+      border-color: #c6f6d5;
+    }
+
+    .entorno-comment-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 9.5px;
+      color: #64748b;
+      margin-bottom: 3px;
+    }
+
+    .entorno-comment-tag {
+      font-weight: 750;
+      padding: 1px 5px;
+      border-radius: 3px;
+      background: rgba(0, 0, 0, 0.05);
+      color: #334155;
+    }
+
+    .entorno-comment-text {
+      margin: 0;
+      color: #1e293b;
+      line-height: 1.35;
+      font-size: 11px;
+    }
+
+    .entorno-comment-author {
+      margin-top: 4px;
+      font-size: 9px;
+      color: #64748b;
+      font-style: italic;
+    }
+
+    .entorno-btn-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+      margin-top: 10px;
+    }
+
+    .entorno-action-btn {
+      background: var(--green);
+      color: #ffffff;
+      border: none;
+      padding: 7px 6px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.15s ease;
+      text-align: center;
+    }
+
+    .entorno-action-btn:hover {
+      background: var(--green-dark);
+    }
+
+    .entorno-action-btn.btn-secondary {
+      background: #ffffff;
+      color: var(--green-dark);
+      border: 1px solid var(--green);
+    }
+
+    .entorno-action-btn.btn-secondary:hover {
+      background: #f0f7f2;
+    }
+
+    .entorno-overview-box {
+      text-align: center;
+      padding: 14px 10px;
+      background: #fbfdfb;
+      border-radius: 6px;
+      border: 1px dashed #cfe0d4;
+    }
+
+    .entorno-overview-title {
+      font-size: 13.5px;
+      font-weight: 800;
+      color: #1e513f;
+      margin-bottom: 4px;
+    }
+
+    .entorno-overview-desc {
+      font-size: 11px;
+      color: #4b6354;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
   </style>
 </head>
 
@@ -1091,6 +1492,10 @@
           <button id="tab-btn-aeros" class="sidebar-tab-btn" type="button" role="tab" aria-selected="false" aria-controls="aeros-panel">
             <span>🌀 Aeros</span>
             <span id="tab-aeros-badge" class="sidebar-tab-badge" style="display: none;"></span>
+          </button>
+          <button id="tab-btn-entorno" class="sidebar-tab-btn" type="button" role="tab" aria-selected="false" aria-controls="entorno-panel">
+            <span>👥 Entorno</span>
+            <span id="tab-entorno-badge" class="sidebar-tab-badge" style="display: none;"></span>
           </button>
         </div>
 
@@ -1265,6 +1670,62 @@
               </div>
             </div>
           </div>
+        </div>
+
+        <!-- Panel de Entorno Social y Relacionamiento de Comunidades -->
+        <div id="entorno-panel" class="arcgis-panel" style="display: none;">
+          <header class="arcgis-head">
+            <div class="arcgis-head-top">
+              <div>
+                <span id="entorno-scope-badge" class="arcgis-scope-badge">Entorno Social</span>
+                <h2 id="entorno-scope-title">Relacionamiento</h2>
+              </div>
+              <button id="entorno-reset-btn" class="arcgis-reset-btn" type="button" title="Restablecer a todas las comunidades" style="display: none;">
+                ↺ Ver todo
+              </button>
+            </div>
+            <div id="entorno-scope-subtitle" class="arcgis-scope-subtitle">
+              122 comunidades · Monitoreo social y compromisos
+            </div>
+          </header>
+
+          <!-- KPIs de Relacionamiento (Filtros Espaciales Interactivos) -->
+          <div class="entorno-kpi-grid">
+            <button class="entorno-kpi-card is-active" id="kpi-filter-todos" type="button" data-filter="todos" title="Mostrar y enfocar todas las comunidades">
+              <span class="entorno-kpi-label">Total Comunidades</span>
+              <span class="entorno-kpi-val" id="entorno-kpi-total">122</span>
+              <span class="entorno-kpi-hint">100 % del territorio</span>
+            </button>
+            <button class="entorno-kpi-card kpi-card-green" id="kpi-filter-verde" type="button" data-filter="verde" title="Filtrar y hacer zoom a comunidades con relacionamiento Verde">
+              <span class="entorno-kpi-label"><span class="kpi-dot dot-green"></span> Verde</span>
+              <span class="entorno-kpi-val text-green" id="entorno-kpi-verde">29</span>
+              <span class="entorno-kpi-hint" id="entorno-kpi-verde-pct">23.8 % · Favorable</span>
+            </button>
+            <button class="entorno-kpi-card kpi-card-amber" id="kpi-filter-amarillo" type="button" data-filter="amarillo" title="Filtrar y hacer zoom a comunidades con relacionamiento Amarillo">
+              <span class="entorno-kpi-label"><span class="kpi-dot dot-amber"></span> Amarillo</span>
+              <span class="entorno-kpi-val text-amber" id="entorno-kpi-amarillo">63</span>
+              <span class="entorno-kpi-hint" id="entorno-kpi-amarillo-pct">51.6 % · En diálogo</span>
+            </button>
+            <button class="entorno-kpi-card kpi-card-red" id="kpi-filter-rojo" type="button" data-filter="rojo" title="Filtrar y hacer zoom a comunidades con relacionamiento Rojo">
+              <span class="entorno-kpi-label"><span class="kpi-dot dot-red"></span> Rojo</span>
+              <span class="entorno-kpi-val text-red" id="entorno-kpi-rojo">16</span>
+              <span class="entorno-kpi-hint" id="entorno-kpi-rojo-pct">13.1 % · Prioritario</span>
+            </button>
+          </div>
+
+          <!-- Selector y Filtro de Comunidades -->
+          <div class="entorno-filter-section">
+            <label for="entorno-community-select" class="entorno-select-label">
+              <span>Comunidad seleccionada:</span>
+              <span id="entorno-select-count" class="entorno-count-badge">122 comunidades</span>
+            </label>
+            <select id="entorno-community-select" class="entorno-select">
+              <option value="">-- Selecciona una comunidad para ver detalle --</option>
+            </select>
+          </div>
+
+          <!-- Tarjeta de Detalle y Comentarios (Dummy) -->
+          <div id="entorno-detail-card" class="entorno-detail-card"></div>
         </div>
       </aside>
 
@@ -1446,6 +1907,7 @@
       const scheduleBtn = document.getElementById('tab-btn-schedule');
       const towersBtn = document.getElementById('tab-btn-towers');
       const aerosBtn = document.getElementById('tab-btn-aeros');
+      const entornoBtn = document.getElementById('tab-btn-entorno');
 
       if (scheduleBtn) {
         scheduleBtn.classList.toggle('is-active', tabName === 'schedule');
@@ -1459,17 +1921,24 @@
         aerosBtn.classList.toggle('is-active', tabName === 'aeros');
         aerosBtn.setAttribute('aria-selected', String(tabName === 'aeros'));
       }
+      if (entornoBtn) {
+        entornoBtn.classList.toggle('is-active', tabName === 'entorno');
+        entornoBtn.setAttribute('aria-selected', String(tabName === 'entorno'));
+      }
 
       const activityPanel = document.getElementById('activity-panel');
       const towersPanel = document.getElementById('towers-panel');
       const aerosPanel = document.getElementById('aeros-panel');
+      const entornoPanel = document.getElementById('entorno-panel');
 
       if (activityPanel) activityPanel.style.display = tabName === 'schedule' ? 'flex' : 'none';
       if (towersPanel) towersPanel.style.display = tabName === 'towers' ? 'flex' : 'none';
       if (aerosPanel) aerosPanel.style.display = tabName === 'aeros' ? 'flex' : 'none';
+      if (entornoPanel) entornoPanel.style.display = tabName === 'entorno' ? 'flex' : 'none';
 
       if (tabName === 'towers') updateTowersDashboard();
       if (tabName === 'aeros') updateAerosDashboard();
+      if (tabName === 'entorno') updateEntornoDashboard();
     }
 
     function resetTowersScope() {
@@ -1669,6 +2138,402 @@
       });
     }
 
+    /* --- Lógica y Controlador de Entorno y Relacionamiento Social --- */
+    let activeEntornoFilter = 'todos';
+
+    function getCommunityRelacionamiento(feature) {
+      if (feature.relacionamiento) return feature.relacionamiento;
+
+      const getAttr = (regex) => {
+        const found = feature.attributes?.find(([k]) => regex.test(k));
+        return found ? found[1] : '';
+      };
+      const semaforoRaw = String(feature.properties?.Semaforo || feature.properties?.semaforo || getAttr(/^sem[aá]foro/i) || '').trim();
+      const semLower = semaforoRaw.toLowerCase();
+
+      let status = 'otro';
+      let statusLabel = 'Sin Definir';
+      let icon = '⚪';
+      let badgeClass = 'badge-other';
+
+      if (semLower.includes('verde')) {
+        status = 'verde';
+        statusLabel = 'Verde';
+        icon = '🟢';
+        badgeClass = 'badge-green';
+      } else if (semLower.includes('amar')) {
+        status = 'amarillo';
+        statusLabel = 'Amarillo';
+        icon = '🟡';
+        badgeClass = 'badge-amber';
+      } else if (semLower.includes('rojo')) {
+        status = 'rojo';
+        statusLabel = 'Rojo';
+        icon = '🔴';
+        badgeClass = 'badge-red';
+      }
+
+      const badgeHtml = `<span class="popup-badge ${badgeClass}">${icon} ${statusLabel}</span>`;
+
+      // Generación determinística de comentarios realistas (Wayúu / La Guajira)
+      let hash = 0;
+      const str = (feature.name || '') + '_relacionamiento_guajira_2026';
+      for (let i = 0; i < str.length; i++) {
+        hash = (hash << 5) - hash + str.charCodeAt(i);
+        hash |= 0;
+      }
+      const rand = (offset) => {
+        const x = Math.sin(hash + offset) * 10000;
+        return x - Math.floor(x);
+      };
+
+      const commentsPool = {
+        rojo: [
+          {
+            date: '14/10/2026',
+            tag: 'Alerta Preventiva',
+            manager: 'Equipo Social Territorio Norte',
+            text: 'Reunión de diálogo suspendida por inconformidad con el tránsito de volquetas en la vía de acceso comunitaria. Solicitan humectación intensiva para mitigar polvo y mantenimiento de guardaganados. Se reprograma mesa con la autoridad tradicional y veeduría local.'
+          },
+          {
+            date: '02/10/2026',
+            tag: 'Mesa de Concertación',
+            manager: 'Gestión Social Parque',
+            text: 'Comunidad manifiesta inconformidad en el cumplimiento de cuotas de empleo no calificado en cuadrillas de obra civil. Se programa reunión extraordinaria con contratistas para revisión de postulaciones locales.'
+          },
+          {
+            date: '21/09/2026',
+            tag: 'Acuerdos Sociales',
+            manager: 'Dirección Étnica',
+            text: 'Solicitud formal de revisión del proyecto productivo de apoyo artesanal y mantenimiento de jaguey comunitario antes de habilitar nuevos pasos de maquinaria pesada.'
+          },
+          {
+            date: '11/09/2026',
+            tag: 'Atención Prioritaria',
+            manager: 'Equipo Social de Obra',
+            text: 'Punto de control preventivo en vía perimetral. Se atiende a los voceros en territorio con acta de escucha y formalización de mesa técnica comunitaria.'
+          }
+        ],
+        amarillo: [
+          {
+            date: '15/10/2026',
+            tag: 'Diálogo en Curso',
+            manager: 'Equipo Social Territorio Norte',
+            text: 'En concertación activa sobre horarios de tránsito de maquinaria pesada. La comunidad muestra voluntad de acuerdo siempre que se respeten los pasos de pastoreo de caprinos.'
+          },
+          {
+            date: '05/10/2026',
+            tag: 'Compromisos de Agua',
+            manager: 'Gestión Social Territorio',
+            text: 'Seguimiento quincenal al suministro de agua potable en carrotanques y evaluación técnica para la rehabilitación del molino de viento comunitario.'
+          },
+          {
+            date: '25/09/2026',
+            tag: 'Socialización de Obra',
+            manager: 'Gestión de Obra y Entorno',
+            text: 'Reunión con autoridades tradicionales para socializar el cronograma de cimentación de torres cercanas. Se acordó señalización bilingüe (Español - Wayuunaiki).'
+          },
+          {
+            date: '12/09/2026',
+            tag: 'Empleo y Proveeduría',
+            manager: 'Coordinación Social',
+            text: 'Recepción y validación de hojas de vida para labores de ahuyentamiento de fauna y desbroce vegetal. Proceso adelantado con acompañamiento de los voceros.'
+          }
+        ],
+        verde: [
+          {
+            date: '16/10/2026',
+            tag: 'Relacionamiento Fluido',
+            manager: 'Equipo Social Territorio Norte',
+            text: 'Relacionamiento favorable y concertación sin novedades. Acuerdos de servidumbre y paso vigentes, con pleno respaldo de la autoridad tradicional y la comunidad.'
+          },
+          {
+            date: '08/10/2026',
+            tag: 'Seguimiento Étnico',
+            manager: 'Gestión Social Parque',
+            text: 'Visita de acompañamiento social y verificación de medidas de manejo ambiental. Comunidad ratifica conformidad con las obras y señalización instalada.'
+          },
+          {
+            date: '28/09/2026',
+            tag: 'Inversión Comunitaria',
+            manager: 'Dirección Étnica',
+            text: 'Aprobación exitosa del proyecto de fortalecimiento artesanal y dotación de paneles solares para la enramada comunitaria.'
+          },
+          {
+            date: '15/09/2026',
+            tag: 'Veeduría y Convivencia',
+            manager: 'Equipo Social Territorio Norte',
+            text: 'Mesa mensual de seguimiento realizada con balance positivo. No se registran incidentes ni quejas activas en el libro de peticiones.'
+          }
+        ],
+        otro: [
+          {
+            date: '10/10/2026',
+            tag: 'Contacto Inicial',
+            manager: 'Equipo Social',
+            text: 'En proceso de validación censal ante el Ministerio del Interior y coordinación de primera mesa de acercamiento con voceros locales.'
+          }
+        ]
+      };
+
+      const pool = commentsPool[status] || commentsPool.otro;
+      const primaryIdx = Math.floor(rand(1) * pool.length);
+      const secondaryIdx = Math.floor(rand(2) * pool.length);
+
+      const comments = [pool[primaryIdx]];
+      if (secondaryIdx !== primaryIdx && pool[secondaryIdx]) {
+        comments.push(pool[secondaryIdx]);
+      }
+
+      const res = {
+        status,
+        statusLabel,
+        icon,
+        badgeClass,
+        badgeHtml,
+        comments
+      };
+      feature.relacionamiento = res;
+      return res;
+    }
+
+    function applyEntornoFilter(filterKey, shouldFitBounds = true) {
+      activeEntornoFilter = filterKey;
+
+      // Actualizar estado activo en botones KPI
+      document.querySelectorAll('.entorno-kpi-card').forEach((card) => {
+        card.classList.toggle('is-active', card.dataset.filter === filterKey);
+      });
+
+      const resetBtn = document.getElementById('entorno-reset-btn');
+      if (resetBtn) {
+        resetBtn.style.display = (filterKey !== 'todos' || selectedCommunityFeature) ? 'inline-flex' : 'none';
+      }
+
+      // Filtrar comunidades
+      let targetCommunities = communityFeatures;
+      if (filterKey !== 'todos') {
+        targetCommunities = communityFeatures.filter((c) => c.relacionamiento?.status === filterKey);
+      }
+
+      // Efecto visual en mapa: ajustar opacidad
+      communityFeatures.forEach((c) => {
+        const match = filterKey === 'todos' || c.relacionamiento?.status === filterKey;
+        const el = c.marker.getElement();
+        if (el) {
+          el.style.opacity = match ? '1' : '0.22';
+          el.style.transition = 'opacity 0.25s ease';
+        }
+      });
+
+      // Zoom espacial al área que contiene el grupo
+      if (shouldFitBounds && targetCommunities.length) {
+        const latLngs = targetCommunities.map((c) => [c.coordinates[1], c.coordinates[0]]);
+        const bounds = L.latLngBounds(latLngs);
+        if (bounds.isValid()) {
+          map.fitBounds(bounds.pad(0.12), { maxZoom: 14 });
+        }
+      }
+
+      // Si la comunidad seleccionada actual no pertenece al filtro, deseleccionar
+      if (selectedCommunityFeature && filterKey !== 'todos' && selectedCommunityFeature.relacionamiento?.status !== filterKey) {
+        clearCommunityHighlight();
+        map.closePopup(featurePopup);
+      }
+
+      updateEntornoDashboard();
+    }
+
+    function selectCommunityInEntorno(feature, options = {}) {
+      if (!feature) return;
+      highlightCommunity(feature, { skipTabSwitch: true });
+      if (options.fly !== false) {
+        map.flyTo([feature.coordinates[1], feature.coordinates[0]], 14, { duration: 0.8 });
+        setTimeout(() => {
+          showFeatureInfo(feature.marker, feature, 'Comunidad');
+        }, 850);
+      }
+      updateEntornoDashboard(feature);
+    }
+
+    function resetEntornoFilter() {
+      clearCommunityHighlight();
+      map.closePopup(featurePopup);
+      applyEntornoFilter('todos', true);
+    }
+
+    window.openCommunityInEntorno = function(communityName) {
+      const feat = communityFeatures.find((c) => c.name === communityName);
+      if (feat) {
+        switchSidebarTab('entorno');
+        if (workspace && workspace.classList.contains('summary-hidden')) {
+          summaryToggle.click();
+        }
+        selectCommunityInEntorno(feat, { fly: true });
+      }
+    };
+
+    function updateEntornoDashboard(activeCommunity = selectedCommunityFeature) {
+      if (!communityFeatures.length) return;
+
+      // Calcular conteos globales
+      const counts = { total: communityFeatures.length, verde: 0, amarillo: 0, rojo: 0, otro: 0 };
+      communityFeatures.forEach((c) => {
+        const rel = getCommunityRelacionamiento(c);
+        if (counts[rel.status] !== undefined) counts[rel.status]++;
+        else counts.otro++;
+      });
+
+      const totalEl = document.getElementById('entorno-kpi-total');
+      const verdeEl = document.getElementById('entorno-kpi-verde');
+      const verdePct = document.getElementById('entorno-kpi-verde-pct');
+      const amarilloEl = document.getElementById('entorno-kpi-amarillo');
+      const amarilloPct = document.getElementById('entorno-kpi-amarillo-pct');
+      const rojoEl = document.getElementById('entorno-kpi-rojo');
+      const rojoPct = document.getElementById('entorno-kpi-rojo-pct');
+
+      if (totalEl) totalEl.textContent = counts.total;
+      if (verdeEl) verdeEl.textContent = counts.verde;
+      if (verdePct) verdePct.textContent = `${((counts.verde / counts.total) * 100).toFixed(1)} % · Favorable`;
+      if (amarilloEl) amarilloEl.textContent = counts.amarillo;
+      if (amarilloPct) amarilloPct.textContent = `${((counts.amarillo / counts.total) * 100).toFixed(1)} % · En diálogo`;
+      if (rojoEl) rojoEl.textContent = counts.rojo;
+      if (rojoPct) rojoPct.textContent = `${((counts.rojo / counts.total) * 100).toFixed(1)} % · Prioritario`;
+
+      // Población de dropdown según filtro activo
+      let filtered = communityFeatures;
+      if (activeEntornoFilter !== 'todos') {
+        filtered = communityFeatures.filter((c) => c.relacionamiento?.status === activeEntornoFilter);
+      }
+      filtered = [...filtered].sort((a, b) => (a.name || '').localeCompare(b.name || ''));
+
+      const selectCount = document.getElementById('entorno-select-count');
+      if (selectCount) {
+        selectCount.textContent = `${filtered.length} ${filtered.length === 1 ? 'comunidad' : 'comunidades'}`;
+      }
+
+      const select = document.getElementById('entorno-community-select');
+      if (select) {
+        const currentVal = activeCommunity ? activeCommunity.name : '';
+        const defaultLabel = activeEntornoFilter === 'todos'
+          ? `-- Ver todas las ${filtered.length} comunidades --`
+          : `-- Ver las ${filtered.length} en ${activeEntornoFilter.toUpperCase()} --`;
+
+        let optionsHtml = `<option value="">${defaultLabel}</option>`;
+        filtered.forEach((c) => {
+          const zona = c.properties?.Parque || c.properties?.Zona || '';
+          const zonaStr = zona ? ` [${zona}]` : '';
+          optionsHtml += `<option value="${escapeHtml(c.name)}">${c.relacionamiento.icon} ${escapeHtml(c.name)}${escapeHtml(zonaStr)}</option>`;
+        });
+        select.innerHTML = optionsHtml;
+        if (currentVal && filtered.some((c) => c.name === currentVal)) {
+          select.value = currentVal;
+        } else {
+          select.value = '';
+        }
+      }
+
+      const resetBtn = document.getElementById('entorno-reset-btn');
+      if (resetBtn) {
+        resetBtn.style.display = (activeEntornoFilter !== 'todos' || activeCommunity) ? 'inline-flex' : 'none';
+      }
+
+      // Render de la tarjeta de detalle
+      const detailContainer = document.getElementById('entorno-detail-card');
+      if (!detailContainer) return;
+
+      if (activeCommunity) {
+        const rel = getCommunityRelacionamiento(activeCommunity);
+        const zona = activeCommunity.properties?.Parque || activeCommunity.properties?.Zona || 'Sin dato';
+        const lat = activeCommunity.coordinates ? formatWgs84(activeCommunity.coordinates[1]) : 'Sin dato';
+        const lon = activeCommunity.coordinates ? formatWgs84(activeCommunity.coordinates[0]) : 'Sin dato';
+        const towerCount = activeCommunity.relatedTowerCount ?? (Array.isArray(activeCommunity.relatedTowers) ? activeCommunity.relatedTowers.length : 0);
+
+        let commentsHtml = '';
+        if (rel.comments && rel.comments.length) {
+          commentsHtml = rel.comments.map((cm) => `
+            <div class="entorno-comment-item comment-${rel.status}">
+              <div class="entorno-comment-meta">
+                <span class="entorno-comment-tag">${escapeHtml(cm.tag)}</span>
+                <span class="entorno-comment-date">${escapeHtml(cm.date)}</span>
+              </div>
+              <p class="entorno-comment-text">“${escapeHtml(cm.text)}”</p>
+              <div class="entorno-comment-author">Gestor: ${escapeHtml(cm.manager)}</div>
+            </div>
+          `).join('');
+        } else {
+          commentsHtml = `<p class="entorno-comment-text" style="color: #64748b;">No hay comentarios registrados para esta comunidad.</p>`;
+        }
+
+        detailContainer.innerHTML = `
+          <div class="entorno-detail-head">
+            <div>
+              <h3 class="entorno-community-name">🛖 ${escapeHtml(activeCommunity.name)}</h3>
+              <div style="font-size: 11px; color: #64748b; margin-top: 2px;">Área de influencia comunitaria Wayúu</div>
+            </div>
+            <div>${rel.badgeHtml}</div>
+          </div>
+
+          <div class="entorno-meta-grid">
+            <div class="entorno-meta-item">
+              <dt>Zona</dt>
+              <dd>${escapeHtml(zona)}</dd>
+            </div>
+            <div class="entorno-meta-item">
+              <dt>Torres asociadas</dt>
+              <dd>${towerCount} ${towerCount === 1 ? 'torre' : 'torres'}</dd>
+            </div>
+            <div class="entorno-meta-item">
+              <dt>Latitud</dt>
+              <dd>${escapeHtml(lat)}</dd>
+            </div>
+            <div class="entorno-meta-item">
+              <dt>Longitud</dt>
+              <dd>${escapeHtml(lon)}</dd>
+            </div>
+          </div>
+
+          <div class="entorno-comments-title">
+            <span>📝 Bitácora de Relacionamiento (Demo)</span>
+          </div>
+          ${commentsHtml}
+
+          <div class="entorno-btn-group">
+            <button type="button" class="entorno-action-btn" onclick="map.flyTo([${activeCommunity.coordinates[1]}, ${activeCommunity.coordinates[0]}], 15); showFeatureInfo(communityFeatures.find(c => c.name === '${escapeHtml(activeCommunity.name)}').marker, communityFeatures.find(c => c.name === '${escapeHtml(activeCommunity.name)}'), 'Comunidad');">
+              📍 Ver en mapa
+            </button>
+            <button type="button" class="entorno-action-btn btn-secondary" onclick="switchSidebarTab('towers');">
+              🗼 Ver torres (${towerCount})
+            </button>
+          </div>
+        `;
+      } else {
+        // Vista de resumen del filtro actual
+        const filterTitles = {
+          todos: 'Todas las Comunidades',
+          verde: 'Relacionamiento Verde · Favorable',
+          amarillo: 'Relacionamiento Amarillo · En Diálogo',
+          rojo: 'Relacionamiento Rojo · Atención Prioritaria'
+        };
+        const filterDescriptions = {
+          todos: 'Monitoreo social sobre las 122 comunidades en el área de influencia del proyecto eólico (Parque, Línea y Vía). Selecciona una tarjeta KPI para filtrar espacialmente o elige una comunidad de la lista.',
+          verde: `${counts.verde} comunidades con relacionamiento fluido, acuerdos de servidumbre al día y acompañamiento étnico sin novedades.`,
+          amarillo: `${counts.amarillo} comunidades en procesos de concertación de horarios de maquinaria, compromisos de agua potable y postulaciones de mano de obra local.`,
+          rojo: `${counts.rojo} comunidades con atención social prioritaria por acuerdos pendientes, polvo en vías de acceso o mesas técnicas en reprogramación.`
+        };
+
+        detailContainer.innerHTML = `
+          <div class="entorno-overview-box">
+            <div class="entorno-overview-title">${filterTitles[activeEntornoFilter]}</div>
+            <div class="entorno-overview-desc">${filterDescriptions[activeEntornoFilter]}</div>
+            <button type="button" class="entorno-action-btn" onclick="applyEntornoFilter('${activeEntornoFilter}', true);">
+              🔍 Encuadrar ${filtered.length} comunidades en el mapa
+            </button>
+          </div>
+        `;
+      }
+    }
+
     let weeklyPrograms = [];
     let activeWeek = null;
     let weekdaySchedule = {};
@@ -1780,28 +2645,18 @@
     function popupContent(feature, layerName) {
       let rows = '';
       if (layerName === 'Comunidad') {
+        const rel = getCommunityRelacionamiento(feature);
         const getAttr = (regex) => {
           const found = feature.attributes?.find(([k]) => regex.test(k));
           return found ? found[1] : '';
         };
 
-        const semaforoRaw = getAttr(/^sem[aá]foro/i) || 'Sin dato';
-        const zonaRaw = getAttr(/^(parque|zona)/i) || 'Sin dato';
+        const zonaRaw = feature.properties?.Parque || feature.properties?.Zona || getAttr(/^(parque|zona)/i) || 'Sin dato';
         const latRaw = feature.coordinates ? feature.coordinates[1] : getAttr(/^lat/i);
         const lonRaw = feature.coordinates ? feature.coordinates[0] : (getAttr(/^longitud/i) || getAttr(/^lon/i));
 
-        const semLower = semaforoRaw.toLowerCase();
-        let semBadge = escapeHtml(semaforoRaw);
-        if (semLower.includes('verde')) {
-          semBadge = `<span class="popup-badge badge-green">🟢 ${escapeHtml(semaforoRaw)}</span>`;
-        } else if (semLower.includes('amarillo')) {
-          semBadge = `<span class="popup-badge badge-amber">🟡 ${escapeHtml(semaforoRaw)}</span>`;
-        } else if (semLower.includes('rojo')) {
-          semBadge = `<span class="popup-badge badge-red">🔴 ${escapeHtml(semaforoRaw)}</span>`;
-        }
-
         rows = `
-          <div class="popup-row"><dt>Semáforo</dt><dd>${semBadge}</dd></div>
+          <div class="popup-row"><dt>Relacionamiento</dt><dd>${rel.badgeHtml}</dd></div>
           <div class="popup-row"><dt>Zona</dt><dd>${escapeHtml(zonaRaw)}</dd></div>
           <div class="popup-row"><dt>Latitud</dt><dd>${escapeHtml(formatWgs84(latRaw))}</dd></div>
           <div class="popup-row"><dt>Longitud</dt><dd>${escapeHtml(formatWgs84(lonRaw))}</dd></div>
@@ -1903,8 +2758,29 @@
           </div>
         `;
       }
+
+      let communityCommentBlock = '';
+      if (layerName === 'Comunidad') {
+        const rel = getCommunityRelacionamiento(feature);
+        const latestComment = rel.comments && rel.comments.length ? rel.comments[0] : null;
+        if (latestComment) {
+          communityCommentBlock = `
+            <div class="popup-rel-box popup-rel-${rel.status}">
+              <div class="popup-rel-head">
+                <span class="popup-rel-tag">${escapeHtml(latestComment.tag)}</span>
+                <span class="popup-rel-date">${escapeHtml(latestComment.date)}</span>
+              </div>
+              <p class="popup-rel-text">“${escapeHtml(latestComment.text)}”</p>
+              <button type="button" class="popup-rel-link-btn" onclick="openCommunityInEntorno('${escapeHtml(feature.name)}')">
+                Ver detalle en pestaña Entorno →
+              </button>
+            </div>
+          `;
+        }
+      }
+
       const dlBlock = rows.trim() ? `<dl>${rows}</dl>` : '';
-      return `<div class="feature-popup"><div class="popup-layer">${escapeHtml(layerName)}</div><h3 class="popup-title">${escapeHtml(feature.name)}</h3>${relatedSummary}${progressBlock}${dlBlock}</div>`;
+      return `<div class="feature-popup"><div class="popup-layer">${escapeHtml(layerName)}</div><h3 class="popup-title">${escapeHtml(feature.name)}</h3>${relatedSummary}${progressBlock}${dlBlock}${communityCommentBlock}</div>`;
     }
 
     function showFeatureInfo(layer, feature, layerName) {
@@ -1915,6 +2791,8 @@
       } else if (layerName === 'Aerogenerador') {
         selectedAeroFeature = feature;
         updateAerosDashboard();
+      } else if (layerName === 'Comunidad') {
+        updateEntornoDashboard(feature);
       }
       featurePopup.setLatLng(layer.getLatLng()).setContent(popupContent(feature, layerName)).openOn(map);
     }
@@ -1951,6 +2829,7 @@
         selectedCommunityFeature.relatedTowers = undefined;
       }
       selectedCommunityFeature = null;
+      updateEntornoDashboard();
     }
 
     function isUpperSanLuis(community) {
@@ -1959,12 +2838,13 @@
         community.attributes?.some(([k, v]) => k.toLowerCase() === 'parque' && /v[ií]a/i.test(v));
     }
 
-    function highlightCommunity(community) {
+    function highlightCommunity(community, options = {}) {
       clearCommunityHighlight();
       selectedTowerFeature = null;
       if (isUpperSanLuis(community)) {
         updateTowersDashboard();
-        switchSidebarTab('towers');
+        updateEntornoDashboard(community);
+        if (!options.skipTabSwitch && activeSidebarTab !== 'entorno') switchSidebarTab('towers');
         return 0;
       }
       const communityKey = normalizeCommunity(community.name);
@@ -1981,7 +2861,10 @@
       }
       community.marker.getElement()?.querySelector('.community-logo')?.classList.add('is-selected');
       updateTowersDashboard();
-      switchSidebarTab('towers');
+      updateEntornoDashboard(community);
+      if (!options.skipTabSwitch && activeSidebarTab !== 'entorno') {
+        switchSidebarTab('towers');
+      }
       if (workspace && workspace.classList.contains('summary-hidden')) {
         summaryToggle.click();
       }
@@ -2364,6 +3247,9 @@
         zIndexOffset: 16000,
         onClick: highlightCommunity
       });
+      communityFeatures.forEach((c) => {
+        getCommunityRelacionamiento(c);
+      });
 
       L.geoJSON(areaGeo, {
         style: {
@@ -2433,6 +3319,7 @@
     document.getElementById('tab-btn-schedule')?.addEventListener('click', () => switchSidebarTab('schedule'));
     document.getElementById('tab-btn-towers')?.addEventListener('click', () => switchSidebarTab('towers'));
     document.getElementById('tab-btn-aeros')?.addEventListener('click', () => switchSidebarTab('aeros'));
+    document.getElementById('tab-btn-entorno')?.addEventListener('click', () => switchSidebarTab('entorno'));
 
     // Botones de restablecer alcance
     document.getElementById('towers-reset-btn')?.addEventListener('click', (e) => {
@@ -2443,14 +3330,40 @@
       e.stopPropagation();
       resetAerosScope();
     });
+    document.getElementById('entorno-reset-btn')?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      resetEntornoFilter();
+    });
 
+    // Filtros espaciales por KPI en pestaña Entorno
+    document.querySelectorAll('.entorno-kpi-card').forEach((card) => {
+      card.addEventListener('click', () => {
+        const filterKey = card.dataset.filter || 'todos';
+        applyEntornoFilter(filterKey, true);
+      });
+    });
 
+    // Selector de comunidad en pestaña Entorno
+    document.getElementById('entorno-community-select')?.addEventListener('change', (e) => {
+      const val = e.target.value;
+      if (!val) {
+        clearCommunityHighlight();
+        map.closePopup(featurePopup);
+        updateEntornoDashboard();
+        return;
+      }
+      const found = communityFeatures.find((c) => c.name === val);
+      if (found) {
+        selectCommunityInEntorno(found, { fly: true });
+      }
+    });
 
     // Clic en el mapa para deseleccionar si se hace clic fuera
     map.on('click', (e) => {
       if (e.originalEvent && e.originalEvent._handledByMarker) return;
       if (selectedTowerFeature || selectedCommunityFeature) {
         resetTowersScope();
+        updateEntornoDashboard();
       }
       if (selectedAeroFeature) {
         resetAerosScope();
@@ -2469,6 +3382,7 @@
         updateMapLabels();
         updateTowersDashboard();
         updateAerosDashboard();
+        updateEntornoDashboard();
         status.textContent = `${features.length} torres, ${aerosFeatures.length} aerogeneradores, ${cauceLineaFeatures.length} ocupaciones de línea, ${cauceParqueFeatures.length} de parque, ${communityFeatures.length} comunidades y área cargados`;
       } catch (error) {
         status.textContent = error.message;

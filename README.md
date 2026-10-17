@@ -46,13 +46,17 @@ La información territorial, cartográfica y de contexto comunitario incorporada
 - **Diseño de Alto Contraste para Campo:**
   - Paleta visual en verde bosque (`#1e513f`), blanco y acentos ámbar (`#dd9a39` / `#d97706`), inspirada en tableros KPI profesionales (ArcGIS Online) y optimizada para visibilidad en pantallas de dispositivos móviles bajo condiciones de alta radiación solar (como en La Guajira).
 
-- **Panel de Control de Avance de Obra (KPIs Interactivos):**
+- **Panel de Control y Módulos de Información (Estilo ArcGIS Dashboard):**
   - **Pestaña Avance Torres:**
     - Muestra porcentajes de ejecución para: *Excavación*, *Relleno*, *Solado*, *Acero*, *Concreto* y *Ahuyentamiento*.
     - **Comportamiento Reactivo:** Si se hace clic en una torre específica, expone su avance individual; si se selecciona una comunidad, calcula y refleja automáticamente el promedio ponderado de las torres asociadas a dicha comunidad; si no hay selección activa, presenta el promedio general consolidado de todas las torres del proyecto.
   - **Pestaña Aerogeneradores:**
-    - Tarjetas KPI con el progreso de las 47 turbinas eólicas (*Cimentación*, *Plataformas*, *Canalizaciones*, *Izaje*, *Cableado* y *Comisionamiento*).
+    - Tarjetas KPI con el progreso de las 47 turbinas eólicas (*Ahuyentamiento*, *Excavación*, *Relleno*, *Solado*, *Acero* y *Concreto*).
     - Desacoplada de las comunidades; responde a la selección individual de aerogeneradores o al consolidado total del parque.
+  - **Pestaña Entorno (Relacionamiento Social y Filtro Espacial):**
+    - **KPIs de Relacionamiento:** Tarjetas de alto contraste con el conteo y porcentaje territorial para *Total* (122 comunidades), 🟢 *Verde* (Favorable / Diálogo fluido), 🟡 *Amarillo* (En proceso de concertación / Atención) y 🔴 *Rojo* (Alerta social / Prioritario).
+    - **Filtro Espacial Interactivo:** Al hacer clic en cualquiera de las tarjetas KPI, el mapa realiza automáticamente un zoom (`fitBounds`) al área que engloba el total de las comunidades de ese grupo y atenúa visualmente las demás en el mapa.
+    - **Selector y Bitácora de Relacionamiento (Demo):** Menú desplegable dinámico para filtrar y elegir comunidades, ficha técnica con metadatos (zona, torres asociadas, coordenadas WGS 84) e historial de comentarios y acuerdos sociales.
   - **Pestaña Programación Semanal:**
     - Selector dinámico de semana de programación.
     - Pestañas por día (Lunes a Viernes y Consolidado semanal).
@@ -67,7 +71,7 @@ La información territorial, cartográfica y de contexto comunitario incorporada
   - **Aerogeneradores:** Posición de turbinas eólicas del parque (`geojson/Aerogeneradores.geojson`).
   - **Polígono del parque:** Delimitación perimetral del área del proyecto (`geojson/Area_Parque.geojson`).
   - **Ocupaciones de cauce:** Puntos de intervención hídrica en línea y parque (`geojson/Ocupacion_Cauce_Linea.geojson`, `geojson/Ocupaciones_Cauce_Parque.geojson`). Pop-up simplificado exclusivamente con: Vereda, Nombre de cauce (`NOM_C_AG`), Margen, Tipo de caudal, Tipo fuente superficial, Tipo de ocupación, Especificación, Observación, Cota y Coordenadas geográficas WGS 84 a 6 cifras decimales.
-  - **Comunidades:** Localización de asentamientos del área de influencia (`geojson/Comunidades.geojson`). Pop-up con: Nombre, Semáforo, Zona y Coordenadas WGS 84 a 6 cifras decimales.
+  - **Comunidades:** Localización de asentamientos del área de influencia (`geojson/Comunidades.geojson`). Pop-up con: Nombre de la comunidad, Relacionamiento (badges con color en 🟢 Verde, 🟡 Amarillo y 🔴 Rojo), Zona, Coordenadas WGS 84 a 6 cifras decimales, extracto de la última bitácora social y botón de acceso directo a la pestaña Entorno.
 
 ---
 
