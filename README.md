@@ -62,12 +62,12 @@ La información territorial, cartográfica y de contexto comunitario incorporada
   - Control de capas base: callejero OpenStreetMap y satélite Esri World Imagery (híbrido con etiquetas).
   - Escala métrica y navegación fluida adaptada a escritorio y dispositivos móviles.
 
-- **Capas Geográficas (KML y KMZ):**
-  - **Torres de transmisión:** Trazado y ubicación de estructuras (`kml/Torres.kml`).
-  - **Aerogeneradores:** Posición de turbinas eólicas (`kml/Aeros_Parque.kml`).
-  - **Polígono del parque:** Delimitación perimetral del área del proyecto (`kml/Area_Parque.kml`).
-  - **Ocupaciones de cauce:** Puntos de intervención hídrica en línea y parque (`kml/Ocupacion_Cauce_Linea.kml`, `kml/Ocupaciones_Cauce_Parque.kml`).
-  - **Comunidades:** Localización de asentamientos del área de influencia (`geojson/Comunidades.geojson`). Popup con: Nombre, Semáforo, Zona y Coordenadas WGS 84 a 6 cifras decimales.
+- **Capas Geoespaciales en Formato Abierto (GeoJSON WGS 84):**
+  - **Torres de transmisión:** Trazado y ubicación de estructuras (`geojson/Torres.geojson`).
+  - **Aerogeneradores:** Posición de turbinas eólicas del parque (`geojson/Aerogeneradores.geojson`).
+  - **Polígono del parque:** Delimitación perimetral del área del proyecto (`geojson/Area_Parque.geojson`).
+  - **Ocupaciones de cauce:** Puntos de intervención hídrica en línea y parque (`geojson/Ocupacion_Cauce_Linea.geojson`, `geojson/Ocupaciones_Cauce_Parque.geojson`). Pop-up simplificado exclusivamente con: Vereda, Nombre de cauce (`NOM_C_AG`), Margen, Tipo de caudal, Tipo fuente superficial, Tipo de ocupación, Especificación, Observación, Cota y Coordenadas geográficas WGS 84 a 6 cifras decimales.
+  - **Comunidades:** Localización de asentamientos del área de influencia (`geojson/Comunidades.geojson`). Pop-up con: Nombre, Semáforo, Zona y Coordenadas WGS 84 a 6 cifras decimales.
 
 ---
 
@@ -100,8 +100,7 @@ Todas las capas geográficas del proyecto se encuentran disponibles en formato a
 │   ├── Ocupacion_Cauce_Linea.geojson
 │   ├── Ocupaciones_Cauce_Parque.geojson
 │   └── Torres.geojson
-├── kml/                        # Capas originales de referencia (KML y KMZ)
-├── scripts/                    # Scripts de procesamiento de datos
+├── scripts/                    # Scripts de procesamiento y conversión de datos
 │   └── convert_to_geojson.py
 ├── png/                        # Recursos visuales y logotipo
 │   └── dummy_logo.jpg
@@ -133,7 +132,7 @@ Para ejecutar y probar el visor localmente:
    cd Dashboard-Proyecto-Obra
    ```
 
-2. Iniciar un servidor HTTP local (requerido para permitir la carga de capas KML/KMZ locales mediante peticiones `fetch` sin restricciones de origen CORS):
+2. Iniciar un servidor HTTP local (requerido para permitir la carga de capas GeoJSON locales mediante peticiones `fetch` sin restricciones de origen CORS):
    ```bash
    # Opción 1: Python 3
    python3 -m http.server 8000

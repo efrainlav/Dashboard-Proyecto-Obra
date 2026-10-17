@@ -1832,6 +1832,38 @@
         `;
 
         rows = attrRows + coordRows;
+      } else if (layerName.includes('cauce') || layerName.includes('Cauce')) {
+        const getAttr = (regex) => {
+          const found = (feature.attributes || []).find(([k]) => regex.test(k));
+          return found ? found[1] : '';
+        };
+
+        const vereda = getAttr(/^vereda/i) || 'Sin dato';
+        const nomCauce = getAttr(/^nom_c_ag/i) || 'Sin dato';
+        const margen = getAttr(/^margen/i) || 'Sin dato';
+        const tCaudal = getAttr(/^t_caudal/i) || 'Sin dato';
+        const tFueSup = getAttr(/^t_fue_sup/i) || 'Sin dato';
+        const tipoOcup = getAttr(/^tipo_ocup/i) || 'Sin dato';
+        const especific = getAttr(/^especific/i) || 'Sin dato';
+        const observ = getAttr(/^observ/i) || 'La construcción de esta ocupación no ha dado inicio a la fecha de corte del presente informe. El proyecto se encuentra suspendido desde el 15 de octubre del 2022.';
+        const cota = getAttr(/^cota/i) || 'Sin dato';
+
+        const lat = feature.coordinates ? feature.coordinates[1] : null;
+        const lon = feature.coordinates ? feature.coordinates[0] : null;
+
+        rows = `
+          <div class="popup-row"><dt>Vereda</dt><dd>${escapeHtml(vereda)}</dd></div>
+          <div class="popup-row"><dt>Nombre de cauce</dt><dd>${escapeHtml(nomCauce)}</dd></div>
+          <div class="popup-row"><dt>Margen</dt><dd>${escapeHtml(margen)}</dd></div>
+          <div class="popup-row"><dt>Tipo caudal</dt><dd>${escapeHtml(tCaudal)}</dd></div>
+          <div class="popup-row"><dt>Tipo fuente superficial</dt><dd>${escapeHtml(tFueSup)}</dd></div>
+          <div class="popup-row"><dt>Tipo ocupación</dt><dd>${escapeHtml(tipoOcup)}</dd></div>
+          <div class="popup-row"><dt>Especificación</dt><dd>${escapeHtml(especific)}</dd></div>
+          <div class="popup-row"><dt>Observación</dt><dd>${escapeHtml(observ)}</dd></div>
+          <div class="popup-row"><dt>Cota</dt><dd>${escapeHtml(cota)}</dd></div>
+          <div class="popup-row"><dt>Latitud</dt><dd>${escapeHtml(formatWgs84(lat))}</dd></div>
+          <div class="popup-row"><dt>Longitud</dt><dd>${escapeHtml(formatWgs84(lon))}</dd></div>
+        `;
       } else {
         rows = (feature.attributes || []).map(([key, value]) => (
           `<div class="popup-row"><dt>${escapeHtml(key)}</dt><dd>${escapeHtml(value || 'Sin dato')}</dd></div>`
