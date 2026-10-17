@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Visor proyecto Windpeshi vr 1.0</title>
+  <title>Visor Proyecto Eólico vr 1.0</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <style>
     :root {
@@ -1034,10 +1034,10 @@
   <main class="app">
     <header class="topbar">
       <div class="brand">
-        <img src="png/dummy_logo.jpg" alt="Logo Proyecto Windpeshi" class="brand-logo">
+        <img src="png/dummy_logo.jpg" alt="Logo Proyecto Eólico" class="brand-logo">
         <div>
-          <h1>Visor proyecto Windpeshi vr 1.0</h1>
-          <div class="subtitle">Proyecto Windpeshi · Capa de infraestructura</div>
+          <h1>Visor Proyecto Eólico vr 1.0</h1>
+          <div class="subtitle">Proyecto Eólico · Capa de infraestructura</div>
         </div>
       </div>
       <div class="top-meta">Visualización de datos KML</div>
@@ -1337,7 +1337,7 @@
 
     function generateDemoProgress(tower, index) {
       let hash = 0;
-      const str = (tower.name || `T${index}`) + '_windpeshi_demo_2026';
+      const str = (tower.name || `T${index}`) + '_proyecto_eolico_demo_2026';
       for (let i = 0; i < str.length; i++) {
         hash = (hash << 5) - hash + str.charCodeAt(i);
         hash |= 0;
@@ -1392,7 +1392,7 @@
 
     function generateDemoAeroProgress(aero, index) {
       let hash = 0;
-      const str = (aero.name || `WP${index + 1}`) + '_windpeshi_aero_demo_2026';
+      const str = (aero.name || `WP${index + 1}`) + '_proyecto_eolico_aero_demo_2026';
       for (let i = 0; i < str.length; i++) {
         hash = (hash << 5) - hash + str.charCodeAt(i);
         hash |= 0;
