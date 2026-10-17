@@ -706,24 +706,24 @@
       }
     }
 
-    /* --- Pestañas del Panel Lateral --- */
+    /* --- Pestañas del Panel Lateral (Paleta Verde, Blanco y Naranja / Alto Contraste Guajira) --- */
     .sidebar-tabs {
       display: flex;
-      background: #021422;
+      background: #eef3ef;
       padding: 6px;
       gap: 5px;
-      border-bottom: 1px solid #083c61;
+      border-bottom: 2px solid var(--line);
     }
 
     .sidebar-tab-btn {
       flex: 1;
-      border: 1px solid transparent;
-      background: rgba(255, 255, 255, 0.05);
-      padding: 7px 4px;
-      border-radius: 4px;
+      border: 1px solid #d4dfd7;
+      background: #f7faf7;
+      padding: 8px 4px;
+      border-radius: 5px;
       font-size: 11px;
-      font-weight: 650;
-      color: #8bb5d6;
+      font-weight: 700;
+      color: #3b5a4b;
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -734,44 +734,45 @@
     }
 
     .sidebar-tab-btn:hover {
-      color: #ffffff;
-      background: rgba(255, 255, 255, 0.12);
-      border-color: #0b517d;
+      color: var(--green-dark);
+      background: #ffffff;
+      border-color: var(--green);
     }
 
     .sidebar-tab-btn.is-active {
-      background: #06395b;
-      color: #ffffff;
-      border-color: #00b4d8;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+      background: #ffffff;
+      color: var(--green-dark);
+      border-color: var(--green);
+      box-shadow: 0 2px 5px rgba(30, 81, 63, 0.15);
+      border-bottom: 3px solid var(--green);
     }
 
     .sidebar-tab-badge {
       display: inline-block;
-      padding: 1px 5px;
+      padding: 1px 6px;
       border-radius: 999px;
-      background: #00b4d8;
-      color: #031c2e;
+      background: var(--amber);
+      color: #ffffff;
       font-size: 9px;
       font-weight: 800;
       line-height: 1.2;
     }
 
-    /* --- Paneles de Avance Estilo ArcGIS Online Dashboard --- */
+    /* --- Paneles de Avance Estilo ArcGIS Online (Paleta Verde / Blanco / Ámbar de Alto Brillo) --- */
     .arcgis-panel {
       min-height: 0;
       flex: 1;
       display: flex;
       flex-direction: column;
       overflow: hidden;
-      background: #021422;
-      color: #e2f0fa;
+      background: var(--paper);
+      color: var(--ink);
     }
 
     .arcgis-head {
       padding: 12px 14px 10px;
-      border-bottom: 1px solid #083854;
-      background: #031a2c;
+      border-bottom: 1px solid var(--line);
+      background: #ffffff;
     }
 
     .arcgis-head-top {
@@ -786,43 +787,44 @@
       margin-bottom: 3px;
       padding: 2px 7px;
       border-radius: 3px;
-      font-size: 9px;
+      font-size: 9.5px;
       font-weight: 750;
       letter-spacing: 0.6px;
       text-transform: uppercase;
-      background: #073859;
-      color: #38bdf8;
-      border: 1px solid #0c5685;
+      background: #eaf3ed;
+      color: var(--green-dark);
+      border: 1px solid #c5dbce;
     }
 
     .arcgis-scope-badge.is-filtered {
-      background: #044b7a;
-      color: #7dd3fc;
-      border-color: #0284c7;
+      background: #fef3c7;
+      color: #92400e;
+      border-color: #fcd34d;
     }
 
     .arcgis-head h2 {
       margin: 2px 0 0;
       font-size: 15px;
-      font-weight: 700;
-      color: #ffffff;
+      font-weight: 750;
+      color: #112c22;
       line-height: 1.25;
     }
 
     .arcgis-scope-subtitle {
       margin-top: 3px;
       font-size: 10.5px;
-      color: #8cb6d4;
+      color: var(--muted);
+      font-weight: 500;
     }
 
     .arcgis-reset-btn {
-      border: 1px solid #0284c7;
-      background: rgba(2, 132, 199, 0.15);
-      color: #38bdf8;
+      border: 1px solid var(--green);
+      background: #eef7f2;
+      color: var(--green-dark);
       padding: 3px 8px;
       border-radius: 4px;
       font-size: 10px;
-      font-weight: 700;
+      font-weight: 750;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
@@ -832,9 +834,8 @@
     }
 
     .arcgis-reset-btn:hover {
-      background: #0284c7;
+      background: var(--green-dark);
       color: #ffffff;
-      box-shadow: 0 0 8px rgba(2, 132, 199, 0.5);
     }
 
     .arcgis-cards-container {
@@ -847,15 +848,16 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 8px;
       align-content: start;
+      background: var(--paper);
     }
 
     .arcgis-card {
-      background: linear-gradient(180deg, #04243a 0%, #031c2e 100%);
-      border: 1px solid #094a73;
-      border-radius: 5px;
+      background: #ffffff;
+      border: 1.5px solid #d5e0d8;
+      border-radius: 6px;
       padding: 10px 8px;
       text-align: center;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -863,69 +865,101 @@
     }
 
     .arcgis-card:hover {
-      border-color: #00b4d8;
-      box-shadow: 0 4px 10px rgba(0, 180, 216, 0.2);
+      border-color: var(--green);
+      box-shadow: 0 3px 8px rgba(30, 81, 63, 0.12);
     }
 
     .arcgis-card.arcgis-card-main {
       grid-column: span 2;
       padding: 12px 10px;
-      background: linear-gradient(180deg, #053354 0%, #032138 100%);
-      border-color: #0c5c8f;
+      background: linear-gradient(135deg, #1e513f 0%, #163f31 100%);
+      border: 1.5px solid #143e2e;
+      color: #ffffff;
+      box-shadow: 0 3px 6px rgba(18, 62, 35, 0.15);
     }
 
     .arcgis-card-title {
-      font-size: 12px;
-      font-weight: 500;
-      color: #9ec5e2;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: #295944;
       letter-spacing: 0.3px;
+      text-transform: uppercase;
       margin: 0 0 2px;
     }
 
     .arcgis-card-main .arcgis-card-title {
-      font-size: 13.5px;
-      font-weight: 600;
-      color: #bae0fc;
-      letter-spacing: 0.6px;
+      font-size: 12.5px;
+      font-weight: 750;
+      color: var(--lime);
+      letter-spacing: 0.8px;
       text-transform: uppercase;
     }
 
     .arcgis-card-value {
-      font-size: 22px;
-      font-weight: 750;
-      color: #ffffff;
+      font-size: 23px;
+      font-weight: 800;
+      color: #11281e;
       margin: 2px 0;
       line-height: 1.15;
-      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     }
 
     .arcgis-card-main .arcgis-card-value {
       font-size: 34px;
-      font-weight: 800;
+      font-weight: 850;
       color: #ffffff;
       margin: 2px 0 3px;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     }
 
     .arcgis-card-caption {
-      font-size: 9.5px;
-      color: #79a7c5;
+      font-size: 10px;
+      color: #c7dbce;
     }
 
     .arcgis-card-bar {
-      height: 3px;
-      background: #02111d;
+      height: 5px;
+      background: #e6eee8;
       border-radius: 999px;
       overflow: hidden;
       margin: 6px auto 0;
-      width: 85%;
-      border: 1px solid rgba(255, 255, 255, 0.04);
+      width: 90%;
+      border: 1px solid rgba(0, 0, 0, 0.05);
     }
 
     .arcgis-card-bar-fill {
       height: 100%;
       border-radius: 999px;
-      background: linear-gradient(90deg, #0284c7, #38bdf8);
+      background: linear-gradient(90deg, #1f6b3d, #2ea45e);
       transition: width 0.4s ease-out;
+    }
+
+    /* Popup badges para Semáforo de Comunidades */
+    .popup-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 750;
+      font-size: 11px;
+    }
+
+    .badge-green {
+      background: #e6f6ec;
+      color: #14532d;
+      border: 1px solid #86efac;
+    }
+
+    .badge-amber {
+      background: #fef3c7;
+      color: #78350f;
+      border: 1px solid #fde047;
+    }
+
+    .badge-red {
+      background: #fee2e2;
+      color: #7f1d1d;
+      border: 1px solid #fca5a5;
     }
 
     /* Popup integration */
@@ -961,7 +995,7 @@
       color: #0f4c2c;
     }
 
-    /* Botones flotantes de acceso rápido en el mapa */
+    /* Botones flotantes de acceso rápido en el mapa (Alto Contraste) */
     .map-progress-buttons {
       position: absolute;
       top: 14px;
@@ -972,14 +1006,14 @@
     }
 
     .map-progress-quickbtn {
-      background: #04243a;
-      color: #e2f0fa;
-      border: 1px solid #0a527f;
-      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.35);
+      background: #ffffff;
+      color: var(--green-dark);
+      border: 1.5px solid var(--green);
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
       padding: 7px 11px;
       border-radius: 5px;
       font-size: 11.5px;
-      font-weight: 650;
+      font-weight: 750;
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -988,8 +1022,8 @@
     }
 
     .map-progress-quickbtn:hover {
-      background: #063c63;
-      border-color: #00b4d8;
+      background: var(--green-dark);
+      border-color: var(--green-dark);
       color: #ffffff;
       transform: translateY(-1px);
     }
@@ -1559,11 +1593,11 @@
         barEl.style.width = `${Math.min(100, Math.max(0, avg))}%`;
 
         if (avg >= 80) {
-          barEl.style.background = 'linear-gradient(90deg, #10b981, #00b4d8)';
+          barEl.style.background = 'linear-gradient(90deg, #1f6b3d, #2ea45e)';
         } else if (avg >= 40) {
-          barEl.style.background = 'linear-gradient(90deg, #00b4d8, #38bdf8)';
+          barEl.style.background = 'linear-gradient(90deg, #d97706, #f59e0b)';
         } else {
-          barEl.style.background = 'linear-gradient(90deg, #f59e0b, #fbbf24)';
+          barEl.style.background = 'linear-gradient(90deg, #ea580c, #f97316)';
         }
       });
     }
@@ -1630,11 +1664,11 @@
         barEl.style.width = `${Math.min(100, Math.max(0, avg))}%`;
 
         if (avg >= 80) {
-          barEl.style.background = 'linear-gradient(90deg, #10b981, #00b4d8)';
+          barEl.style.background = 'linear-gradient(90deg, #1f6b3d, #2ea45e)';
         } else if (avg >= 40) {
-          barEl.style.background = 'linear-gradient(90deg, #00b4d8, #38bdf8)';
+          barEl.style.background = 'linear-gradient(90deg, #d97706, #f59e0b)';
         } else {
-          barEl.style.background = 'linear-gradient(90deg, #f59e0b, #fbbf24)';
+          barEl.style.background = 'linear-gradient(90deg, #ea580c, #f97316)';
         }
       });
     }
@@ -1729,10 +1763,56 @@
       });
     }
 
+    function formatCoord(val) {
+      if (val === null || val === undefined || val === '') return 'Sin dato';
+      const num = typeof val === 'number' ? val : parseFloat(String(val).replace(',', '.'));
+      if (isNaN(num)) {
+        const cleaned = String(val).trim();
+        return cleaned.length > 8 ? cleaned.slice(0, 8) : cleaned;
+      }
+      let str = num.toFixed(6);
+      if (str.length > 8) {
+        str = str.slice(0, 8);
+        if (str.endsWith('.')) str = str.slice(0, -1);
+      }
+      return str;
+    }
+
     function popupContent(feature, layerName) {
-      const rows = feature.attributes.map(([key, value]) => (
-        `<div class="popup-row"><dt>${escapeHtml(key)}</dt><dd>${escapeHtml(value || 'Sin dato')}</dd></div>`
-      )).join('');
+      let rows = '';
+      if (layerName === 'Comunidad') {
+        const getAttr = (regex) => {
+          const found = feature.attributes?.find(([k]) => regex.test(k));
+          return found ? found[1] : '';
+        };
+
+        const semaforoRaw = getAttr(/^sem[aá]foro/i) || 'Sin dato';
+        const zonaRaw = getAttr(/^(parque|zona)/i) || 'Sin dato';
+        const latRaw = feature.coordinates ? feature.coordinates[1] : getAttr(/^lat/i);
+        const lonRaw = feature.coordinates ? feature.coordinates[0] : (getAttr(/^longitud/i) || getAttr(/^lon/i));
+
+        const semLower = semaforoRaw.toLowerCase();
+        let semBadge = escapeHtml(semaforoRaw);
+        if (semLower.includes('verde')) {
+          semBadge = `<span class="popup-badge badge-green">🟢 ${escapeHtml(semaforoRaw)}</span>`;
+        } else if (semLower.includes('amarillo')) {
+          semBadge = `<span class="popup-badge badge-amber">🟡 ${escapeHtml(semaforoRaw)}</span>`;
+        } else if (semLower.includes('rojo')) {
+          semBadge = `<span class="popup-badge badge-red">🔴 ${escapeHtml(semaforoRaw)}</span>`;
+        }
+
+        rows = `
+          <div class="popup-row"><dt>Semáforo</dt><dd>${semBadge}</dd></div>
+          <div class="popup-row"><dt>Zona</dt><dd>${escapeHtml(zonaRaw)}</dd></div>
+          <div class="popup-row"><dt>Latitud</dt><dd>${escapeHtml(formatCoord(latRaw))}</dd></div>
+          <div class="popup-row"><dt>Longitud</dt><dd>${escapeHtml(formatCoord(lonRaw))}</dd></div>
+        `;
+      } else {
+        rows = feature.attributes.map(([key, value]) => (
+          `<div class="popup-row"><dt>${escapeHtml(key)}</dt><dd>${escapeHtml(value || 'Sin dato')}</dd></div>`
+        )).join('');
+      }
+
       const relatedSummary = Number.isInteger(feature.relatedTowerCount)
         ? `<p class="community-related-summary">${feature.relatedTowerCount} ${feature.relatedTowerCount === 1 ? 'torre asociada' : 'torres asociadas'}</p>`
         : '';
