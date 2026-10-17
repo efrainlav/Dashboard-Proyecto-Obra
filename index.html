@@ -705,10 +705,384 @@
         min-height: 0;
       }
 
-      .feature-popup {
-        min-width: 205px;
-        max-width: 260px;
-      }
+    /* --- Pestañas del Panel Lateral --- */
+    .sidebar-tabs {
+      display: flex;
+      background: #edf3ee;
+      padding: 6px;
+      gap: 6px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .sidebar-tab-btn {
+      flex: 1;
+      border: none;
+      background: transparent;
+      padding: 7px 10px;
+      border-radius: 4px;
+      font-size: 11.5px;
+      font-weight: 650;
+      color: var(--muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+
+    .sidebar-tab-btn:hover {
+      color: var(--green-dark);
+      background: rgba(255, 255, 255, 0.6);
+    }
+
+    .sidebar-tab-btn.is-active {
+      background: #ffffff;
+      color: var(--green-dark);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    }
+
+    .sidebar-tab-badge {
+      display: inline-block;
+      padding: 1px 5px;
+      border-radius: 999px;
+      background: #00b4d8;
+      color: #ffffff;
+      font-size: 9px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    /* --- Panel de Avance de Torres --- */
+    .progress-panel {
+      min-height: 0;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background: #fbfdfb;
+    }
+
+    .progress-head {
+      padding: 14px 16px 12px;
+      border-bottom: 1px solid var(--line);
+      background: #ffffff;
+    }
+
+    .progress-head-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .progress-scope-badge {
+      display: inline-block;
+      margin-bottom: 4px;
+      padding: 2px 7px;
+      border-radius: 3px;
+      font-size: 9.5px;
+      font-weight: 750;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      background: #e8f3ec;
+      color: var(--green-dark);
+    }
+
+    .progress-scope-badge.is-filtered {
+      background: #e0f2fe;
+      color: #0369a1;
+    }
+
+    .progress-head h2 {
+      margin: 2px 0 0;
+      font-size: 16px;
+      font-weight: 700;
+      color: #11281a;
+      line-height: 1.25;
+    }
+
+    .progress-scope-subtitle {
+      margin-top: 4px;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .progress-reset-btn {
+      border: 1px solid #c8dcd0;
+      background: #f4faf6;
+      color: var(--green-dark);
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 10.5px;
+      font-weight: 650;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      white-space: nowrap;
+      transition: all 0.15s ease;
+    }
+
+    .progress-reset-btn:hover {
+      background: #e5f3eb;
+      border-color: var(--green);
+    }
+
+    .progress-cards-container {
+      min-height: 0;
+      flex: 1;
+      padding: 12px 14px 16px;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    /* --- Tarjetas Estilo Dashboard KPI (Azul Oscuro / Petróleo) --- */
+    .kpi-card {
+      background: linear-gradient(180deg, #042740 0%, #031c2e 100%);
+      border: 1px solid #094a73;
+      border-radius: 6px;
+      padding: 10px 14px;
+      color: #e2f0fa;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: transform 0.12s ease, border-color 0.12s ease, box-shadow 0.12s ease;
+    }
+
+    .kpi-card:hover {
+      border-color: #00b4d8;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .kpi-card.kpi-card-main {
+      padding: 14px 14px;
+      text-align: center;
+      background: linear-gradient(180deg, #053354 0%, #032238 100%);
+      border-color: #0c5c8f;
+    }
+
+    .kpi-card-main .kpi-card-title {
+      font-size: 15px;
+      font-weight: 500;
+      color: #9cd4f8;
+      letter-spacing: 0.5px;
+    }
+
+    .kpi-card-main .kpi-card-number {
+      font-size: 32px;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 4px 0 2px;
+      line-height: 1;
+    }
+
+    .kpi-card-caption {
+      font-size: 10px;
+      color: #88b7d6;
+    }
+
+    /* Acordeones de cada métrica */
+    .kpi-card-accordion {
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .kpi-card-summary {
+      padding: 10px 14px;
+      list-style: none;
+      cursor: pointer;
+      user-select: none;
+      text-align: center;
+      position: relative;
+    }
+
+    .kpi-card-summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .kpi-card-title {
+      font-size: 13.5px;
+      font-weight: 500;
+      color: #bce1fa;
+      margin: 0;
+    }
+
+    .kpi-card-number {
+      font-size: 22px;
+      font-weight: 750;
+      color: #ffffff;
+      margin: 3px 0 5px;
+      line-height: 1.15;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    }
+
+    .kpi-progress-bar {
+      height: 4px;
+      background: #061926;
+      border-radius: 999px;
+      overflow: hidden;
+      margin: 5px auto 0;
+      max-width: 90%;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .kpi-progress-fill {
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #00b4d8, #48cae4);
+      transition: width 0.4s ease-out;
+    }
+
+    .kpi-expand-hint {
+      display: inline-block;
+      font-size: 9px;
+      color: #6ea4c7;
+      margin-top: 3px;
+      transition: transform 0.15s ease;
+    }
+
+    .kpi-card-accordion[open] .kpi-expand-hint {
+      transform: rotate(180deg);
+    }
+
+    .kpi-card-details {
+      padding: 10px 14px 12px;
+      background: #021422;
+      border-top: 1px solid #083b5c;
+      font-size: 11px;
+    }
+
+    .kpi-breakdown-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4px;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    .kpi-breakdown-item {
+      background: rgba(255, 255, 255, 0.04);
+      padding: 4px;
+      border-radius: 3px;
+    }
+
+    .kpi-breakdown-label {
+      font-size: 8.5px;
+      color: #79a7c5;
+      text-transform: uppercase;
+    }
+
+    .kpi-breakdown-val {
+      font-size: 12px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-top: 2px;
+    }
+
+    .kpi-towers-list-title {
+      font-size: 9.5px;
+      font-weight: 700;
+      color: #79a7c5;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin: 6px 0 4px;
+      text-align: left;
+    }
+
+    .kpi-towers-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      max-height: 110px;
+      overflow-y: auto;
+      padding: 2px 0;
+    }
+
+    .kpi-tower-pill {
+      border: 1px solid #0a466d;
+      background: #04243a;
+      color: #d6ecfb;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-size: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .kpi-tower-pill:hover {
+      background: #00b4d8;
+      color: #031c2e;
+      border-color: #00b4d8;
+    }
+
+    .kpi-tower-pill-pct {
+      font-size: 8.5px;
+      opacity: 0.8;
+    }
+
+    /* Popup integration */
+    .popup-progress-section {
+      margin-top: 8px;
+      padding-top: 7px;
+      border-top: 1px solid #e1ebe3;
+    }
+
+    .popup-progress-title {
+      font-size: 10.5px;
+      font-weight: 750;
+      color: var(--green-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 5px;
+    }
+
+    .popup-progress-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px 8px;
+      font-size: 10px;
+    }
+
+    .popup-progress-item {
+      display: flex;
+      justify-content: space-between;
+      color: #3b5042;
+    }
+
+    .popup-progress-item strong {
+      color: #0f4c2c;
+    }
+
+    /* Botón flotante de acceso rápido en el mapa */
+    .map-progress-quickbtn {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      z-index: 999;
+      background: #042740;
+      color: #ffffff;
+      border: 1px solid #00b4d8;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+      padding: 7px 12px;
+      border-radius: 5px;
+      font-size: 12px;
+      font-weight: 650;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+
+    .map-progress-quickbtn:hover {
+      background: #063c63;
+      transform: translateY(-1px);
     }
   </style>
 </head>
@@ -756,7 +1130,17 @@
         <span class="summary-tab-arrow" aria-hidden="true">‹</span>
         <span class="summary-tab-label" aria-hidden="true"></span>
       </button>
-      <aside class="sidebar" aria-label="Resumen de actividades del día">
+      <aside class="sidebar" aria-label="Panel lateral del proyecto">
+        <div class="sidebar-tabs" role="tablist" aria-label="Secciones del panel">
+          <button id="tab-btn-schedule" class="sidebar-tab-btn is-active" type="button" role="tab" aria-selected="true" aria-controls="activity-panel">
+            <span>📋 Programación</span>
+          </button>
+          <button id="tab-btn-progress" class="sidebar-tab-btn" type="button" role="tab" aria-selected="false" aria-controls="progress-panel">
+            <span>🏗️ Avance Torres</span>
+            <span id="tab-progress-badge" class="sidebar-tab-badge" style="display: none;"></span>
+          </button>
+        </div>
+
         <div id="activity-panel" class="activity-panel">
           <header class="activity-head">
             <div class="eyebrow">Resumen de actividades</div>
@@ -767,10 +1151,117 @@
             <div class="activity-empty">Selecciona un día para consultar la programación.</div>
           </div>
         </div>
+
+        <div id="progress-panel" class="progress-panel" style="display: none;">
+          <header class="progress-head">
+            <div class="progress-head-top">
+              <div>
+                <span id="progress-scope-badge" class="progress-scope-badge">General</span>
+                <h2 id="progress-scope-title">Todo el Proyecto</h2>
+              </div>
+              <button id="progress-reset-btn" class="progress-reset-btn" type="button" title="Restablecer a todo el proyecto" style="display: none;">
+                ↺ Ver todo
+              </button>
+            </div>
+            <div id="progress-scope-subtitle" class="progress-scope-subtitle">
+              138 torres en total · Promedio consolidado
+            </div>
+          </header>
+
+          <div class="progress-cards-container">
+            <!-- Card Principal: Conteo de Torres -->
+            <div class="kpi-card kpi-card-main">
+              <div class="kpi-card-title">Torres</div>
+              <div class="kpi-card-number" id="kpi-towers-count">0</div>
+              <div class="kpi-card-caption" id="kpi-towers-caption">Torres en el alcance actual</div>
+            </div>
+
+            <!-- Card Acordeón: Ahuyentamiento -->
+            <details class="kpi-card kpi-card-accordion" data-metric="ahuyentamiento">
+              <summary class="kpi-card-summary">
+                <div class="kpi-card-title">Ahuyentamiento</div>
+                <div class="kpi-card-number" id="kpi-val-ahuyentamiento">0 %</div>
+                <div class="kpi-progress-bar">
+                  <div class="kpi-progress-fill" id="kpi-bar-ahuyentamiento" style="width: 0%;"></div>
+                </div>
+                <span class="kpi-expand-hint">▾</span>
+              </summary>
+              <div class="kpi-card-details" id="kpi-details-ahuyentamiento"></div>
+            </details>
+
+            <!-- Card Acordeón: Excavación -->
+            <details class="kpi-card kpi-card-accordion" data-metric="excavacion">
+              <summary class="kpi-card-summary">
+                <div class="kpi-card-title">Excavación</div>
+                <div class="kpi-card-number" id="kpi-val-excavacion">0 %</div>
+                <div class="kpi-progress-bar">
+                  <div class="kpi-progress-fill" id="kpi-bar-excavacion" style="width: 0%;"></div>
+                </div>
+                <span class="kpi-expand-hint">▾</span>
+              </summary>
+              <div class="kpi-card-details" id="kpi-details-excavacion"></div>
+            </details>
+
+            <!-- Card Acordeón: Relleno -->
+            <details class="kpi-card kpi-card-accordion" data-metric="relleno">
+              <summary class="kpi-card-summary">
+                <div class="kpi-card-title">Relleno</div>
+                <div class="kpi-card-number" id="kpi-val-relleno">0 %</div>
+                <div class="kpi-progress-bar">
+                  <div class="kpi-progress-fill" id="kpi-bar-relleno" style="width: 0%;"></div>
+                </div>
+                <span class="kpi-expand-hint">▾</span>
+              </summary>
+              <div class="kpi-card-details" id="kpi-details-relleno"></div>
+            </details>
+
+            <!-- Card Acordeón: Solado -->
+            <details class="kpi-card kpi-card-accordion" data-metric="solado">
+              <summary class="kpi-card-summary">
+                <div class="kpi-card-title">Solado</div>
+                <div class="kpi-card-number" id="kpi-val-solado">0 %</div>
+                <div class="kpi-progress-bar">
+                  <div class="kpi-progress-fill" id="kpi-bar-solado" style="width: 0%;"></div>
+                </div>
+                <span class="kpi-expand-hint">▾</span>
+              </summary>
+              <div class="kpi-card-details" id="kpi-details-solado"></div>
+            </details>
+
+            <!-- Card Acordeón: Acero -->
+            <details class="kpi-card kpi-card-accordion" data-metric="acero">
+              <summary class="kpi-card-summary">
+                <div class="kpi-card-title">Acero</div>
+                <div class="kpi-card-number" id="kpi-val-acero">0 %</div>
+                <div class="kpi-progress-bar">
+                  <div class="kpi-progress-fill" id="kpi-bar-acero" style="width: 0%;"></div>
+                </div>
+                <span class="kpi-expand-hint">▾</span>
+              </summary>
+              <div class="kpi-card-details" id="kpi-details-acero"></div>
+            </details>
+
+            <!-- Card Acordeón: Concreto -->
+            <details class="kpi-card kpi-card-accordion" data-metric="concreto">
+              <summary class="kpi-card-summary">
+                <div class="kpi-card-title">Concreto</div>
+                <div class="kpi-card-number" id="kpi-val-concreto">0 %</div>
+                <div class="kpi-progress-bar">
+                  <div class="kpi-progress-fill" id="kpi-bar-concreto" style="width: 0%;"></div>
+                </div>
+                <span class="kpi-expand-hint">▾</span>
+              </summary>
+              <div class="kpi-card-details" id="kpi-details-concreto"></div>
+            </details>
+          </div>
+        </div>
       </aside>
 
       <section class="map-panel" aria-label="Mapa de torres">
         <div id="map"></div>
+        <button id="map-progress-btn" class="map-progress-quickbtn" type="button" title="Ver avance general de torres">
+          <span>🏗️ Avance Torres</span>
+        </button>
         <div class="map-badge"><strong>Capas del proyecto</strong></div>
         <div id="status" class="status">Cargando kml/Torres.kml…</div>
       </section>
@@ -822,6 +1313,253 @@
     let cauceParqueFeatures = [];
     let communityFeatures = [];
     let selectedCommunityFeature = null;
+    let selectedTowerFeature = null;
+    let activeSidebarTab = 'schedule';
+    const PROGRESS_METRICS = [
+      { key: 'ahuyentamiento', label: 'Ahuyentamiento' },
+      { key: 'excavacion', label: 'Excavación' },
+      { key: 'relleno', label: 'Relleno' },
+      { key: 'solado', label: 'Solado' },
+      { key: 'acero', label: 'Acero' },
+      { key: 'concreto', label: 'Concreto' }
+    ];
+
+    function generateDemoProgress(tower, index) {
+      let hash = 0;
+      const str = (tower.name || `T${index}`) + '_windpeshi_demo_2026';
+      for (let i = 0; i < str.length; i++) {
+        hash = (hash << 5) - hash + str.charCodeAt(i);
+        hash |= 0;
+      }
+      const rand = (seedOffset) => {
+        const x = Math.sin(hash + seedOffset) * 10000;
+        return x - Math.floor(x);
+      };
+
+      const tier = rand(10);
+      let ahuyentamiento, excavacion, solado, acero, concreto, relleno;
+
+      if (tier < 0.28) {
+        ahuyentamiento = 100;
+        excavacion = 100;
+        solado = 100;
+        acero = 100;
+        concreto = Math.round(90 + rand(1) * 10);
+        relleno = Math.round(75 + rand(2) * 25);
+      } else if (tier < 0.58) {
+        ahuyentamiento = 100;
+        excavacion = Math.round(80 + rand(1) * 20);
+        solado = Math.round(65 + rand(2) * 35);
+        acero = Math.round(40 + rand(3) * 55);
+        concreto = Math.round(25 + rand(4) * 45);
+        relleno = Math.round(10 + rand(5) * 30);
+      } else if (tier < 0.82) {
+        ahuyentamiento = Math.round(85 + rand(1) * 15);
+        excavacion = Math.round(35 + rand(2) * 50);
+        solado = Math.round(15 + rand(3) * 35);
+        acero = Math.round(rand(4) * 30);
+        concreto = Math.round(rand(5) * 15);
+        relleno = 0;
+      } else {
+        ahuyentamiento = Math.round(20 + rand(1) * 60);
+        excavacion = Math.round(rand(2) * 30);
+        solado = 0;
+        acero = 0;
+        concreto = 0;
+        relleno = 0;
+      }
+
+      return {
+        ahuyentamiento: Math.min(100, Math.max(0, ahuyentamiento)),
+        excavacion: Math.min(100, Math.max(0, excavacion)),
+        relleno: Math.min(100, Math.max(0, relleno)),
+        solado: Math.min(100, Math.max(0, solado)),
+        acero: Math.min(100, Math.max(0, acero)),
+        concreto: Math.min(100, Math.max(0, concreto))
+      };
+    }
+
+    function switchSidebarTab(tabName) {
+      activeSidebarTab = tabName;
+      const isSchedule = tabName === 'schedule';
+      const scheduleBtn = document.getElementById('tab-btn-schedule');
+      const progressBtn = document.getElementById('tab-btn-progress');
+      if (scheduleBtn && progressBtn) {
+        scheduleBtn.classList.toggle('is-active', isSchedule);
+        scheduleBtn.setAttribute('aria-selected', String(isSchedule));
+        progressBtn.classList.toggle('is-active', !isSchedule);
+        progressBtn.setAttribute('aria-selected', String(!isSchedule));
+      }
+
+      const activityPanel = document.getElementById('activity-panel');
+      const progressPanel = document.getElementById('progress-panel');
+      if (activityPanel) activityPanel.style.display = isSchedule ? 'flex' : 'none';
+      if (progressPanel) progressPanel.style.display = isSchedule ? 'none' : 'flex';
+
+      if (!isSchedule) {
+        updateProgressDashboard();
+      }
+    }
+
+    function resetProgressScope() {
+      selectedTowerFeature = null;
+      clearCommunityHighlight();
+      map.closePopup(featurePopup);
+      updateProgressDashboard();
+    }
+
+    function selectTowerForProgress(feature) {
+      clearCommunityHighlight();
+      selectedTowerFeature = feature;
+      updateProgressDashboard();
+      showFeatureInfo(feature.marker, feature, 'Torre');
+    }
+
+    function formatPercentage(value) {
+      if (typeof value !== 'number' || isNaN(value)) return '0 %';
+      const rounded = Math.round(value * 10) / 10;
+      return Number.isInteger(rounded)
+        ? `${rounded} %`
+        : `${rounded.toFixed(1).replace('.', ',')} %`;
+    }
+
+    function updateProgressDashboard() {
+      const scopeBadge = document.getElementById('progress-scope-badge');
+      const scopeTitle = document.getElementById('progress-scope-title');
+      const scopeSubtitle = document.getElementById('progress-scope-subtitle');
+      const resetBtn = document.getElementById('progress-reset-btn');
+      const tabBadge = document.getElementById('tab-progress-badge');
+      const towersCount = document.getElementById('kpi-towers-count');
+      const towersCaption = document.getElementById('kpi-towers-caption');
+
+      if (!scopeTitle || !towersCount) return;
+
+      let scopeTowers = [];
+      let isFiltered = false;
+
+      if (selectedTowerFeature) {
+        scopeTowers = [selectedTowerFeature];
+        isFiltered = true;
+        scopeBadge.textContent = 'Torre';
+        scopeBadge.classList.add('is-filtered');
+        scopeTitle.textContent = `Torre ${selectedTowerFeature.name}`;
+        const comm = selectedTowerFeature.attributes?.find(([k]) => k.toLowerCase() === 'comunidad')?.[1] || 'Sin comunidad asignada';
+        scopeSubtitle.textContent = `Comunidad: ${comm} · Avance individual de la torre`;
+        towersCount.textContent = '1';
+        towersCaption.textContent = 'Torre seleccionada en el mapa';
+        if (tabBadge) {
+          tabBadge.textContent = selectedTowerFeature.name;
+          tabBadge.style.display = 'inline-block';
+        }
+      } else if (selectedCommunityFeature) {
+        scopeTowers = Array.isArray(selectedCommunityFeature.relatedTowers) ? selectedCommunityFeature.relatedTowers : [];
+        isFiltered = true;
+        scopeBadge.textContent = 'Comunidad';
+        scopeBadge.classList.add('is-filtered');
+        scopeTitle.textContent = selectedCommunityFeature.name;
+        scopeSubtitle.textContent = `${scopeTowers.length} ${scopeTowers.length === 1 ? 'torre asociada' : 'torres asociadas'} · Promedio de la comunidad`;
+        towersCount.textContent = String(scopeTowers.length);
+        towersCaption.textContent = `Torres que corresponden a ${selectedCommunityFeature.name}`;
+        if (tabBadge) {
+          tabBadge.textContent = `${scopeTowers.length} T`;
+          tabBadge.style.display = 'inline-block';
+        }
+      } else {
+        scopeTowers = features;
+        isFiltered = false;
+        scopeBadge.textContent = 'General';
+        scopeBadge.classList.remove('is-filtered');
+        scopeTitle.textContent = 'Todo el Proyecto';
+        scopeSubtitle.textContent = `${features.length} torres en total · Promedio consolidado de avance`;
+        towersCount.textContent = String(features.length);
+        towersCaption.textContent = 'Total de torres de transmisión del proyecto';
+        if (tabBadge) {
+          tabBadge.style.display = 'none';
+        }
+      }
+
+      if (resetBtn) {
+        resetBtn.style.display = isFiltered ? 'inline-flex' : 'none';
+      }
+
+      PROGRESS_METRICS.forEach(({ key }) => {
+        const valEl = document.getElementById(`kpi-val-${key}`);
+        const barEl = document.getElementById(`kpi-bar-${key}`);
+        const detailsEl = document.getElementById(`kpi-details-${key}`);
+        if (!valEl || !barEl) return;
+
+        let avg = 0;
+        if (scopeTowers.length === 1) {
+          avg = scopeTowers[0].progress ? (scopeTowers[0].progress[key] ?? 0) : 0;
+        } else if (scopeTowers.length > 1) {
+          const sum = scopeTowers.reduce((acc, t) => acc + (t.progress ? (t.progress[key] ?? 0) : 0), 0);
+          avg = sum / scopeTowers.length;
+        }
+
+        valEl.textContent = formatPercentage(avg);
+        barEl.style.width = `${Math.min(100, Math.max(0, avg))}%`;
+
+        if (avg >= 80) {
+          barEl.style.background = 'linear-gradient(90deg, #10b981, #00b4d8)';
+        } else if (avg >= 40) {
+          barEl.style.background = 'linear-gradient(90deg, #00b4d8, #38bdf8)';
+        } else {
+          barEl.style.background = 'linear-gradient(90deg, #f59e0b, #fbbf24)';
+        }
+
+        if (detailsEl) {
+          const completed = scopeTowers.filter((t) => (t.progress?.[key] ?? 0) >= 100).length;
+          const inProgress = scopeTowers.filter((t) => (t.progress?.[key] ?? 0) > 0 && (t.progress?.[key] ?? 0) < 100).length;
+          const pending = scopeTowers.filter((t) => (t.progress?.[key] ?? 0) === 0).length;
+
+          let pillsHtml = '';
+          if (scopeTowers.length > 0) {
+            const sorted = [...scopeTowers].sort((a, b) => (b.progress?.[key] ?? 0) - (a.progress?.[key] ?? 0));
+            pillsHtml = sorted.map((t) => {
+              const pct = t.progress ? (t.progress[key] ?? 0) : 0;
+              return `<button class="kpi-tower-pill" type="button" data-tower-name="${escapeHtml(t.name)}" title="Enfocar ${escapeHtml(t.name)}">
+                <span>${escapeHtml(t.name)}</span>
+                <span class="kpi-tower-pill-pct">${pct}%</span>
+              </button>`;
+            }).join('');
+          } else {
+            pillsHtml = '<span style="color:#79a7c5;font-size:10px;">No hay torres en este alcance.</span>';
+          }
+
+          detailsEl.innerHTML = `
+            <div class="kpi-breakdown-stats">
+              <div class="kpi-breakdown-item">
+                <div class="kpi-breakdown-label">100% Listas</div>
+                <div class="kpi-breakdown-val">${completed}</div>
+              </div>
+              <div class="kpi-breakdown-item">
+                <div class="kpi-breakdown-label">En Progreso</div>
+                <div class="kpi-breakdown-val">${inProgress}</div>
+              </div>
+              <div class="kpi-breakdown-item">
+                <div class="kpi-breakdown-label">0% Pendientes</div>
+                <div class="kpi-breakdown-val">${pending}</div>
+              </div>
+            </div>
+            <div class="kpi-towers-list-title">Detalle por torre (${scopeTowers.length}):</div>
+            <div class="kpi-towers-pills">${pillsHtml}</div>
+          `;
+
+          detailsEl.querySelectorAll('.kpi-tower-pill').forEach((pill) => {
+            pill.addEventListener('click', (e) => {
+              e.stopPropagation();
+              const towerName = pill.dataset.towerName;
+              const matched = features.find((f) => f.name === towerName);
+              if (matched && matched.marker) {
+                map.setView(matched.marker.getLatLng(), 15);
+                selectTowerForProgress(matched);
+              }
+            });
+          });
+        }
+      });
+    }
+
     let weeklyPrograms = [];
     let activeWeek = null;
     let weekdaySchedule = {};
@@ -919,10 +1657,31 @@
       const relatedSummary = Number.isInteger(feature.relatedTowerCount)
         ? `<p class="community-related-summary">${feature.relatedTowerCount} ${feature.relatedTowerCount === 1 ? 'torre asociada' : 'torres asociadas'}</p>`
         : '';
-      return `<div class="feature-popup"><div class="popup-layer">${escapeHtml(layerName)}</div><h3>${escapeHtml(feature.name)}</h3>${relatedSummary}<dl>${rows}</dl></div>`;
+      let progressBlock = '';
+      if (layerName === 'Torre' && feature.progress) {
+        progressBlock = `
+          <div class="popup-progress-section">
+            <div class="popup-progress-title">Avance de Obra (Demo)</div>
+            <div class="popup-progress-grid">
+              <div class="popup-progress-item"><span>Ahuyentamiento:</span> <strong>${feature.progress.ahuyentamiento}%</strong></div>
+              <div class="popup-progress-item"><span>Excavación:</span> <strong>${feature.progress.excavacion}%</strong></div>
+              <div class="popup-progress-item"><span>Relleno:</span> <strong>${feature.progress.relleno}%</strong></div>
+              <div class="popup-progress-item"><span>Solado:</span> <strong>${feature.progress.solado}%</strong></div>
+              <div class="popup-progress-item"><span>Acero:</span> <strong>${feature.progress.acero}%</strong></div>
+              <div class="popup-progress-item"><span>Concreto:</span> <strong>${feature.progress.concreto}%</strong></div>
+            </div>
+          </div>
+        `;
+      }
+      return `<div class="feature-popup"><div class="popup-layer">${escapeHtml(layerName)}</div><h3>${escapeHtml(feature.name)}</h3>${relatedSummary}${progressBlock}<dl>${rows}</dl></div>`;
     }
 
     function showFeatureInfo(layer, feature, layerName) {
+      if (layerName === 'Torre') {
+        selectedTowerFeature = feature;
+        clearCommunityHighlight();
+        updateProgressDashboard();
+      }
       featurePopup.setLatLng(layer.getLatLng()).setContent(popupContent(feature, layerName)).openOn(map);
     }
 
@@ -968,7 +1727,9 @@
 
     function highlightCommunity(community) {
       clearCommunityHighlight();
+      selectedTowerFeature = null;
       if (isUpperSanLuis(community)) {
+        updateProgressDashboard();
         return 0;
       }
       const communityKey = normalizeCommunity(community.name);
@@ -976,13 +1737,15 @@
         const towerCommunity = tower.attributes.find(([key]) => key.toLowerCase() === 'comunidad')?.[1];
         return towerCommunity && normalizeCommunity(towerCommunity) === communityKey;
       });
-      if (!relatedTowers.length) return 0;
 
       selectedCommunityFeature = community;
       community.relatedTowers = relatedTowers;
       community.relatedTowerCount = relatedTowers.length;
-      relatedTowers.forEach((tower) => tower.marker.getElement()?.querySelector('.tower-logo')?.classList.add('is-community-related'));
+      if (relatedTowers.length) {
+        relatedTowers.forEach((tower) => tower.marker.getElement()?.querySelector('.tower-logo')?.classList.add('is-community-related'));
+      }
       community.marker.getElement()?.querySelector('.community-logo')?.classList.add('is-selected');
+      updateProgressDashboard();
       return relatedTowers.length;
     }
 
@@ -1253,7 +2016,8 @@
           opacity: 1
         });
         marker.on('add', () => syncVisitStyle(feature, '.cauce-point'));
-        marker.on('click', () => {
+        marker.on('click', (e) => {
+          if (e && e.originalEvent) e.originalEvent._handledByMarker = true;
           if (style.onClick) {
             map.closePopup(featurePopup);
             const clickResult = style.onClick(feature);
@@ -1317,7 +2081,8 @@
       features = towerPlacemarks.map(readPlacemark).filter(Boolean);
       if (!features.length) throw new Error('No se encontraron torres válidas en kml/Torres.kml.');
 
-      features.forEach((feature) => {
+      features.forEach((feature, index) => {
+        feature.progress = generateDemoProgress(feature, index);
         feature.baseZIndexOffset = 0;
         feature.marker = L.marker([feature.coordinates[1], feature.coordinates[0]], { icon: makeIcon(), title: feature.name });
         feature.marker.bindTooltip(feature.name, {
@@ -1328,9 +2093,9 @@
           opacity: 1
         });
         feature.marker.on('add', () => syncVisitStyle(feature, '.tower-logo'));
-        feature.marker.on('click', () => {
-          clearCommunityHighlight();
-          showFeatureInfo(feature.marker, feature, 'Torre');
+        feature.marker.on('click', (e) => {
+          if (e && e.originalEvent) e.originalEvent._handledByMarker = true;
+          selectTowerForProgress(feature);
         });
         feature.marker.addTo(towerLayer);
       });
@@ -1433,6 +2198,32 @@
     positionSummaryTab();
     map.on('zoomend', updateMapLabels);
 
+    // Conexión de pestañas del panel lateral
+    document.getElementById('tab-btn-schedule')?.addEventListener('click', () => switchSidebarTab('schedule'));
+    document.getElementById('tab-btn-progress')?.addEventListener('click', () => switchSidebarTab('progress'));
+
+    // Botón de restablecer alcance a todo el proyecto
+    document.getElementById('progress-reset-btn')?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      resetProgressScope();
+    });
+
+    // Botón de acceso rápido flotante en el mapa
+    document.getElementById('map-progress-btn')?.addEventListener('click', () => {
+      if (workspace.classList.contains('summary-hidden')) {
+        summaryToggle.click();
+      }
+      switchSidebarTab('progress');
+    });
+
+    // Clic en el mapa para deseleccionar torre/comunidad si se hace clic fuera
+    map.on('click', (e) => {
+      if (e.originalEvent && e.originalEvent._handledByMarker) return;
+      if (selectedTowerFeature || selectedCommunityFeature) {
+        resetProgressScope();
+      }
+    });
+
     async function initApp() {
       try {
         status.textContent = 'Cargando programación y capas geográficas…';
@@ -1443,6 +2234,7 @@
         document.querySelectorAll('.day-button').forEach((button) => { button.disabled = false; });
         highlightDay('monday');
         updateMapLabels();
+        updateProgressDashboard();
         status.textContent = `${features.length} torres, ${aerosFeatures.length} aerogeneradores, ${cauceLineaFeatures.length} ocupaciones de línea, ${cauceParqueFeatures.length} de parque, ${communityFeatures.length} comunidades y área cargados`;
       } catch (error) {
         status.textContent = error.message;
