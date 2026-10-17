@@ -67,7 +67,23 @@ La información territorial, cartográfica y de contexto comunitario incorporada
   - **Aerogeneradores:** Posición de turbinas eólicas (`kml/Aeros_Parque.kml`).
   - **Polígono del parque:** Delimitación perimetral del área del proyecto (`kml/Area_Parque.kml`).
   - **Ocupaciones de cauce:** Puntos de intervención hídrica en línea y parque (`kml/Ocupacion_Cauce_Linea.kml`, `kml/Ocupaciones_Cauce_Parque.kml`).
-  - **Comunidades:** Localización de asentamientos del área de influencia (`kml/Comunidades_2026.kmz`). Popup simplificado con: Nombre, Semáforo, Zona y Coordenadas con formato truncado a 8 caracteres máximo.
+  - **Comunidades:** Localización de asentamientos del área de influencia (`geojson/Comunidades.geojson`). Popup con: Nombre, Semáforo, Zona y Coordenadas WGS 84 a 6 cifras decimales.
+
+---
+
+## 📂 Capas en Formato Abierto GeoJSON (WGS 84)
+
+Todas las capas geográficas del proyecto se encuentran disponibles en formato abierto y transparente **GeoJSON** dentro del directorio `geojson/` para facilitar su copia, descarga e integración inmediata en herramientas SIG (como QGIS, ArcGIS, Mapbox, Leaflet o librerías Python como GeoPandas):
+
+| Capa | Archivo GeoJSON | Tipo de Geometría | Descripción |
+| :--- | :--- | :--- | :--- |
+| **Torres** | [`Torres.geojson`](file:///Users/efrainlav/Downloads/Dashboard-Proyecto-Obra/geojson/Torres.geojson) | `Point` (138) | Estructuras de transmisión eléctrica con atributos y frentes |
+| **Aerogeneradores** | [`Aerogeneradores.geojson`](file:///Users/efrainlav/Downloads/Dashboard-Proyecto-Obra/geojson/Aerogeneradores.geojson) | `Point` (47) | Posición de turbinas eólicas del parque |
+| **Área del Parque** | [`Area_Parque.geojson`](file:///Users/efrainlav/Downloads/Dashboard-Proyecto-Obra/geojson/Area_Parque.geojson) | `Polygon` (1) | Polígono perimetral del parque eólico |
+| **Ocupación de Cauce (Línea)** | [`Ocupacion_Cauce_Linea.geojson`](file:///Users/efrainlav/Downloads/Dashboard-Proyecto-Obra/geojson/Ocupacion_Cauce_Linea.geojson) | `Point` (55) | Cruces e intervenciones sobre cauces en el trazado de la línea |
+| **Ocupación de Cauce (Parque)** | [`Ocupaciones_Cauce_Parque.geojson`](file:///Users/efrainlav/Downloads/Dashboard-Proyecto-Obra/geojson/Ocupaciones_Cauce_Parque.geojson) | `Point` (67) | Ocupaciones hídricas dentro del área del parque |
+| **Comunidades** | [`Comunidades.geojson`](file:///Users/efrainlav/Downloads/Dashboard-Proyecto-Obra/geojson/Comunidades.geojson) | `Point` (122) | Asentamientos y comunidades del área de influencia |
+| **Municipios** | [`Municipios.geojson`](file:///Users/efrainlav/Downloads/Dashboard-Proyecto-Obra/geojson/Municipios.geojson) | `MultiPolygon` (4) | Límites municipales del área (Uribia, Manaure, Maicao, Riohacha) |
 
 ---
 
@@ -76,14 +92,17 @@ La información territorial, cartográfica y de contexto comunitario incorporada
 ```text
 ├── index.html                  # Aplicación web / Visor interactivo
 ├── programacion-semanal.json   # Datos demo de programación semanal
-├── kml/                        # Capas espaciales vectoriales (KML y KMZ)
-│   ├── Aeros_Parque.kml
-│   ├── Area_Parque.kml
-│   ├── Comunidades_2026.kmz
-│   ├── Municipios.kml.kmz
-│   ├── Ocupacion_Cauce_Linea.kml
-│   ├── Ocupaciones_Cauce_Parque.kml
-│   └── Torres.kml
+├── geojson/                    # Capas abiertas estándar en WGS 84 (GeoJSON)
+│   ├── Aerogeneradores.geojson
+│   ├── Area_Parque.geojson
+│   ├── Comunidades.geojson
+│   ├── Municipios.geojson
+│   ├── Ocupacion_Cauce_Linea.geojson
+│   ├── Ocupaciones_Cauce_Parque.geojson
+│   └── Torres.geojson
+├── kml/                        # Capas originales de referencia (KML y KMZ)
+├── scripts/                    # Scripts de procesamiento de datos
+│   └── convert_to_geojson.py
 ├── png/                        # Recursos visuales y logotipo
 │   └── dummy_logo.jpg
 ├── svg/                        # Iconos vectoriales de infraestructura
@@ -100,7 +119,7 @@ La información territorial, cartográfica y de contexto comunitario incorporada
 
 - **Frontend Core:** HTML5 semántico, CSS3 moderno con variables y diseño responsivo, JavaScript Vanilla (ES6+).
 - **Librería de Mapas:** Leaflet 1.9.4.
-- **Procesamiento Geoespacial:** Omnivore y ToGeoJSON para renderizado dinámico de KML y compresión KMZ (JSZip) en el navegador.
+- **Procesamiento Geoespacial:** Consumo nativo de estándares GeoJSON (RFC 7946) en coordenadas WGS 84 (EPSG:4326), eliminando dependencias de descompresión en el cliente.
 
 ---
 

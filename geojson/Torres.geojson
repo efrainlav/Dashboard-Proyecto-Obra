@@ -1,0 +1,4428 @@
+{
+  "type": "FeatureCollection",
+  "name": "Torres",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ID_00000",
+      "properties": {
+        "name": "T108V",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T108V",
+        "COOR_ESTE": "5085966,5298",
+        "COOR_NORTE": "2804748,666",
+        "SITIO": "T108V",
+        "Comunidad": "Predio Guasimalito",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5085966,5298",
+        "COOR_Y": "2804748,666",
+        "Text": "#N/A",
+        "ObjectID": "106"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.212028,
+          11.281294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00001",
+      "properties": {
+        "name": "T109V",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T109V",
+        "COOR_ESTE": "5085605,6833",
+        "COOR_NORTE": "2804570,0401",
+        "SITIO": "T109V",
+        "Comunidad": "Predio Rancho Nercita",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5085605,6833",
+        "COOR_Y": "2804570,0401",
+        "Text": "#N/A",
+        "ObjectID": "107"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.21534,
+          11.279687
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00002",
+      "properties": {
+        "name": "T110V",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T110V",
+        "COOR_ESTE": "5085216,1848",
+        "COOR_NORTE": "2804377,2322",
+        "SITIO": "T110V",
+        "Comunidad": "Predio Rancho Nercita",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5085216,1848",
+        "COOR_Y": "2804377,2322",
+        "Text": "#N/A",
+        "ObjectID": "108"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.218914,
+          11.277952
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00003",
+      "properties": {
+        "name": "T111V",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T111V",
+        "COOR_ESTE": "5084856,5972",
+        "COOR_NORTE": "2804199,2304",
+        "SITIO": "T111V",
+        "Comunidad": "Predio Rancho Nercita",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5084856,5972",
+        "COOR_Y": "2804199,2304",
+        "Text": "#N/A",
+        "ObjectID": "109"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.222215,
+          11.27635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00004",
+      "properties": {
+        "name": "T112V",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T112V",
+        "COOR_ESTE": "5084549,3994",
+        "COOR_NORTE": "2804047,1634",
+        "SITIO": "T112V",
+        "Comunidad": "Predio Villa Esperanza",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5084549,3994",
+        "COOR_Y": "2804047,1634",
+        "Text": "#N/A",
+        "ObjectID": "110"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.225034,
+          11.274982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00005",
+      "properties": {
+        "name": "T113V",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T113V",
+        "COOR_ESTE": "5084493,2702",
+        "COOR_NORTE": "2803670,3473",
+        "SITIO": "T113V",
+        "Comunidad": "Predio Miriam",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5084493,2702",
+        "COOR_Y": "2803670,3473",
+        "Text": "#N/A",
+        "ObjectID": "111"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.225557,
+          11.271574
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00006",
+      "properties": {
+        "name": "T114V",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T114V",
+        "COOR_ESTE": "5084430,1208",
+        "COOR_NORTE": "2803246,4131",
+        "SITIO": "T114V",
+        "Comunidad": "Predio Miriam",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5084430,1208",
+        "COOR_Y": "2803246,4131",
+        "Text": "#N/A",
+        "ObjectID": "112"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.226146,
+          11.267741
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00007",
+      "properties": {
+        "name": "T115V",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T115V",
+        "COOR_ESTE": "5084377,5702",
+        "COOR_NORTE": "2802893,6297",
+        "SITIO": "T115V",
+        "Comunidad": "Predio Miriam",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5084377,5702",
+        "COOR_Y": "2802893,6297",
+        "Text": "#N/A",
+        "ObjectID": "113"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.226637,
+          11.26455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00008",
+      "properties": {
+        "name": "T115AV",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T115AV",
+        "COOR_ESTE": "5084320,0129",
+        "COOR_NORTE": "2802507,2474",
+        "SITIO": "T115AV",
+        "Comunidad": "Predio Miriam",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5084320,0129",
+        "COOR_Y": "2802507,2474",
+        "Text": "#N/A",
+        "ObjectID": "114"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.227173,
+          11.261056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00009",
+      "properties": {
+        "name": "T115BV",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T115BV",
+        "COOR_ESTE": "5084253,0338",
+        "COOR_NORTE": "2802057,6217",
+        "SITIO": "T115BV",
+        "Comunidad": "Predio Miriam",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5084253,0338",
+        "COOR_Y": "2802057,6217",
+        "Text": "#N/A",
+        "ObjectID": "115"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.227798,
+          11.25699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00010",
+      "properties": {
+        "name": "T2N",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T2N",
+        "COOR_ESTE": "5107351,6247",
+        "COOR_NORTE": "2840267,4283",
+        "SITIO": "T2N",
+        "Comunidad": "Utkap",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5107351,6247",
+        "COOR_Y": "2840267,4283",
+        "Text": "Utkap",
+        "ObjectID": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.01492,
+          11.602012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00011",
+      "properties": {
+        "name": "T3",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T3",
+        "COOR_ESTE": "5107730,9263",
+        "COOR_NORTE": "2840100,6732",
+        "SITIO": "T3",
+        "Comunidad": "Utkap",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5107730,9263",
+        "COOR_Y": "2840100,6732",
+        "Text": "Utkap",
+        "ObjectID": "2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.011445,
+          11.600492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00012",
+      "properties": {
+        "name": "T4",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T4",
+        "COOR_ESTE": "5108056,3927",
+        "COOR_NORTE": "2839957,586",
+        "SITIO": "T4",
+        "Comunidad": "Utkap",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5108056,3927",
+        "COOR_Y": "2839957,586",
+        "Text": "Utkap",
+        "ObjectID": "3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.008463,
+          11.599187
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00013",
+      "properties": {
+        "name": "T5",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T5",
+        "COOR_ESTE": "5108135,1652",
+        "COOR_NORTE": "2839681,1371",
+        "SITIO": "T5",
+        "Comunidad": "Utkap",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5108135,1652",
+        "COOR_Y": "2839681,1371",
+        "Text": "Utkap",
+        "ObjectID": "4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.007749,
+          11.596684
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00014",
+      "properties": {
+        "name": "T6",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T6",
+        "COOR_ESTE": "5108239,0041",
+        "COOR_NORTE": "2839316,715",
+        "SITIO": "T6",
+        "Comunidad": "Utkap",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5108239,0041",
+        "COOR_Y": "2839316,715",
+        "Text": "Utkap",
+        "ObjectID": "5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.006808,
+          11.593384
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00015",
+      "properties": {
+        "name": "T7",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T7",
+        "COOR_ESTE": "5108048,653",
+        "COOR_NORTE": "2838872,1125",
+        "SITIO": "T7",
+        "Comunidad": "Utkap",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5108048,653",
+        "COOR_Y": "2838872,1125",
+        "Text": "Utkap",
+        "ObjectID": "6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.008569,
+          11.589368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00016",
+      "properties": {
+        "name": "T8",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T8",
+        "COOR_ESTE": "5107873,0317",
+        "COOR_NORTE": "2838461,9191",
+        "SITIO": "T8",
+        "Comunidad": "Mashuamana",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5107873,0317",
+        "COOR_Y": "2838461,9191",
+        "Text": "Mashuamana",
+        "ObjectID": "7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.010193,
+          11.585663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00017",
+      "properties": {
+        "name": "T9",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T9",
+        "COOR_ESTE": "5107693,7314",
+        "COOR_NORTE": "2838043,1342",
+        "SITIO": "T9",
+        "Comunidad": "Mashuamana Wane",
+        "AHUYENTAMIENTO DE FAUNA": "SI",
+        "DESPEJE TORRE": "0,4",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5107693,7314",
+        "COOR_Y": "2838043,1342",
+        "Text": "Mashuamana Wane",
+        "ObjectID": "8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.011851,
+          11.58188
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00018",
+      "properties": {
+        "name": "T10",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T10",
+        "COOR_ESTE": "5107500,8151",
+        "COOR_NORTE": "2837592,5506",
+        "SITIO": "T10",
+        "Comunidad": "Mashuamana Wane",
+        "AHUYENTAMIENTO DE FAUNA": "SI",
+        "DESPEJE TORRE": "1",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5107500,8151",
+        "COOR_Y": "2837592,5506",
+        "Text": "Mashuamana Wane",
+        "ObjectID": "9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.013636,
+          11.577811
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00019",
+      "properties": {
+        "name": "T11",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T11",
+        "COOR_ESTE": "5107378,2599",
+        "COOR_NORTE": "2837306,3054",
+        "SITIO": "T11",
+        "Comunidad": "Mashuamana Wane",
+        "AHUYENTAMIENTO DE FAUNA": "SI",
+        "DESPEJE TORRE": "1",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5107378,2599",
+        "COOR_Y": "2837306,3054",
+        "Text": "Mashuamana Wane",
+        "ObjectID": "10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.014769,
+          11.575225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00020",
+      "properties": {
+        "name": "T12",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T12",
+        "COOR_ESTE": "5107022,736",
+        "COOR_NORTE": "2837166,3579",
+        "SITIO": "T12",
+        "Comunidad": "Mashuamana Wane",
+        "AHUYENTAMIENTO DE FAUNA": "SI",
+        "DESPEJE TORRE": "1",
+        "EXCAVACIÓN": "1",
+        "SOLADO": "1",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "1",
+        "CONCRETO": "0,12",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5107022,736",
+        "COOR_Y": "2837166,3579",
+        "Text": "Mashuamana Wane",
+        "ObjectID": "11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.018035,
+          11.57397
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00021",
+      "properties": {
+        "name": "T13",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T13",
+        "COOR_ESTE": "5106568,9208",
+        "COOR_NORTE": "2836987,7204",
+        "SITIO": "T13",
+        "Comunidad": "Kamushipá",
+        "AHUYENTAMIENTO DE FAUNA": "SI",
+        "DESPEJE TORRE": "1",
+        "EXCAVACIÓN": "1",
+        "SOLADO": "1",
+        "CIMENTACION": "1",
+        "ACERO DE REFUERZO": "1",
+        "CONCRETO": "1",
+        "RELLENO Y COMPACTACIÓN": "1",
+        "COOR_X": "5106568,9208",
+        "COOR_Y": "2836987,7204",
+        "Text": "Kamushipá",
+        "ObjectID": "12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.022204,
+          11.572368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00022",
+      "properties": {
+        "name": "T14",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T14",
+        "COOR_ESTE": "5106107,8434",
+        "COOR_NORTE": "2836806,2241",
+        "SITIO": "T14",
+        "Comunidad": "Kamushipá",
+        "AHUYENTAMIENTO DE FAUNA": "SI",
+        "DESPEJE TORRE": "1",
+        "EXCAVACIÓN": "1",
+        "SOLADO": "1",
+        "CIMENTACION": "1",
+        "ACERO DE REFUERZO": "1",
+        "CONCRETO": "1",
+        "RELLENO Y COMPACTACIÓN": "1",
+        "COOR_X": "5106107,8434",
+        "COOR_Y": "2836806,2241",
+        "Text": "Kamushipá",
+        "ObjectID": "13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.02644,
+          11.570741
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00023",
+      "properties": {
+        "name": "T15",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T15",
+        "COOR_ESTE": "5105668,9938",
+        "COOR_NORTE": "2836633,4776",
+        "SITIO": "T15",
+        "Comunidad": "Kamushipá",
+        "AHUYENTAMIENTO DE FAUNA": "SI",
+        "DESPEJE TORRE": "1",
+        "EXCAVACIÓN": "1",
+        "SOLADO": "1",
+        "CIMENTACION": "1",
+        "ACERO DE REFUERZO": "1",
+        "CONCRETO": "1",
+        "RELLENO Y COMPACTACIÓN": "1",
+        "COOR_X": "5105668,9938",
+        "COOR_Y": "2836633,4776",
+        "Text": "Kamushipá",
+        "ObjectID": "14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.030471,
+          11.569192
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00024",
+      "properties": {
+        "name": "T16",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T16",
+        "COOR_ESTE": "5105223,6363",
+        "COOR_NORTE": "2836458,171",
+        "SITIO": "T16",
+        "Comunidad": "Kamushipá",
+        "AHUYENTAMIENTO DE FAUNA": "SI",
+        "DESPEJE TORRE": "1",
+        "EXCAVACIÓN": "1",
+        "SOLADO": "1",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "1",
+        "CONCRETO": "1",
+        "RELLENO Y COMPACTACIÓN": "1",
+        "COOR_X": "5105223,6363",
+        "COOR_Y": "2836458,171",
+        "Text": "Kamushipá",
+        "ObjectID": "15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.034563,
+          11.567619
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00025",
+      "properties": {
+        "name": "T17",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T17",
+        "COOR_ESTE": "5104816,7688",
+        "COOR_NORTE": "2836298,0145",
+        "SITIO": "T17",
+        "Comunidad": "Romana",
+        "AHUYENTAMIENTO DE FAUNA": "SI",
+        "DESPEJE TORRE": "1",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5104816,7688",
+        "COOR_Y": "2836298,0145",
+        "Text": "Romana",
+        "ObjectID": "16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.0383,
+          11.566183
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00026",
+      "properties": {
+        "name": "T18",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T18",
+        "COOR_ESTE": "5104392,4289",
+        "COOR_NORTE": "2836130,9815",
+        "SITIO": "T18",
+        "Comunidad": "Romana",
+        "AHUYENTAMIENTO DE FAUNA": "SI",
+        "DESPEJE TORRE": "1",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5104392,4289",
+        "COOR_Y": "2836130,9815",
+        "Text": "Romana",
+        "ObjectID": "17"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.042198,
+          11.564685
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00027",
+      "properties": {
+        "name": "T19",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T19",
+        "COOR_ESTE": "5104026,1038",
+        "COOR_NORTE": "2835986,7849",
+        "SITIO": "T19",
+        "Comunidad": "Romana",
+        "AHUYENTAMIENTO DE FAUNA": "SI",
+        "DESPEJE TORRE": "1",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5104026,1038",
+        "COOR_Y": "2835986,7849",
+        "Text": "Romana",
+        "ObjectID": "18"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.045564,
+          11.563392
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00028",
+      "properties": {
+        "name": "T20N",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T20N",
+        "COOR_ESTE": "5103617,01",
+        "COOR_NORTE": "2835825,7542",
+        "SITIO": "T20N",
+        "Comunidad": "Romana",
+        "AHUYENTAMIENTO DE FAUNA": "SI",
+        "DESPEJE TORRE": "1",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5103617,01",
+        "COOR_Y": "2835825,7542",
+        "Text": "Romana",
+        "ObjectID": "19"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.049322,
+          11.561947
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00029",
+      "properties": {
+        "name": "T21N",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T21N",
+        "COOR_ESTE": "5103356,679",
+        "COOR_NORTE": "2835723,2804",
+        "SITIO": "T21N",
+        "Comunidad": "Romana",
+        "AHUYENTAMIENTO DE FAUNA": "SI",
+        "DESPEJE TORRE": "1",
+        "EXCAVACIÓN": "1",
+        "SOLADO": "1",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0,925",
+        "CONCRETO": "0,554",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5103356,679",
+        "COOR_Y": "2835723,2804",
+        "Text": "Romana",
+        "ObjectID": "20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.051713,
+          11.561028
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00030",
+      "properties": {
+        "name": "T22",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T22",
+        "COOR_ESTE": "5102904,3521",
+        "COOR_NORTE": "2835545,2322",
+        "SITIO": "T22",
+        "Comunidad": "Romana",
+        "AHUYENTAMIENTO DE FAUNA": "SI",
+        "DESPEJE TORRE": "1",
+        "EXCAVACIÓN": "1",
+        "SOLADO": "1",
+        "CIMENTACION": "1",
+        "ACERO DE REFUERZO": "1",
+        "CONCRETO": "1",
+        "RELLENO Y COMPACTACIÓN": "1",
+        "COOR_X": "5102904,3521",
+        "COOR_Y": "2835545,2322",
+        "Text": "Romana",
+        "ObjectID": "21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.055868,
+          11.559431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00031",
+      "properties": {
+        "name": "T23",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T23",
+        "COOR_ESTE": "5102549,9583",
+        "COOR_NORTE": "2835352,0897",
+        "SITIO": "T23",
+        "Comunidad": "Romana",
+        "AHUYENTAMIENTO DE FAUNA": "SI",
+        "DESPEJE TORRE": "1",
+        "EXCAVACIÓN": "1",
+        "SOLADO": "1",
+        "CIMENTACION": "1",
+        "ACERO DE REFUERZO": "0,925",
+        "CONCRETO": "1",
+        "RELLENO Y COMPACTACIÓN": "1",
+        "COOR_X": "5102549,9583",
+        "COOR_Y": "2835352,0897",
+        "Text": "Romana",
+        "ObjectID": "22"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.059125,
+          11.557694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00032",
+      "properties": {
+        "name": "T24N",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T24N",
+        "COOR_ESTE": "5102155,5324",
+        "COOR_NORTE": "2835137,1299",
+        "SITIO": "T24N",
+        "Comunidad": "Romana",
+        "AHUYENTAMIENTO DE FAUNA": "SI",
+        "DESPEJE TORRE": "1",
+        "EXCAVACIÓN": "0,7",
+        "SOLADO": "0,666667",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0,01",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5102155,5324",
+        "COOR_Y": "2835137,1299",
+        "Text": "Romana",
+        "ObjectID": "23"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.06275,
+          11.555762
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00033",
+      "properties": {
+        "name": "T25",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T25",
+        "COOR_ESTE": "5101739,3172",
+        "COOR_NORTE": "2834910,2958",
+        "SITIO": "T25",
+        "Comunidad": "Kijotchon",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5101739,3172",
+        "COOR_Y": "2834910,2958",
+        "Text": "Kijotchon",
+        "ObjectID": "24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.066575,
+          11.553722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00034",
+      "properties": {
+        "name": "T26N",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T26N",
+        "COOR_ESTE": "5101450,4377",
+        "COOR_NORTE": "2834752,8599",
+        "SITIO": "T26N",
+        "Comunidad": "Kijotchon",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5101450,4377",
+        "COOR_Y": "2834752,8599",
+        "Text": "Kijotchon",
+        "ObjectID": "25"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.06923,
+          11.552306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00035",
+      "properties": {
+        "name": "T27",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T27",
+        "COOR_ESTE": "5100918,9082",
+        "COOR_NORTE": "2834463,1812",
+        "SITIO": "T27",
+        "Comunidad": "Kijotchon",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5100918,9082",
+        "COOR_Y": "2834463,1812",
+        "Text": "Kijotchon",
+        "ObjectID": "26"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.074115,
+          11.549701
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00036",
+      "properties": {
+        "name": "T28N",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T28N",
+        "COOR_ESTE": "5100421,0136",
+        "COOR_NORTE": "2834191,8355",
+        "SITIO": "T28N",
+        "Comunidad": "Kijotchon",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5100421,0136",
+        "COOR_Y": "2834191,8355",
+        "Text": "Kijotchon",
+        "ObjectID": "27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.07869,
+          11.547261
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00037",
+      "properties": {
+        "name": "T29N",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T29N",
+        "COOR_ESTE": "5100047,2645",
+        "COOR_NORTE": "2833988,1474",
+        "SITIO": "T29N",
+        "Comunidad": "Kijotchon",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5100047,2645",
+        "COOR_Y": "2833988,1474",
+        "Text": "Kijotchon",
+        "ObjectID": "28"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.082125,
+          11.54543
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00038",
+      "properties": {
+        "name": "T30N",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T30N",
+        "COOR_ESTE": "5099756,3886",
+        "COOR_NORTE": "2833829,6247",
+        "SITIO": "T30N",
+        "Comunidad": "Pajakat",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5099756,3886",
+        "COOR_Y": "2833829,6247",
+        "Text": "Pajakat",
+        "ObjectID": "29"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.084798,
+          11.544004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00039",
+      "properties": {
+        "name": "T31",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T31",
+        "COOR_ESTE": "5099342,2011",
+        "COOR_NORTE": "2833603,8989",
+        "SITIO": "T31",
+        "Comunidad": "Amalipa",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5099342,2011",
+        "COOR_Y": "2833603,8989",
+        "Text": "Amalipa",
+        "ObjectID": "30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.088604,
+          11.541974
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00040",
+      "properties": {
+        "name": "T32",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T32",
+        "COOR_ESTE": "5099143,4014",
+        "COOR_NORTE": "2833146,8301",
+        "SITIO": "T32",
+        "Comunidad": "Pioreka",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5099143,4014",
+        "COOR_Y": "2833146,8301",
+        "Text": "Pioreka",
+        "ObjectID": "31"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.090441,
+          11.537845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00041",
+      "properties": {
+        "name": "T33N",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T33N",
+        "COOR_ESTE": "5098636,2861",
+        "COOR_NORTE": "2832877,2649",
+        "SITIO": "T33N",
+        "Comunidad": "Pioreka",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5098636,2861",
+        "COOR_Y": "2832877,2649",
+        "Text": "Pioreka",
+        "ObjectID": "32"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.095101,
+          11.535421
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00042",
+      "properties": {
+        "name": "T34",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T34",
+        "COOR_ESTE": "5098295,0798",
+        "COOR_NORTE": "2832695,8916",
+        "SITIO": "T34",
+        "Comunidad": "Pioreka",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5098295,0798",
+        "COOR_Y": "2832695,8916",
+        "Text": "Pioreka",
+        "ObjectID": "33"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.098236,
+          11.53379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00043",
+      "properties": {
+        "name": "T35N",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T35N",
+        "COOR_ESTE": "5097941,5622",
+        "COOR_NORTE": "2832444,767",
+        "SITIO": "T35N",
+        "Comunidad": "Pioreka",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5097941,5622",
+        "COOR_Y": "2832444,767",
+        "Text": "Pioreka",
+        "ObjectID": "34"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.101486,
+          11.531528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00044",
+      "properties": {
+        "name": "T36",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T36",
+        "COOR_ESTE": "5097579,0821",
+        "COOR_NORTE": "2832187,2764",
+        "SITIO": "T36",
+        "Comunidad": "Pioreka",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5097579,0821",
+        "COOR_Y": "2832187,2764",
+        "Text": "Pioreka",
+        "ObjectID": "35"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.104819,
+          11.529209
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00045",
+      "properties": {
+        "name": "T37",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T37",
+        "COOR_ESTE": "5097173,688",
+        "COOR_NORTE": "2831899,3026",
+        "SITIO": "T37",
+        "Comunidad": "Pioreka",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0,1",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5097173,688",
+        "COOR_Y": "2831899,3026",
+        "Text": "Pioreka",
+        "ObjectID": "36"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.108546,
+          11.526616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00046",
+      "properties": {
+        "name": "T38",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T38",
+        "COOR_ESTE": "5096802,9547",
+        "COOR_NORTE": "2831635,9505",
+        "SITIO": "T38",
+        "Comunidad": "Pioreka",
+        "AHUYENTAMIENTO DE FAUNA": "SI",
+        "DESPEJE TORRE": "1",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5096802,9547",
+        "COOR_Y": "2831635,9505",
+        "Text": "Pioreka",
+        "ObjectID": "37"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.111954,
+          11.524244
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00047",
+      "properties": {
+        "name": "T39",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T39",
+        "COOR_ESTE": "5096783,4352",
+        "COOR_NORTE": "2831282,6021",
+        "SITIO": "T39",
+        "Comunidad": "Pioreka",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5096783,4352",
+        "COOR_Y": "2831282,6021",
+        "Text": "Pioreka",
+        "ObjectID": "38"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.112143,
+          11.521048
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00048",
+      "properties": {
+        "name": "T40",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T40",
+        "COOR_ESTE": "5096758,6344",
+        "COOR_NORTE": "2830833,6658",
+        "SITIO": "T40",
+        "Comunidad": "Pioreka",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5096758,6344",
+        "COOR_Y": "2830833,6658",
+        "Text": "Pioreka",
+        "ObjectID": "39"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.112383,
+          11.516987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00049",
+      "properties": {
+        "name": "T41",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T41",
+        "COOR_ESTE": "5096731,6289",
+        "COOR_NORTE": "2830344,8236",
+        "SITIO": "T41",
+        "Comunidad": "Pioreka",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5096731,6289",
+        "COOR_Y": "2830344,8236",
+        "Text": "Pioreka",
+        "ObjectID": "40"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.112645,
+          11.512566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00050",
+      "properties": {
+        "name": "T42N",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T42N",
+        "COOR_ESTE": "5096711,7319",
+        "COOR_NORTE": "2829984,6766",
+        "SITIO": "T42N",
+        "Comunidad": "Pioreka",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5096711,7319",
+        "COOR_Y": "2829984,6766",
+        "Text": "Pioreka",
+        "ObjectID": "41"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.112837,
+          11.509308
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00051",
+      "properties": {
+        "name": "T43",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T43",
+        "COOR_ESTE": "5096683,0691",
+        "COOR_NORTE": "2829465,9061",
+        "SITIO": "T43",
+        "Comunidad": "Toloira",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5096683,0691",
+        "COOR_Y": "2829465,9061",
+        "Text": "Toloira",
+        "ObjectID": "42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.113115,
+          11.504616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00052",
+      "properties": {
+        "name": "T44N",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T44N",
+        "COOR_ESTE": "5096658,9263",
+        "COOR_NORTE": "2829028,9409",
+        "SITIO": "T44N",
+        "Comunidad": "Toloira",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5096658,9263",
+        "COOR_Y": "2829028,9409",
+        "Text": "Toloira",
+        "ObjectID": "43"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.113349,
+          11.500664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00053",
+      "properties": {
+        "name": "T45N",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T45N",
+        "COOR_ESTE": "5096630,9233",
+        "COOR_NORTE": "2828522,1423",
+        "SITIO": "T45N",
+        "Comunidad": "Toloira",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5096630,9233",
+        "COOR_Y": "2828522,1423",
+        "Text": "Toloira",
+        "ObjectID": "44"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.11362,
+          11.49608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00054",
+      "properties": {
+        "name": "T46",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T46",
+        "COOR_ESTE": "5096607,4398",
+        "COOR_NORTE": "2828097,149",
+        "SITIO": "T46",
+        "Comunidad": "Jununtao",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5096607,4398",
+        "COOR_Y": "2828097,149",
+        "Text": "Jununtao",
+        "ObjectID": "45"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.113847,
+          11.492236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00055",
+      "properties": {
+        "name": "T47",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T47",
+        "COOR_ESTE": "5096589,258",
+        "COOR_NORTE": "2827768,1214",
+        "SITIO": "T47",
+        "Comunidad": "Jununtao",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5096589,258",
+        "COOR_Y": "2827768,1214",
+        "Text": "Jununtao",
+        "ObjectID": "46"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.114023,
+          11.48926
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00056",
+      "properties": {
+        "name": "T48",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T48",
+        "COOR_ESTE": "5096568,2972",
+        "COOR_NORTE": "2827388,8286",
+        "SITIO": "T48",
+        "Comunidad": "Jununtao",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5096568,2972",
+        "COOR_Y": "2827388,8286",
+        "Text": "Jununtao",
+        "ObjectID": "47"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.114226,
+          11.48583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00057",
+      "properties": {
+        "name": "T49",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T49",
+        "COOR_ESTE": "5096543,9839",
+        "COOR_NORTE": "2826948,8713",
+        "SITIO": "T49",
+        "Comunidad": "Jununtao",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5096543,9839",
+        "COOR_Y": "2826948,8713",
+        "Text": "Jununtao",
+        "ObjectID": "48"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.114462,
+          11.481851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00058",
+      "properties": {
+        "name": "T50",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T50",
+        "COOR_ESTE": "5096516,9578",
+        "COOR_NORTE": "2826459,8453",
+        "SITIO": "T50",
+        "Comunidad": "Jununtao",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5096516,9578",
+        "COOR_Y": "2826459,8453",
+        "Text": "Jununtao",
+        "ObjectID": "49"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.114724,
+          11.477427
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00059",
+      "properties": {
+        "name": "T51",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T51",
+        "COOR_ESTE": "5096491,0538",
+        "COOR_NORTE": "2825991,1422",
+        "SITIO": "T51",
+        "Comunidad": "Jununtao",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5096491,0538",
+        "COOR_Y": "2825991,1422",
+        "Text": "Jununtao",
+        "ObjectID": "50"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.114974,
+          11.473188
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00060",
+      "properties": {
+        "name": "T52",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T52",
+        "COOR_ESTE": "5096464,6385",
+        "COOR_NORTE": "2825513,2235",
+        "SITIO": "T52",
+        "Comunidad": "Sirruma",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5096464,6385",
+        "COOR_Y": "2825513,2235",
+        "Text": "Sirruma",
+        "ObjectID": "51"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.11523,
+          11.468866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00061",
+      "properties": {
+        "name": "T53",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T53",
+        "COOR_ESTE": "5096429,3134",
+        "COOR_NORTE": "2824874,1208",
+        "SITIO": "T53",
+        "Comunidad": "Sirruma",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5096429,3134",
+        "COOR_Y": "2824874,1208",
+        "Text": "Sirruma",
+        "ObjectID": "52"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.115572,
+          11.463085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00062",
+      "properties": {
+        "name": "T54",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T54",
+        "COOR_ESTE": "5096404,9806",
+        "COOR_NORTE": "2824371,041",
+        "SITIO": "T54",
+        "Comunidad": "Sirruma",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5096404,9806",
+        "COOR_Y": "2824371,041",
+        "Text": "Sirruma",
+        "ObjectID": "53"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.115809,
+          11.458535
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00063",
+      "properties": {
+        "name": "T55",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T55",
+        "COOR_ESTE": "5096382,0657",
+        "COOR_NORTE": "2823897,2866",
+        "SITIO": "T55",
+        "Comunidad": "Corralito",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5096382,0657",
+        "COOR_Y": "2823897,2866",
+        "Text": "Corralito",
+        "ObjectID": "54"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.116033,
+          11.45425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00064",
+      "properties": {
+        "name": "T56",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T56",
+        "COOR_ESTE": "5096361,3064",
+        "COOR_NORTE": "2823468,1461",
+        "SITIO": "T56",
+        "Comunidad": "Corralito",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5096361,3064",
+        "COOR_Y": "2823468,1461",
+        "Text": "Corralito",
+        "ObjectID": "55"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.116235,
+          11.450368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00065",
+      "properties": {
+        "name": "T57",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T57",
+        "COOR_ESTE": "5096341,2946",
+        "COOR_NORTE": "2823054,4569",
+        "SITIO": "T57",
+        "Comunidad": "Corralito",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5096341,2946",
+        "COOR_Y": "2823054,4569",
+        "Text": "Corralito",
+        "ObjectID": "56"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.11643,
+          11.446626
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00066",
+      "properties": {
+        "name": "T58",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T58",
+        "COOR_ESTE": "5096321,9854",
+        "COOR_NORTE": "2822655,3145",
+        "SITIO": "T58",
+        "Comunidad": "Corralito",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5096321,9854",
+        "COOR_Y": "2822655,3145",
+        "Text": "Corralito",
+        "ObjectID": "57"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.116619,
+          11.443016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00067",
+      "properties": {
+        "name": "T59",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T59",
+        "COOR_ESTE": "5096308,9467",
+        "COOR_NORTE": "2822385,8043",
+        "SITIO": "T59",
+        "Comunidad": "Sabanalarga",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5096308,9467",
+        "COOR_Y": "2822385,8043",
+        "Text": "Sabanalarga",
+        "ObjectID": "58"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.116746,
+          11.440578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00068",
+      "properties": {
+        "name": "T60N",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T60N",
+        "COOR_ESTE": "5096282,9553",
+        "COOR_NORTE": "2821848,5643",
+        "SITIO": "T60N",
+        "Comunidad": "Sabanalarga",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5096282,9553",
+        "COOR_Y": "2821848,5643",
+        "Text": "Sabanalarga",
+        "ObjectID": "59"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.116999,
+          11.435719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00069",
+      "properties": {
+        "name": "T62",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T62",
+        "COOR_ESTE": "5096254,8197",
+        "COOR_NORTE": "2821267,0595",
+        "SITIO": "T62",
+        "Comunidad": "Sabanalarga",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5096254,8197",
+        "COOR_Y": "2821267,0595",
+        "Text": "Sabanalarga",
+        "ObjectID": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.117273,
+          11.430459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00070",
+      "properties": {
+        "name": "T63",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T63",
+        "COOR_ESTE": "5096236,9528",
+        "COOR_NORTE": "2820897,8035",
+        "SITIO": "T63",
+        "Comunidad": "Sabanalarga",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5096236,9528",
+        "COOR_Y": "2820897,8035",
+        "Text": "Sabanalarga",
+        "ObjectID": "61"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.117448,
+          11.427119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00071",
+      "properties": {
+        "name": "T64",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T64",
+        "COOR_ESTE": "5096214,5388",
+        "COOR_NORTE": "2820434,5987",
+        "SITIO": "T64",
+        "Comunidad": "Siború",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5096214,5388",
+        "COOR_Y": "2820434,5987",
+        "Text": "Siború",
+        "ObjectID": "62"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.117666,
+          11.42293
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00072",
+      "properties": {
+        "name": "T65",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T65",
+        "COOR_ESTE": "5096011,2297",
+        "COOR_NORTE": "2820049,7516",
+        "SITIO": "T65",
+        "Comunidad": "Siború",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5096011,2297",
+        "COOR_Y": "2820049,7516",
+        "Text": "Siború",
+        "ObjectID": "63"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.119541,
+          11.419454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00073",
+      "properties": {
+        "name": "T66",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T66",
+        "COOR_ESTE": "5095803,7401",
+        "COOR_NORTE": "2819656,9931",
+        "SITIO": "T66",
+        "Comunidad": "Siború",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5095803,7401",
+        "COOR_Y": "2819656,9931",
+        "Text": "Siború",
+        "ObjectID": "64"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.121455,
+          11.415907
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00074",
+      "properties": {
+        "name": "T67",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T67",
+        "COOR_ESTE": "5095593,0133",
+        "COOR_NORTE": "2819258,109",
+        "SITIO": "T67",
+        "Comunidad": "San Luis",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5095593,0133",
+        "COOR_Y": "2819258,109",
+        "Text": "San Luis",
+        "ObjectID": "65"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.123398,
+          11.412304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00075",
+      "properties": {
+        "name": "T68",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T68",
+        "COOR_ESTE": "5095416,1015",
+        "COOR_NORTE": "2818867,5805",
+        "SITIO": "T68",
+        "Comunidad": "San Luis",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5095416,1015",
+        "COOR_Y": "2818867,5805",
+        "Text": "San Luis",
+        "ObjectID": "66"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.125031,
+          11.408776
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00076",
+      "properties": {
+        "name": "T69",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T69",
+        "COOR_ESTE": "5095081,1939",
+        "COOR_NORTE": "2818572,9709",
+        "SITIO": "T69",
+        "Comunidad": "San Luis",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5095081,1939",
+        "COOR_Y": "2818572,9709",
+        "Text": "San Luis",
+        "ObjectID": "67"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.12811,
+          11.40612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00077",
+      "properties": {
+        "name": "T70N",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T70N",
+        "COOR_ESTE": "5094873,7555",
+        "COOR_NORTE": "2818253,6812",
+        "SITIO": "T70N",
+        "Comunidad": "San Luis",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5094873,7555",
+        "COOR_Y": "2818253,6812",
+        "Text": "San Luis",
+        "ObjectID": "68"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.130021,
+          11.403237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00078",
+      "properties": {
+        "name": "T71",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T71",
+        "COOR_ESTE": "5094645,2436",
+        "COOR_NORTE": "2817901,9583",
+        "SITIO": "T71",
+        "Comunidad": "Chuluita",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5094645,2436",
+        "COOR_Y": "2817901,9583",
+        "Text": "Chuluita",
+        "ObjectID": "69"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.132126,
+          11.400062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00079",
+      "properties": {
+        "name": "T72",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T72",
+        "COOR_ESTE": "5094455,0124",
+        "COOR_NORTE": "2817609,1562",
+        "SITIO": "T72",
+        "Comunidad": "Chuluita",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5094455,0124",
+        "COOR_Y": "2817609,1562",
+        "Text": "Chuluita",
+        "ObjectID": "70"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.133878,
+          11.397418
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00080",
+      "properties": {
+        "name": "T73",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T73",
+        "COOR_ESTE": "5094220,37",
+        "COOR_NORTE": "2817295,4025",
+        "SITIO": "T73",
+        "Comunidad": "Chuluita",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5094220,37",
+        "COOR_Y": "2817295,4025",
+        "Text": "Chuluita",
+        "ObjectID": "71"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.136038,
+          11.394586
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00081",
+      "properties": {
+        "name": "T74",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T74",
+        "COOR_ESTE": "5094107,0235",
+        "COOR_NORTE": "2816865,0575",
+        "SITIO": "T74",
+        "Comunidad": "Chuluita",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5094107,0235",
+        "COOR_Y": "2816865,0575",
+        "Text": "Chuluita",
+        "ObjectID": "72"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.137089,
+          11.390696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00082",
+      "properties": {
+        "name": "T75",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T75",
+        "COOR_ESTE": "5093768,2644",
+        "COOR_NORTE": "2816415,1297",
+        "SITIO": "T75",
+        "Comunidad": "Urraichipa",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5093768,2644",
+        "COOR_Y": "2816415,1297",
+        "Text": "Urraichipa",
+        "ObjectID": "73"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.140207,
+          11.386635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00083",
+      "properties": {
+        "name": "T76",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T76",
+        "COOR_ESTE": "5093620,609",
+        "COOR_NORTE": "2816097,6074",
+        "SITIO": "T76",
+        "Comunidad": "Urraichipa",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5093620,609",
+        "COOR_Y": "2816097,6074",
+        "Text": "Urraichipa",
+        "ObjectID": "74"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.14157,
+          11.383766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00084",
+      "properties": {
+        "name": "T77",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T77",
+        "COOR_ESTE": "5093382,6271",
+        "COOR_NORTE": "2815722,1296",
+        "SITIO": "T77",
+        "Comunidad": "Urraichipa",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5093382,6271",
+        "COOR_Y": "2815722,1296",
+        "Text": "Urraichipa",
+        "ObjectID": "75"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.143762,
+          11.380376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00085",
+      "properties": {
+        "name": "T78",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T78",
+        "COOR_ESTE": "5093178,71",
+        "COOR_NORTE": "2815400,3992",
+        "SITIO": "T78",
+        "Comunidad": "Urraichipa",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5093178,71",
+        "COOR_Y": "2815400,3992",
+        "Text": "Urraichipa",
+        "ObjectID": "76"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.14564,
+          11.377471
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00086",
+      "properties": {
+        "name": "T79N",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T79N",
+        "COOR_ESTE": "5093029,5131",
+        "COOR_NORTE": "2815080,1058",
+        "SITIO": "T79N",
+        "Comunidad": "Urraichipa",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5093029,5131",
+        "COOR_Y": "2815080,1058",
+        "Text": "Urraichipa",
+        "ObjectID": "77"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.147017,
+          11.374577
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00087",
+      "properties": {
+        "name": "T80",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T80",
+        "COOR_ESTE": "5092870,2898",
+        "COOR_NORTE": "2814738,2885",
+        "SITIO": "T80",
+        "Comunidad": "Jaipachon",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5092870,2898",
+        "COOR_Y": "2814738,2885",
+        "Text": "Jaipachon",
+        "ObjectID": "78"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.148485,
+          11.371489
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00088",
+      "properties": {
+        "name": "T81",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T81",
+        "COOR_ESTE": "5092694,7477",
+        "COOR_NORTE": "2814361,4393",
+        "SITIO": "T81",
+        "Comunidad": "Jaipachon",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5092694,7477",
+        "COOR_Y": "2814361,4393",
+        "Text": "Jaipachon",
+        "ObjectID": "79"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.150105,
+          11.368085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00089",
+      "properties": {
+        "name": "T82",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T82",
+        "COOR_ESTE": "5092534,921",
+        "COOR_NORTE": "2814020,2118",
+        "SITIO": "T82",
+        "Comunidad": "Predio Farallones",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5092534,921",
+        "COOR_Y": "2814020,2118",
+        "Text": "#N/A",
+        "ObjectID": "80"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.151579,
+          11.365002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00090",
+      "properties": {
+        "name": "T83",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T83",
+        "COOR_ESTE": "5092342,8446",
+        "COOR_NORTE": "2813610,1356",
+        "SITIO": "T83",
+        "Comunidad": "Predio Farallones",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5092342,8446",
+        "COOR_Y": "2813610,1356",
+        "Text": "#N/A",
+        "ObjectID": "81"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.153351,
+          11.361298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00091",
+      "properties": {
+        "name": "T84",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T84",
+        "COOR_ESTE": "5092151,4039",
+        "COOR_NORTE": "2813201,4172",
+        "SITIO": "T84",
+        "Comunidad": "Predio Farallones",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5092151,4039",
+        "COOR_Y": "2813201,4172",
+        "Text": "#N/A",
+        "ObjectID": "82"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.155117,
+          11.357605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00092",
+      "properties": {
+        "name": "T85",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T85",
+        "COOR_ESTE": "5091932,7537",
+        "COOR_NORTE": "2812734,6119",
+        "SITIO": "T85",
+        "Comunidad": "Predio Cascabeles",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5091932,7537",
+        "COOR_Y": "2812734,6119",
+        "Text": "#N/A",
+        "ObjectID": "83"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.157134,
+          11.353388
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00093",
+      "properties": {
+        "name": "T86",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T86",
+        "COOR_ESTE": "5091750,8372",
+        "COOR_NORTE": "2812346,2331",
+        "SITIO": "T86",
+        "Comunidad": "Predio Cascabeles",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5091750,8372",
+        "COOR_Y": "2812346,2331",
+        "Text": "#N/A",
+        "ObjectID": "84"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.158812,
+          11.349879
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00094",
+      "properties": {
+        "name": "T87",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T87",
+        "COOR_ESTE": "5091583,633",
+        "COOR_NORTE": "2811989,2635",
+        "SITIO": "T87",
+        "Comunidad": "Predio Cascabeles",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5091583,633",
+        "COOR_Y": "2811989,2635",
+        "Text": "#N/A",
+        "ObjectID": "85"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.160355,
+          11.346654
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00095",
+      "properties": {
+        "name": "T88",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T88",
+        "COOR_ESTE": "5091372,4488",
+        "COOR_NORTE": "2811538,4048",
+        "SITIO": "T88",
+        "Comunidad": "NO SE TIENE INFORMACIÓN",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5091372,4488",
+        "COOR_Y": "2811538,4048",
+        "Text": "#N/A",
+        "ObjectID": "86"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.162302,
+          11.342581
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00096",
+      "properties": {
+        "name": "T89",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T89",
+        "COOR_ESTE": "5091206,8307",
+        "COOR_NORTE": "2811184,8273",
+        "SITIO": "T89",
+        "Comunidad": "NO SE TIENE INFORMACIÓN",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5091206,8307",
+        "COOR_Y": "2811184,8273",
+        "Text": "#N/A",
+        "ObjectID": "87"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.16383,
+          11.339387
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00097",
+      "properties": {
+        "name": "T90",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T90",
+        "COOR_ESTE": "5090959,4167",
+        "COOR_NORTE": "2810869,4219",
+        "SITIO": "T90",
+        "Comunidad": "Predio San Carlos",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5090959,4167",
+        "COOR_Y": "2810869,4219",
+        "Text": "#N/A",
+        "ObjectID": "88"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.166106,
+          11.33654
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00098",
+      "properties": {
+        "name": "T91",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T91",
+        "COOR_ESTE": "5090683,1529",
+        "COOR_NORTE": "2810517,2402",
+        "SITIO": "T91",
+        "Comunidad": "Predio San Carlos",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5090683,1529",
+        "COOR_Y": "2810517,2402",
+        "Text": "#N/A",
+        "ObjectID": "89"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.168648,
+          11.333361
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00099",
+      "properties": {
+        "name": "T92",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T92",
+        "COOR_ESTE": "5090497,625",
+        "COOR_NORTE": "2810280,7305",
+        "SITIO": "T92",
+        "Comunidad": "Predio San Carlos",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5090497,625",
+        "COOR_Y": "2810280,7305",
+        "Text": "#N/A",
+        "ObjectID": "90"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.170355,
+          11.331226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00100",
+      "properties": {
+        "name": "T93",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T93",
+        "COOR_ESTE": "5090277,6264",
+        "COOR_NORTE": "2810000,2774",
+        "SITIO": "T93",
+        "Comunidad": "Predio La Unión",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5090277,6264",
+        "COOR_Y": "2810000,2774",
+        "Text": "#N/A",
+        "ObjectID": "91"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.172379,
+          11.328695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00101",
+      "properties": {
+        "name": "T94N",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T94N",
+        "COOR_ESTE": "5090034,1875",
+        "COOR_NORTE": "2809694,0924",
+        "SITIO": "T94N",
+        "Comunidad": "Predio Apatud",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5090034,1875",
+        "COOR_Y": "2809694,0924",
+        "Text": "#N/A",
+        "ObjectID": "92"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.174619,
+          11.325931
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00102",
+      "properties": {
+        "name": "T95N",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T95N",
+        "COOR_ESTE": "5089796,7395",
+        "COOR_NORTE": "2809395,4452",
+        "SITIO": "T95N",
+        "Comunidad": "Predio Apatud",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5089796,7395",
+        "COOR_Y": "2809395,4452",
+        "Text": "#N/A",
+        "ObjectID": "93"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.176803,
+          11.323236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00103",
+      "properties": {
+        "name": "T96",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T96",
+        "COOR_ESTE": "5089479,6224",
+        "COOR_NORTE": "2808996,5965",
+        "SITIO": "T96",
+        "Comunidad": "Predio Apatud",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5089479,6224",
+        "COOR_Y": "2808996,5965",
+        "Text": "#N/A",
+        "ObjectID": "94"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.17972,
+          11.319636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00104",
+      "properties": {
+        "name": "T97",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T97",
+        "COOR_ESTE": "5089172,455",
+        "COOR_NORTE": "2808610,262",
+        "SITIO": "T97",
+        "Comunidad": "Predio Sinu",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5089172,455",
+        "COOR_Y": "2808610,262",
+        "Text": "#N/A",
+        "ObjectID": "95"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.182546,
+          11.316148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00105",
+      "properties": {
+        "name": "T98",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T98",
+        "COOR_ESTE": "5088872,748",
+        "COOR_NORTE": "2808233,3138",
+        "SITIO": "T98",
+        "Comunidad": "Predio Sinu",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5088872,748",
+        "COOR_Y": "2808233,3138",
+        "Text": "#N/A",
+        "ObjectID": "96"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.185303,
+          11.312746
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00106",
+      "properties": {
+        "name": "T99",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T99",
+        "COOR_ESTE": "5088557,9339",
+        "COOR_NORTE": "2807837,3656",
+        "SITIO": "T99",
+        "Comunidad": "Predio Sinu",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5088557,9339",
+        "COOR_Y": "2807837,3656",
+        "Text": "#N/A",
+        "ObjectID": "97"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.188198,
+          11.309172
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00107",
+      "properties": {
+        "name": "T100",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T100",
+        "COOR_ESTE": "5088294,5442",
+        "COOR_NORTE": "2807506,0954",
+        "SITIO": "T100",
+        "Comunidad": "Guadalajara",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5088294,5442",
+        "COOR_Y": "2807506,0954",
+        "Text": "Guadalajara",
+        "ObjectID": "98"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.190621,
+          11.306182
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00108",
+      "properties": {
+        "name": "T101",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T101",
+        "COOR_ESTE": "5088069,6086",
+        "COOR_NORTE": "2807223,1923",
+        "SITIO": "T101",
+        "Comunidad": "Guadalajara",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5088069,6086",
+        "COOR_Y": "2807223,1923",
+        "Text": "Guadalajara",
+        "ObjectID": "99"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.19269,
+          11.303628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00109",
+      "properties": {
+        "name": "T102",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T102",
+        "COOR_ESTE": "5087755,3336",
+        "COOR_NORTE": "2806813,2232",
+        "SITIO": "T102",
+        "Comunidad": "Guadalajara",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5087755,3336",
+        "COOR_Y": "2806813,2232",
+        "Text": "Guadalajara",
+        "ObjectID": "100"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.195581,
+          11.299927
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00110",
+      "properties": {
+        "name": "T103",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T103",
+        "COOR_ESTE": "5087467,8481",
+        "COOR_NORTE": "2806438,2013",
+        "SITIO": "T103",
+        "Comunidad": "Predio Plegatos",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5087467,8481",
+        "COOR_Y": "2806438,2013",
+        "Text": "#N/A",
+        "ObjectID": "101"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.198226,
+          11.296542
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00111",
+      "properties": {
+        "name": "T104N",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T104N",
+        "COOR_ESTE": "5087208,0664",
+        "COOR_NORTE": "2806099,3213",
+        "SITIO": "T104N",
+        "Comunidad": "Predio Guasimalito",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5087208,0664",
+        "COOR_Y": "2806099,3213",
+        "Text": "#N/A",
+        "ObjectID": "102"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.200615,
+          11.293482
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00112",
+      "properties": {
+        "name": "T105",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T105",
+        "COOR_ESTE": "5086891,9845",
+        "COOR_NORTE": "2805686,999",
+        "SITIO": "T105",
+        "Comunidad": "Predio Guasimalito",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5086891,9845",
+        "COOR_Y": "2805686,999",
+        "Text": "#N/A",
+        "ObjectID": "103"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.203523,
+          11.28976
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00113",
+      "properties": {
+        "name": "T106",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T106",
+        "COOR_ESTE": "5086598,3284",
+        "COOR_NORTE": "2805303,9319",
+        "SITIO": "T106",
+        "Comunidad": "Predio Guasimalito",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5086598,3284",
+        "COOR_Y": "2805303,9319",
+        "Text": "#N/A",
+        "ObjectID": "104"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.206224,
+          11.286302
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00114",
+      "properties": {
+        "name": "T107",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T107",
+        "COOR_ESTE": "5086298,7219",
+        "COOR_NORTE": "2804913,1051",
+        "SITIO": "T107",
+        "Comunidad": "Predio Guasimalito",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5086298,7219",
+        "COOR_Y": "2804913,1051",
+        "Text": "#N/A",
+        "ObjectID": "105"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.208979,
+          11.282773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00115",
+      "properties": {
+        "name": "T116",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T116",
+        "COOR_ESTE": "5084187,1487",
+        "COOR_NORTE": "2801615,3409",
+        "SITIO": "T116",
+        "Comunidad": "Predio Adaluz",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5084187,1487",
+        "COOR_Y": "2801615,3409",
+        "Text": "#N/A",
+        "ObjectID": "116"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.228413,
+          11.252991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00116",
+      "properties": {
+        "name": "T117",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T117",
+        "COOR_ESTE": "5083962,0842",
+        "COOR_NORTE": "2801156,9598",
+        "SITIO": "T117",
+        "Comunidad": "Predio Adaluz",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5083962,0842",
+        "COOR_Y": "2801156,9598",
+        "Text": "#N/A",
+        "ObjectID": "117"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.230486,
+          11.248849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00117",
+      "properties": {
+        "name": "T118",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T118",
+        "COOR_ESTE": "5083753,951",
+        "COOR_NORTE": "2800733,062",
+        "SITIO": "T118",
+        "Comunidad": "Predio La Inmensidad",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5083753,951",
+        "COOR_Y": "2800733,062",
+        "Text": "#N/A",
+        "ObjectID": "118"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.232404,
+          11.245019
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00118",
+      "properties": {
+        "name": "T119N",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T119N",
+        "COOR_ESTE": "5083524,9776",
+        "COOR_NORTE": "2800266,7245",
+        "SITIO": "T119N",
+        "Comunidad": "Predio La Mina",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5083524,9776",
+        "COOR_Y": "2800266,7245",
+        "Text": "#N/A",
+        "ObjectID": "119"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.234513,
+          11.240806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00119",
+      "properties": {
+        "name": "T120",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T120",
+        "COOR_ESTE": "5083349,6651",
+        "COOR_NORTE": "2799909,6769",
+        "SITIO": "T120",
+        "Comunidad": "Predio La Mina",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5083349,6651",
+        "COOR_Y": "2799909,6769",
+        "Text": "#N/A",
+        "ObjectID": "120"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.236128,
+          11.23758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00120",
+      "properties": {
+        "name": "T121",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T121",
+        "COOR_ESTE": "5083249,9512",
+        "COOR_NORTE": "2799706,5973",
+        "SITIO": "T121",
+        "Comunidad": "Predio La Mina",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5083249,9512",
+        "COOR_Y": "2799706,5973",
+        "Text": "#N/A",
+        "ObjectID": "121"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.237047,
+          11.235745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00121",
+      "properties": {
+        "name": "T122",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T122",
+        "COOR_ESTE": "5083050,578",
+        "COOR_NORTE": "2799300,5481",
+        "SITIO": "T122",
+        "Comunidad": "Predio Las Perlas",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5083050,578",
+        "COOR_Y": "2799300,5481",
+        "Text": "#N/A",
+        "ObjectID": "122"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.238884,
+          11.232076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00122",
+      "properties": {
+        "name": "T123",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T123",
+        "COOR_ESTE": "5082905,4107",
+        "COOR_NORTE": "2799004,8985",
+        "SITIO": "T123",
+        "Comunidad": "Predio Las Perlas",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5082905,4107",
+        "COOR_Y": "2799004,8985",
+        "Text": "#N/A",
+        "ObjectID": "123"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.240221,
+          11.229405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00123",
+      "properties": {
+        "name": "T124",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T124",
+        "COOR_ESTE": "5082731,9137",
+        "COOR_NORTE": "2798651,5558",
+        "SITIO": "T124",
+        "Comunidad": "Predio Las Perlas",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5082731,9137",
+        "COOR_Y": "2798651,5558",
+        "Text": "#N/A",
+        "ObjectID": "124"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.241819,
+          11.226213
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00124",
+      "properties": {
+        "name": "T125",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T125",
+        "COOR_ESTE": "5082551,5152",
+        "COOR_NORTE": "2798284,1562",
+        "SITIO": "T125",
+        "Comunidad": "Predio Santa Martha",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5082551,5152",
+        "COOR_Y": "2798284,1562",
+        "Text": "#N/A",
+        "ObjectID": "125"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.243481,
+          11.222893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00125",
+      "properties": {
+        "name": "T126",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T126",
+        "COOR_ESTE": "5082286,1519",
+        "COOR_NORTE": "2797999,7635",
+        "SITIO": "T126",
+        "Comunidad": "Predio Santa Martha",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5082286,1519",
+        "COOR_Y": "2797999,7635",
+        "Text": "#N/A",
+        "ObjectID": "126"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.245919,
+          11.220326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00126",
+      "properties": {
+        "name": "T127",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T127",
+        "COOR_ESTE": "5081980,7965",
+        "COOR_NORTE": "2797672,5119",
+        "SITIO": "T127",
+        "Comunidad": "Predio Santa Martha",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5081980,7965",
+        "COOR_Y": "2797672,5119",
+        "Text": "#N/A",
+        "ObjectID": "127"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.248725,
+          11.217373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00127",
+      "properties": {
+        "name": "T128",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T128",
+        "COOR_ESTE": "5081611,3713",
+        "COOR_NORTE": "2797276,5976",
+        "SITIO": "T128",
+        "Comunidad": "Predio Santa Rosa 2",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5081611,3713",
+        "COOR_Y": "2797276,5976",
+        "Text": "#N/A",
+        "ObjectID": "128"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.25212,
+          11.2138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00128",
+      "properties": {
+        "name": "T129",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T129",
+        "COOR_ESTE": "5081345,4572",
+        "COOR_NORTE": "2796991,6177",
+        "SITIO": "T129",
+        "Comunidad": "Predio Santa Rosa 2",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5081345,4572",
+        "COOR_Y": "2796991,6177",
+        "Text": "#N/A",
+        "ObjectID": "129"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.254563,
+          11.211228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00129",
+      "properties": {
+        "name": "T130",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T130",
+        "COOR_ESTE": "5081094,6844",
+        "COOR_NORTE": "2796722,8657",
+        "SITIO": "T130",
+        "Comunidad": "Predio Villa Dolores",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5081094,6844",
+        "COOR_Y": "2796722,8657",
+        "Text": "#N/A",
+        "ObjectID": "130"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.256867,
+          11.208802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00130",
+      "properties": {
+        "name": "T131",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T131",
+        "COOR_ESTE": "5080770,9197",
+        "COOR_NORTE": "2796342,2513",
+        "SITIO": "T131",
+        "Comunidad": "Predio Noa Noa",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5080770,9197",
+        "COOR_Y": "2796342,2513",
+        "Text": "#N/A",
+        "ObjectID": "131"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.259842,
+          11.205366
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00131",
+      "properties": {
+        "name": "T132",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T132",
+        "COOR_ESTE": "5080475,8508",
+        "COOR_NORTE": "2795995,3727",
+        "SITIO": "T132",
+        "Comunidad": "Predio Noa Noa",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5080475,8508",
+        "COOR_Y": "2795995,3727",
+        "Text": "#N/A",
+        "ObjectID": "132"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.262554,
+          11.202235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00132",
+      "properties": {
+        "name": "T133",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T133",
+        "COOR_ESTE": "5080132,6742",
+        "COOR_NORTE": "2795591,9408",
+        "SITIO": "T133",
+        "Comunidad": "Predio Noa Noa",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5080132,6742",
+        "COOR_Y": "2795591,9408",
+        "Text": "#N/A",
+        "ObjectID": "133"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.265708,
+          11.198593
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00133",
+      "properties": {
+        "name": "T134",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T134",
+        "COOR_ESTE": "5079851,937",
+        "COOR_NORTE": "2795261,9127",
+        "SITIO": "T134",
+        "Comunidad": "Predio Noa Noa",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5079851,937",
+        "COOR_Y": "2795261,9127",
+        "Text": "#N/A",
+        "ObjectID": "134"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.268288,
+          11.195613
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00134",
+      "properties": {
+        "name": "T135N",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T135N",
+        "COOR_ESTE": "5079491,968",
+        "COOR_NORTE": "2794838,7449",
+        "SITIO": "T135N",
+        "Comunidad": "Predio Noa Noa",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5079491,968",
+        "COOR_Y": "2794838,7449",
+        "Text": "#N/A",
+        "ObjectID": "135"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.271596,
+          11.191793
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00135",
+      "properties": {
+        "name": "T136",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T136",
+        "COOR_ESTE": "5079207,0949",
+        "COOR_NORTE": "2794503,8565",
+        "SITIO": "T136",
+        "Comunidad": "YARITUAHA",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5079207,0949",
+        "COOR_Y": "2794503,8565",
+        "Text": "#N/A",
+        "ObjectID": "136"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.274213,
+          11.18877
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00136",
+      "properties": {
+        "name": "T137N",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T137N",
+        "COOR_ESTE": "5078881,1051",
+        "COOR_NORTE": "2794120,6354",
+        "SITIO": "T137N",
+        "Comunidad": "LOS REMEDIOS",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5078881,1051",
+        "COOR_Y": "2794120,6354",
+        "Text": "#N/A",
+        "ObjectID": "137"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.277209,
+          11.18531
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00137",
+      "properties": {
+        "name": "T138",
+        "TIPO_INFRA": "Torre",
+        "ID_INFRA_PT": "T138",
+        "COOR_ESTE": "5078704,1513",
+        "COOR_NORTE": "2793912,616",
+        "SITIO": "T138",
+        "Comunidad": "LOS REMEDIOS",
+        "AHUYENTAMIENTO DE FAUNA": "NO",
+        "DESPEJE TORRE": "0",
+        "EXCAVACIÓN": "0",
+        "SOLADO": "0",
+        "CIMENTACION": "0",
+        "ACERO DE REFUERZO": "0",
+        "CONCRETO": "0",
+        "RELLENO Y COMPACTACIÓN": "0",
+        "COOR_X": "5078704,1513",
+        "COOR_Y": "2793912,616",
+        "Text": "#N/A",
+        "ObjectID": "138"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.278835,
+          11.183432
+        ]
+      }
+    }
+  ]
+}

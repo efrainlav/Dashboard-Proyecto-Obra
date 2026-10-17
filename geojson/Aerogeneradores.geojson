@@ -1,0 +1,1516 @@
+{
+  "type": "FeatureCollection",
+  "name": "Aerogeneradores",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ID_00000",
+      "properties": {
+        "name": "WP1",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP1",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "Intervisible con Observador",
+        "COOR_ESTE": "5110348,2956",
+        "COOR_NORTE": "2843626,858",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.987315,
+          11.632306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00001",
+      "properties": {
+        "name": "WP2",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP2",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5110518,2125",
+        "COOR_NORTE": "2843227,279",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.985769,
+          11.628686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00002",
+      "properties": {
+        "name": "WP3",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP3",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5110212,9258",
+        "COOR_NORTE": "2842836,0442",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.988583,
+          11.625156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00003",
+      "properties": {
+        "name": "WP4",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP4",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5110409,8183",
+        "COOR_NORTE": "2842439,2802",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.986789,
+          11.621561
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00004",
+      "properties": {
+        "name": "WP5",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP5",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5109654,9162",
+        "COOR_NORTE": "2841007,8338",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.993762,
+          11.608637
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00005",
+      "properties": {
+        "name": "WP6",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP6",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5109377,6356",
+        "COOR_NORTE": "2840623,3757",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.996319,
+          11.605168
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00006",
+      "properties": {
+        "name": "WP8",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP8",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5108782,2662",
+        "COOR_NORTE": "2839444,4048",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.00182,
+          11.594522
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00007",
+      "properties": {
+        "name": "WP9",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP9",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5108601,5648",
+        "COOR_NORTE": "2839021,3264",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.003491,
+          11.5907
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00008",
+      "properties": {
+        "name": "WP14",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP14",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "Intervisible con Observador",
+        "COOR_ESTE": "5106569,9907",
+        "COOR_NORTE": "2835786,6055",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.022232,
+          11.561503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00009",
+      "properties": {
+        "name": "WP15",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP15",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "Intervisible con Observador",
+        "COOR_ESTE": "5106508,4534",
+        "COOR_NORTE": "2835411,6201",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.022808,
+          11.558113
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00010",
+      "properties": {
+        "name": "WP16",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP16",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5105467,8347",
+        "COOR_NORTE": "2836235,6526",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.032329,
+          11.565599
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00011",
+      "properties": {
+        "name": "WP18",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP18",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5105774,2999",
+        "COOR_NORTE": "2837081,2001",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.029491,
+          11.573238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00012",
+      "properties": {
+        "name": "WP19",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP19",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5107463,2141",
+        "COOR_NORTE": "2839289,9229",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.013927,
+          11.593166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00013",
+      "properties": {
+        "name": "WP20",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP20",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5107499,9096",
+        "COOR_NORTE": "2839681,0551",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.013578,
+          11.596703
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00014",
+      "properties": {
+        "name": "WP22",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP22",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "Intervisible con Observador",
+        "COOR_ESTE": "5107781,3434",
+        "COOR_NORTE": "2840513,7881",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.010969,
+          11.604227
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00015",
+      "properties": {
+        "name": "WP23",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP23",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "Intervisible con Observador",
+        "COOR_ESTE": "5108125,9209",
+        "COOR_NORTE": "2841098,4558",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.007789,
+          11.609505
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00016",
+      "properties": {
+        "name": "WP24",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP24",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5107626,6744",
+        "COOR_NORTE": "2841520,3261",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.012356,
+          11.613337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00017",
+      "properties": {
+        "name": "WP25",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP25",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "Intervisible con Observador",
+        "COOR_ESTE": "5108654,21",
+        "COOR_NORTE": "2842106,1746",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.002909,
+          11.618604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00018",
+      "properties": {
+        "name": "WP26",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP26",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5108635,9184",
+        "COOR_NORTE": "2842486,7151",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.003064,
+          11.622047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00019",
+      "properties": {
+        "name": "WP27",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP27",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5108627,691",
+        "COOR_NORTE": "2842878,1577",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.003127,
+          11.625588
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00020",
+      "properties": {
+        "name": "WP28",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP28",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5108667,66",
+        "COOR_NORTE": "2843308,207",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.002747,
+          11.629477
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00021",
+      "properties": {
+        "name": "WP29",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP29",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "Intervisible con Observador",
+        "COOR_ESTE": "5109261,792",
+        "COOR_NORTE": "2844023,9068",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.997272,
+          11.635932
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00022",
+      "properties": {
+        "name": "WP30",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP30",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "Intervisible con Observador",
+        "COOR_ESTE": "5109319,546",
+        "COOR_NORTE": "2844425,8755",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.996729,
+          11.639567
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00023",
+      "properties": {
+        "name": "WP31",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP31",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "Intervisible con observador 31",
+        "COOR_ESTE": "5109467,2299",
+        "COOR_NORTE": "2844838,1893",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.99536,
+          11.643292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00024",
+      "properties": {
+        "name": "WP32",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP32",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5108060,6432",
+        "COOR_NORTE": "2845154,6385",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.008258,
+          11.646199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00025",
+      "properties": {
+        "name": "WP33",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP33",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5107824,9973",
+        "COOR_NORTE": "2844727,9644",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.010434,
+          11.642347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00026",
+      "properties": {
+        "name": "WP34",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP34",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5107724,2093",
+        "COOR_NORTE": "2844311,3133",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.011372,
+          11.638581
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00027",
+      "properties": {
+        "name": "WP35",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP35",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "Intervisible con Observador",
+        "COOR_ESTE": "5107780,4517",
+        "COOR_NORTE": "2843932,508",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.010868,
+          11.635152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00028",
+      "properties": {
+        "name": "WP39",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP39",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5105686,667",
+        "COOR_NORTE": "2841946,334",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.030143,
+          11.617251
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00029",
+      "properties": {
+        "name": "WP40",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP40",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "Intervisible con Observador",
+        "COOR_ESTE": "5105567,9627",
+        "COOR_NORTE": "2841536,8074",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.031246,
+          11.61355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00030",
+      "properties": {
+        "name": "WP41",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP41",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "Intervisible con Observador",
+        "COOR_ESTE": "5105717,6947",
+        "COOR_NORTE": "2840964,6301",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.02989,
+          11.60837
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00031",
+      "properties": {
+        "name": "WP42",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP42",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5106093,837",
+        "COOR_NORTE": "2840355,9169",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.026457,
+          11.602852
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00032",
+      "properties": {
+        "name": "WP44",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP44",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5103469,4064",
+        "COOR_NORTE": "2838728,8757",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.050587,
+          11.588213
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00033",
+      "properties": {
+        "name": "WP45",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP45",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5103348,5163",
+        "COOR_NORTE": "2838291,3864",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.05171,
+          11.58426
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00034",
+      "properties": {
+        "name": "WP46",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP46",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5103243,7692",
+        "COOR_NORTE": "2837878,7581",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.052683,
+          11.58053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00035",
+      "properties": {
+        "name": "WP47",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP47",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5103253,9261",
+        "COOR_NORTE": "2837475,2999",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.052602,
+          11.57688
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00036",
+      "properties": {
+        "name": "WP48",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP48",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5103214,0844",
+        "COOR_NORTE": "2837062,202",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.05298,
+          11.573144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00037",
+      "properties": {
+        "name": "WP49",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP49",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5103329,3118",
+        "COOR_NORTE": "2836692,9638",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.051935,
+          11.569801
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00038",
+      "properties": {
+        "name": "WP50",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP50",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "Intervisible con Observador",
+        "COOR_ESTE": "5103637,1285",
+        "COOR_NORTE": "2836306,3914",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.049122,
+          11.566295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00039",
+      "properties": {
+        "name": "WP52",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP52",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5104141,7325",
+        "COOR_NORTE": "2835646,8556",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.044513,
+          11.560313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00040",
+      "properties": {
+        "name": "WP53",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP53",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5104538,4711",
+        "COOR_NORTE": "2835267,6518",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.040885,
+          11.556871
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00041",
+      "properties": {
+        "name": "TM2_",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Torre de Medición",
+        "ID_INFRA_PT": "TM2_",
+        "CARACTER": "Torres de medición propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "Torre de monitoreo de variables metereológicas",
+        "COOR_ESTE": "5106129,5237",
+        "COOR_NORTE": "2837128,8526",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.026231,
+          11.573659
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00042",
+      "properties": {
+        "name": "TM1_",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Torre de Medición",
+        "ID_INFRA_PT": "TM1_",
+        "CARACTER": "Torres de medición propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "Torre de monitoreo de variables metereológicas",
+        "COOR_ESTE": "5106782,0939",
+        "COOR_NORTE": "2835563,5421",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.020293,
+          11.559479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00043",
+      "properties": {
+        "name": "WP36",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP36",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "Intervisible con Observador",
+        "COOR_ESTE": "5106887,2559",
+        "COOR_NORTE": "2843426,5976",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.01908,
+          11.630604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00044",
+      "properties": {
+        "name": "WP37",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP37",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "Intervisible con Observador",
+        "COOR_ESTE": "5107000,2411",
+        "COOR_NORTE": "2842881,6362",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.018061,
+          11.625671
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00045",
+      "properties": {
+        "name": "WP38",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP38",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5106898,5054",
+        "COOR_NORTE": "2842471,984",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.019007,
+          11.621968
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00046",
+      "properties": {
+        "name": "WP43",
+        "EXPEDIENTE": "LAV0029-00-2019",
+        "OPERADOR": "WIND AUTOGENERACIÓN S.A.S.",
+        "PROYECTO": "PARQUE EÓLICO WINDPESHI",
+        "NUM_ACT_AD": "00261",
+        "FEC_ACT_AD": "13/02/2020",
+        "ART_ACT_AD": "Articulo primero",
+        "TIPO_INFRA": "Aerogenerador",
+        "ID_INFRA_PT": "WP43",
+        "CARACTER": "Aerogeneradores Propuestos",
+        "ESTADO": "502",
+        "ADECUACION": "<Null>",
+        "TIPO_ADEC": "<Null>",
+        "CALIDAD": "<Null>",
+        "REQU_OCUP": "<Null>",
+        "OBSERV": "<Null>",
+        "COOR_ESTE": "5104524,6608",
+        "COOR_NORTE": "2840414,8761",
+        "GRUPO": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.040853,
+          11.603433
+        ]
+      }
+    }
+  ]
+}

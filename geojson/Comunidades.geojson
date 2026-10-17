@@ -1,0 +1,3062 @@
+{
+  "type": "FeatureCollection",
+  "name": "Comunidades",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ID_00000",
+      "properties": {
+        "name": "Maashumana Wane",
+        "Name": "Maashumana Wane",
+        "Semaforo": "Verde",
+        "Parque": "Parque",
+        "DP": "0",
+        "Lat": "11,5841090531018",
+        "Lon": "<Null>",
+        "Longitud": "-72,021311",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.021311,
+          11.584109
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00001",
+      "properties": {
+        "name": "Jamucherra",
+        "Name": "Jamucherra",
+        "Semaforo": "Verde",
+        "Parque": "Parque",
+        "DP": "0",
+        "Lat": "11,6401275306807",
+        "Lon": "<Null>",
+        "Longitud": "-72,003431",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.003431,
+          11.640128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00002",
+      "properties": {
+        "name": "Cañaveral",
+        "Name": "Cañaveral",
+        "Semaforo": "Verde",
+        "Parque": "Parque",
+        "DP": "0",
+        "Lat": "11,6011821251997",
+        "Lon": "<Null>",
+        "Longitud": "-72,034687",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.034687,
+          11.601182
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00003",
+      "properties": {
+        "name": "Mashuamana",
+        "Name": "Mashuamana",
+        "Semaforo": "Verde",
+        "Parque": "Parque-Linea",
+        "DP": "0",
+        "Lat": "11,5856104876624",
+        "Lon": "<Null>",
+        "Longitud": "-72,010723",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.010723,
+          11.58561
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00004",
+      "properties": {
+        "name": "Jaika Kalinchon",
+        "Name": "Jaika Kalinchon",
+        "Semaforo": "Verde",
+        "Parque": "Parque",
+        "DP": "0",
+        "Lat": "11,6442685386104",
+        "Lon": "<Null>",
+        "Longitud": "-72,023226",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.023226,
+          11.644269
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00005",
+      "properties": {
+        "name": "Paliyawain",
+        "Name": "Paliyawain",
+        "Semaforo": "Verde",
+        "Parque": "Parque",
+        "DP": "0",
+        "Lat": "11,6283714184753",
+        "Lon": "<Null>",
+        "Longitud": "-71,993364",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.993364,
+          11.628371
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00006",
+      "properties": {
+        "name": "Matajuna",
+        "Name": "Matajuna",
+        "Semaforo": "Verde",
+        "Parque": "Parque",
+        "DP": "0",
+        "Lat": "11,6446241412096",
+        "Lon": "<Null>",
+        "Longitud": "-71,973294",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.973294,
+          11.644624
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00007",
+      "properties": {
+        "name": "Patajatamana",
+        "Name": "Patajatamana",
+        "Semaforo": "Amarrillo",
+        "Parque": "Parque",
+        "DP": "0",
+        "Lat": "11,6157171960557",
+        "Lon": "<Null>",
+        "Longitud": "-71,998278",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.998278,
+          11.615717
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00008",
+      "properties": {
+        "name": "Kalinchon",
+        "Name": "Kalinchon",
+        "Semaforo": "Verde",
+        "Parque": "Parque",
+        "DP": "0",
+        "Lat": "11,6136034322239",
+        "Lon": "<Null>",
+        "Longitud": "-72,024182",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.024182,
+          11.613603
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00009",
+      "properties": {
+        "name": "Romana",
+        "Name": "Romana",
+        "Semaforo": "Amarrillo",
+        "Parque": "Parque-Linea",
+        "DP": "0",
+        "Lat": "11,5577868384114",
+        "Lon": "<Null>",
+        "Longitud": "-72,05601",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.05601,
+          11.557787
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00010",
+      "properties": {
+        "name": "Wimpeshi",
+        "Name": "Wimpeshi",
+        "Semaforo": "Verde",
+        "Parque": "Parque-Linea",
+        "DP": "0",
+        "Lat": "11,5535035201403",
+        "Lon": "<Null>",
+        "Longitud": "-72,034528",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.034528,
+          11.553504
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00011",
+      "properties": {
+        "name": "Kamushipa",
+        "Name": "Kamushipa",
+        "Semaforo": "Verde",
+        "Parque": "Parque-Linea",
+        "DP": "0",
+        "Lat": "11,5657927921044",
+        "Lon": "<Null>",
+        "Longitud": "-72,027555",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.027555,
+          11.565793
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00012",
+      "properties": {
+        "name": "Flor de la Frontera",
+        "Name": "Flor de la Frontera",
+        "Semaforo": "Verde",
+        "Parque": "Parque-Linea",
+        "DP": "0",
+        "Lat": "11,565019184239",
+        "Lon": "<Null>",
+        "Longitud": "-72,016558",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.016558,
+          11.565019
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00013",
+      "properties": {
+        "name": "Utkap",
+        "Name": "Utkap",
+        "Semaforo": "Verde",
+        "Parque": "Parque-Linea",
+        "DP": "0",
+        "Lat": "11,6017004222338",
+        "Lon": "<Null>",
+        "Longitud": "-72,006276",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.006276,
+          11.6017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00014",
+      "properties": {
+        "name": "Yotojoroin",
+        "Name": "Yotojoroin",
+        "Semaforo": "Verde",
+        "Parque": "Parque-Linea",
+        "DP": "0",
+        "Lat": "11,5926479512861",
+        "Lon": "<Null>",
+        "Longitud": "-72,026134",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.026134,
+          11.592648
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00015",
+      "properties": {
+        "name": "Pioreka",
+        "Name": "Pioreka",
+        "Semaforo": "Verde",
+        "Parque": "Parque-Linea",
+        "DP": "0",
+        "Lat": "11,5265495311687",
+        "Lon": "<Null>",
+        "Longitud": "-72,102172",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.102172,
+          11.52655
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00016",
+      "properties": {
+        "name": "Amalipa",
+        "Name": "Amalipa",
+        "Semaforo": "Amarrillo",
+        "Parque": "Parque-Linea",
+        "DP": "0",
+        "Lat": "11,5301837790944",
+        "Lon": "<Null>",
+        "Longitud": "-72,074603",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.074603,
+          11.530184
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00017",
+      "properties": {
+        "name": "Pajakat",
+        "Name": "Pajakat",
+        "Semaforo": "Verde",
+        "Parque": "Parque-Linea",
+        "DP": "0",
+        "Lat": "11,548470766214",
+        "Lon": "<Null>",
+        "Longitud": "-72,094371",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "2",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.094371,
+          11.548471
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00018",
+      "properties": {
+        "name": "Kijotchon",
+        "Name": "Kijotchon",
+        "Semaforo": "Verde",
+        "Parque": "Parque-Linea",
+        "DP": "0",
+        "Lat": "11,5483036519131",
+        "Lon": "<Null>",
+        "Longitud": "-72,079757",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.079757,
+          11.548304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00019",
+      "properties": {
+        "name": "Kamushipa",
+        "Name": "Kamushipa",
+        "Semaforo": "Verde",
+        "Parque": "Parque-Linea",
+        "DP": "0",
+        "Lat": "11,5629400099551",
+        "Lon": "<Null>",
+        "Longitud": "-72,011366",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.011366,
+          11.56294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00020",
+      "properties": {
+        "name": "Matnajuyaii",
+        "Name": "Matnajuyaii",
+        "Semaforo": "Verde",
+        "Parque": "Parque",
+        "DP": "0",
+        "Lat": "11,6367726002288",
+        "Lon": "<Null>",
+        "Longitud": "-71,991269",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.991269,
+          11.636773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00021",
+      "properties": {
+        "name": "Casa Autoridad Toloira",
+        "Name": "Casa Autoridad Toloira",
+        "Semaforo": "Verde",
+        "Parque": "Parque-Linea",
+        "DP": "0",
+        "Lat": "11,4950691800142",
+        "Lon": "<Null>",
+        "Longitud": "-72,161251",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.161251,
+          11.495069
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00022",
+      "properties": {
+        "name": "Jununtao",
+        "Name": "Jununtao",
+        "Semaforo": "Verde",
+        "Parque": "Parque-Linea",
+        "DP": "0",
+        "Lat": "11,4819195731097",
+        "Lon": "<Null>",
+        "Longitud": "-72,124098",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.124098,
+          11.48192
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00023",
+      "properties": {
+        "name": "Sirruma",
+        "Name": "Sirruma",
+        "Semaforo": "Verde",
+        "Parque": "Parque-Linea",
+        "DP": "0",
+        "Lat": "11,4699046297769",
+        "Lon": "<Null>",
+        "Longitud": "-72,109348",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.109348,
+          11.469905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00024",
+      "properties": {
+        "name": "Corralito",
+        "Name": "Corralito",
+        "Semaforo": "Verde",
+        "Parque": "Parque-Linea",
+        "DP": "0",
+        "Lat": "11,4570069220647",
+        "Lon": "<Null>",
+        "Longitud": "-72,140486",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.140486,
+          11.457007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00025",
+      "properties": {
+        "name": "Sabana Larga",
+        "Name": "Sabana Larga",
+        "Semaforo": "Verde",
+        "Parque": "Parque-Linea",
+        "DP": "0",
+        "Lat": "11,4267152111357",
+        "Lon": "<Null>",
+        "Longitud": "-72,12374",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.12374,
+          11.426715
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00026",
+      "properties": {
+        "name": "Siboru",
+        "Name": "Siboru",
+        "Semaforo": "Amarrillo",
+        "Parque": "Parque-Linea",
+        "DP": "0",
+        "Lat": "11,4145047330955",
+        "Lon": "<Null>",
+        "Longitud": "-72,131932",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.131932,
+          11.414505
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00027",
+      "properties": {
+        "name": "San Luis",
+        "Name": "San Luis",
+        "Semaforo": "Verde",
+        "Parque": "Parque-Linea",
+        "DP": "0",
+        "Lat": "11,4018836780549",
+        "Lon": "<Null>",
+        "Longitud": "-72,125714",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.125714,
+          11.401884
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00028",
+      "properties": {
+        "name": "Chuluita",
+        "Name": "Chuluita",
+        "Semaforo": "Verde",
+        "Parque": "Parque-Linea",
+        "DP": "0",
+        "Lat": "11,3851465603581",
+        "Lon": "<Null>",
+        "Longitud": "-72,130442",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.130442,
+          11.385147
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00029",
+      "properties": {
+        "name": "Urraichipa",
+        "Name": "Urraichipa",
+        "Semaforo": "Verde",
+        "Parque": "Parque-Linea",
+        "DP": "0",
+        "Lat": "11,3740109104386",
+        "Lon": "<Null>",
+        "Longitud": "-72,150832",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.150832,
+          11.374011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00030",
+      "properties": {
+        "name": "Jaipaichon",
+        "Name": "Jaipaichon",
+        "Semaforo": "Verde",
+        "Parque": "Parque-Linea",
+        "DP": "0",
+        "Lat": "11,3724081580699",
+        "Lon": "<Null>",
+        "Longitud": "-72,15028",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.15028,
+          11.372408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00031",
+      "properties": {
+        "name": "Santa Lucia",
+        "Name": "Santa Lucia",
+        "Semaforo": "Verde",
+        "Parque": "Parque-Linea",
+        "DP": "0",
+        "Lat": "11,3155814263177",
+        "Lon": "<Null>",
+        "Longitud": "-72,194757",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.194757,
+          11.315581
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00032",
+      "properties": {
+        "name": "Guadalajara",
+        "Name": "Guadalajara",
+        "Semaforo": "Verde",
+        "Parque": "Parque-Linea",
+        "DP": "0",
+        "Lat": "11,3007250000182",
+        "Lon": "<Null>",
+        "Longitud": "-72,19368",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.19368,
+          11.300725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00033",
+      "properties": {
+        "name": "Aritepchon",
+        "Name": "Aritepchon",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6016165985329",
+        "Lon": "<Null>",
+        "Longitud": "-72,101872",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.101872,
+          11.601617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00034",
+      "properties": {
+        "name": "Yatapchi",
+        "Name": "Yatapchi",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6209465951973",
+        "Lon": "<Null>",
+        "Longitud": "-72,114694",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.114694,
+          11.620947
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00035",
+      "properties": {
+        "name": "Kurrura",
+        "Name": "Kurrura",
+        "Semaforo": "Rojo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6439084041016",
+        "Lon": "<Null>",
+        "Longitud": "-72,121719",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.121719,
+          11.643908
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00036",
+      "properties": {
+        "name": "Mantapa",
+        "Name": "Mantapa",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,63946762534",
+        "Lon": "<Null>",
+        "Longitud": "-72,164801",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.164801,
+          11.639468
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00037",
+      "properties": {
+        "name": "Matnashon",
+        "Name": "Matnashon",
+        "Semaforo": "Rojo",
+        "Parque": "Via",
+        "DP": "1",
+        "Lat": "11,6805270734234",
+        "Lon": "<Null>",
+        "Longitud": "-72,238301",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "2",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.238301,
+          11.680527
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00038",
+      "properties": {
+        "name": "Kurrarirain",
+        "Name": "Kurrarirain",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6023215381443",
+        "Lon": "<Null>",
+        "Longitud": "-72,077219",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.077219,
+          11.602322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00039",
+      "properties": {
+        "name": "Kaichirin",
+        "Name": "Kaichirin",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,5938771694195",
+        "Lon": "<Null>",
+        "Longitud": "-72,097064",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.097064,
+          11.593877
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00040",
+      "properties": {
+        "name": "Tewou",
+        "Name": "Tewou",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6160749063795",
+        "Lon": "<Null>",
+        "Longitud": "-72,143938",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.143938,
+          11.616075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00041",
+      "properties": {
+        "name": "Walawalao",
+        "Name": "Walawalao",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6637550003821",
+        "Lon": "<Null>",
+        "Longitud": "-72,183299",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.183299,
+          11.663755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00042",
+      "properties": {
+        "name": "Media Luna",
+        "Name": "Media Luna",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6635559996723",
+        "Lon": "<Null>",
+        "Longitud": "-72,181874",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.181874,
+          11.663556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00043",
+      "properties": {
+        "name": "Olopa",
+        "Name": "Olopa",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6691719998188",
+        "Lon": "<Null>",
+        "Longitud": "-72,22399",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.22399,
+          11.669172
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00044",
+      "properties": {
+        "name": "Walakali II",
+        "Name": "Walakali II",
+        "Semaforo": "Rojo",
+        "Parque": "Via",
+        "DP": "1",
+        "Lat": "11,682106000056",
+        "Lon": "<Null>",
+        "Longitud": "-72,220812",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "2",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.220812,
+          11.682106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00045",
+      "properties": {
+        "name": "Walakaly I",
+        "Name": "Walakaly I",
+        "Semaforo": "Rojo",
+        "Parque": "Via",
+        "DP": "1",
+        "Lat": "11,6859669996631",
+        "Lon": "<Null>",
+        "Longitud": "-72,225148",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "2",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.225148,
+          11.685967
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00046",
+      "properties": {
+        "name": "Jololo",
+        "Name": "Jololo",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6999619996918",
+        "Lon": "<Null>",
+        "Longitud": "-72,234851",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.234851,
+          11.699962
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00047",
+      "properties": {
+        "name": "Chichankat",
+        "Name": "Chichankat",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6905920000018",
+        "Lon": "<Null>",
+        "Longitud": "-72,234716",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.240247,
+          11.686361
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00048",
+      "properties": {
+        "name": "Karraisirra",
+        "Name": "Karraisirra",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,697295999998",
+        "Lon": "<Null>",
+        "Longitud": "-72,250158",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "2",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.250208,
+          11.697206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00049",
+      "properties": {
+        "name": "Palishiteimana",
+        "Name": "Palishiteimana",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,693547000224",
+        "Lon": "<Null>",
+        "Longitud": "-72,26268",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.26268,
+          11.693547
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00050",
+      "properties": {
+        "name": "Pájaro-2 / Isashi",
+        "Name": "Pájaro-2 / Isashi",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6096111112979",
+        "Lon": "<Null>",
+        "Longitud": "-72,089583",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.089583,
+          11.609611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00051",
+      "properties": {
+        "name": "Suchiwaralu",
+        "Name": "Suchiwaralu",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6916000002371",
+        "Lon": "<Null>",
+        "Longitud": "-72,2577",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.2577,
+          11.6916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00052",
+      "properties": {
+        "name": "Jasaichon",
+        "Name": "Jasaichon",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6901388887918",
+        "Lon": "<Null>",
+        "Longitud": "-72,276694",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.276694,
+          11.690139
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00053",
+      "properties": {
+        "name": "Pololima",
+        "Name": "Pololima",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6320733608371",
+        "Lon": "<Null>",
+        "Longitud": "-72,104773",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.104773,
+          11.632073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00054",
+      "properties": {
+        "name": "Petsupa",
+        "Name": "Petsupa",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,7031111110395",
+        "Lon": "<Null>",
+        "Longitud": "-72,266556",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.266556,
+          11.703111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00055",
+      "properties": {
+        "name": "Walijio",
+        "Name": "Walijio",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,7031666656354",
+        "Lon": "<Null>",
+        "Longitud": "-72,260194",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.260194,
+          11.703167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00056",
+      "properties": {
+        "name": "Aritepchon-Manzanita",
+        "Name": "Aritepchon-Manzanita",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6051573798075",
+        "Lon": "<Null>",
+        "Longitud": "-72,107227",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.107227,
+          11.605157
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00057",
+      "properties": {
+        "name": "Mantara",
+        "Name": "Mantara",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,645555554886",
+        "Lon": "<Null>",
+        "Longitud": "-72,172583",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.172583,
+          11.645556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00058",
+      "properties": {
+        "name": "San Luis",
+        "Name": "San Luis",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,5680833329204",
+        "Lon": "<Null>",
+        "Longitud": "-72,106639",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.106639,
+          11.568083
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00059",
+      "properties": {
+        "name": "Potcho /Potchi",
+        "Name": "Potcho /Potchi",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6562222224444",
+        "Lon": "<Null>",
+        "Longitud": "-72,181806",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.181806,
+          11.656222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00060",
+      "properties": {
+        "name": "Jololo",
+        "Name": "Jololo",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6974863234241",
+        "Lon": "<Null>",
+        "Longitud": "-72,23297",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.23297,
+          11.697486
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00061",
+      "properties": {
+        "name": "Tewou",
+        "Name": "Tewou",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6153333333372",
+        "Lon": "<Null>",
+        "Longitud": "-72,146167",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.146167,
+          11.615333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00062",
+      "properties": {
+        "name": "Mannachon",
+        "Name": "Mannachon",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6743611104333",
+        "Lon": "<Null>",
+        "Longitud": "-72,229361",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.229361,
+          11.674361
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00063",
+      "properties": {
+        "name": "Yatashi",
+        "Name": "Yatashi",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6145489853495",
+        "Lon": "<Null>",
+        "Longitud": "-72,106058",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.106058,
+          11.614549
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00064",
+      "properties": {
+        "name": "Jurula Paraiso",
+        "Name": "Jurula Paraiso",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6408425971496",
+        "Lon": "<Null>",
+        "Longitud": "-72,129745",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.129745,
+          11.640843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00065",
+      "properties": {
+        "name": "Jemechi / Jemema",
+        "Name": "Jemechi / Jemema",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6463678030825",
+        "Lon": "<Null>",
+        "Longitud": "-72,179902",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.179902,
+          11.646368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00066",
+      "properties": {
+        "name": "Mannapaz",
+        "Name": "Mannapaz",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6192862412333",
+        "Lon": "<Null>",
+        "Longitud": "-72,094157",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.094157,
+          11.619286
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00067",
+      "properties": {
+        "name": "Mantapa",
+        "Name": "Mantapa",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6437881090866",
+        "Lon": "<Null>",
+        "Longitud": "-72,160365",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.160365,
+          11.643788
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00068",
+      "properties": {
+        "name": "Petsuapa",
+        "Name": "Petsuapa",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,7017450518707",
+        "Lon": "<Null>",
+        "Longitud": "-72,259667",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.259667,
+          11.701745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00069",
+      "properties": {
+        "name": "Petsuapa",
+        "Name": "Petsuapa",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,702640271445",
+        "Lon": "<Null>",
+        "Longitud": "-72,257288",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.257288,
+          11.70264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00070",
+      "properties": {
+        "name": "Petsuapa",
+        "Name": "Petsuapa",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,7009518722056",
+        "Lon": "<Null>",
+        "Longitud": "-72,252566",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.252566,
+          11.700952
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00071",
+      "properties": {
+        "name": "Petsuapa",
+        "Name": "Petsuapa",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6999466351545",
+        "Lon": "<Null>",
+        "Longitud": "-72,257285",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.257285,
+          11.699947
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00072",
+      "properties": {
+        "name": "Jololo",
+        "Name": "Jololo",
+        "Semaforo": "Rojo",
+        "Parque": "Via",
+        "DP": "1",
+        "Lat": "11,7008663841533",
+        "Lon": "<Null>",
+        "Longitud": "-72,234923",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.234923,
+          11.700866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00073",
+      "properties": {
+        "name": "Jololo",
+        "Name": "Jololo",
+        "Semaforo": "Rojo",
+        "Parque": "Via",
+        "DP": "1",
+        "Lat": "11,7009790323541",
+        "Lon": "<Null>",
+        "Longitud": "-72,233885",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.233885,
+          11.700979
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00074",
+      "properties": {
+        "name": "Joloushen",
+        "Name": "Joloushen",
+        "Semaforo": "Rojo",
+        "Parque": "Via",
+        "DP": "1",
+        "Lat": "11,6795192866684",
+        "Lon": "<Null>",
+        "Longitud": "-72,217161",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "2",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.217161,
+          11.679519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00075",
+      "properties": {
+        "name": "Joloushen",
+        "Name": "Joloushen",
+        "Semaforo": "Rojo",
+        "Parque": "Via",
+        "DP": "1",
+        "Lat": "11,6758655172434",
+        "Lon": "<Null>",
+        "Longitud": "-72,217243",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "2",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.217243,
+          11.675866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00076",
+      "properties": {
+        "name": "Manantial de Vida",
+        "Name": "Manantial de Vida",
+        "Semaforo": "Rojo",
+        "Parque": "Via",
+        "DP": "1",
+        "Lat": "11,6744251475886",
+        "Lon": "<Null>",
+        "Longitud": "-72,2071",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "2",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.2071,
+          11.674425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00077",
+      "properties": {
+        "name": "Joloushen",
+        "Name": "Joloushen",
+        "Semaforo": "Rojo",
+        "Parque": "Via",
+        "DP": "1",
+        "Lat": "11,6708752273536",
+        "Lon": "<Null>",
+        "Longitud": "-72,215784",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "2",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.215784,
+          11.670875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00078",
+      "properties": {
+        "name": "Manantial de Vida",
+        "Name": "Manantial de Vida",
+        "Semaforo": "Rojo",
+        "Parque": "Via",
+        "DP": "1",
+        "Lat": "11,6664160590154",
+        "Lon": "<Null>",
+        "Longitud": "-72,202253",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "2",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.202253,
+          11.666416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00079",
+      "properties": {
+        "name": "Potcho /Potchi",
+        "Name": "Potcho /Potchi",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6515249538915",
+        "Lon": "<Null>",
+        "Longitud": "-72,179899",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.179899,
+          11.651525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00080",
+      "properties": {
+        "name": "Mantapa",
+        "Name": "Mantapa",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,640011790604",
+        "Lon": "<Null>",
+        "Longitud": "-72,165825",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.165825,
+          11.640012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00081",
+      "properties": {
+        "name": "Franelamana",
+        "Name": "Franelamana",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6402749225601",
+        "Lon": "<Null>",
+        "Longitud": "-72,148924",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.148924,
+          11.640275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00082",
+      "properties": {
+        "name": "Jurula Paraiso",
+        "Name": "Jurula Paraiso",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,622753909782",
+        "Lon": "<Null>",
+        "Longitud": "-72,138207",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.138207,
+          11.622754
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00083",
+      "properties": {
+        "name": "Tewou",
+        "Name": "Tewou",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6176149048661",
+        "Lon": "<Null>",
+        "Longitud": "-72,143162",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.143162,
+          11.617615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00084",
+      "properties": {
+        "name": "Yatapchi",
+        "Name": "Yatapchi",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6179214371866",
+        "Lon": "<Null>",
+        "Longitud": "-72,117727",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.117727,
+          11.617921
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00085",
+      "properties": {
+        "name": "Majayut",
+        "Name": "Majayut",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6064173761742",
+        "Lon": "<Null>",
+        "Longitud": "-72,124379",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.124379,
+          11.606417
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00086",
+      "properties": {
+        "name": "Aritepchon-Manzanita",
+        "Name": "Aritepchon-Manzanita",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6089950427957",
+        "Lon": "<Null>",
+        "Longitud": "-72,104117",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.104117,
+          11.608995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00087",
+      "properties": {
+        "name": "Manzanita",
+        "Name": "Manzanita",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6018123347466",
+        "Lon": "<Null>",
+        "Longitud": "-72,108334",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.108334,
+          11.601812
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00088",
+      "properties": {
+        "name": "Aritepchon",
+        "Name": "Aritepchon",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6013368270306",
+        "Lon": "<Null>",
+        "Longitud": "-72,100032",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.100032,
+          11.601337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00089",
+      "properties": {
+        "name": "Kijotchon",
+        "Name": "Kijotchon",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,588646500047",
+        "Lon": "<Null>",
+        "Longitud": "-72,07981",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.07981,
+          11.588647
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00090",
+      "properties": {
+        "name": "Kurrarirain",
+        "Name": "Kurrarirain",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,591621164773",
+        "Lon": "<Null>",
+        "Longitud": "-72,076968",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.076968,
+          11.591621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00091",
+      "properties": {
+        "name": "Kurrarirain",
+        "Name": "Kurrarirain",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,5857364248182",
+        "Lon": "<Null>",
+        "Longitud": "-72,067111",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.067111,
+          11.585736
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00092",
+      "properties": {
+        "name": "Kijotchon",
+        "Name": "Kijotchon",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,5815603448018",
+        "Lon": "<Null>",
+        "Longitud": "-72,067835",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.067835,
+          11.58156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00093",
+      "properties": {
+        "name": "Romana",
+        "Name": "Romana",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,5768766673911",
+        "Lon": "<Null>",
+        "Longitud": "-72,051237",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.051237,
+          11.576877
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00094",
+      "properties": {
+        "name": "Romana",
+        "Name": "Romana",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,5774519393861",
+        "Lon": "<Null>",
+        "Longitud": "-72,06095",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.06095,
+          11.577452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00095",
+      "properties": {
+        "name": "Romana",
+        "Name": "Romana",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,5736910117546",
+        "Lon": "<Null>",
+        "Longitud": "-72,054055",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.054055,
+          11.573691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00096",
+      "properties": {
+        "name": "Julapa - Romana",
+        "Name": "Julapa - Romana",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,5830204777288",
+        "Lon": "<Null>",
+        "Longitud": "-72,060964",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.060964,
+          11.58302
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00097",
+      "properties": {
+        "name": "Ousinalu",
+        "Name": "Ousinalu",
+        "Semaforo": "Rojo",
+        "Parque": "Via",
+        "DP": "1",
+        "Lat": "11,6931361108748",
+        "Lon": "<Null>",
+        "Longitud": "-72,158743",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "2",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.158743,
+          11.693136
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00098",
+      "properties": {
+        "name": "Mapuain",
+        "Name": "Mapuain",
+        "Semaforo": "Rojo",
+        "Parque": "Fuera",
+        "DP": "1",
+        "Lat": "11,5161938891091",
+        "Lon": "<Null>",
+        "Longitud": "-72,168167",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "2",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.168167,
+          11.516194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00099",
+      "properties": {
+        "name": "Yolujapien",
+        "Name": "Yolujapien",
+        "Semaforo": "Rojo",
+        "Parque": "Via",
+        "DP": "1",
+        "Lat": "11,8299569443858",
+        "Lon": "<Null>",
+        "Longitud": "-72,309506",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "2",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.220034,
+          11.672415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00100",
+      "properties": {
+        "name": "Montermon",
+        "Name": "Montermon",
+        "Semaforo": "Rojo",
+        "Parque": "Via",
+        "DP": "1",
+        "Lat": "11,6680280560816",
+        "Lon": "<Null>",
+        "Longitud": "-72,176111",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "2",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.176111,
+          11.668028
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00101",
+      "properties": {
+        "name": "Potcho /Potchi",
+        "Name": "Potcho /Potchi",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6552499999014",
+        "Lon": "<Null>",
+        "Longitud": "-72,177972",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.177972,
+          11.65525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00102",
+      "properties": {
+        "name": "Masamana",
+        "Name": "Masamana",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6605279999981",
+        "Lon": "<Null>",
+        "Longitud": "-72,170833",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.170833,
+          11.660528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00103",
+      "properties": {
+        "name": "Pájaro",
+        "Name": "Pájaro",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6085280004187",
+        "Lon": "<Null>",
+        "Longitud": "-72,088306",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.088306,
+          11.608528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00104",
+      "properties": {
+        "name": "Manzanita",
+        "Name": "Manzanita",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6041109999631",
+        "Lon": "<Null>",
+        "Longitud": "-72,108972",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.108972,
+          11.604111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00105",
+      "properties": {
+        "name": "Majayut",
+        "Name": "Majayut",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6148610002042",
+        "Lon": "<Null>",
+        "Longitud": "-72,133306",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.133306,
+          11.614861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00106",
+      "properties": {
+        "name": "Poulaput",
+        "Name": "Poulaput",
+        "Semaforo": "Rojo",
+        "Parque": "Via",
+        "DP": "1",
+        "Lat": "11,682055999633",
+        "Lon": "<Null>",
+        "Longitud": "-72,2465",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "2",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.2465,
+          11.682056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00107",
+      "properties": {
+        "name": "Petsuapa",
+        "Name": "Petsuapa",
+        "Semaforo": "Amarrillo",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,7013609997409",
+        "Lon": "<Null>",
+        "Longitud": "-72,265972",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.265972,
+          11.701361
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00108",
+      "properties": {
+        "name": "Cadenachon",
+        "Name": "Cadenachon",
+        "Semaforo": "<Null>",
+        "Parque": "Via",
+        "DP": "0",
+        "Lat": "11,6930558592647",
+        "Lon": "<Null>",
+        "Longitud": "-72,285319",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.285319,
+          11.693056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00109",
+      "properties": {
+        "name": "Petsuapa",
+        "Name": "Petsuapa",
+        "Semaforo": "<Null>",
+        "Parque": "<Null>",
+        "DP": "<Null>",
+        "Lat": "<Null>",
+        "Lon": "<Null>",
+        "Longitud": "<Null>",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.266062,
+          11.697723
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00110",
+      "properties": {
+        "name": "Siboru x 3",
+        "Name": "Siboru x 3",
+        "Semaforo": "<Null>",
+        "Parque": "<Null>",
+        "DP": "<Null>",
+        "Lat": "<Null>",
+        "Lon": "<Null>",
+        "Longitud": "<Null>",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.264278,
+          11.688627
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00111",
+      "properties": {
+        "name": "Ipashirain",
+        "Name": "Ipashirain",
+        "Semaforo": "Ipashi",
+        "Parque": "<Null>",
+        "DP": "<Null>",
+        "Lat": "<Null>",
+        "Lon": "<Null>",
+        "Longitud": "<Null>",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "2",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.261261,
+          11.705686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00112",
+      "properties": {
+        "name": "Itrashi",
+        "Name": "Itrashi",
+        "Semaforo": "<Null>",
+        "Parque": "<Null>",
+        "DP": "<Null>",
+        "Lat": "<Null>",
+        "Lon": "<Null>",
+        "Longitud": "<Null>",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.258481,
+          11.706774
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00113",
+      "properties": {
+        "name": "Irruishirra",
+        "Name": "Irruishirra",
+        "Semaforo": "<Null>",
+        "Parque": "<Null>",
+        "DP": "<Null>",
+        "Lat": "<Null>",
+        "Lon": "<Null>",
+        "Longitud": "<Null>",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.25572,
+          11.707115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00114",
+      "properties": {
+        "name": "Franelamana",
+        "Name": "Franelamana",
+        "Semaforo": "<Null>",
+        "Parque": "<Null>",
+        "DP": "<Null>",
+        "Lat": "<Null>",
+        "Lon": "<Null>",
+        "Longitud": "<Null>",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.153222,
+          11.642495
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00115",
+      "properties": {
+        "name": "Jasaimana",
+        "Name": "Jasaimana",
+        "Semaforo": "Sin acta",
+        "Parque": "<Null>",
+        "DP": "<Null>",
+        "Lat": "<Null>",
+        "Lon": "<Null>",
+        "Longitud": "<Null>",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "2",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.165375,
+          11.646274
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00116",
+      "properties": {
+        "name": "Kaatsuo",
+        "Name": "Kaatsuo",
+        "Semaforo": "<Null>",
+        "Parque": "<Null>",
+        "DP": "<Null>",
+        "Lat": "<Null>",
+        "Lon": "<Null>",
+        "Longitud": "<Null>",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.059697,
+          11.611916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00117",
+      "properties": {
+        "name": "Aritepchon",
+        "Name": "Aritepchon",
+        "Semaforo": "<Null>",
+        "Parque": "<Null>",
+        "DP": "<Null>",
+        "Lat": "<Null>",
+        "Lon": "<Null>",
+        "Longitud": "<Null>",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "1",
+        "Listado30": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.101034,
+          11.59757
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00118",
+      "properties": {
+        "name": "URAICHIRAP",
+        "Name": "URAICHIRAP",
+        "Semaforo": "<Null>",
+        "Parque": "<Null>",
+        "DP": "<Null>",
+        "Lat": "<Null>",
+        "Lon": "<Null>",
+        "Longitud": "<Null>",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.175369,
+          11.688883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00119",
+      "properties": {
+        "name": "URAICHIRAP - Prin",
+        "Name": "URAICHIRAP - Prin",
+        "Semaforo": "<Null>",
+        "Parque": "<Null>",
+        "DP": "<Null>",
+        "Lat": "<Null>",
+        "Lon": "<Null>",
+        "Longitud": "<Null>",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.183418,
+          11.695717
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00120",
+      "properties": {
+        "name": "Area por definir",
+        "Name": "Area por definir",
+        "Semaforo": "<Null>",
+        "Parque": "<Null>",
+        "DP": "<Null>",
+        "Lat": "<Null>",
+        "Lon": "<Null>",
+        "Longitud": "<Null>",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.154387,
+          11.625632
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ID_00121",
+      "properties": {
+        "name": "Area por definir",
+        "Name": "Area por definir",
+        "Semaforo": "<Null>",
+        "Parque": "<Null>",
+        "DP": "<Null>",
+        "Lat": "<Null>",
+        "Lon": "<Null>",
+        "Longitud": "<Null>",
+        "RiesgoPasivoGov": "<Null>",
+        "Zona": "<Null>",
+        "Listado59": "<Null>",
+        "Listado30": "<Null>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.215146,
+          11.680976
+        ]
+      }
+    }
+  ]
+}

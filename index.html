@@ -1270,13 +1270,12 @@
 
       <section class="map-panel" aria-label="Mapa de torres">
         <div id="map"></div>
-        <div id="status" class="status">Cargando kml/Torres.kml…</div>
+        <div id="status" class="status">Cargando capas geoespaciales…</div>
       </section>
     </section>
   </main>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
   <script>
     const map = L.map('map', { preferCanvas: true }).setView([11.28, -72.22], 13);
     const streetBase = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -2190,17 +2189,19 @@
       });
     }
 
-    function readPlacemark(placemark, index) {
-      const coordinates = placemark.getElementsByTagNameNS('*', 'coordinates')[0]?.textContent.trim().split(/[\s,]+/).map(Number);
-      if (!coordinates || coordinates.length < 2 || !Number.isFinite(coordinates[0]) || !Number.isFinite(coordinates[1])) return null;
-      const name = placemark.getElementsByTagNameNS('*', 'name')[0]?.textContent.trim() || `Torre ${index + 1}`;
-      const description = placemark.getElementsByTagNameNS('*', 'description')[0]?.textContent || '';
-      return { id: placemark.getAttribute('id') || `tower-${index}`, index, name, coordinates, attributes: parseAttributes(description) };
-    }
+    function addClickableGeojsonPoints(geojson, layer, layerName, style = {}) {
+      const points = (geojson.features || []).map((f, index) => {
+        if (!f.geometry || !Array.isArray(f.geometry.coordinates) || f.geometry.coordinates.length < 2) return null;
+        return {
+          id: f.id || `${layerName}-${index}`,
+          index,
+          name: f.properties?.name || f.properties?.Name || `${layerName} ${index + 1}`,
+          coordinates: f.geometry.coordinates,
+          attributes: Object.entries(f.properties || {}).filter(([k]) => k !== 'name'),
+          properties: f.properties || {}
+        };
+      }).filter(Boolean);
 
-    function addClickablePoints(xml, layer, layerName, style) {
-      const placemarks = Array.from(xml.getElementsByTagNameNS('*', 'Placemark'));
-      const points = placemarks.map(readPlacemark).filter(Boolean);
       points.forEach((feature) => {
         const icon = L.divIcon({
           className: '',
@@ -2246,48 +2247,37 @@
       return points;
     }
 
-    function parseKml(xml, path) {
-      const parser = new DOMParser();
-      const parsed = parser.parseFromString(xml, 'application/xml');
-      if (parsed.querySelector('parsererror')) throw new Error(`${path} no tiene un formato KML válido.`);
-      return parsed;
-    }
-
-    function parseCoordinates(coordinatesNode) {
-      return (coordinatesNode?.textContent || '').trim().split(/\s+/).map((coordinate) => {
-        const [longitude, latitude] = coordinate.split(',').map(Number);
-        return Number.isFinite(longitude) && Number.isFinite(latitude) ? [latitude, longitude] : null;
-      }).filter(Boolean);
-    }
-
     async function loadLayers() {
       const paths = [
-        './kml/Torres.kml',
-        './kml/Aeros_Parque.kml',
-        './kml/Area_Parque.kml',
-        './kml/Ocupacion_Cauce_Linea.kml',
-        './kml/Ocupaciones_Cauce_Parque.kml'
+        './geojson/Torres.geojson',
+        './geojson/Aerogeneradores.geojson',
+        './geojson/Area_Parque.geojson',
+        './geojson/Ocupacion_Cauce_Linea.geojson',
+        './geojson/Ocupaciones_Cauce_Parque.geojson',
+        './geojson/Comunidades.geojson'
       ];
-      const [kmlResponses, communitiesResponse] = await Promise.all([
-        Promise.all(paths.map((path) => fetch(path))),
-        fetch('./kml/Comunidades_2026.kmz')
-      ]);
-      const failedResponse = kmlResponses.find((response) => !response.ok);
-      if (failedResponse) throw new Error(`No se pudo leer una capa KML (HTTP ${failedResponse.status}).`);
-      if (!communitiesResponse.ok) throw new Error(`No se pudo leer Comunidades_2026.kmz (HTTP ${communitiesResponse.status}).`);
+      const responses = await Promise.all(paths.map((path) => fetch(path)));
+      const failed = responses.find((r) => !r.ok);
+      if (failed) throw new Error(`No se pudo cargar una capa GeoJSON (HTTP ${failed.status}).`);
 
-      const [documents, communityArchive] = await Promise.all([
-        Promise.all(kmlResponses.map(async (response, index) => parseKml(await response.text(), paths[index]))),
-        JSZip.loadAsync(await communitiesResponse.arrayBuffer())
-      ]);
+      const [
+        torresGeo,
+        aerosGeo,
+        areaGeo,
+        cauceLineaGeo,
+        cauceParqueGeo,
+        comunidadesGeo
+      ] = await Promise.all(responses.map((r) => r.json()));
 
-      const communityKml = Object.values(communityArchive.files).find((entry) => !entry.dir && entry.name.toLowerCase().endsWith('.kml'));
-      if (!communityKml) throw new Error('No se encontró un KML dentro de Comunidades_2026.kmz.');
-      const communitiesDocument = parseKml(await communityKml.async('text'), 'Comunidades_2026.kmz');
-
-      const towerPlacemarks = Array.from(documents[0].getElementsByTagNameNS('*', 'Placemark'));
-      features = towerPlacemarks.map(readPlacemark).filter(Boolean);
-      if (!features.length) throw new Error('No se encontraron torres válidas en kml/Torres.kml.');
+      features = (torresGeo.features || []).map((f, index) => ({
+        id: f.id || `tower-${index}`,
+        index,
+        name: f.properties?.name || f.properties?.ID_INFRA_PT || `T${index}`,
+        coordinates: f.geometry.coordinates,
+        attributes: Object.entries(f.properties || {}).filter(([k]) => k !== 'name'),
+        properties: f.properties || {}
+      }));
+      if (!features.length) throw new Error('No se encontraron torres válidas en geojson/Torres.geojson.');
 
       features.forEach((feature, index) => {
         feature.progress = generateDemoProgress(feature, index);
@@ -2308,7 +2298,7 @@
         feature.marker.addTo(towerLayer);
       });
 
-      aerosFeatures = addClickablePoints(documents[1], aerosLayer, 'Aerogenerador', {
+      aerosFeatures = addClickableGeojsonPoints(aerosGeo, aerosLayer, 'Aerogenerador', {
         iconHtml: '<img class="aeros-logo" src="./svg/eolica.svg" alt="">',
         iconSize: [36, 24],
         iconAnchor: [18, 12],
@@ -2318,19 +2308,22 @@
       aerosFeatures.forEach((feature, index) => {
         feature.progress = generateDemoAeroProgress(feature, index);
       });
-      cauceLineaFeatures = addClickablePoints(documents[3], cauceLineaLayer, 'Ocupación de cauce · Línea', {
+
+      cauceLineaFeatures = addClickableGeojsonPoints(cauceLineaGeo, cauceLineaLayer, 'Ocupación de cauce · Línea', {
         markerClass: 'cauce-line-point',
         iconSize: [11, 11],
         iconAnchor: [5, 5],
         zIndexOffset: 2000
       });
-      cauceParqueFeatures = addClickablePoints(documents[4], cauceParqueLayer, 'Ocupación de cauce · Parque', {
+
+      cauceParqueFeatures = addClickableGeojsonPoints(cauceParqueGeo, cauceParqueLayer, 'Ocupación de cauce · Parque', {
         markerClass: 'cauce-park-point',
         iconSize: [11, 11],
         iconAnchor: [5, 5],
         zIndexOffset: 3000
       });
-      communityFeatures = addClickablePoints(communitiesDocument, communitiesLayer, 'Comunidad', {
+
+      communityFeatures = addClickableGeojsonPoints(comunidadesGeo, communitiesLayer, 'Comunidad', {
         iconHtml: '<img class="community-logo" src="./svg/hut.svg" alt="">',
         iconSize: [30, 30],
         iconAnchor: [15, 15],
@@ -2340,19 +2333,13 @@
         onClick: highlightCommunity
       });
 
-      const polygonParts = Array.from(documents[2].getElementsByTagNameNS('*', 'Polygon')).map((polygon) => {
-        const outerBoundary = polygon.getElementsByTagNameNS('*', 'outerBoundaryIs')[0];
-        const outer = parseCoordinates(outerBoundary?.getElementsByTagNameNS('*', 'coordinates')[0]);
-        const holes = Array.from(polygon.getElementsByTagNameNS('*', 'innerBoundaryIs')).map((boundary) => parseCoordinates(boundary.getElementsByTagNameNS('*', 'coordinates')[0]));
-        return outer.length ? [outer, ...holes.filter((ring) => ring.length)] : null;
-      }).filter(Boolean);
-      if (!polygonParts.length) throw new Error('No se encontró un polígono en kml/Area_Parque.kml.');
-      const areaGeometry = polygonParts.length === 1 ? polygonParts[0] : polygonParts;
-      L.polygon(areaGeometry, {
-        color: '#c75d47',
-        weight: 2,
-        fillColor: '#e59a70',
-        fillOpacity: 0.16,
+      L.geoJSON(areaGeo, {
+        style: {
+          color: '#c75d47',
+          weight: 2,
+          fillColor: '#e59a70',
+          fillOpacity: 0.16
+        },
         interactive: false
       }).addTo(areaLayer);
     }
