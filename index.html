@@ -620,20 +620,413 @@
       transform: none;
     }
 
-    @media (max-width: 760px) {
+    /* ==========================================================================
+       Navegación Móvil y Componentes Adaptativos (Hamburguesa & Colapsable)
+       ========================================================================== */
+    .mobile-hamburger-btn {
+      display: none;
+      align-items: center;
+      gap: 7px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      border-radius: 6px;
+      color: #ffffff;
+      padding: 7px 11px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 700;
+      transition: all 0.18s ease;
+      margin-right: 2px;
+      outline: none;
+      user-select: none;
+    }
+
+    .mobile-hamburger-btn:hover,
+    .mobile-hamburger-btn:focus-visible {
+      background: rgba(255, 255, 255, 0.22);
+      border-color: #ffffff;
+    }
+
+    .mobile-hamburger-btn .hamburger-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 18px;
+      height: 13px;
+    }
+
+    .mobile-hamburger-btn .hamburger-line {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: #ffffff;
+      border-radius: 2px;
+      transition: transform 0.22s ease, opacity 0.22s ease;
+    }
+
+    .mobile-hamburger-btn.is-active .hamburger-line:nth-child(1) {
+      transform: translateY(5.5px) rotate(45deg);
+    }
+
+    .mobile-hamburger-btn.is-active .hamburger-line:nth-child(2) {
+      opacity: 0;
+    }
+
+    .mobile-hamburger-btn.is-active .hamburger-line:nth-child(3) {
+      transform: translateY(-5.5px) rotate(-45deg);
+    }
+
+    .mobile-nav-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(12, 33, 24, 0.65);
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(3px);
+      z-index: 1100;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+    }
+
+    .mobile-nav-backdrop.is-open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .mobile-nav-drawer {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 310px;
+      max-width: 86vw;
+      background: #ffffff;
+      z-index: 1101;
+      transform: translateX(-100%);
+      transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 6px 0 28px rgba(0, 0, 0, 0.25);
+      flex-direction: column;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+    }
+
+    .mobile-nav-drawer.is-open {
+      transform: translateX(0);
+    }
+
+    .mobile-drawer-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 18px;
+      background: var(--green-dark);
+      color: #ffffff;
+      border-bottom: 3px solid var(--lime);
+    }
+
+    .mobile-drawer-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .drawer-logo-icon {
+      font-size: 22px;
+      line-height: 1;
+    }
+
+    .drawer-title {
+      font-size: 14.5px;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.2;
+    }
+
+    .drawer-subtitle {
+      font-size: 11px;
+      color: #d3e0d8;
+      margin-top: 2px;
+    }
+
+    .mobile-drawer-close {
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #ffffff;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.15s ease;
+    }
+
+    .mobile-drawer-close:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .mobile-drawer-body {
+      padding: 16px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      background: var(--paper);
+    }
+
+    .drawer-section-label {
+      font-size: 10.5px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    .mobile-drawer-menu {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .mobile-drawer-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 14px;
+      background: #ffffff;
+      border: 1.5px solid #d8e3dc;
+      border-radius: 8px;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      width: 100%;
+    }
+
+    .mobile-drawer-item:hover {
+      border-color: var(--green);
+      background: #f4f8f5;
+    }
+
+    .mobile-drawer-item.is-active {
+      border-color: var(--green);
+      background: #f0f7f3;
+      box-shadow: 0 2px 6px rgba(30, 81, 63, 0.12);
+      border-left: 4px solid var(--green);
+    }
+
+    .drawer-item-icon {
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+    .drawer-item-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      min-width: 0;
+    }
+
+    .drawer-item-name {
+      font-size: 13px;
+      font-weight: 750;
+      color: var(--ink);
+    }
+
+    .mobile-drawer-item.is-active .drawer-item-name {
+      color: var(--green-dark);
+    }
+
+    .drawer-item-desc {
+      font-size: 11px;
+      color: var(--muted);
+      line-height: 1.3;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .mobile-drawer-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: auto;
+      padding-top: 10px;
+      border-top: 1px solid var(--line);
+    }
+
+    .drawer-quick-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 10px 14px;
+      background: var(--green);
+      color: #ffffff;
+      border: none;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 750;
+      cursor: pointer;
+      transition: background 0.15s ease;
+    }
+
+    .drawer-quick-btn:hover {
+      background: var(--green-dark);
+    }
+
+    .drawer-quick-btn-secondary {
+      background: #ffffff;
+      color: var(--green-dark);
+      border: 1.5px solid var(--green);
+    }
+
+    .drawer-quick-btn-secondary:hover {
+      background: #edf5f0;
+    }
+
+    .mobile-sidebar-collapsible-bar {
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px;
+      background: #eaf1ec;
+      border-bottom: 1.5px solid var(--line);
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .mobile-sidebar-info {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 750;
+      color: var(--green-dark);
+    }
+
+    .mobile-active-tab-icon {
+      font-size: 16px;
+    }
+
+    .mobile-sidebar-toggle-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: #ffffff;
+      border: 1px solid #c5dbce;
+      border-radius: 5px;
+      padding: 5px 10px;
+      font-size: 11px;
+      font-weight: 750;
+      color: var(--green-dark);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .mobile-sidebar-toggle-btn:hover {
+      background: var(--green-dark);
+      color: #ffffff;
+      border-color: var(--green-dark);
+    }
+
+    /* ==========================================================================
+       MEDIA QUERIES: DISPOSITIVOS MÓVILES (<= 768px)
+       ========================================================================== */
+    @media (max-width: 768px) {
+      /* Visor Desplazable: Permitir desplazamiento vertical fluido en móviles */
+      html,
+      body {
+        height: auto !important;
+        min-height: 100% !important;
+        overflow-x: hidden !important;
+      }
+
+      body {
+        overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .app {
+        height: auto !important;
+        min-height: 100vh !important;
+        min-height: 100dvh !important;
+        display: flex !important;
+        flex-direction: column !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      /* Mostrar componentes móviles adaptativos */
+      .mobile-hamburger-btn {
+        display: inline-flex !important;
+      }
+
+      .mobile-nav-backdrop,
+      .mobile-nav-drawer {
+        display: flex !important;
+      }
+
+      .mobile-sidebar-collapsible-bar {
+        display: flex !important;
+      }
+
+      /* Ocultar summary-tab flotante de escritorio */
+      .summary-tab {
+        display: none !important;
+      }
+
+      /* Topbar móvil */
       .topbar {
-        min-height: 60px;
-        padding: 10px 14px;
+        min-height: 58px;
+        padding: 8px 12px;
+        gap: 8px;
       }
 
       .top-meta {
-        display: none;
+        display: none !important;
       }
 
-      .day-nav {
-        flex-wrap: wrap;
+      .brand {
         gap: 8px;
-        padding: 10px 14px;
+        flex: 1;
+        min-width: 0;
+      }
+
+      .brand-logo {
+        height: 34px;
+        max-width: 90px;
+      }
+
+      h1 {
+        font-size: 14px;
+        line-height: 1.2;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .subtitle {
+        font-size: 10.5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      /* Selector de semana y botones de día en móvil */
+      .day-nav {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px 12px;
+        gap: 8px;
+        min-height: auto;
       }
 
       .week-picker {
@@ -641,57 +1034,229 @@
         min-width: 0;
       }
 
+      .week-select {
+        font-size: 12px;
+        min-height: 36px;
+      }
+
       .day-buttons {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 6px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
       }
 
       .day-button {
         min-width: 0;
-        padding: 0 4px;
-        gap: 4px;
         min-height: 36px;
-      }
-
-      .summary-tab {
-        top: 10px !important;
-        left: 10px !important;
-        transform: none !important;
-        width: 32px;
-        min-height: 32px;
-        border-radius: 4px;
-      }
-
-      .summary-tab-label {
-        display: none;
+        padding: 0 4px;
+        font-size: 11px;
+        justify-content: center;
       }
 
       .day-feedback {
         width: 100%;
         margin-left: 0;
         text-align: left;
+        font-size: 10.5px;
       }
 
+      /* Workspace móvil: Apilamiento vertical */
       .workspace {
-        grid-template-columns: 1fr;
-        grid-template-rows: minmax(0, 48fr) minmax(0, 52fr);
-        padding: 10px;
-        gap: 10px;
+        display: flex !important;
+        flex-direction: column !important;
+        height: auto !important;
+        min-height: auto !important;
+        padding: 10px !important;
+        gap: 12px !important;
+        overflow-y: visible !important;
+        overflow-x: hidden !important;
+        grid-template-columns: none !important;
+        grid-template-rows: none !important;
       }
 
-      .workspace.summary-hidden {
-        grid-template-rows: minmax(0, 1fr);
-      }
-
-      .sidebar {
-        order: 2;
-      }
-
+      /* Mapa en pantalla móvil */
       .map-panel {
-        order: 1;
-        min-height: 0;
+        order: 1 !important;
+        width: 100% !important;
+        height: 46vh !important;
+        min-height: 310px !important;
+        max-height: 440px !important;
+        border-radius: 8px !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+        position: relative !important;
+        overflow: hidden !important;
+        z-index: 5 !important;
+      }
+
+      #map {
+        height: 100% !important;
+        width: 100% !important;
+        border-radius: 8px !important;
+      }
+
+      /* Sidebar / Panel lateral en móvil */
+      .sidebar {
+        order: 2 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        overflow: visible !important;
+        border-radius: 8px !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
+      }
+
+      /* Estado colapsado del sidebar en móvil */
+      .sidebar.is-collapsed .sidebar-tabs,
+      .sidebar.is-collapsed .activity-panel,
+      .sidebar.is-collapsed .arcgis-panel {
+        display: none !important;
+      }
+
+      .sidebar.is-collapsed {
+        border-bottom: 1.5px solid var(--line);
+      }
+
+      /* Pestañas de módulo con scroll horizontal táctil suave */
+      .sidebar-tabs {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding: 8px 8px 6px;
+        gap: 6px;
+      }
+
+      .sidebar-tabs::-webkit-scrollbar {
+        display: none;
+      }
+
+      .sidebar-tab-btn {
+        flex: 0 0 auto;
+        padding: 8px 12px;
+        font-size: 11.5px;
+        border-radius: 6px;
+      }
+
+      /* ======================================================================
+         Objetivo 1: Apilamiento vertical de componentes (Gráficos, Tarjetas, Tablas)
+         ====================================================================== */
+      .arcgis-panel {
+        height: auto !important;
+        min-height: auto !important;
+        overflow: visible !important;
+      }
+
+      .arcgis-cards-container {
+        height: auto !important;
+        min-height: auto !important;
+        overflow-y: visible !important;
+        grid-template-columns: 1fr !important;
+        gap: 10px !important;
+        padding: 10px !important;
+      }
+
+      .arcgis-card.arcgis-card-main {
+        grid-column: span 1 !important;
+        padding: 14px 12px !important;
+      }
+
+      .arcgis-card {
+        padding: 12px 14px !important;
+        border-radius: 8px !important;
+      }
+
+      .arcgis-card-title {
+        font-size: 12px !important;
+      }
+
+      .arcgis-card-value {
+        font-size: 26px !important;
+      }
+
+      .arcgis-card-main .arcgis-card-value {
+        font-size: 32px !important;
+      }
+
+      .arcgis-card-bar {
+        width: 95% !important;
+        height: 6px !important;
+      }
+
+      /* Actividades de programación */
+      .activity-panel {
+        height: auto !important;
+        min-height: auto !important;
+        overflow: visible !important;
+      }
+
+      .activity-list {
+        height: auto !important;
+        min-height: auto !important;
+        overflow-y: visible !important;
+        max-height: none !important;
+        padding: 0 12px 14px !important;
+      }
+
+      .activity-item {
+        padding: 10px 8px !important;
+        border-bottom: 1px solid #edf2ee;
+      }
+
+      /* Entorno social apilado verticalmente */
+      .entorno-kpi-grid {
+        grid-template-columns: 1fr !important;
+        gap: 8px !important;
+      }
+
+      .entorno-meta-grid {
+        grid-template-columns: 1fr !important;
+        gap: 6px !important;
+      }
+
+      .entorno-btn-group {
+        grid-template-columns: 1fr !important;
+        gap: 8px !important;
+      }
+
+      /* Popups y tablas en pantallas móviles */
+      .popup-progress-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      .popup-row {
+        grid-template-columns: 1fr !important;
+        gap: 4px !important;
+      }
+
+      .leaflet-popup-content {
+        margin: 12px 14px !important;
+        max-width: calc(100vw - 48px) !important;
+      }
+
+      .feature-popup {
+        min-width: 0 !important;
+        max-width: 100% !important;
+        max-height: 340px !important;
+      }
+    }
+
+    /* Sub-breakpoint para teléfonos muy compactos (<= 420px) */
+    @media (max-width: 420px) {
+      .day-buttons {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .week-summary-button {
+        grid-column: span 2;
+      }
+
+      .brand-logo {
+        height: 30px;
+        max-width: 75px;
+      }
+
+      h1 {
+        font-size: 13px;
       }
     }
 
@@ -1441,6 +2006,14 @@
   <main class="app">
     <header class="topbar">
       <div class="brand">
+        <button id="mobile-menu-btn" class="mobile-hamburger-btn" type="button" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mobile-nav-drawer">
+          <span class="hamburger-box">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </span>
+          <span class="mobile-menu-text">Menú</span>
+        </button>
         <img src="png/dummy_logo.jpg" alt="Logo Proyecto Eólico" class="brand-logo">
         <div>
           <h1>Visor Proyecto Eólico vr 1.0</h1>
@@ -1449,6 +2022,67 @@
       </div>
       <div class="top-meta">Visualización de datos KML</div>
     </header>
+
+    <!-- Menú Adaptativo Móvil (Drawer de Navegación Lateral / Hamburguesa) -->
+    <div id="mobile-nav-backdrop" class="mobile-nav-backdrop" aria-hidden="true"></div>
+    <aside id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Menú de navegación principal" aria-hidden="true">
+      <div class="mobile-drawer-head">
+        <div class="mobile-drawer-brand">
+          <span class="drawer-logo-icon">🌿</span>
+          <div>
+            <div class="drawer-title">Navegación del Tablero</div>
+            <div class="drawer-subtitle">Visor Proyecto Eólico vr 1.0</div>
+          </div>
+        </div>
+        <button id="mobile-drawer-close" class="mobile-drawer-close" type="button" aria-label="Cerrar menú">✕</button>
+      </div>
+      <div class="mobile-drawer-body">
+        <div class="drawer-section-label">MÓDULOS DEL PROYECTO</div>
+        <div class="mobile-drawer-menu">
+          <button class="mobile-drawer-item is-active" type="button" data-tab="schedule">
+            <span class="drawer-item-icon">📋</span>
+            <div class="drawer-item-content">
+              <span class="drawer-item-name">Programación Semanal</span>
+              <span class="drawer-item-desc">Frentes activos, cuadrillas y frentes de trabajo</span>
+            </div>
+          </button>
+          <button class="mobile-drawer-item" type="button" data-tab="towers">
+            <span class="drawer-item-icon">🗼</span>
+            <div class="drawer-item-content">
+              <span class="drawer-item-name">Avance Torres</span>
+              <span class="drawer-item-desc" id="drawer-towers-desc">138 torres · Concreto, acero, solado</span>
+            </div>
+          </button>
+          <button class="mobile-drawer-item" type="button" data-tab="aeros">
+            <span class="drawer-item-icon">🌀</span>
+            <div class="drawer-item-content">
+              <span class="drawer-item-name">Aerogeneradores</span>
+              <span class="drawer-item-desc" id="drawer-aeros-desc">47 turbinas · Avance físico consolidado</span>
+            </div>
+          </button>
+          <button class="mobile-drawer-item" type="button" data-tab="entorno">
+            <span class="drawer-item-icon">👥</span>
+            <div class="drawer-item-content">
+              <span class="drawer-item-name">Entorno Social</span>
+              <span class="drawer-item-desc" id="drawer-entorno-desc">122 comunidades · Monitoreo y diálogo</span>
+            </div>
+          </button>
+        </div>
+
+        <div class="drawer-section-label">ACCIONES RÁPIDAS</div>
+        <div class="mobile-drawer-actions">
+          <button id="drawer-btn-focus-map" class="drawer-quick-btn" type="button">
+            🗺️ Enfocar Mapa
+          </button>
+          <button id="drawer-btn-focus-panel" class="drawer-quick-btn" type="button">
+            📊 Ver Métricas y Panel
+          </button>
+          <button id="drawer-btn-toggle-sidebar" class="drawer-quick-btn drawer-quick-btn-secondary" type="button">
+            ⮁ Colapsar / Expandir Panel
+          </button>
+        </div>
+      </div>
+    </aside>
 
     <nav class="day-nav" aria-label="Selector de semana y día de programación">
       <label class="week-picker" for="week-select">
@@ -1481,6 +2115,18 @@
         <span class="summary-tab-label" aria-hidden="true"></span>
       </button>
       <aside class="sidebar" aria-label="Panel lateral del proyecto">
+        <!-- Barra Colapsable para Móviles -->
+        <div class="mobile-sidebar-collapsible-bar" id="mobile-sidebar-collapsible-bar">
+          <div class="mobile-sidebar-info">
+            <span class="mobile-active-tab-icon" id="mobile-active-tab-icon">📋</span>
+            <span class="mobile-active-tab-title" id="mobile-active-tab-title">Programación de Obra</span>
+          </div>
+          <button id="mobile-sidebar-toggle-btn" class="mobile-sidebar-toggle-btn" type="button" aria-expanded="true" aria-label="Colapsar o expandir panel">
+            <span class="mobile-toggle-text" id="mobile-toggle-text">Ocultar panel</span>
+            <span class="mobile-toggle-icon" id="mobile-toggle-icon">▲</span>
+          </button>
+        </div>
+
         <div class="sidebar-tabs" role="tablist" aria-label="Secciones del panel">
           <button id="tab-btn-schedule" class="sidebar-tab-btn is-active" type="button" role="tab" aria-selected="true" aria-controls="activity-panel">
             <span>📋 Programación</span>
@@ -1935,6 +2581,25 @@
       if (towersPanel) towersPanel.style.display = tabName === 'towers' ? 'flex' : 'none';
       if (aerosPanel) aerosPanel.style.display = tabName === 'aeros' ? 'flex' : 'none';
       if (entornoPanel) entornoPanel.style.display = tabName === 'entorno' ? 'flex' : 'none';
+
+      // Sincronizar encabezado colapsable en móvil
+      const tabIcons = { schedule: '📋', towers: '🗼', aeros: '🌀', entorno: '👥' };
+      const tabTitles = { schedule: 'Programación de Obra', towers: 'Avance Torres', aeros: 'Aerogeneradores', entorno: 'Entorno Social' };
+      const mobileActiveIcon = document.getElementById('mobile-active-tab-icon');
+      const mobileActiveTitle = document.getElementById('mobile-active-tab-title');
+      if (mobileActiveIcon && tabIcons[tabName]) mobileActiveIcon.textContent = tabIcons[tabName];
+      if (mobileActiveTitle && tabTitles[tabName]) mobileActiveTitle.textContent = tabTitles[tabName];
+
+      // Sincronizar estado en menú drawer de navegación móvil
+      document.querySelectorAll('.mobile-drawer-item').forEach((item) => {
+        item.classList.toggle('is-active', item.dataset.tab === tabName);
+      });
+
+      // Si el sidebar en móvil estaba colapsado, expandirlo al seleccionar pestaña
+      const sidebarEl = document.querySelector('.sidebar');
+      if (window.innerWidth <= 768 && sidebarEl && sidebarEl.classList.contains('is-collapsed')) {
+        toggleMobileSidebar(false);
+      }
 
       if (tabName === 'towers') updateTowersDashboard();
       if (tabName === 'aeros') updateAerosDashboard();
@@ -3283,11 +3948,13 @@
     const summaryTabArrow = summaryToggle.querySelector('.summary-tab-arrow');
 
     function positionSummaryTab() {
-      if (window.innerWidth <= 760) {
+      if (window.innerWidth <= 768) {
+        summaryToggle.style.display = 'none';
         summaryToggle.style.left = '';
         summaryToggle.style.top = '';
         return;
       }
+      summaryToggle.style.display = '';
       const workspaceRect = workspace.getBoundingClientRect();
       if (workspace.classList.contains('summary-hidden')) {
         summaryToggle.style.left = '14px';
@@ -3311,9 +3978,110 @@
       });
     });
 
-    window.addEventListener('resize', positionSummaryTab);
+    window.addEventListener('resize', () => {
+      positionSummaryTab();
+      if (window.innerWidth > 768 && sidebar) {
+        sidebar.classList.remove('is-collapsed');
+      }
+    });
     positionSummaryTab();
     map.on('zoomend', updateMapLabels);
+
+    // --- Control de Navegación Adaptativa Móvil (Menú Hamburguesa y Panel Colapsable) ---
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileNavDrawer = document.getElementById('mobile-nav-drawer');
+    const mobileNavBackdrop = document.getElementById('mobile-nav-backdrop');
+    const mobileDrawerClose = document.getElementById('mobile-drawer-close');
+    const mobileSidebarToggleBtn = document.getElementById('mobile-sidebar-toggle-btn');
+    const mobileSidebarCollapsibleBar = document.getElementById('mobile-sidebar-collapsible-bar');
+
+    function toggleMobileNavDrawer(forceOpen) {
+      if (!mobileNavDrawer || !mobileNavBackdrop) return;
+      const isOpen = forceOpen !== undefined ? forceOpen : !mobileNavDrawer.classList.contains('is-open');
+      mobileNavDrawer.classList.toggle('is-open', isOpen);
+      mobileNavBackdrop.classList.toggle('is-open', isOpen);
+      if (mobileMenuBtn) {
+        mobileMenuBtn.classList.toggle('is-active', isOpen);
+        mobileMenuBtn.setAttribute('aria-expanded', String(isOpen));
+      }
+      mobileNavDrawer.setAttribute('aria-hidden', String(!isOpen));
+      mobileNavBackdrop.setAttribute('aria-hidden', String(!isOpen));
+    }
+
+    function toggleMobileSidebar(forceCollapse) {
+      if (!sidebar) return;
+      const isCollapsed = forceCollapse !== undefined ? forceCollapse : !sidebar.classList.contains('is-collapsed');
+      sidebar.classList.toggle('is-collapsed', isCollapsed);
+      const toggleText = document.getElementById('mobile-toggle-text');
+      const toggleIcon = document.getElementById('mobile-toggle-icon');
+      if (toggleText) toggleText.textContent = isCollapsed ? 'Mostrar panel' : 'Ocultar panel';
+      if (toggleIcon) toggleIcon.textContent = isCollapsed ? '▼' : '▲';
+      if (mobileSidebarToggleBtn) mobileSidebarToggleBtn.setAttribute('aria-expanded', String(!isCollapsed));
+      requestAnimationFrame(() => {
+        map.invalidateSize({ pan: false });
+      });
+    }
+
+    function scrollToSidebar() {
+      if (sidebar) {
+        sidebar.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    function scrollToMap() {
+      const mapPanel = document.querySelector('.map-panel');
+      if (mapPanel) {
+        mapPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        setTimeout(() => { map.invalidateSize({ pan: false }); }, 250);
+      }
+    }
+
+    mobileMenuBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleMobileNavDrawer();
+    });
+
+    mobileDrawerClose?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleMobileNavDrawer(false);
+    });
+
+    mobileNavBackdrop?.addEventListener('click', () => {
+      toggleMobileNavDrawer(false);
+    });
+
+    document.querySelectorAll('.mobile-drawer-item').forEach((item) => {
+      item.addEventListener('click', () => {
+        const tab = item.dataset.tab;
+        if (tab) {
+          switchSidebarTab(tab);
+          toggleMobileNavDrawer(false);
+          if (window.innerWidth <= 768) {
+            scrollToSidebar();
+          }
+        }
+      });
+    });
+
+    mobileSidebarCollapsibleBar?.addEventListener('click', () => {
+      toggleMobileSidebar();
+    });
+
+    document.getElementById('drawer-btn-focus-map')?.addEventListener('click', () => {
+      toggleMobileNavDrawer(false);
+      scrollToMap();
+    });
+
+    document.getElementById('drawer-btn-focus-panel')?.addEventListener('click', () => {
+      toggleMobileNavDrawer(false);
+      toggleMobileSidebar(false);
+      scrollToSidebar();
+    });
+
+    document.getElementById('drawer-btn-toggle-sidebar')?.addEventListener('click', () => {
+      toggleMobileNavDrawer(false);
+      toggleMobileSidebar();
+    });
 
     // Conexión de pestañas del panel lateral
     document.getElementById('tab-btn-schedule')?.addEventListener('click', () => switchSidebarTab('schedule'));
