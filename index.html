@@ -233,6 +233,93 @@
       letter-spacing: 0.3px;
     }
 
+    .activity-badges-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 4px;
+    }
+
+    .activity-badges-row .activity-front-badge {
+      margin-bottom: 0;
+    }
+
+    .activity-flag-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-size: 9.5px;
+      font-weight: 800;
+      letter-spacing: 0.35px;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+
+    .activity-flag-badge.flag-torres {
+      background: #1e513f;
+      color: #ffffff;
+    }
+
+    .activity-flag-badge.flag-ods01 {
+      background: #fffbeb;
+      color: #92400e;
+      border: 1px solid #d97706;
+    }
+
+    .activity-flag-badge.flag-ods02 {
+      background: #f0f9ff;
+      color: #075985;
+      border: 1px solid #0284c7;
+    }
+
+    .schedule-flag-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 10px;
+    }
+
+    .schedule-flag-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #ffffff;
+      color: var(--ink);
+      font: inherit;
+      font-size: 10.5px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .schedule-flag-pill:hover {
+      border-color: var(--green);
+    }
+
+    .schedule-flag-pill.is-active {
+      background: var(--green-dark);
+      border-color: var(--green-dark);
+      color: #ffffff;
+    }
+
+    .schedule-flag-pill[data-source="ODS01"].is-active {
+      background: #b45309;
+      border-color: #b45309;
+      color: #ffffff;
+    }
+
+    .schedule-flag-pill[data-source="ODS02"].is-active {
+      background: #0369a1;
+      border-color: #0369a1;
+      color: #ffffff;
+    }
+
     .activity-item-maplink {
       display: inline-flex;
       align-items: center;
@@ -495,11 +582,26 @@
       border-color: #e8c4bf;
     }
 
+    #map {
+      --icon-scale: 1;
+      --comm-scale: 0.95;
+      --visit-scale: 1.18;
+      --visit-outline: 2.5px;
+      --visit-offset: 2.5px;
+      --nonvisit-opacity: 1;
+      --visit-label-size: 11.5px;
+      --base-label-size: 11px;
+    }
+
     .tower-logo {
       width: 26px;
       height: 26px;
       display: block;
       filter: drop-shadow(0 1px 2px #17251f88);
+      transform: scale(var(--icon-scale, 1));
+      transform-origin: center center;
+      opacity: var(--nonvisit-opacity, 1);
+      transition: transform 0.18s ease, opacity 0.18s ease, outline-color 0.2s ease;
     }
 
     .aeros-logo {
@@ -508,37 +610,55 @@
       display: block;
       object-fit: contain;
       filter: drop-shadow(0 1px 2px #17251f88);
+      transform: scale(var(--icon-scale, 1));
+      transform-origin: center center;
+      opacity: var(--nonvisit-opacity, 1);
+      transition: transform 0.18s ease, opacity 0.18s ease, outline-color 0.2s ease;
     }
 
     .tower-logo.is-visit {
-      outline: 3px solid var(--lime);
-      outline-offset: 3px;
+      outline: var(--visit-outline, 2.5px) solid var(--lime);
+      outline-offset: var(--visit-offset, 2px);
       border-radius: 5px;
       background: rgba(212, 231, 90, 0.35);
-      filter: drop-shadow(0 0 10px #d4e75a) drop-shadow(0 2px 4px rgba(23, 37, 31, 0.8));
-      transform: scale(1.22);
-      transition: transform 0.2s ease, outline-color 0.2s ease;
+      filter: drop-shadow(0 0 8px #d4e75a) drop-shadow(0 2px 4px rgba(23, 37, 31, 0.8));
+      transform: scale(var(--visit-scale, 1.18));
+      opacity: 1;
+    }
+
+    .aeros-logo.is-visit {
+      outline: var(--visit-outline, 2.5px) solid #0284c7;
+      outline-offset: var(--visit-offset, 2px);
+      border-radius: 5px;
+      background: rgba(56, 189, 248, 0.35);
+      filter: drop-shadow(0 0 8px #38bdf8) drop-shadow(0 2px 4px rgba(23, 37, 31, 0.8));
+      transform: scale(var(--visit-scale, 1.18));
+      opacity: 1;
     }
 
     .cauce-point.is-visit {
-      outline: 3px solid var(--lime);
-      outline-offset: 3px;
-      transform: scale(1.35);
-      box-shadow: 0 0 12px #d4e75a;
-      transition: transform 0.2s ease;
+      outline: var(--visit-outline, 2.5px) solid var(--lime);
+      outline-offset: var(--visit-offset, 2px);
+      transform: scale(calc(var(--visit-scale, 1.18) * 1.1));
+      box-shadow: 0 0 10px #d4e75a;
+      opacity: 1;
     }
 
     .tower-logo.is-community-related {
-      outline: 3px solid #00bcd4;
-      outline-offset: 2px;
+      outline: var(--visit-outline, 2.5px) solid #00bcd4;
+      outline-offset: var(--visit-offset, 2px);
       box-shadow: 0 0 10px #00bcd4;
+      transform: scale(var(--visit-scale, 1.14));
+      opacity: 1;
     }
 
     .community-logo.is-selected {
-      outline: 3px solid #00bcd4;
-      outline-offset: 2px;
+      outline: var(--visit-outline, 2.5px) solid #00bcd4;
+      outline-offset: var(--visit-offset, 2px);
       border-radius: 5px;
       box-shadow: 0 0 10px #00bcd4;
+      transform: scale(var(--visit-scale, 1.15));
+      opacity: 1;
     }
 
     .leaflet-tooltip.tower-name-label {
@@ -547,11 +667,12 @@
       color: var(--green-dark);
       background: transparent;
       box-shadow: none;
-      font-size: 12px;
+      font-size: var(--base-label-size, 11.5px);
       font-weight: 800;
-      line-height: 1.2;
+      line-height: 1.15;
       text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 0 0 4px #fff;
       pointer-events: none;
+      transition: font-size 0.15s ease;
     }
 
     .leaflet-tooltip.tower-name-label::before {
@@ -564,11 +685,12 @@
       color: #202b2b;
       background: transparent;
       box-shadow: none;
-      font-size: 10px;
+      font-size: calc(var(--base-label-size, 11px) - 1px);
       font-weight: 750;
-      line-height: 1.2;
+      line-height: 1.15;
       text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 0 0 3px #fff;
       pointer-events: none;
+      transition: font-size 0.15s ease;
     }
 
     .leaflet-tooltip.asset-name-label::before {
@@ -580,6 +702,10 @@
       height: 30px;
       display: block;
       filter: drop-shadow(0 1px 2px #17251f88);
+      transform: scale(var(--comm-scale, 0.95));
+      transform-origin: center center;
+      opacity: var(--nonvisit-opacity, 1);
+      transition: transform 0.18s ease, opacity 0.18s ease;
     }
 
     .leaflet-tooltip.community-name-label {
@@ -588,15 +714,169 @@
       color: #704625;
       background: transparent;
       box-shadow: none;
-      font-size: 11px;
+      font-size: calc(var(--base-label-size, 11px) - 0.5px);
       font-weight: 800;
-      line-height: 1.2;
+      line-height: 1.15;
       text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 0 0 3px #fff;
       pointer-events: none;
+      transition: font-size 0.15s ease;
     }
 
     .leaflet-tooltip.community-name-label::before {
       display: none;
+    }
+
+    .leaflet-tooltip.is-visit-label {
+      font-size: var(--visit-label-size, 11px) !important;
+      font-weight: 850 !important;
+      color: #0f291e !important;
+      text-shadow: -1.2px -1.2px 0 #fff, 1.2px -1.2px 0 #fff, -1.2px 1.2px 0 #fff, 1.2px 1.2px 0 #fff, 0 0 5px #ffffff, 0 0 8px rgba(212, 231, 90, 0.75) !important;
+      z-index: 950 !important;
+    }
+
+    .leaflet-tooltip.asset-name-label.is-visit-label {
+      color: #075985 !important;
+      text-shadow: -1.2px -1.2px 0 #fff, 1.2px -1.2px 0 #fff, -1.2px 1.2px 0 #fff, 1.2px 1.2px 0 #fff, 0 0 5px #ffffff, 0 0 8px rgba(56, 189, 248, 0.7) !important;
+    }
+
+    .leaflet-tooltip.eje-name-label {
+      padding: 1px 5px;
+      border: 1px solid rgba(24, 24, 27, 0.25);
+      border-radius: 4px;
+      color: #18181b;
+      background: rgba(255, 255, 255, 0.88);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.14);
+      font-size: calc(var(--base-label-size, 11px) - 0.5px);
+      font-weight: 800;
+      line-height: 1.2;
+      pointer-events: none;
+      transition: font-size 0.15s ease;
+    }
+
+    .leaflet-tooltip.eje-name-label::before {
+      display: none;
+    }
+
+    .leaflet-tooltip.eje-name-label.is-visit-label {
+      font-size: var(--visit-label-size, 11px) !important;
+      font-weight: 850 !important;
+      color: #14532d !important;
+      background: #dcfce7 !important;
+      border: 1.5px solid #16a34a !important;
+      text-shadow: none !important;
+      box-shadow: 0 2px 6px rgba(22, 163, 74, 0.28) !important;
+      z-index: 960 !important;
+    }
+
+    .ejes-map-legend {
+      position: absolute;
+      z-index: 500;
+      left: 12px;
+      bottom: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(4px);
+      box-shadow: 0 4px 12px rgba(23, 37, 31, 0.12);
+      font-size: 11px;
+      color: var(--ink);
+      max-width: 225px;
+    }
+
+    .ejes-legend-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      font-weight: 800;
+      font-size: 11px;
+      color: var(--green-dark);
+      border-bottom: 1px solid #e4ece6;
+      padding-bottom: 4px;
+    }
+
+    .ejes-legend-count {
+      font-weight: 700;
+      font-size: 10px;
+      color: #15803d;
+      background: #dcfce7;
+      padding: 1px 6px;
+      border-radius: 999px;
+    }
+
+    .ejes-legend-items {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .ejes-legend-row {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-weight: 600;
+      color: #2c3e35;
+    }
+
+    .ejes-swatch {
+      display: inline-block;
+      width: 20px;
+      height: 4px;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    .ejes-swatch-scheduled {
+      background: #16a34a;
+      box-shadow: 0 0 0 2px rgba(134, 239, 172, 0.75);
+    }
+
+    .ejes-swatch-unscheduled {
+      background: #18181b;
+      height: 3px;
+    }
+
+    .ejes-legend-filter {
+      display: flex;
+      gap: 4px;
+      margin-top: 2px;
+    }
+
+    .ejes-filter-btn {
+      flex: 1;
+      border: 1px solid #cbd5d0;
+      border-radius: 4px;
+      background: #f8faf9;
+      color: #334139;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 4px 6px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .ejes-filter-btn:hover {
+      background: #eef4f0;
+    }
+
+    .ejes-filter-btn.is-active {
+      background: #16a34a;
+      border-color: #15803d;
+      color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      .ejes-map-legend {
+        left: 8px;
+        bottom: 42px;
+        padding: 6px 8px;
+        font-size: 10px;
+        max-width: 195px;
+      }
     }
 
     .cauce-point {
@@ -604,6 +884,10 @@
       height: 15px;
       border: 2px solid white;
       box-shadow: 0 1px 5px #17251f99;
+      transform: scale(var(--icon-scale, 1));
+      transform-origin: center center;
+      opacity: var(--nonvisit-opacity, 1);
+      transition: transform 0.18s ease, opacity 0.18s ease;
     }
 
     .aeros-point {
@@ -2102,6 +2386,8 @@
             class="day-name">Jueves</span> <span class="day-date"></span></button>
         <button class="day-button" type="button" data-day="friday" aria-pressed="false" disabled><span
             class="day-name">Viernes</span> <span class="day-date"></span></button>
+        <button class="day-button" type="button" data-day="saturday" aria-pressed="false" disabled><span
+            class="day-name">Sábado</span> <span class="day-date"></span></button>
         <button class="day-button week-summary-button" type="button" data-day="week-summary" aria-pressed="false"
           disabled>Resumen <span class="day-date">Semana</span></button>
       </div>
@@ -2150,6 +2436,7 @@
             <div class="eyebrow">Resumen de actividades</div>
             <h2 id="activity-day">Selecciona un día</h2>
             <div id="activity-count" class="activity-meta"></div>
+            <div id="schedule-flag-filters" class="schedule-flag-filters" role="group" aria-label="Filtrar programación por frente macro"></div>
           </header>
           <div id="activity-list" class="activity-list">
             <div class="activity-empty">Selecciona un día para consultar la programación.</div>
@@ -2377,6 +2664,20 @@
 
       <section class="map-panel" aria-label="Mapa de torres">
         <div id="map"></div>
+        <div id="ejes-map-legend" class="ejes-map-legend" aria-label="Leyenda y filtro de ejes viales">
+          <div class="ejes-legend-head">
+            <span>🛣️ Ejes viales</span>
+            <span id="ejes-legend-count" class="ejes-legend-count">0 / 0 prog.</span>
+          </div>
+          <div class="ejes-legend-items">
+            <div class="ejes-legend-row"><span class="ejes-swatch ejes-swatch-scheduled"></span><span>Vía programada</span></div>
+            <div class="ejes-legend-row"><span class="ejes-swatch ejes-swatch-unscheduled"></span><span>Vía no programada</span></div>
+          </div>
+          <div class="ejes-legend-filter" role="group" aria-label="Filtrar ejes viales">
+            <button type="button" class="ejes-filter-btn is-active" data-ejes-mode="all" aria-pressed="true">Ver todos</button>
+            <button type="button" class="ejes-filter-btn" data-ejes-mode="scheduled" aria-pressed="false">Solo programados</button>
+          </div>
+        </div>
         <div id="status" class="status">Cargando capas geoespaciales…</div>
       </section>
     </section>
@@ -2403,6 +2704,7 @@
 
     const towerLayer = L.featureGroup().addTo(map);
     const aerosLayer = L.featureGroup().addTo(map);
+    const ejesLayer = L.featureGroup().addTo(map);
     const areaLayer = L.featureGroup().addTo(map);
     const cauceLineaLayer = L.featureGroup().addTo(map);
     const cauceParqueLayer = L.featureGroup().addTo(map);
@@ -2413,6 +2715,7 @@
     }, {
       Torres: towerLayer,
       Aerogeneradores: aerosLayer,
+      'Ejes viales': ejesLayer,
       'Área del parque': areaLayer,
       'Ocupación de cauce · Línea': cauceLineaLayer,
       'Ocupación de cauce · Parque': cauceParqueLayer,
@@ -2422,12 +2725,16 @@
     const featurePopup = L.popup({ maxWidth: 360, maxHeight: 340, autoClose: true, closeOnClick: true });
     let features = [];
     let aerosFeatures = [];
+    let ejesFeatures = [];
     let cauceLineaFeatures = [];
     let cauceParqueFeatures = [];
     let communityFeatures = [];
     let selectedCommunityFeature = null;
     let selectedTowerFeature = null;
     let selectedAeroFeature = null;
+    let selectedEjeFeature = null;
+    let showOnlyScheduledEjes = false;
+    let activeDayKey = 'monday';
     let activeSidebarTab = 'schedule';
     const PROGRESS_METRICS = [
       { key: 'ahuyentamiento', label: 'Ahuyentamiento' },
@@ -2611,12 +2918,14 @@
       clearCommunityHighlight();
       map.closePopup(featurePopup);
       updateTowersDashboard();
+      updateMapLabels();
     }
 
     function selectTowerForProgress(feature) {
       clearCommunityHighlight();
       selectedTowerFeature = feature;
       updateTowersDashboard();
+      updateMapLabels();
       switchSidebarTab('towers');
       if (workspace && workspace.classList.contains('summary-hidden')) {
         summaryToggle.click();
@@ -2628,11 +2937,13 @@
       selectedAeroFeature = null;
       map.closePopup(featurePopup);
       updateAerosDashboard();
+      updateMapLabels();
     }
 
     function selectAeroForProgress(feature) {
       selectedAeroFeature = feature;
       updateAerosDashboard();
+      updateMapLabels();
       switchSidebarTab('aeros');
       if (workspace && workspace.classList.contains('summary-hidden')) {
         summaryToggle.click();
@@ -3202,16 +3513,31 @@
     let weeklyPrograms = [];
     let activeWeek = null;
     let weekdaySchedule = {};
+    let activeScheduleSource = 'ALL';
     const weekSelect = document.getElementById('week-select');
+
+    const SCHEDULE_SOURCE_META = {
+      TORRES: { flag: '🗼 INTERVENCIÓN TORRES', shortLabel: '🗼 Torres', className: 'flag-torres' },
+      ODS01: { flag: '🚩 OSDS01', shortLabel: '🚩 OSDS01', className: 'flag-ods01' },
+      ODS02: { flag: '🚩 ODS02', shortLabel: '🚩 ODS02', className: 'flag-ods02' }
+    };
 
     function setActiveWeek(weekId) {
       activeWeek = weeklyPrograms.find((week) => week.id === weekId);
       if (!activeWeek) throw new Error(`No se encontró la semana ${weekId}.`);
       weekdaySchedule = Object.fromEntries(activeWeek.days.map((day) => [day.key, day]));
       weekSelect.value = activeWeek.id;
-      activeWeek.days.forEach((day) => {
-        const button = document.querySelector(`.day-button[data-day="${day.key}"]`);
-        if (!button) return;
+      document.querySelectorAll('.day-button[data-day]').forEach((button) => {
+        const dayKey = button.dataset.day;
+        if (dayKey === 'week-summary') return;
+        const day = weekdaySchedule[dayKey];
+        if (!day) {
+          button.style.display = 'none';
+          button.disabled = true;
+          return;
+        }
+        button.style.display = '';
+        button.disabled = false;
         const nameEl = button.querySelector('.day-name');
         const dateEl = button.querySelector('.day-date');
         if (nameEl) nameEl.textContent = day.name;
@@ -3240,8 +3566,9 @@
       const grouped = new Map();
       Object.values(weekdaySchedule).forEach((day) => {
         (day.activities || []).filter((activity) => !/ocupaciones de cauce/i.test(activity.title)).forEach((activity) => {
-          const key = `${activity.title}|${activity.location}`;
-          const existing = grouped.get(key) || { ...activity, days: [] };
+          const source = activity.source || 'TORRES';
+          const key = `${source}|${activity.front || ''}|${activity.title}|${activity.location}`;
+          const existing = grouped.get(key) || { ...activity, source, days: [] };
           existing.days.push(day.name);
           grouped.set(key, existing);
         });
@@ -3260,6 +3587,8 @@
         label: 'Resumen semanal',
         towers: Array.from(new Set(days.flatMap((day) => day.towers || []))),
         occupations: Array.from(new Set(days.flatMap((day) => day.occupations || []))),
+        aeros: Array.from(new Set(days.flatMap((day) => day.aeros || []))),
+        ejes: Array.from(new Set(days.flatMap((day) => day.ejes || []))),
         activities: getWeeklyActivities()
       };
     }
@@ -3282,10 +3611,122 @@
     }
 
     function updateMapLabels() {
-      const showLabels = map.getZoom() >= 12;
-      [...features, ...aerosFeatures, ...cauceLineaFeatures, ...cauceParqueFeatures, ...communityFeatures].forEach((feature) => {
-        if (showLabels) feature.marker.openTooltip();
-        else feature.marker.closeTooltip();
+      const zoom = map.getZoom();
+      const mapEl = map.getContainer();
+      if (mapEl) {
+        let iconScale = '1';
+        let commScale = '0.95';
+        let visitScale = '1.18';
+        let visitOutline = '2.5px';
+        let visitOffset = '2.5px';
+        let nonVisitOpacity = '1';
+        let visitLabelSize = '12.2px';
+        let baseLabelSize = '11.5px';
+
+        if (zoom <= 9) {
+          iconScale = '0.34';
+          commScale = '0.24';
+          visitScale = '0.50';
+          visitOutline = '1.5px';
+          visitOffset = '1px';
+          nonVisitOpacity = '0.52';
+          visitLabelSize = '8.5px';
+          baseLabelSize = '9px';
+        } else if (zoom === 10) {
+          iconScale = '0.44';
+          commScale = '0.30';
+          visitScale = '0.62';
+          visitOutline = '1.5px';
+          visitOffset = '1px';
+          nonVisitOpacity = '0.58';
+          visitLabelSize = '9.2px';
+          baseLabelSize = '9.5px';
+        } else if (zoom === 11) {
+          iconScale = '0.56';
+          commScale = '0.40';
+          visitScale = '0.74';
+          visitOutline = '2px';
+          visitOffset = '1.5px';
+          nonVisitOpacity = '0.68';
+          visitLabelSize = '10px';
+          baseLabelSize = '10px';
+        } else if (zoom === 12) {
+          iconScale = '0.72';
+          commScale = '0.56';
+          visitScale = '0.88';
+          visitOutline = '2px';
+          visitOffset = '1.5px';
+          nonVisitOpacity = '0.82';
+          visitLabelSize = '10.8px';
+          baseLabelSize = '10px';
+        } else if (zoom === 13) {
+          iconScale = '0.86';
+          commScale = '0.74';
+          visitScale = '1.04';
+          visitOutline = '2.5px';
+          visitOffset = '2px';
+          nonVisitOpacity = '0.92';
+          visitLabelSize = '11.5px';
+          baseLabelSize = '11px';
+        }
+
+        mapEl.style.setProperty('--icon-scale', iconScale);
+        mapEl.style.setProperty('--comm-scale', commScale);
+        mapEl.style.setProperty('--visit-scale', visitScale);
+        mapEl.style.setProperty('--visit-outline', visitOutline);
+        mapEl.style.setProperty('--visit-offset', visitOffset);
+        mapEl.style.setProperty('--nonvisit-opacity', nonVisitOpacity);
+        mapEl.style.setProperty('--visit-label-size', visitLabelSize);
+        mapEl.style.setProperty('--base-label-size', baseLabelSize);
+      }
+
+      const relatedTowers = Array.isArray(selectedCommunityFeature?.relatedTowers)
+        ? selectedCommunityFeature.relatedTowers
+        : [];
+      const communitySet = new Set(communityFeatures);
+      const ejesVisible = map.hasLayer(ejesLayer);
+      const allFeatures = [
+        ...features,
+        ...aerosFeatures,
+        ...cauceLineaFeatures,
+        ...cauceParqueFeatures,
+        ...communityFeatures,
+        ...ejesFeatures
+      ];
+
+      allFeatures.forEach((feature) => {
+        if (!feature.marker) return;
+        const isEje = feature.isEje === true;
+        if (isEje && (!ejesVisible || (showOnlyScheduledEjes && !feature.isVisit && feature !== selectedEjeFeature) || feature.suppressLabel)) {
+          const tooltipEl = feature.marker.getTooltip()?.getElement();
+          if (tooltipEl) tooltipEl.classList.remove('is-visit-label');
+          feature.marker.closeTooltip();
+          return;
+        }
+
+        const isPriority = Boolean(feature.isVisit)
+          || feature === selectedTowerFeature
+          || feature === selectedAeroFeature
+          || feature === selectedEjeFeature
+          || feature === selectedCommunityFeature
+          || relatedTowers.includes(feature);
+        const showGeneral = isEje
+          ? zoom >= 13
+          : (communitySet.has(feature) ? zoom >= 13 : zoom >= 12);
+
+        if (isPriority || showGeneral) {
+          feature.marker.openTooltip();
+          const tooltipEl = feature.marker.getTooltip()?.getElement();
+          if (tooltipEl) {
+            tooltipEl.classList.toggle('is-visit-label', isPriority);
+          }
+        } else {
+          const tooltipEl = feature.marker.getTooltip()?.getElement();
+          if (tooltipEl) {
+            tooltipEl.classList.remove('is-visit-label');
+          }
+          feature.marker.closeTooltip();
+        }
       });
     }
 
@@ -3333,6 +3774,30 @@
         rows = `
           <div class="popup-row"><dt>Latitud</dt><dd>${escapeHtml(formatWgs84(lat))}</dd></div>
           <div class="popup-row"><dt>Longitud</dt><dd>${escapeHtml(formatWgs84(lon))}</dd></div>
+        `;
+      } else if (layerName === 'Eje Vial') {
+        const statusBadge = feature.isVisit
+          ? '<span class="popup-badge badge-green">🟢 Programado</span>'
+          : '<span class="popup-badge badge-other">⚫ No programado</span>';
+        const props = feature.properties || {};
+        const aliases = Array.isArray(props.ejeAliases) && props.ejeAliases.length
+          ? props.ejeAliases
+          : [props.ejeId].filter(Boolean);
+        const currentDay = getScheduleForDay(activeDayKey);
+        const currentTargets = currentDay ? getFilteredScheduleTargets(currentDay) : { activities: [] };
+        const matchingActs = (currentTargets.activities || []).filter((act) => {
+          const actEjes = extractEjeIdsFromActivities([act]);
+          return aliases.some((code) => actEjes.includes(code));
+        });
+        const actsSummary = matchingActs.length
+          ? matchingActs.map((act) => `• ${escapeHtml(act.title)} (${escapeHtml(act.location)})`).join('<br>')
+          : 'Sin actividades registradas en la selección actual';
+        rows = `
+          <div class="popup-row"><dt>Estado</dt><dd>${statusBadge}</dd></div>
+          <div class="popup-row"><dt>Código</dt><dd>${escapeHtml(aliases.join(' / ') || 'Sin dato')}</dd></div>
+          <div class="popup-row"><dt>Longitud</dt><dd>${escapeHtml(String(props.length_km ?? ''))} km (${escapeHtml(String(props.length_m ?? ''))} m)</dd></div>
+          <div class="popup-row"><dt>Plano origen</dt><dd>${escapeHtml(props.docName || 'Sin dato')}</dd></div>
+          <div class="popup-row"><dt>Actividades (${escapeHtml(currentDay?.label || 'Actual')})</dt><dd>${actsSummary}</dd></div>
         `;
       } else if (layerName === 'Torre') {
         // Se quita TIPO_INFRA, ID_INFRA_PT, SITIO, coordenadas proyectadas y campos redundantes
@@ -3448,7 +3913,7 @@
       return `<div class="feature-popup"><div class="popup-layer">${escapeHtml(layerName)}</div><h3 class="popup-title">${escapeHtml(feature.name)}</h3>${relatedSummary}${progressBlock}${dlBlock}${communityCommentBlock}</div>`;
     }
 
-    function showFeatureInfo(layer, feature, layerName) {
+    function showFeatureInfo(layer, feature, layerName, customLatLng) {
       if (layerName === 'Torre') {
         selectedTowerFeature = feature;
         clearCommunityHighlight();
@@ -3458,8 +3923,14 @@
         updateAerosDashboard();
       } else if (layerName === 'Comunidad') {
         updateEntornoDashboard(feature);
+      } else if (layerName === 'Eje Vial') {
+        selectedEjeFeature = feature;
+        updateEjesStyle();
+        updateMapLabels();
       }
-      featurePopup.setLatLng(layer.getLatLng()).setContent(popupContent(feature, layerName)).openOn(map);
+      const targetLatLng = customLatLng
+        || (typeof layer.getLatLng === 'function' ? layer.getLatLng() : layer.getBounds().getCenter());
+      featurePopup.setLatLng(targetLatLng).setContent(popupContent(feature, layerName)).openOn(map);
     }
 
     function syncVisitStyle(feature, selector) {
@@ -3487,14 +3958,19 @@
     }
 
     function clearCommunityHighlight() {
-      features.forEach((tower) => tower.marker.getElement()?.querySelector('.tower-logo')?.classList.remove('is-community-related'));
+      features.forEach((tower) => {
+        tower.marker.getElement()?.querySelector('.tower-logo')?.classList.remove('is-community-related');
+        tower.marker.setZIndexOffset(tower.isVisit ? 18000 : (tower.baseZIndexOffset ?? 0));
+      });
       if (selectedCommunityFeature) {
         selectedCommunityFeature.marker.getElement()?.querySelector('.community-logo')?.classList.remove('is-selected');
+        selectedCommunityFeature.marker.setZIndexOffset(selectedCommunityFeature.baseZIndexOffset ?? 600);
         selectedCommunityFeature.relatedTowerCount = undefined;
         selectedCommunityFeature.relatedTowers = undefined;
       }
       selectedCommunityFeature = null;
       updateEntornoDashboard();
+      updateMapLabels();
     }
 
     function isUpperSanLuis(community) {
@@ -3509,6 +3985,7 @@
       if (isUpperSanLuis(community)) {
         updateTowersDashboard();
         updateEntornoDashboard(community);
+        updateMapLabels();
         if (!options.skipTabSwitch && activeSidebarTab !== 'entorno') switchSidebarTab('towers');
         return 0;
       }
@@ -3522,11 +3999,16 @@
       community.relatedTowers = relatedTowers;
       community.relatedTowerCount = relatedTowers.length;
       if (relatedTowers.length) {
-        relatedTowers.forEach((tower) => tower.marker.getElement()?.querySelector('.tower-logo')?.classList.add('is-community-related'));
+        relatedTowers.forEach((tower) => {
+          tower.marker.getElement()?.querySelector('.tower-logo')?.classList.add('is-community-related');
+          tower.marker.setZIndexOffset(17000);
+        });
       }
       community.marker.getElement()?.querySelector('.community-logo')?.classList.add('is-selected');
+      community.marker.setZIndexOffset(22000);
       updateTowersDashboard();
       updateEntornoDashboard(community);
+      updateMapLabels();
       if (!options.skipTabSwitch && activeSidebarTab !== 'entorno') {
         switchSidebarTab('towers');
       }
@@ -3549,57 +4031,219 @@
       });
     }
 
-    function highlightDay(dayKey) {
+    function matchesAeroVisit(feature, aeroIds) {
+      if (!Array.isArray(aeroIds) || !aeroIds.length) return false;
+      const featName = (feature.name || '').trim().toUpperCase();
+      return aeroIds.some((id) => {
+        if (!id) return false;
+        return featName === String(id).trim().toUpperCase();
+      });
+    }
+
+    function extractAeroIdsFromActivities(activities) {
+      const ids = new Set();
+      (activities || []).forEach((act) => {
+        const text = `${act.location || ''} ${act.title || ''} ${act.front || ''}`;
+        const matches = text.matchAll(/\bWP[:\s]*0*(\d{1,2})\b/gi);
+        for (const m of matches) {
+          ids.add(`WP${Number(m[1])}`);
+        }
+      });
+      return Array.from(ids);
+    }
+
+    function extractEjeIdsFromActivities(activities) {
+      const ids = new Set();
+      (activities || []).forEach((act) => {
+        const text = `${act.location || ''} ${act.title || ''} ${act.front || ''}`;
+        const matches = text.matchAll(/\bejes?\b\s*:?\s*(\d{1,2}(?:\s*(?:,|y|\.|\/|-)\s*\d{1,2})*)/gi);
+        for (const m of matches) {
+          const nums = m[1].match(/\d{1,2}/g) || [];
+          nums.forEach((n) => ids.add(`EJE${Number(n)}`));
+        }
+        if (/\bWP[:\s]*0*43\b/i.test(text)) {
+          ids.add('WP43');
+        }
+      });
+      return Array.from(ids);
+    }
+
+    function matchesEjeVisit(feature, ejeIds) {
+      if (!Array.isArray(ejeIds) || !ejeIds.length) return false;
+      const aliases = Array.isArray(feature.properties?.ejeAliases) && feature.properties.ejeAliases.length
+        ? feature.properties.ejeAliases
+        : [feature.properties?.ejeId].filter(Boolean);
+      const upperSet = new Set(ejeIds.map((id) => String(id).trim().toUpperCase()));
+      return aliases.some((alias) => upperSet.has(String(alias).trim().toUpperCase()));
+    }
+
+    function getFilteredScheduleTargets(day) {
+      const allActivities = day.activities || [];
+      if (activeScheduleSource === 'ALL') {
+        const fallbackAeros = extractAeroIdsFromActivities(allActivities);
+        const fallbackEjes = extractEjeIdsFromActivities(allActivities);
+        return {
+          towers: day.towers || [],
+          occupations: day.occupations || [],
+          aeros: Array.from(new Set([...(day.aeros || []), ...fallbackAeros])),
+          ejes: Array.from(new Set([...(day.ejes || []), ...fallbackEjes])),
+          activities: allActivities
+        };
+      }
+      const filteredActivities = allActivities.filter((a) => (a.source || 'TORRES') === activeScheduleSource);
+      if (activeScheduleSource === 'TORRES') {
+        return {
+          towers: day.towers || [],
+          occupations: day.occupations || [],
+          aeros: [],
+          ejes: extractEjeIdsFromActivities(filteredActivities),
+          activities: filteredActivities
+        };
+      }
+      return {
+        towers: [],
+        occupations: [],
+        aeros: extractAeroIdsFromActivities(filteredActivities),
+        ejes: extractEjeIdsFromActivities(filteredActivities),
+        activities: filteredActivities
+      };
+    }
+
+    function updateEjesStyle() {
+      const scheduledCount = ejesFeatures.filter((f) => f.isVisit).length;
+      const countEl = document.getElementById('ejes-legend-count');
+      if (countEl) {
+        countEl.textContent = `${scheduledCount} / ${ejesFeatures.length} prog.`;
+      }
+
+      const scheduledFeatures = [];
+      ejesFeatures.forEach((feature) => {
+        const isVisit = Boolean(feature.isVisit);
+        const isSelected = feature === selectedEjeFeature;
+        if (!feature.polyline || !feature.haloPolyline) return;
+
+        if (isVisit) {
+          feature.isVisible = true;
+          if (!ejesLayer.hasLayer(feature.haloPolyline)) ejesLayer.addLayer(feature.haloPolyline);
+          if (!ejesLayer.hasLayer(feature.polyline)) ejesLayer.addLayer(feature.polyline);
+          feature.haloPolyline.setStyle({
+            color: '#86efac',
+            weight: isSelected ? 11 : 9,
+            opacity: isSelected ? 0.8 : 0.55
+          });
+          feature.polyline.setStyle({
+            color: '#16a34a',
+            weight: isSelected ? 6 : 5,
+            opacity: 0.98
+          });
+          scheduledFeatures.push(feature);
+        } else {
+          const shouldHide = showOnlyScheduledEjes && !isSelected;
+          feature.isVisible = !shouldHide;
+          if (ejesLayer.hasLayer(feature.haloPolyline)) ejesLayer.removeLayer(feature.haloPolyline);
+          if (shouldHide) {
+            if (ejesLayer.hasLayer(feature.polyline)) ejesLayer.removeLayer(feature.polyline);
+          } else {
+            if (!ejesLayer.hasLayer(feature.polyline)) ejesLayer.addLayer(feature.polyline);
+            feature.polyline.setStyle({
+              color: isSelected ? '#0f172a' : '#18181b',
+              weight: isSelected ? 4.5 : 2.8,
+              opacity: isSelected ? 0.95 : 0.78
+            });
+          }
+        }
+      });
+
+      scheduledFeatures.forEach((feature) => {
+        if (feature.haloPolyline && ejesLayer.hasLayer(feature.haloPolyline)) feature.haloPolyline.bringToFront();
+        if (feature.polyline && ejesLayer.hasLayer(feature.polyline)) feature.polyline.bringToFront();
+      });
+      if (selectedEjeFeature && !selectedEjeFeature.isVisit && selectedEjeFeature.polyline && ejesLayer.hasLayer(selectedEjeFeature.polyline)) {
+        selectedEjeFeature.polyline.bringToFront();
+      }
+    }
+
+    function highlightDay(dayKey, options = {}) {
       const day = getScheduleForDay(dayKey);
       if (!day) return;
+      activeDayKey = dayKey;
       clearCommunityHighlight();
+      selectedEjeFeature = null;
       map.closePopup(featurePopup);
       document.querySelectorAll('.day-button').forEach((button) => {
         button.setAttribute('aria-pressed', String(button.dataset.day === dayKey));
       });
 
-      const selectedTowers = features.filter((feature) => matchesTowerVisit(feature, day.towers));
-      const selectedLineOccupations = cauceLineaFeatures.filter((feature) => matchesOccupationVisit(feature, day.occupations));
-      const selectedParkOccupations = cauceParqueFeatures.filter((feature) => matchesOccupationVisit(feature, day.occupations));
+      const targets = getFilteredScheduleTargets(day);
+      const selectedTowers = features.filter((feature) => matchesTowerVisit(feature, targets.towers));
+      const selectedAeros = aerosFeatures.filter((feature) => matchesAeroVisit(feature, targets.aeros));
+      const selectedEjes = ejesFeatures.filter((feature) => matchesEjeVisit(feature, targets.ejes));
+      const selectedLineOccupations = cauceLineaFeatures.filter((feature) => matchesOccupationVisit(feature, targets.occupations));
+      const selectedParkOccupations = cauceParqueFeatures.filter((feature) => matchesOccupationVisit(feature, targets.occupations));
       features.forEach((feature) => {
         feature.isVisit = selectedTowers.includes(feature);
-        feature.marker.setZIndexOffset(feature.isVisit ? 8000 : feature.baseZIndexOffset);
+        feature.marker.setZIndexOffset(feature.isVisit ? 18000 : feature.baseZIndexOffset);
         syncVisitStyle(feature, '.tower-logo');
+      });
+      aerosFeatures.forEach((feature) => {
+        feature.isVisit = selectedAeros.includes(feature);
+        feature.marker.setZIndexOffset(feature.isVisit ? 19000 : feature.baseZIndexOffset);
+        syncVisitStyle(feature, '.aeros-logo');
       });
       [...cauceLineaFeatures, ...cauceParqueFeatures].forEach((feature) => {
         feature.isVisit = selectedLineOccupations.includes(feature) || selectedParkOccupations.includes(feature);
-        feature.marker.setZIndexOffset(feature.isVisit ? 12000 : feature.baseZIndexOffset);
+        feature.marker.setZIndexOffset(feature.isVisit ? 20000 : feature.baseZIndexOffset);
         syncVisitStyle(feature, '.cauce-point');
       });
+      ejesFeatures.forEach((feature) => {
+        feature.isVisit = selectedEjes.includes(feature);
+      });
+      updateEjesStyle();
+
       const occupationCount = selectedLineOccupations.length + selectedParkOccupations.length;
-      const occupationLabel = occupationCount === 1 ? 'ocupación resaltada' : 'ocupaciones resaltadas';
+      const occupationLabel = occupationCount === 1 ? 'ocupación' : 'ocupaciones';
       const towerLabel = selectedTowers.length === 1 ? 'torre' : 'torres';
-      document.getElementById('day-feedback').textContent = `${day.label}: ${selectedTowers.length} ${towerLabel} y ${occupationCount} ${occupationLabel}`;
+      const aeroLabel = selectedAeros.length === 1 ? 'aero' : 'aeros';
+      const ejeLabel = selectedEjes.length === 1 ? 'eje' : 'ejes';
+      const parts = [`${selectedTowers.length} ${towerLabel}`, `${selectedAeros.length} ${aeroLabel}`];
+      if (selectedEjes.length > 0) parts.push(`${selectedEjes.length} ${ejeLabel}`);
+      if (occupationCount > 0) parts.push(`${occupationCount} ${occupationLabel}`);
+      document.getElementById('day-feedback').textContent = `${day.label}: ${parts.join(' · ')}`;
       renderDayActivities(dayKey);
-      zoomToDay(dayKey);
+      updateMapLabels();
+      if (!options.skipZoom) zoomToDay(dayKey);
     }
 
     function zoomToDay(dayKey) {
       const day = getScheduleForDay(dayKey);
       if (!day) return;
+      const targets = getFilteredScheduleTargets(day);
       const visits = [
-        ...features.filter((feature) => matchesTowerVisit(feature, day.towers)),
-        ...cauceLineaFeatures.filter((feature) => matchesOccupationVisit(feature, day.occupations)),
-        ...cauceParqueFeatures.filter((feature) => matchesOccupationVisit(feature, day.occupations))
+        ...features.filter((feature) => matchesTowerVisit(feature, targets.towers)),
+        ...aerosFeatures.filter((feature) => matchesAeroVisit(feature, targets.aeros)),
+        ...cauceLineaFeatures.filter((feature) => matchesOccupationVisit(feature, targets.occupations)),
+        ...cauceParqueFeatures.filter((feature) => matchesOccupationVisit(feature, targets.occupations))
       ];
-      const bounds = L.latLngBounds(visits.map((feature) => [feature.coordinates[1], feature.coordinates[0]]));
+      const latLngs = visits.map((feature) => [feature.coordinates[1], feature.coordinates[0]]);
+      const scheduledEjes = ejesFeatures.filter((feature) => matchesEjeVisit(feature, targets.ejes));
+      scheduledEjes.forEach((feature) => {
+        if (feature.bounds) {
+          latLngs.push(feature.bounds.getSouthWest(), feature.bounds.getNorthEast());
+        }
+      });
+      const bounds = L.latLngBounds(latLngs);
       if (bounds.isValid()) map.fitBounds(bounds.pad(0.25), { maxZoom: 14 });
     }
 
     function categorizeActivity(activity) {
       const text = `${activity.title || ''} ${activity.front || ''}`.toLowerCase();
-      if (/socializaci[oó]n|atenci[oó]n|predio|acta|capacitaci[oó]n|\brio\b|comunidad|vecindad/i.test(text)) {
+      if (/socializaci[oó]n|atenci[oó]n|predio|acta|capacitaci[oó]n|\brio\b|comunidad|vecindad|entorno|pqrs/i.test(text)) {
         return 'Social y predial';
       }
       if (/forest|fauna|bi[oó]tico|ahuyenta|ambiental/i.test(text)) {
         return 'Gestión ambiental';
       }
-      if (/obra civil|campamento|adecuaci[oó]n|excavaci[oó]n|fundaci[oó]n|montaje/i.test(text)) {
+      if (/obra civil|campamento|adecuaci[oó]n|excavaci[oó]n|fundaci[oó]n|montaje|recalce|topograf|terrapl[eé]n|subrasante|odt|jag[uü]ey|ducto|el[eé]ctric|acero|pernos|solado|fundida|desbroce/i.test(text)) {
         return 'Obra civil';
       }
       if (/abastecimiento|despacho|recepci[oó]n|descargue|material|zona franca|log[ií]stica|ej[eé]rcito|suministro|patio/i.test(text)) {
@@ -3611,27 +4255,101 @@
       return 'Otras actividades';
     }
 
+    function renderScheduleFlagFilters(dayKey, dayActivities) {
+      const container = document.getElementById('schedule-flag-filters');
+      if (!container) return;
+      const nonOcc = (dayActivities || []).filter((a) => !/ocupaciones de cauce/i.test(a.title));
+      const counts = {
+        ALL: nonOcc.length,
+        TORRES: nonOcc.filter((a) => (a.source || 'TORRES') === 'TORRES').length,
+        ODS01: nonOcc.filter((a) => a.source === 'ODS01').length,
+        ODS02: nonOcc.filter((a) => a.source === 'ODS02').length
+      };
+      const defs = [
+        { key: 'ALL', label: `Todos (${counts.ALL})` },
+        { key: 'TORRES', label: `🗼 Torres (${counts.TORRES})` },
+        { key: 'ODS01', label: `🚩 OSDS01 (${counts.ODS01})` },
+        { key: 'ODS02', label: `🚩 ODS02 (${counts.ODS02})` }
+      ];
+      container.replaceChildren();
+      defs.forEach((def) => {
+        if (def.key !== 'ALL' && counts[def.key] === 0) return;
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = `schedule-flag-pill${activeScheduleSource === def.key ? ' is-active' : ''}`;
+        btn.dataset.source = def.key;
+        btn.textContent = def.label;
+        btn.setAttribute('aria-pressed', String(activeScheduleSource === def.key));
+        btn.addEventListener('click', () => {
+          activeScheduleSource = def.key;
+          highlightDay(dayKey);
+        });
+        container.append(btn);
+      });
+    }
+
     function renderDayActivities(dayKey) {
       const day = getScheduleForDay(dayKey);
       if (!day) return;
 
-      const towerVisits = features.filter((feature) => matchesTowerVisit(feature, day.towers)).map((feature) => ({
+      renderScheduleFlagFilters(dayKey, day.activities || []);
+      const targets = getFilteredScheduleTargets(day);
+
+      const towerVisits = features.filter((feature) => matchesTowerVisit(feature, targets.towers)).map((feature) => ({
         title: feature.name,
         location: feature.attributes.find(([key]) => key.toLowerCase() === 'comunidad')?.[1] || '',
+        source: 'TORRES',
         feature
       }));
 
-      const occupationFeatures = [...cauceLineaFeatures, ...cauceParqueFeatures].filter((feature) => matchesOccupationVisit(feature, day.occupations));
-      const occupationVisits = occupationFeatures.map((feature) => {
-        const occId = (day.occupations || []).find((id) => matchesOccupationVisit(feature, [id])) || feature.name;
+      const aeroVisits = aerosFeatures.filter((feature) => matchesAeroVisit(feature, targets.aeros)).map((feature) => {
+        const matchingSources = Array.from(new Set(
+          (targets.activities || [])
+            .filter((act) => extractAeroIdsFromActivities([act]).includes((feature.name || '').toUpperCase()))
+            .map((act) => act.source)
+            .filter(Boolean)
+        ));
         return {
-          title: `${occId} (${feature.name})`,
-          location: feature.attributes.find(([key]) => key.toUpperCase() === 'VEREDA')?.[1] || '',
+          title: feature.name,
+          location: 'Aerogenerador · Parque Eólico Windpeshi',
+          source: matchingSources.length === 1 ? matchingSources[0] : (activeScheduleSource !== 'ALL' ? activeScheduleSource : 'ODS02'),
           feature
         };
       });
 
-      const scheduledActivities = (day.activities || []).filter((activity) => !/ocupaciones de cauce/i.test(activity.title));
+      const ejeVisits = ejesFeatures.filter((feature) => matchesEjeVisit(feature, targets.ejes)).map((feature) => {
+        const aliases = Array.isArray(feature.properties?.ejeAliases) && feature.properties.ejeAliases.length
+          ? feature.properties.ejeAliases
+          : [feature.properties?.ejeId].filter(Boolean);
+        const matchingSources = Array.from(new Set(
+          (targets.activities || [])
+            .filter((act) => {
+              const actEjes = extractEjeIdsFromActivities([act]);
+              return aliases.some((code) => actEjes.includes(code));
+            })
+            .map((act) => act.source)
+            .filter(Boolean)
+        ));
+        return {
+          title: `${feature.name} (${feature.properties?.length_km ?? ''} km)`,
+          location: `Vía programada · ${aliases.join(' / ')}`,
+          source: matchingSources.length === 1 ? matchingSources[0] : (activeScheduleSource !== 'ALL' ? activeScheduleSource : 'ODS01'),
+          feature
+        };
+      });
+
+      const occupationFeatures = [...cauceLineaFeatures, ...cauceParqueFeatures].filter((feature) => matchesOccupationVisit(feature, targets.occupations));
+      const occupationVisits = occupationFeatures.map((feature) => {
+        const occId = (targets.occupations || []).find((id) => matchesOccupationVisit(feature, [id])) || feature.name;
+        return {
+          title: `${occId} (${feature.name})`,
+          location: feature.attributes.find(([key]) => key.toUpperCase() === 'VEREDA')?.[1] || '',
+          source: 'TORRES',
+          feature
+        };
+      });
+
+      const scheduledActivities = (targets.activities || []).filter((activity) => !/ocupaciones de cauce/i.test(activity.title));
 
       const categorized = {
         'Social y predial': [],
@@ -3656,17 +4374,25 @@
       ];
 
       const groups = [
-        { title: 'Torres programadas', items: towerVisits, type: 'towers' },
-        { title: 'Ocupaciones de cauce', items: occupationVisits, type: 'cauces' },
+        { title: '🗼 Torres programadas', items: towerVisits, type: 'towers' },
+        { title: '🌀 Aerogeneradores programados (WP)', items: aeroVisits, type: 'aeros' },
+        { title: '🛣️ Ejes viales programados', items: ejeVisits, type: 'ejes' },
+        { title: '💧 Ocupaciones de cauce', items: occupationVisits, type: 'cauces' },
         ...activityGroups
       ].filter((group) => group.items.length > 0);
 
       document.getElementById('activity-day').textContent = day.label;
       const towerLabel = towerVisits.length === 1 ? 'torre' : 'torres';
+      const aeroLabel = aeroVisits.length === 1 ? 'aero' : 'aeros';
+      const ejeLabel = ejeVisits.length === 1 ? 'eje' : 'ejes';
       const occupationLabel = occupationVisits.length === 1 ? 'cauce' : 'cauces';
       const totalActivities = scheduledActivities.length;
       const activityLabel = totalActivities === 1 ? 'actividad' : 'actividades';
-      document.getElementById('activity-count').textContent = `${towerVisits.length} ${towerLabel} · ${occupationVisits.length} ${occupationLabel} · ${totalActivities} ${activityLabel}`;
+      const summaryStats = [`${towerVisits.length} ${towerLabel}`, `${aeroVisits.length} ${aeroLabel}`];
+      if (ejeVisits.length > 0) summaryStats.push(`${ejeVisits.length} ${ejeLabel}`);
+      summaryStats.push(`${occupationVisits.length} ${occupationLabel}`);
+      summaryStats.push(`${totalActivities} ${activityLabel}`);
+      document.getElementById('activity-count').textContent = summaryStats.join(' · ');
 
       const list = document.getElementById('activity-list');
       const showFullWeek = dayKey === 'week-summary';
@@ -3706,6 +4432,25 @@
               map.setView(activity.feature.marker.getLatLng(), 15);
               showFeatureInfo(activity.feature.marker, activity.feature, 'Torre');
             });
+          } else if (group.type === 'aeros' && activity.feature?.marker) {
+            item.classList.add('is-clickable');
+            item.title = 'Hacer clic para ubicar aerogenerador en el mapa';
+            item.addEventListener('click', (e) => {
+              e.stopPropagation();
+              map.setView(activity.feature.marker.getLatLng(), 15);
+              showFeatureInfo(activity.feature.marker, activity.feature, 'Aerogenerador');
+            });
+          } else if (group.type === 'ejes' && activity.feature?.polyline) {
+            item.classList.add('is-clickable');
+            item.title = `Hacer clic para enfocar ${activity.feature.name} en el mapa`;
+            item.addEventListener('click', (e) => {
+              e.stopPropagation();
+              if (!map.hasLayer(ejesLayer)) map.addLayer(ejesLayer);
+              if (activity.feature.bounds) {
+                map.fitBounds(activity.feature.bounds.pad(0.25), { maxZoom: 15 });
+              }
+              showFeatureInfo(activity.feature.polyline, activity.feature, 'Eje Vial', activity.feature.midpointLatLng);
+            });
           } else if (group.type === 'cauces' && activity.feature?.marker) {
             item.classList.add('is-clickable');
             item.title = 'Hacer clic para ubicar en el mapa';
@@ -3715,9 +4460,13 @@
               showFeatureInfo(activity.feature.marker, activity.feature, 'Ocupación de cauce');
             });
           } else {
-            const towerMatch = ((activity.location || '') + ' ' + (activity.title || '')).match(/\b(T\d{1,3}[NV]?)\b/i);
-            if (towerMatch) {
-              const matchedTower = features.find((f) => matchesTowerVisit(f, [towerMatch[1]]));
+            const combinedText = `${activity.location || ''} ${activity.title || ''}`;
+            const towerMatch = combinedText.match(/\b(T\s*\d{1,3}[NV]?)\b/i);
+            const aeroMatch = combinedText.match(/\bWP[:\s]*0*(\d{1,2})\b/i);
+            const actEjes = extractEjeIdsFromActivities([activity]);
+            if (towerMatch && (activity.source || 'TORRES') === 'TORRES') {
+              const cleanTower = towerMatch[1].replace(/\s+/g, '').toUpperCase();
+              const matchedTower = features.find((f) => matchesTowerVisit(f, [cleanTower]));
               if (matchedTower && matchedTower.marker) {
                 item.classList.add('is-clickable');
                 item.title = `Hacer clic para ubicar ${matchedTower.name} en el mapa`;
@@ -3727,15 +4476,53 @@
                   showFeatureInfo(matchedTower.marker, matchedTower, 'Torre');
                 });
               }
+            } else if (aeroMatch) {
+              const cleanAero = `WP${Number(aeroMatch[1])}`;
+              const matchedAero = aerosFeatures.find((f) => matchesAeroVisit(f, [cleanAero]));
+              if (matchedAero && matchedAero.marker) {
+                item.classList.add('is-clickable');
+                item.title = `Hacer clic para ubicar ${matchedAero.name} en el mapa`;
+                item.addEventListener('click', (e) => {
+                  e.stopPropagation();
+                  map.setView(matchedAero.marker.getLatLng(), 15);
+                  showFeatureInfo(matchedAero.marker, matchedAero, 'Aerogenerador');
+                });
+              }
+            } else if (actEjes.length) {
+              const matchedEje = ejesFeatures.find((f) => matchesEjeVisit(f, actEjes));
+              if (matchedEje && matchedEje.polyline) {
+                item.classList.add('is-clickable');
+                item.title = `Hacer clic para enfocar ${matchedEje.name} en el mapa`;
+                item.addEventListener('click', (e) => {
+                  e.stopPropagation();
+                  if (!map.hasLayer(ejesLayer)) map.addLayer(ejesLayer);
+                  if (matchedEje.bounds) {
+                    map.fitBounds(matchedEje.bounds.pad(0.25), { maxZoom: 15 });
+                  }
+                  showFeatureInfo(matchedEje.polyline, matchedEje, 'Eje Vial', matchedEje.midpointLatLng);
+                });
+              }
             }
           }
+
+          const sourceKey = activity.source || 'TORRES';
+          const sourceMeta = SCHEDULE_SOURCE_META[sourceKey] || SCHEDULE_SOURCE_META.TORRES;
+          const badgesRow = document.createElement('div');
+          badgesRow.className = 'activity-badges-row';
+
+          const flagBadge = document.createElement('span');
+          flagBadge.className = `activity-flag-badge ${sourceMeta.className}`;
+          flagBadge.textContent = sourceMeta.flag;
+          badgesRow.append(flagBadge);
 
           if (activity.front) {
             const frontBadge = document.createElement('span');
             frontBadge.className = 'activity-front-badge';
             frontBadge.textContent = activity.front;
-            item.append(frontBadge);
+            badgesRow.append(frontBadge);
           }
+
+          item.append(badgesRow);
 
           const itemTitle = document.createElement('h4');
           itemTitle.className = 'activity-title';
@@ -3827,6 +4614,50 @@
       return points;
     }
 
+    function getPolylineMidpointLatLng(geometry) {
+      let line = [];
+      if (geometry?.type === 'LineString' && Array.isArray(geometry.coordinates)) {
+        line = geometry.coordinates;
+      } else if (geometry?.type === 'MultiLineString' && Array.isArray(geometry.coordinates) && geometry.coordinates.length) {
+        line = geometry.coordinates[0];
+      }
+      if (!line.length) return L.latLng(11.6, -72.02);
+      if (line.length === 1) return L.latLng(line[0][1], line[0][0]);
+
+      const segLengths = [];
+      let totalLen = 0;
+      for (let i = 0; i < line.length - 1; i++) {
+        const len = Math.hypot(line[i + 1][0] - line[i][0], line[i + 1][1] - line[i][1]);
+        segLengths.push(len);
+        totalLen += len;
+      }
+      if (totalLen === 0) return L.latLng(line[0][1], line[0][0]);
+      const half = totalLen / 2;
+      let acc = 0;
+      for (let i = 0; i < segLengths.length; i++) {
+        const seg = segLengths[i];
+        if (acc + seg >= half) {
+          const t = seg === 0 ? 0 : (half - acc) / seg;
+          const lon = line[i][0] + (line[i + 1][0] - line[i][0]) * t;
+          const lat = line[i][1] + (line[i + 1][1] - line[i][1]) * t;
+          return L.latLng(lat, lon);
+        }
+        acc += seg;
+      }
+      const midIdx = Math.floor(line.length / 2);
+      return L.latLng(line[midIdx][1], line[midIdx][0]);
+    }
+
+    function geometryToLatLngs(geometry) {
+      if (geometry?.type === 'LineString') {
+        return geometry.coordinates.map(([lon, lat]) => [lat, lon]);
+      }
+      if (geometry?.type === 'MultiLineString') {
+        return geometry.coordinates.map((part) => part.map(([lon, lat]) => [lat, lon]));
+      }
+      return [];
+    }
+
     async function loadLayers() {
       const paths = [
         './geojson/Torres.geojson',
@@ -3834,7 +4665,8 @@
         './geojson/Area_Parque.geojson',
         './geojson/Ocupacion_Cauce_Linea.geojson',
         './geojson/Ocupaciones_Cauce_Parque.geojson',
-        './geojson/Comunidades.geojson'
+        './geojson/Comunidades.geojson',
+        './geojson/Ejes_Viales.geojson'
       ];
       const responses = await Promise.all(paths.map((path) => fetch(path)));
       const failed = responses.find((r) => !r.ok);
@@ -3846,7 +4678,8 @@
         areaGeo,
         cauceLineaGeo,
         cauceParqueGeo,
-        comunidadesGeo
+        comunidadesGeo,
+        ejesGeo
       ] = await Promise.all(responses.map((r) => r.json()));
 
       features = (torresGeo.features || []).map((f, index) => ({
@@ -3909,7 +4742,7 @@
         iconAnchor: [15, 15],
         labelClass: 'community-name-label',
         labelOffset: [9, 0],
-        zIndexOffset: 16000,
+        zIndexOffset: 600,
         onClick: highlightCommunity
       });
       communityFeatures.forEach((c) => {
@@ -3925,6 +4758,62 @@
         },
         interactive: false
       }).addTo(areaLayer);
+
+      ejesFeatures = (ejesGeo.features || []).map((f, index) => {
+        const props = f.properties || {};
+        const latLngs = geometryToLatLngs(f.geometry);
+        const midpointLatLng = getPolylineMidpointLatLng(f.geometry);
+        const haloPolyline = L.polyline(latLngs, {
+          color: '#86efac',
+          weight: 9,
+          opacity: 0,
+          lineCap: 'round',
+          lineJoin: 'round',
+          interactive: false
+        });
+        const polyline = L.polyline(latLngs, {
+          color: '#18181b',
+          weight: 2.8,
+          opacity: 0.78,
+          lineCap: 'round',
+          lineJoin: 'round'
+        }).addTo(ejesLayer);
+        const labelMarker = L.marker(midpointLatLng, {
+          icon: L.divIcon({ className: '', html: '', iconSize: [0, 0] }),
+          interactive: false,
+          keyboard: false,
+          opacity: 0
+        }).addTo(ejesLayer);
+        labelMarker.bindTooltip(props.shortName || props.name || `Eje ${index + 1}`, {
+          permanent: true,
+          direction: 'center',
+          className: 'eje-name-label',
+          opacity: 1
+        });
+        const featureObj = {
+          id: f.id || `eje-${index}`,
+          index,
+          isEje: true,
+          suppressLabel: Number(props.length_m || 0) < 250,
+          name: props.name || `Eje Vial ${index + 1}`,
+          shortName: props.shortName || props.name || `Eje ${index + 1}`,
+          properties: props,
+          attributes: Object.entries(props),
+          polyline,
+          haloPolyline,
+          marker: labelMarker,
+          midpointLatLng,
+          bounds: polyline.getBounds(),
+          isVisit: false,
+          isVisible: true
+        };
+        polyline.on('click', (e) => {
+          if (e && e.originalEvent) e.originalEvent._handledByMarker = true;
+          clearCommunityHighlight();
+          showFeatureInfo(polyline, featureObj, 'Eje Vial', e?.latlng || midpointLatLng);
+        });
+        return featureObj;
+      });
     }
 
     function escapeHtml(value) {
@@ -3932,9 +4821,10 @@
     }
 
     weekSelect.addEventListener('change', () => {
+      activeScheduleSource = 'ALL';
       setActiveWeek(weekSelect.value);
       const activeBtn = document.querySelector('.day-button[aria-pressed="true"]');
-      const activeDay = activeBtn ? activeBtn.dataset.day : 'monday';
+      const activeDay = (activeBtn && activeBtn.style.display !== 'none') ? activeBtn.dataset.day : 'monday';
       highlightDay(activeDay);
     });
 
@@ -4126,6 +5016,26 @@
       }
     });
 
+    // Filtro flotante de Ejes Viales (Ver todos vs Solo programados)
+    document.querySelectorAll('.ejes-filter-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const mode = btn.dataset.ejesMode || 'all';
+        showOnlyScheduledEjes = mode === 'scheduled';
+        document.querySelectorAll('.ejes-filter-btn').forEach((other) => {
+          const active = other === btn;
+          other.classList.toggle('is-active', active);
+          other.setAttribute('aria-pressed', String(active));
+        });
+        if (!map.hasLayer(ejesLayer)) map.addLayer(ejesLayer);
+        updateEjesStyle();
+        updateMapLabels();
+      });
+    });
+
+    map.on('overlayadd overlayremove', () => {
+      updateMapLabels();
+    });
+
     // Clic en el mapa para deseleccionar si se hace clic fuera
     map.on('click', (e) => {
       if (e.originalEvent && e.originalEvent._handledByMarker) return;
@@ -4136,6 +5046,11 @@
       if (selectedAeroFeature) {
         resetAerosScope();
       }
+      if (selectedEjeFeature) {
+        selectedEjeFeature = null;
+        updateEjesStyle();
+        updateMapLabels();
+      }
     });
 
     async function initApp() {
@@ -4145,13 +5060,15 @@
           loadScheduleCatalog(),
           loadLayers()
         ]);
-        document.querySelectorAll('.day-button').forEach((button) => { button.disabled = false; });
+        document.querySelectorAll('.day-button').forEach((button) => {
+          if (button.style.display !== 'none') button.disabled = false;
+        });
         highlightDay('monday');
         updateMapLabels();
         updateTowersDashboard();
         updateAerosDashboard();
         updateEntornoDashboard();
-        status.textContent = `${features.length} torres, ${aerosFeatures.length} aerogeneradores, ${cauceLineaFeatures.length} ocupaciones de línea, ${cauceParqueFeatures.length} de parque, ${communityFeatures.length} comunidades y área cargados`;
+        status.textContent = `${features.length} torres, ${aerosFeatures.length} aerogeneradores, ${ejesFeatures.length} ejes viales, ${cauceLineaFeatures.length} ocupaciones de línea, ${cauceParqueFeatures.length} de parque, ${communityFeatures.length} comunidades y área cargados`;
       } catch (error) {
         status.textContent = error.message;
         status.classList.add('error');
