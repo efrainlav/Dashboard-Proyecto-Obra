@@ -740,15 +740,15 @@
     }
 
     .leaflet-tooltip.eje-name-label {
-      padding: 1px 5px;
-      border: 1px solid rgba(24, 24, 27, 0.25);
-      border-radius: 4px;
+      padding: 0;
+      border: 0;
       color: #18181b;
-      background: rgba(255, 255, 255, 0.88);
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.14);
+      background: transparent;
+      box-shadow: none;
       font-size: calc(var(--base-label-size, 11px) - 0.5px);
       font-weight: 800;
-      line-height: 1.2;
+      line-height: 1.15;
+      text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 0 0 4px #fff;
       pointer-events: none;
       transition: font-size 0.15s ease;
     }
@@ -761,70 +761,46 @@
       font-size: var(--visit-label-size, 11px) !important;
       font-weight: 850 !important;
       color: #14532d !important;
-      background: #dcfce7 !important;
-      border: 1.5px solid #16a34a !important;
-      text-shadow: none !important;
-      box-shadow: 0 2px 6px rgba(22, 163, 74, 0.28) !important;
+      background: transparent !important;
+      border: 0 !important;
+      box-shadow: none !important;
+      text-shadow: -1.2px -1.2px 0 #fff, 1.2px -1.2px 0 #fff, -1.2px 1.2px 0 #fff, 1.2px 1.2px 0 #fff, 0 0 5px #ffffff, 0 0 8px rgba(134, 239, 172, 0.85) !important;
       z-index: 960 !important;
     }
 
-    .ejes-map-legend {
-      position: absolute;
-      z-index: 500;
-      left: 12px;
-      bottom: 12px;
+    .ejes-accordion-toolbar {
       display: flex;
       flex-direction: column;
       gap: 6px;
       padding: 8px 10px;
-      border: 1px solid var(--line);
-      border-radius: 6px;
-      background: rgba(255, 255, 255, 0.94);
-      backdrop-filter: blur(4px);
-      box-shadow: 0 4px 12px rgba(23, 37, 31, 0.12);
+      margin: 0 8px 6px;
+      border: 1px solid #d7e3da;
+      border-radius: 5px;
+      background: #f6faf7;
       font-size: 11px;
       color: var(--ink);
-      max-width: 225px;
-    }
-
-    .ejes-legend-head {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 8px;
-      font-weight: 800;
-      font-size: 11px;
-      color: var(--green-dark);
-      border-bottom: 1px solid #e4ece6;
-      padding-bottom: 4px;
-    }
-
-    .ejes-legend-count {
-      font-weight: 700;
-      font-size: 10px;
-      color: #15803d;
-      background: #dcfce7;
-      padding: 1px 6px;
-      border-radius: 999px;
     }
 
     .ejes-legend-items {
       display: flex;
-      flex-direction: column;
-      gap: 4px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      flex-wrap: wrap;
     }
 
     .ejes-legend-row {
       display: flex;
       align-items: center;
-      gap: 7px;
-      font-weight: 600;
+      gap: 6px;
+      font-weight: 700;
+      font-size: 10.5px;
       color: #2c3e35;
     }
 
     .ejes-swatch {
       display: inline-block;
-      width: 20px;
+      width: 18px;
       height: 4px;
       border-radius: 2px;
       flex-shrink: 0;
@@ -843,14 +819,13 @@
     .ejes-legend-filter {
       display: flex;
       gap: 4px;
-      margin-top: 2px;
     }
 
     .ejes-filter-btn {
       flex: 1;
       border: 1px solid #cbd5d0;
       border-radius: 4px;
-      background: #f8faf9;
+      background: #ffffff;
       color: #334139;
       font-size: 10px;
       font-weight: 700;
@@ -869,14 +844,24 @@
       color: #ffffff;
     }
 
-    @media (max-width: 768px) {
-      .ejes-map-legend {
-        left: 8px;
-        bottom: 42px;
-        padding: 6px 8px;
-        font-size: 10px;
-        max-width: 195px;
-      }
+    .activity-day-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: #dcfce7;
+      color: #14532d;
+      border: 1px solid #bbf7d0;
+      font-size: 10px;
+      font-weight: 750;
+    }
+
+    .activity-eje-detail {
+      margin: 4px 0 0;
+      font-size: 11px;
+      line-height: 1.35;
+      color: #3f5549;
     }
 
     .cauce-point {
@@ -2664,20 +2649,6 @@
 
       <section class="map-panel" aria-label="Mapa de torres">
         <div id="map"></div>
-        <div id="ejes-map-legend" class="ejes-map-legend" aria-label="Leyenda y filtro de ejes viales">
-          <div class="ejes-legend-head">
-            <span>🛣️ Ejes viales</span>
-            <span id="ejes-legend-count" class="ejes-legend-count">0 / 0 prog.</span>
-          </div>
-          <div class="ejes-legend-items">
-            <div class="ejes-legend-row"><span class="ejes-swatch ejes-swatch-scheduled"></span><span>Vía programada</span></div>
-            <div class="ejes-legend-row"><span class="ejes-swatch ejes-swatch-unscheduled"></span><span>Vía no programada</span></div>
-          </div>
-          <div class="ejes-legend-filter" role="group" aria-label="Filtrar ejes viales">
-            <button type="button" class="ejes-filter-btn is-active" data-ejes-mode="all" aria-pressed="true">Ver todos</button>
-            <button type="button" class="ejes-filter-btn" data-ejes-mode="scheduled" aria-pressed="false">Solo programados</button>
-          </div>
-        </div>
         <div id="status" class="status">Cargando capas geoespaciales…</div>
       </section>
     </section>
@@ -3711,7 +3682,7 @@
           || feature === selectedCommunityFeature
           || relatedTowers.includes(feature);
         const showGeneral = isEje
-          ? zoom >= 13
+          ? zoom >= 15
           : (communitySet.has(feature) ? zoom >= 13 : zoom >= 12);
 
         if (isPriority || showGeneral) {
@@ -4317,26 +4288,70 @@
         };
       });
 
-      const ejeVisits = ejesFeatures.filter((feature) => matchesEjeVisit(feature, targets.ejes)).map((feature) => {
-        const aliases = Array.isArray(feature.properties?.ejeAliases) && feature.properties.ejeAliases.length
-          ? feature.properties.ejeAliases
-          : [feature.properties?.ejeId].filter(Boolean);
-        const matchingSources = Array.from(new Set(
-          (targets.activities || [])
-            .filter((act) => {
-              const actEjes = extractEjeIdsFromActivities([act]);
-              return aliases.some((code) => actEjes.includes(code));
-            })
-            .map((act) => act.source)
-            .filter(Boolean)
+      const ejeSortKey = (code) => {
+        const m = String(code).match(/^EJE(\d+)$/i);
+        if (m) return Number(m[1]);
+        const wm = String(code).match(/^WP(\d+)$/i);
+        if (wm) return 1000 + Number(wm[1]);
+        return 9999;
+      };
+
+      const uniqueTargetEjes = Array.from(new Set(
+        (targets.ejes || []).map((id) => String(id).trim().toUpperCase()).filter(Boolean)
+      )).sort((a, b) => ejeSortKey(a) - ejeSortKey(b));
+
+      const isWeekSummary = dayKey === 'week-summary';
+      const ejeVisits = uniqueTargetEjes.map((ejeCode) => {
+        const matchedFeatures = ejesFeatures.filter((f) => matchesEjeVisit(f, [ejeCode]));
+        if (!matchedFeatures.length) return null;
+        const primaryFeature = [...matchedFeatures].sort(
+          (a, b) => Number(b.properties?.length_m || 0) - Number(a.properties?.length_m || 0)
+        )[0];
+        const totalKm = matchedFeatures.reduce((sum, f) => sum + Number(f.properties?.length_km || 0), 0).toFixed(2);
+        const combinedBounds = L.latLngBounds([]);
+        matchedFeatures.forEach((f) => {
+          if (f.bounds && f.bounds.isValid()) combinedBounds.extend(f.bounds);
+        });
+
+        const matchingActs = (targets.activities || []).filter((act) =>
+          extractEjeIdsFromActivities([act]).includes(ejeCode)
+        );
+        const matchingSources = Array.from(new Set(matchingActs.map((act) => act.source).filter(Boolean)));
+        const sectors = Array.from(new Set(
+          matchingActs.map((act) => String(act.location || '').split(' · ')[0].trim()).filter(Boolean)
         ));
+        const actTitles = Array.from(new Set(
+          matchingActs.map((act) => String(act.title || '').trim()).filter(Boolean)
+        ));
+
+        let dayBadge = day.label;
+        if (isWeekSummary && weekdaySchedule) {
+          const dayNames = Object.values(weekdaySchedule)
+            .filter((dObj) => {
+              const dTargets = getFilteredScheduleTargets(dObj);
+              return (dTargets.ejes || []).includes(ejeCode);
+            })
+            .map((dObj) => dObj.name);
+          if (dayNames.length) {
+            dayBadge = `Días: ${dayNames.join(', ')}`;
+          }
+        }
+
+        const displayCode = ejeCode.startsWith('EJE')
+          ? `Eje Vial ${ejeCode.slice(3)}`
+          : (primaryFeature.name || ejeCode);
+
         return {
-          title: `${feature.name} (${feature.properties?.length_km ?? ''} km)`,
-          location: `Vía programada · ${aliases.join(' / ')}`,
+          title: `${displayCode} (${totalKm} km)`,
+          location: sectors.length ? sectors.join(' / ') : `Vía programada · ${displayCode}`,
+          detailText: actTitles.join(' · '),
+          dayBadge,
           source: matchingSources.length === 1 ? matchingSources[0] : (activeScheduleSource !== 'ALL' ? activeScheduleSource : 'ODS01'),
-          feature
+          feature: primaryFeature,
+          allFeatures: matchedFeatures,
+          bounds: combinedBounds.isValid() ? combinedBounds : primaryFeature.bounds
         };
-      });
+      }).filter(Boolean);
 
       const occupationFeatures = [...cauceLineaFeatures, ...cauceParqueFeatures].filter((feature) => matchesOccupationVisit(feature, targets.occupations));
       const occupationVisits = occupationFeatures.map((feature) => {
@@ -4420,6 +4435,59 @@
         const items = document.createElement('ul');
         items.className = 'activity-group-items';
 
+        if (group.type === 'ejes') {
+          const toolbar = document.createElement('div');
+          toolbar.className = 'ejes-accordion-toolbar';
+
+          const legendItems = document.createElement('div');
+          legendItems.className = 'ejes-legend-items';
+          legendItems.innerHTML = `
+            <div class="ejes-legend-row"><span class="ejes-swatch ejes-swatch-scheduled"></span><span>Vía programada</span></div>
+            <div class="ejes-legend-row"><span class="ejes-swatch ejes-swatch-unscheduled"></span><span>No programada</span></div>
+          `;
+
+          const filterGroup = document.createElement('div');
+          filterGroup.className = 'ejes-legend-filter';
+          filterGroup.setAttribute('role', 'group');
+          filterGroup.setAttribute('aria-label', 'Filtrar ejes viales en el mapa');
+
+          const btnAll = document.createElement('button');
+          btnAll.type = 'button';
+          btnAll.className = `ejes-filter-btn${!showOnlyScheduledEjes ? ' is-active' : ''}`;
+          btnAll.textContent = 'Ver todos';
+          btnAll.setAttribute('aria-pressed', String(!showOnlyScheduledEjes));
+
+          const btnScheduled = document.createElement('button');
+          btnScheduled.type = 'button';
+          btnScheduled.className = `ejes-filter-btn${showOnlyScheduledEjes ? ' is-active' : ''}`;
+          btnScheduled.textContent = 'Solo programados';
+          btnScheduled.setAttribute('aria-pressed', String(showOnlyScheduledEjes));
+
+          const applyMode = (onlyScheduled) => {
+            showOnlyScheduledEjes = onlyScheduled;
+            btnAll.classList.toggle('is-active', !onlyScheduled);
+            btnAll.setAttribute('aria-pressed', String(!onlyScheduled));
+            btnScheduled.classList.toggle('is-active', onlyScheduled);
+            btnScheduled.setAttribute('aria-pressed', String(onlyScheduled));
+            if (!map.hasLayer(ejesLayer)) map.addLayer(ejesLayer);
+            updateEjesStyle();
+            updateMapLabels();
+          };
+
+          btnAll.addEventListener('click', (e) => {
+            e.stopPropagation();
+            applyMode(false);
+          });
+          btnScheduled.addEventListener('click', (e) => {
+            e.stopPropagation();
+            applyMode(true);
+          });
+
+          filterGroup.append(btnAll, btnScheduled);
+          toolbar.append(legendItems, filterGroup);
+          section.append(header, toolbar, items);
+        }
+
         group.items.forEach((activity) => {
           const item = document.createElement('li');
           item.className = 'activity-item';
@@ -4442,12 +4510,13 @@
             });
           } else if (group.type === 'ejes' && activity.feature?.polyline) {
             item.classList.add('is-clickable');
-            item.title = `Hacer clic para enfocar ${activity.feature.name} en el mapa`;
+            item.title = `Hacer clic para enfocar ${activity.title} en el mapa`;
             item.addEventListener('click', (e) => {
               e.stopPropagation();
               if (!map.hasLayer(ejesLayer)) map.addLayer(ejesLayer);
-              if (activity.feature.bounds) {
-                map.fitBounds(activity.feature.bounds.pad(0.25), { maxZoom: 15 });
+              const targetBounds = activity.bounds || activity.feature.bounds;
+              if (targetBounds && targetBounds.isValid()) {
+                map.fitBounds(targetBounds.pad(0.25), { maxZoom: 15 });
               }
               showFeatureInfo(activity.feature.polyline, activity.feature, 'Eje Vial', activity.feature.midpointLatLng);
             });
@@ -4515,6 +4584,13 @@
           flagBadge.textContent = sourceMeta.flag;
           badgesRow.append(flagBadge);
 
+          if (activity.dayBadge) {
+            const dayBadgeEl = document.createElement('span');
+            dayBadgeEl.className = 'activity-day-badge';
+            dayBadgeEl.textContent = activity.dayBadge;
+            badgesRow.append(dayBadgeEl);
+          }
+
           if (activity.front) {
             const frontBadge = document.createElement('span');
             frontBadge.className = 'activity-front-badge';
@@ -4540,6 +4616,12 @@
           location.textContent = activity.location || 'Sin ubicación';
 
           item.append(itemTitle, location);
+          if (activity.detailText) {
+            const detailEl = document.createElement('p');
+            detailEl.className = 'activity-eje-detail';
+            detailEl.textContent = activity.detailText;
+            item.append(detailEl);
+          }
           items.append(item);
         });
 
@@ -4551,7 +4633,9 @@
           }
         });
 
-        section.append(header, items);
+        if (group.type !== 'ejes') {
+          section.append(header, items);
+        }
         list.append(section);
       });
     }
@@ -5014,22 +5098,6 @@
       if (found) {
         selectCommunityInEntorno(found, { fly: true });
       }
-    });
-
-    // Filtro flotante de Ejes Viales (Ver todos vs Solo programados)
-    document.querySelectorAll('.ejes-filter-btn').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const mode = btn.dataset.ejesMode || 'all';
-        showOnlyScheduledEjes = mode === 'scheduled';
-        document.querySelectorAll('.ejes-filter-btn').forEach((other) => {
-          const active = other === btn;
-          other.classList.toggle('is-active', active);
-          other.setAttribute('aria-pressed', String(active));
-        });
-        if (!map.hasLayer(ejesLayer)) map.addLayer(ejesLayer);
-        updateEjesStyle();
-        updateMapLabels();
-      });
     });
 
     map.on('overlayadd overlayremove', () => {

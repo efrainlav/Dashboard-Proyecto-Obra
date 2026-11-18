@@ -418,7 +418,7 @@ def main():
         })
 
     output = {
-        "defaultWeekId": "2026-11-09",
+        "defaultWeekId": "2026-11-16",
         "weeks": historical_weeks + nov_weeks,
     }
     JSON_PATH.write_text(json.dumps(output, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
