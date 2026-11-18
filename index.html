@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <title>Visor Proyecto Eólico vr 1.0</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <style>
@@ -3517,7 +3518,7 @@
     }
 
     async function loadScheduleCatalog() {
-      const response = await fetch('./programacion-semanal.json');
+      const response = await fetch('./programacion-semanal.json', { cache: 'no-cache' });
       if (!response.ok) throw new Error(`No se pudo leer programacion-semanal.json (HTTP ${response.status}).`);
       const catalog = await response.json();
       if (!Array.isArray(catalog.weeks) || !catalog.weeks.length) throw new Error('El catálogo no contiene semanas.');
@@ -4081,12 +4082,6 @@
     }
 
     function updateEjesStyle() {
-      const scheduledCount = ejesFeatures.filter((f) => f.isVisit).length;
-      const countEl = document.getElementById('ejes-legend-count');
-      if (countEl) {
-        countEl.textContent = `${scheduledCount} / ${ejesFeatures.length} prog.`;
-      }
-
       const scheduledFeatures = [];
       ejesFeatures.forEach((feature) => {
         const isVisit = Boolean(feature.isVisit);
@@ -4752,7 +4747,7 @@
         './geojson/Comunidades.geojson',
         './geojson/Ejes_Viales.geojson'
       ];
-      const responses = await Promise.all(paths.map((path) => fetch(path)));
+      const responses = await Promise.all(paths.map((path) => fetch(path, { cache: 'no-cache' })));
       const failed = responses.find((r) => !r.ok);
       if (failed) throw new Error(`No se pudo cargar una capa GeoJSON (HTTP ${failed.status}).`);
 
